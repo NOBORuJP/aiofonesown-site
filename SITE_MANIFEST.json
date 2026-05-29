@@ -1,0 +1,44 @@
+{
+  "project": "AI of One’s Own / 育てるAI Official Site",
+  "version": "0.1",
+  "created": "2026-05-29",
+  "official_site": "https://aiofonesown.com",
+  "support": {
+    "entry": "https://support.aiofonesown.com",
+    "ja": "https://support.aiofonesown.com/ja",
+    "en": "https://support.aiofonesown.com/en",
+    "email": "support@aiofonesown.com"
+  },
+  "sns": {
+    "x": "@aiofonesown",
+    "instagram": "@aiofonesown",
+    "threads": "@aiofonesown"
+  },
+  "assets": {
+    "ja-hero-wide.png": {
+      "width": 1672,
+      "height": 941,
+      "bytes": 2539075
+    },
+    "en-hero-wide.png": {
+      "width": 1672,
+      "height": 941,
+      "bytes": 2488445
+    },
+    "ja-cover-square.png": {
+      "width": 1254,
+      "height": 1254,
+      "bytes": 2720402
+    },
+    "en-cover-square.png": {
+      "width": 1254,
+      "height": 1254,
+      "bytes": 2753796
+    },
+    "noboru-ikuta.jpg": {
+      "width": 1365,
+      "height": 2048,
+      "bytes": 281658
+    }
+  }
+}
