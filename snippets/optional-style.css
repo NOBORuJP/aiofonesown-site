@@ -1,5 +1,30 @@
-/* Optional drop-in CSS for new hero/logo images */
-.site-logo-image { display: block; width: 56px; height: 56px; object-fit: cover; border-radius: 12px; }
-.hero-image { display: block; width: 100%; max-width: 1280px; height: auto; margin: 0 auto; border-radius: 18px; }
-.update-card.release-announcement { border: 1px solid rgba(212, 175, 55, 0.35); border-radius: 18px; padding: 1.25rem; margin: 1.5rem 0; }
-.update-date { opacity: 0.75; font-size: 0.95rem; }
+/* Optional CSS for AI of One's Own / 育てるAI site update */
+
+.site-logo-image {
+  display: block;
+  width: 56px;
+  height: 56px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.hero-image {
+  display: block;
+  width: 100%;
+  max-width: 1280px;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 18px;
+}
+
+.update-card.release-announcement {
+  border: 1px solid rgba(212, 175, 55, 0.35);
+  border-radius: 18px;
+  padding: 1.25rem;
+  margin: 1.5rem 0;
+}
+
+.update-date {
+  opacity: 0.75;
+  font-size: 0.95rem;
+}

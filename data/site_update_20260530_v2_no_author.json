@@ -1,0 +1,13 @@
+{
+  "version": "v2_no_author",
+  "date": "2026-05-30",
+  "official_english_gumroad_url": "https://noborikuta.gumroad.com/l/aiofonesown-early-access",
+  "author_page_policy": "No dedicated Author page. Remove Author page links. Keep author introduction on top page if already present.",
+  "japanese_release_status": "Scheduled later tonight or early tomorrow morning JST.",
+  "assets": [
+    "assets/images/aiofonesown-hero-en.png",
+    "assets/images/sodateru-ai-hero-ja.png",
+    "assets/images/aiofonesown-logo-en-square.png",
+    "assets/images/sodateru-ai-logo-ja-square.png"
+  ]
+}
