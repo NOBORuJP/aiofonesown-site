@@ -1,0 +1,22 @@
+[
+  {
+    "label": "Home",
+    "href": "/"
+  },
+  {
+    "label": "Updates",
+    "href": "/updates/"
+  },
+  {
+    "label": "English",
+    "href": "/en/"
+  },
+  {
+    "label": "日本語",
+    "href": "/ja/"
+  },
+  {
+    "label": "Support",
+    "href": "https://support.aiofonesown.com"
+  }
+]

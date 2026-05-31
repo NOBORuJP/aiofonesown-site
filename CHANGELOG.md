@@ -1,10 +1,14 @@
-# AI of One’s Own / 育てるAI Website Changelog
+# Changelog
 
-## 2026-05-29
-- Initial official website package prepared.
-- Official site: https://aiofonesown.com
-- Support entry: https://support.aiofonesown.com
-- Japanese support: https://support.aiofonesown.com/ja
-- English support: https://support.aiofonesown.com/en
-- Official SNS: X / Instagram / Threads @aiofonesown
-- Support email: support@aiofonesown.com
+## 2026-05-31 v3
+
+- Added site hotfix package for Gumroad release pages.
+- Fixed product links:
+  - English: https://noborikuta.gumroad.com/l/aiofonesown-early-access
+  - Japanese: https://noborikuta.gumroad.com/l/sodateru-ai-early-access
+- Added two updates:
+  - 2026-05-28 English release
+  - 2026-05-31 Japanese release
+- Added replacement images for `/en` and `/ja`.
+- Added snippets to remove `Author` navigation.
+- Added verification scripts.
