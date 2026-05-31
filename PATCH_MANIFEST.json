@@ -1,0 +1,14 @@
+{
+  "files_to_replace": [
+    "index.html",
+    "en/index.html",
+    "ja/index.html"
+  ],
+  "changes": [
+    "Removed FAQ nav link",
+    "Restored English author introduction",
+    "Added Japanese author introduction",
+    "Cleaned support links to root support URL"
+  ],
+  "support_url": "https://support.aiofonesown.com"
+}
