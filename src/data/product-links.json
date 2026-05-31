@@ -1,18 +1,14 @@
 {
-  "updated": "2026-05-31",
-  "products": {
+  "updated": "2026-06-01",
+  "gumroad": {
     "en": {
-      "name": "AI of One’s Own — Early Access Edition",
-      "language": "en",
-      "gumroad_url": "https://noborikuta.gumroad.com/l/aiofonesown-early-access",
-      "cta": "Buy on Gumroad",
+      "label": "AI of One’s Own — Early Access Edition",
+      "url": "https://noborikuta.gumroad.com/l/aiofonesown-early-access",
       "release_date": "2026-05-28"
     },
     "ja": {
-      "name": "育てるAI — 先行アクセス版",
-      "language": "ja",
-      "gumroad_url": "https://noborikuta.gumroad.com/l/sodateru-ai-early-access",
-      "cta": "Gumroadで購入する",
+      "label": "育てるAI — 先行アクセス版",
+      "url": "https://noborikuta.gumroad.com/l/sodateru-ai-early-access",
       "release_date": "2026-05-31"
     }
   },

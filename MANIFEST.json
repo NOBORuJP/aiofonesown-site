@@ -1,128 +1,86 @@
 {
-  "package": "aiofonesown_site_hotfix_20260531_v3",
-  "created": "2026-05-31T22:07:08.927960",
-  "english_gumroad": "https://noborikuta.gumroad.com/l/aiofonesown-early-access",
-  "japanese_gumroad": "https://noborikuta.gumroad.com/l/sodateru-ai-early-access",
+  "package": "aiofonesown_site_hotfix_20260601_v4_exact",
+  "created": "2026-05-31T22:35:23.909213",
   "files": [
     {
-      "path": "CHANGELOG.md",
-      "sha256": "8a5771fbda35a883f608cb5aff92b81c2d0a32736f7aa09fe4b394a2063e31d2",
-      "size": 462
+      "path": "README_APPLY_HOTFIX_V4_EXACT_JA.md",
+      "sha256": "e36375b3796b8d01ef118d73099982c8df9acbf12b02b86e296162fca1e6eb5d",
+      "size": 2417
     },
     {
-      "path": "CHECKLIST_BEFORE_GIT_PUSH_JA.md",
-      "sha256": "c66b7c2fbbe505c518840d24f02f3d5d46c9629b961a2a17f0577f72fcf33397",
-      "size": 1553
-    },
-    {
-      "path": "README_APPLY_FIX_JA.md",
-      "sha256": "2cf30fccd71e9ac7a369a005ccdf6c3fd1b0cad98893f7dea76951a14b1a6545",
-      "size": 1737
-    },
-    {
-      "path": "examples/en.html",
-      "sha256": "47f076725a969f5af1a3102c967719e855fb5e98be4535e5cb55eb49c079acd0",
-      "size": 437
-    },
-    {
-      "path": "examples/ja.html",
-      "sha256": "9f2831ee67c7ceabe12d72446fd6899c0aafb026cd35405955a2ce9005aba55d",
-      "size": 515
-    },
-    {
-      "path": "public/assets/gumroad/en/en-hero-cover.png",
+      "path": "public/assets/site/en/en-hero-cover.png",
       "sha256": "f4e35021d483d0b87ceed5ce1e44cb494885c0dc7e4800ff99719dd6c3f09302",
       "size": 2488445
     },
     {
-      "path": "public/assets/gumroad/en/en-reader-note-hierarchy.png",
+      "path": "public/assets/site/en/en-reader-note-hierarchy.png",
       "sha256": "21be6f6f8c44271bc1cb34531e88da581a56ff3528a0f2127f850d6009494a72",
       "size": 1433262
     },
     {
-      "path": "public/assets/gumroad/ja/ja-hero-cover.png",
+      "path": "public/assets/site/ja/ja-hero-cover.png",
       "sha256": "54b70372c60704fa9c841e6fb55a1846332be9e921dce61286b0439d5c458c39",
       "size": 152980
     },
     {
-      "path": "public/assets/gumroad/ja/ja-reader-note-hierarchy.png",
-      "sha256": "e7cea2a692e26a1c132cb27f1681663469adfc84652586bb5c2a858d88896101",
-      "size": 1131144
+      "path": "public/assets/site/ja/ja-reader-note-hierarchy.png",
+      "sha256": "9b0546a36b65260dc7db3bc8c1174fd1b901e10151fbae566fa7439331071336",
+      "size": 1914270
     },
     {
-      "path": "public/assets/updates/english-early-access-gumroad-release.png",
-      "sha256": "f4e35021d483d0b87ceed5ce1e44cb494885c0dc7e4800ff99719dd6c3f09302",
-      "size": 2488445
-    },
-    {
-      "path": "public/assets/updates/sodateru-ai-ja-gumroad-release-2026-05-31.png",
+      "path": "public/assets/updates/sodateru-ai-ja-release-2026-05-31.png",
       "sha256": "03c8de1cdb2e5b1b2ac7a1947c7157f0739b32bd17b6560dee922a5c87107fb2",
       "size": 128859
     },
     {
-      "path": "scripts/find_author_links.sh",
-      "sha256": "f96f7646505c6360a4687dced470d76205107b453bc151133d4f5721ce141a90",
-      "size": 352
+      "path": "scripts/apply_common_hotfixes.py",
+      "sha256": "56a5579378868a8ea55bd88d5205df367a1bd200f7cb9a11c393f1d4455eb629",
+      "size": 3627
     },
     {
-      "path": "scripts/verify_links.sh",
-      "sha256": "3d3b466b404215f47c7387d580ac5a4e89c8b651ecb468f86dd1f57e17884595",
-      "size": 700
+      "path": "scripts/audit_site_exact.sh",
+      "sha256": "ae7479130aa1e339b9c6918d63c0cf127fca06ec58274af1a08c73c64283a4c4",
+      "size": 634
     },
     {
-      "path": "snippets/en_home_hero.md",
-      "sha256": "0c7f7f8c7c56351d1bdabc2154335bc4c7f2c8bdd0b85bb94a2fd5aa43be9405",
-      "size": 361
+      "path": "snippets/en_purchase_block.html",
+      "sha256": "14657ae0636b9b557ba50a747ba7b1c4c3471e6de118d64bebc23f68a8b9bc9d",
+      "size": 358
     },
     {
-      "path": "snippets/en_page_image_block.html",
-      "sha256": "209ccc6fecacb4196b1cdd5a2082817a2d655267f9740e278db9fc3f386c16e4",
-      "size": 510
+      "path": "snippets/ja_purchase_block.html",
+      "sha256": "d93dc6dfcb0c4eed347991535d506c58d9d682e2ff93cba8bb56e1589ea39163",
+      "size": 374
     },
     {
-      "path": "snippets/ja_home_hero.md",
-      "sha256": "c881a77bed24a3944f03113efd27ad9c5d8ca6a461b9ebf0a214f1208abea80f",
-      "size": 435
+      "path": "snippets/nav_without_author.html",
+      "sha256": "0a33c8c2cfd8941771d65d27f618f660caea274c9f5218860a745810b4b89aa1",
+      "size": 139
     },
     {
-      "path": "snippets/ja_page_image_block.html",
-      "sha256": "d477c82d757e102625717e71263e98bdea2670b4ce097b057df195701aeb8be2",
-      "size": 526
-    },
-    {
-      "path": "snippets/navigation_without_author.html",
-      "sha256": "8875ddcf9e511d624c5c28366ed0d259e939128e9448aeb19eca81f269f2eb06",
-      "size": 286
-    },
-    {
-      "path": "snippets/navigation_without_author.json",
-      "sha256": "727c3a17bfe023ba2cfeb6dd13423ecd6c3c59e253a8d5fbf3913788e56a45a4",
-      "size": 291
+      "path": "snippets/updates_index_cards.html",
+      "sha256": "1c164b8de23fe1cfece15b90f1fa213b688c27981e004169db311d4dff186236",
+      "size": 1319
     },
     {
       "path": "src/content/updates/english-early-access-gumroad-release.md",
-      "sha256": "6c0011c710115eecc46772e9b817d6fff87e845ca76db843e01c8c868926c9e1",
-      "size": 1068
+      "sha256": "ed8f4b19ae31bf8915eb77502ecb7c699d3151c10a5696672cc4c34753672d3b",
+      "size": 1412
     },
     {
-      "path": "src/content/updates/index.en.md",
-      "sha256": "d8b7bceae80e607594957417fba85160778d8d3eec36330af10f60f70e1236cc",
-      "size": 815
-    },
-    {
-      "path": "src/content/updates/index.ja.md",
-      "sha256": "a65427967a4a864242ec2cdec40064e27fd9873e4d57866fab751b22903ab563",
-      "size": 900
-    },
-    {
-      "path": "src/content/updates/sodateru-ai-ja-gumroad-release.md",
-      "sha256": "7088d724ac489e841e06a4445e616e63018502df0cb777b8025b50d893cc69b3",
-      "size": 1491
+      "path": "src/content/updates/sodateru-ai-early-access-gumroad-release.md",
+      "sha256": "966b38f82e2da88e685910784b32bffc1dc1e8bffe275de2fdfec59d6bf7e311",
+      "size": 1459
     },
     {
       "path": "src/data/product-links.json",
-      "sha256": "d42009120da196d8962572349c037df805b3317c1f6bddf35869de91303a57f3",
-      "size": 665
+      "sha256": "112ff9953eca160ef39bd4c170c74328f1ee3382bc9e08763608a0795b16a980",
+      "size": 532
+    },
+    {
+      "path": "src/data/updates.json",
+      "sha256": "1675b2b54671feb954852bcad37744889f0d8bd0c93e7a19a90ca19bfebef814",
+      "size": 723
     }
   ]
 }

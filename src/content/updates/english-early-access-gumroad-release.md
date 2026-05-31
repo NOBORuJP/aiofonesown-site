@@ -1,30 +1,34 @@
 ---
-title: "AI of One’s Own — Early Access Edition is now available"
+title: "English Early Access Edition is now available on Gumroad"
+slug: "english-early-access-gumroad-release"
 date: "2026-05-28"
 lang: "en"
-product: "ai-of-ones-own"
+product: "AI of One’s Own — Early Access Edition"
 gumroad_url: "https://noborikuta.gumroad.com/l/aiofonesown-early-access"
-image: "/assets/updates/english-early-access-gumroad-release.png"
+image: "/assets/site/en/en-hero-cover.png"
 ---
 
-# AI of One’s Own — Early Access Edition is now available
+# English Early Access Edition is now available on Gumroad
 
-**AI of One’s Own — Early Access Edition** is now available on Gumroad.
+The English Early Access Edition of **AI of One’s Own** was released on Gumroad on **May 28, 2026**.
 
-This product includes an eBook PDF and a sanitized AI template pack for building your own personal AI environment.
+This release records the first public Gumroad release of the English edition.
 
-It is designed for readers who want more than a generic chatbot — readers who want to understand and build an AI environment with memory, files, tools, databases, backup habits, and long-term control.
+## Release summary
 
-![AI of One’s Own — Early Access Edition](/assets/updates/english-early-access-gumroad-release.png)
+This Early Access release includes the English eBook and practical template materials for building a personal AI environment.
 
-## Purchase page
+The project focuses on understanding the structure behind AI tools: Docker, MCP, RAG, memory, workspace design, document handling, Google integration, SQLite, and backup workflows.
 
-[Buy on Gumroad](https://noborikuta.gumroad.com/l/aiofonesown-early-access)
+## What this release means
 
-## Support
+This is the first public Gumroad release of the English edition. It marks the transition from an internal project into a public product with an official website, support site, and publication record.
 
-[https://support.aiofonesown.com](https://support.aiofonesown.com)
+AI should not only be used.  
+It should be grown, maintained, backed up, and shaped around your own life and work.
 
-## Official SNS
+## Official links
 
-X / Instagram / Threads: @aiofonesown
+- Gumroad: https://noborikuta.gumroad.com/l/aiofonesown-early-access
+- Official website: https://aiofonesown.com
+- Support: https://support.aiofonesown.com
