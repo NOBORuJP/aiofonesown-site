@@ -1,14 +1,13 @@
 {
-  "project": "AI of One's Own / 育てるAI FAQ chat widget patch",
-  "language": "ja",
-  "support_url": "https://support.aiofonesown.com",
-  "embed_id": "7f525333-502e-4f90-b0b3-3a12cbe23b4d",
-  "important": "Public website must use https://support.aiofonesown.com, not http://localhost:3011.",
-  "files": [
-    "snippets/faq-chat-box-ja.html",
-    "snippets/faq-chat-box-ja-style.html",
-    "snippets/anythingllm-widget-ja-before-body.html",
-    "README_FAQ_CHAT_WIDGET_JA.md",
-    "PATCH_MANIFEST.json"
-  ]
+  "files_to_replace": [
+    "index.html",
+    "en/index.html",
+    "ja/index.html"
+  ],
+  "gumroad": {
+    "ja": "https://gumroad.com/l/sodateru-ai-early-access",
+    "en": "https://gumroad.com/l/ai-of-ones-own-early-access"
+  },
+  "support": "https://support.aiofonesown.com",
+  "commit_message": "Add Gumroad links and restore author sections"
 }
