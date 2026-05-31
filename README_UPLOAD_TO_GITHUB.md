@@ -1,47 +1,72 @@
-# AI of One's Own site patch: author intro + FAQ link cleanup
+# Priority site patch: Updates + Author page
 
-This patch replaces these files:
+This patch does two urgent things:
 
-```text
-index.html
-en/index.html
-ja/index.html
-```
+1. Records that the English Early Access Edition was released on Gumroad.
+2. Adds an author profile page.
 
-## What changed
-
-- Removed the `FAQ` navigation link from all three pages.
-- Kept `Support` as the normal internal site navigation item.
-- Restored the English author introduction on `/en/`.
-- Added a Japanese author introduction on `/ja/`.
-- Changed language-specific support links to the single support root:
+## Upload these folders to the repository root
 
 ```text
-https://support.aiofonesown.com
+updates/
+author/
 ```
 
-## Upload to GitHub
-
-Upload the three files to the same paths in:
+This creates:
 
 ```text
-NOBORuJP/aiofonesown-site
+https://aiofonesown.com/updates/
+https://aiofonesown.com/updates/english-early-access-gumroad-release.html
+https://aiofonesown.com/author/
 ```
 
-Then commit to `main`.
-
-Recommended commit message:
+## Gumroad URL used
 
 ```text
-Restore author sections and remove FAQ nav link
+https://gumroad.com/l/sodateru-ai-early-access
 ```
 
-## After Cloudflare Pages auto-deploy
+If Gumroad's product dashboard Copy URL shows a different URL, replace it before uploading.
 
-Check:
+## Optional homepage snippet
+
+If you want the release record visible on the homepage, paste:
 
 ```text
-https://aiofonesown.com/
-https://aiofonesown.com/en/
-https://aiofonesown.com/ja/
+snippets/homepage-updates-english-gumroad-release.html
 ```
+
+into `index.html`.
+
+## Optional nav link
+
+If you want an Author link in the site header, add:
+
+```html
+<a href="/author/">Author</a>
+```
+
+## Commit message
+
+```text
+Add English Gumroad release update and author page
+```
+
+## Cloudflare build error fix
+
+If Cloudflare logs show:
+
+```text
+Executing user command: exit0
+/bin/sh: 1: exit0: not found
+```
+
+fix the Cloudflare Pages build settings:
+
+```text
+Build command: exit 0
+Build output directory: .
+Root directory: empty
+```
+
+Then retry deployment.

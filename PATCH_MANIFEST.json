@@ -1,13 +1,13 @@
 {
-  "files_to_replace": [
-    "index.html",
-    "en/index.html",
-    "ja/index.html"
-  ],
-  "gumroad": {
-    "ja": "https://gumroad.com/l/sodateru-ai-early-access",
-    "en": "https://gumroad.com/l/ai-of-ones-own-early-access"
-  },
-  "support": "https://support.aiofonesown.com",
-  "commit_message": "Add Gumroad links and restore author sections"
+  "purpose": "Record English Gumroad release and add author page",
+  "date": "2026-05-31",
+  "gumroad_en": "https://gumroad.com/l/sodateru-ai-early-access",
+  "files": [
+    "updates/index.html",
+    "updates/english-early-access-gumroad-release.html",
+    "author/index.html",
+    "snippets/homepage-updates-english-gumroad-release.html",
+    "snippets/author-nav-link.html",
+    "README_UPLOAD_TO_GITHUB.md"
+  ]
 }
