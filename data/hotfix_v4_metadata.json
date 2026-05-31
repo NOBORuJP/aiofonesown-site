@@ -1,0 +1,12 @@
+{
+  "hotfix": "v4_two_release_cards",
+  "english_release": {
+    "date_jst": "2026-05-29",
+    "url": "https://noborikuta.gumroad.com/l/aiofonesown-early-access"
+  },
+  "japanese_release": {
+    "date_jst": "2026-05-31",
+    "url": "https://noborikuta.gumroad.com/l/sodateru-ai-early-access"
+  },
+  "author_page_policy": "No dedicated author page; keep only top-page author introduction."
+}
