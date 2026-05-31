@@ -1,0 +1,16 @@
+{
+  "project": "AI of One's Own / 育てるAI",
+  "release_date_jst": "2026-05-30",
+  "english_gumroad_url": "https://noborikuta.gumroad.com/l/aiofonesown-early-access",
+  "assets": {
+    "english_hero": "assets/images/aiofonesown-hero-en.png",
+    "japanese_hero": "assets/images/sodateru-ai-hero-ja.png",
+    "english_square_logo": "assets/images/aiofonesown-logo-en-square.png",
+    "japanese_square_logo": "assets/images/sodateru-ai-logo-ja-square.png"
+  },
+  "notes": [
+    "Use square logo images for header/icon/OGP thumbnail where a compact logo is needed.",
+    "Use hero images for top-page main visual sections.",
+    "Do not mix Japanese and English RAG/support pages; route users by AnythingLLM workspace permissions."
+  ]
+}
