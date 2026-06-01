@@ -1,18 +1,11 @@
 {
   "project": "AI of One’s Own / 育てるAI Official Site",
-  "version": "2026-06-01-final-push-ready",
-  "official_site": "https://aiofonesown.com",
-  "gumroad": {
+  "version": "2026-06-01-final2-push-ready",
+  "fixed_urls": {
     "en": "https://noborikuta.gumroad.com/l/aiofonesown-early-access",
     "ja": "https://noborikuta.gumroad.com/l/sodateru-ai-early-access"
   },
-  "support": "https://support.aiofonesown.com",
-  "sns": {
-    "x": "@aiofonesown",
-    "instagram": "@aiofonesown",
-    "threads": "@aiofonesown"
-  },
-  "notes": [
-    "Static site package. No Author page included. No Author navigation link included."
-  ]
+  "author_page_included": false,
+  "author_nav_included": false,
+  "generated_at": "2026-06-01T01:00:59.421308"
 }
