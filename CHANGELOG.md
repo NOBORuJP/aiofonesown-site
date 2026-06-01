@@ -1,11 +1,10 @@
 # AI of One’s Own / 育てるAI Website Changelog
 
-## 2026-06-01
-- Rebuilt the official site as a complete push-ready static package.
-- Fixed English Gumroad URL: https://noborikuta.gumroad.com/l/aiofonesown-early-access
-- Fixed Japanese Gumroad URL: https://noborikuta.gumroad.com/l/sodateru-ai-early-access
-- Added Updates index with two release records:
-  - 2026-05-28 English Early Access Edition
-  - 2026-05-31 Japanese Edition / 育てるAI
-- Removed Author navigation and Author page.
-- Replaced site visuals with the supplied English/Japanese square and wide product assets.
+## 2026-06-02
+- FINAL4: corrected English release date to May 29, 2026.
+- Removed the enlarged image from the review/note sections on `/en/` and `/ja/`.
+- Replaced the preview-image area with actual review text blocks.
+- Kept the correct Gumroad URLs:
+  - English: https://noborikuta.gumroad.com/l/aiofonesown-early-access
+  - Japanese: https://noborikuta.gumroad.com/l/sodateru-ai-early-access
+- Author navigation/page remains removed.
