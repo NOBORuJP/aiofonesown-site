@@ -1,13 +1,14 @@
 {
-  "purpose": "Record English Gumroad release and add author page",
-  "date": "2026-05-31",
-  "gumroad_en": "https://gumroad.com/l/sodateru-ai-early-access",
-  "files": [
-    "updates/index.html",
-    "updates/english-early-access-gumroad-release.html",
-    "author/index.html",
-    "snippets/homepage-updates-english-gumroad-release.html",
-    "snippets/author-nav-link.html",
-    "README_UPLOAD_TO_GITHUB.md"
-  ]
+  "mode": "github_upload_only",
+  "manual_html_edit_required": false,
+  "files_to_upload_root": [
+    "en/index.html",
+    "ja/index.html",
+    "assets/book-preview/en/",
+    "assets/book-preview/ja/",
+    "css/preview-carousel.css",
+    "js/preview-carousel.js"
+  ],
+  "missing_sources": [],
+  "gumroad_url_used": "https://gumroad.com/l/sodateru-ai-early-access"
 }
