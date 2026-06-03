@@ -1,0 +1,15 @@
+{
+  "patch": "updates_english_default",
+  "changed_files": [
+    "updates/index.html"
+  ],
+  "english_default": true,
+  "release_dates": {
+    "english": "May 29, 2026 (JST)",
+    "japanese": "May 31, 2026 (JST)"
+  },
+  "gumroad": {
+    "english": "https://noborikuta.gumroad.com/l/aiofonesown-early-access",
+    "japanese": "https://noborikuta.gumroad.com/l/sodateru-ai-early-access"
+  }
+}
