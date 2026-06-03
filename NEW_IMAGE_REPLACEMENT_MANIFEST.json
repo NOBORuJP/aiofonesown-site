@@ -1,0 +1,20 @@
+{
+  "purpose": "Replace old website images with the new images provided by the user.",
+  "source_images": {
+    "english_hero": "01_top_mainen.png",
+    "japanese_hero": "01_top_mainja.png",
+    "english_square": "thumbnail_en_1x1.png",
+    "japanese_square": "thumbnail_ja_1x1.png"
+  },
+  "files_to_upload": [
+    "assets/en-hero-wide.png",
+    "assets/ja-hero-wide.png",
+    "assets/en-cover-square.png",
+    "assets/ja-cover-square.png",
+    "en-hero-wide.png",
+    "ja-hero-wide.png",
+    "en-cover-square.png",
+    "ja-cover-square.png"
+  ],
+  "note": "Upload this ZIP contents to the GitHub repository root. These filenames match the existing website references."
+}
