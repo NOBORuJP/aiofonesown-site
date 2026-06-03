@@ -1,0 +1,14 @@
+{
+  "version": "v9_author_english_only",
+  "changed_files": [
+    "index.html",
+    "css/style.css",
+    "tools/check_author_english_only_v9.sh"
+  ],
+  "scope": "root index author section only",
+  "author_language": "English only",
+  "photo_size": {
+    "desktop": "72px",
+    "mobile": "56px"
+  }
+}
