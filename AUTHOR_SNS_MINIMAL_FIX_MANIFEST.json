@@ -1,0 +1,19 @@
+{
+  "source_zip": "aiofonesown-site-e164c85b622f087aa6f2e7b09ef502e7d84a8087.zip",
+  "source_policy": "latest uploaded GitHub ZIP only",
+  "author_action": "inserted-before-footer",
+  "changed_files": [
+    "index.html",
+    "ja/index.html",
+    "en/index.html",
+    "css/style.css",
+    "tools/check_author_sns_minimal_fix.sh"
+  ],
+  "image_policy": "No broad image replacement. Existing image references preserved.",
+  "gumroad_policy": "No mass Gumroad rewrite in this minimal fix.",
+  "social_links": {
+    "X": "https://x.com/aiofonesown",
+    "Instagram": "https://www.instagram.com/aiofonesown",
+    "Threads": "https://www.threads.net/@aiofonesown"
+  }
+}
