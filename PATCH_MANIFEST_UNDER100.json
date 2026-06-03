@@ -1,0 +1,22 @@
+{
+  "source_zip": "aiofonesown-site-e164c85b622f087aa6f2e7b09ef502e7d84a8087.zip",
+  "full_fixed_zip": "aiofonesown-site-recovered-from-latest.zip",
+  "changed_file_count": 14,
+  "changed_files": [
+    "CHECKSUMS.sha256",
+    "README_RECOVERED_FROM_LATEST_JA.md",
+    "RECOVERY_FROM_LATEST_MANIFEST.json",
+    "index-news-section.html",
+    "index.html",
+    "author/index.html",
+    "css/style.css",
+    "en/index.html",
+    "ja/index.html",
+    "news/ai-of-ones-own-early-access-gumroad-release.html",
+    "news/index.html",
+    "snippets/index-news-section.html",
+    "tools/check_recovery_from_latest.sh",
+    "updates/english-early-access-gumroad-release.html"
+  ],
+  "purpose": "GitHub web upload patch under 100 files"
+}

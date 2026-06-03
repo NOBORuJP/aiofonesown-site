@@ -1,0 +1,26 @@
+{
+  "output": "aiofonesown-site-recovered-from-latest.zip",
+  "source_zip": "aiofonesown-site-e164c85b622f087aa6f2e7b09ef502e7d84a8087.zip",
+  "source_zip_sha256": "8a5ea4379aa29251377a472dfc980a2074af91e1926fa84a43c590c95f2fd534",
+  "policy": "latest uploaded GitHub ZIP used as base; no generated intermediate package used",
+  "image_policy": "preserve latest GitHub ZIP image files; no PDF/template-pack image replacement performed",
+  "changes": [
+    "root index author section English-only",
+    "root author portrait compact CSS",
+    "SNS links ensured on index.html, ja/index.html, en/index.html",
+    "known old dead gumroad.com/aiofonesown link replaced where found",
+    "standalone author page neutralized to redirect if present"
+  ],
+  "author_replacement": 1,
+  "initial_asset_files_count": 25,
+  "initial_html_files_count": 51,
+  "gumroad": {
+    "english": "https://noborikuta.gumroad.com/l/aiofonesown-early-access",
+    "japanese": "https://noborikuta.gumroad.com/l/sodateru-ai-early-access"
+  },
+  "social": {
+    "X": "https://x.com/aiofonesown",
+    "Instagram": "https://www.instagram.com/aiofonesown",
+    "Threads": "https://www.threads.net/@aiofonesown"
+  }
+}

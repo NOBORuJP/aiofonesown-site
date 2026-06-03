@@ -29,9 +29,9 @@ footer{border-top:1px solid rgba(49,215,255,.16);padding:34px 0 46px;color:var(-
 @media(max-width:860px){.hero-grid,.split,.lang-cards{grid-template-columns:1fr}.card-grid{grid-template-columns:1fr}.nav{align-items:flex-start;flex-direction:column;padding:14px 0}}
 
 
-/* author-sns-minimal-fix
-   Minimal override based on latest GitHub ZIP.
-   Does not replace product images or Gumroad links. */
+/* author-sns-recovery-fix
+   Restored from latest GitHub ZIP. This only compacts the root author portrait
+   and styles SNS links. It does not replace hero/product images. */
 #author.author-section {
   padding-top: 36px;
   padding-bottom: 36px;
