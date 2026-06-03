@@ -1,17 +1,10 @@
 {
   "project": "AI of One’s Own / 育てるAI Official Site",
-  "version": "2026-06-02-final4-push-ready",
+  "version": "2026-06-02-template-pack-only",
+  "gumroad_sales_model": "template_pack_only",
   "english_gumroad": "https://noborikuta.gumroad.com/l/aiofonesown-early-access",
-  "english_release_date": "2026-05-29",
   "japanese_gumroad": "https://noborikuta.gumroad.com/l/sodateru-ai-early-access",
-  "japanese_release_date": "2026-05-31",
+  "ebook_pdf_included_on_gumroad": false,
   "author_page_included": false,
-  "preview_sections_use_text_reviews": true,
-  "images": [
-    "assets/en-cover-square.png",
-    "assets/en-hero-wide.png",
-    "assets/ja-cover-square.png",
-    "assets/ja-hero-wide.png"
-  ],
-  "generated_at": "2026-06-01T01:25:01.828623"
+  "generated_at": "2026-06-03T02:17:12.510660"
 }
