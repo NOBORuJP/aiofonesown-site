@@ -1,0 +1,21 @@
+{
+  "file_count": 18,
+  "source_zip": "aiofonesown-site-e164c85b622f087aa6f2e7b09ef502e7d84a8087.zip",
+  "type": "github upload patch",
+  "changes": [
+    "new images",
+    "sns links on 3 pages",
+    "author only on root",
+    "compact author photo",
+    "author redirect"
+  ],
+  "gumroad": {
+    "en": "https://noborikuta.gumroad.com/l/aiofonesown-early-access",
+    "ja": "https://noborikuta.gumroad.com/l/sodateru-ai-early-access"
+  },
+  "social": {
+    "x": "https://x.com/aiofonesown",
+    "instagram": "https://www.instagram.com/aiofonesown",
+    "threads": "https://www.threads.net/@aiofonesown"
+  }
+}
