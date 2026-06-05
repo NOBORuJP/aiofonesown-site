@@ -36,3 +36,39 @@ footer{border-top:1px solid rgba(49,215,255,.16);padding:34px 0 46px;color:var(-
 .social-line a, footer a{word-break:normal}
 .record a{word-break:break-word}
 @media(max-width:860px){.author-card{grid-template-columns:64px minmax(0,1fr);gap:14px}.author-photo{width:56px;height:56px;min-width:56px;min-height:56px;max-width:56px;max-height:56px}}
+
+
+/* kindle-main-author-photo-adjust
+   Kindle is now the main purchase path.
+   Author portrait on root index is a slightly larger square image. */
+#author .author-card {
+  grid-template-columns: 128px minmax(0, 1fr);
+  gap: 22px;
+}
+
+#author .author-photo {
+  width: 112px !important;
+  height: 112px !important;
+  max-width: 112px !important;
+  max-height: 112px !important;
+  min-width: 112px !important;
+  min-height: 112px !important;
+  object-fit: cover;
+  border-radius: 14px !important;
+}
+
+@media(max-width:860px) {
+  #author .author-card {
+    grid-template-columns: 96px minmax(0, 1fr);
+  }
+
+  #author .author-photo {
+    width: 88px !important;
+    height: 88px !important;
+    max-width: 88px !important;
+    max-height: 88px !important;
+    min-width: 88px !important;
+    min-height: 88px !important;
+    border-radius: 12px !important;
+  }
+}

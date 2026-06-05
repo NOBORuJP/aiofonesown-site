@@ -1,0 +1,21 @@
+{
+  "patch": "kindle_main_patch",
+  "changed_files": [
+    "index.html",
+    "en/index.html",
+    "ja/index.html",
+    "css/style.css"
+  ],
+  "kindle": {
+    "english": "https://www.amazon.com/dp/B0GX2WFTTZ",
+    "japanese": "https://www.amazon.co.jp/dp/B0H3ZSMFMH"
+  },
+  "gumroad_secondary": {
+    "english": "https://noborikuta.gumroad.com/l/aiofonesown-early-access",
+    "japanese": "https://noborikuta.gumroad.com/l/sodateru-ai-early-access"
+  },
+  "author_photo": {
+    "desktop": "112x112 square rounded",
+    "mobile": "88x88 square rounded"
+  }
+}
