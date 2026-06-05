@@ -1,0 +1,10 @@
+{
+  "patch": "hero_author_layout_v12",
+  "changed_files": [
+    "index.html",
+    "css/style.css"
+  ],
+  "hero_buttons": "dedicated row below hero grid, equal compact 168px buttons",
+  "author_card": "centered max-width 720px",
+  "author_photo": "132x132 rounded square"
+}

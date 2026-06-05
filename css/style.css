@@ -117,91 +117,85 @@ body #author .author-card > img[src*="noboru-ikuta"] {
 }
 
 
-/* v11 root layout refinement
-   - Make top action buttons the same compact width so future Udemy buttons can sit beside Kindle/Gumroad.
-   - Make the root author card match the site content width, aligned with the two cards above.
-   - Keep the author portrait as a moderate rounded-square photo. */
-body .hero .actions,
-body .lang-card .actions {
+/* v12 hero button row + author card width refinement
+   - Root hero buttons are a dedicated row below the hero grid, extending toward the right visual.
+   - Equal compact buttons are ready for future Udemy additions.
+   - Author card is centered and sized like one of the upper product cards, not full-width. */
+body .hero-actions-wide {
   display: flex !important;
   flex-wrap: wrap !important;
   gap: 12px !important;
   align-items: center !important;
+  justify-content: flex-start !important;
+  width: 100% !important;
+  margin-top: 28px !important;
 }
 
-body .hero .actions .button {
-  flex: 0 0 176px !important;
-  width: 176px !important;
-  min-width: 176px !important;
-  max-width: 176px !important;
-  min-height: 52px !important;
-  padding: 0 14px !important;
-  white-space: nowrap !important;
-  text-align: center !important;
-}
-
-body .lang-card .actions .button,
-body .split .actions .button {
-  flex: 0 0 160px !important;
-  width: 160px !important;
-  min-width: 160px !important;
-  max-width: 160px !important;
-  min-height: 48px !important;
+body .hero-actions-wide .button {
+  flex: 0 0 168px !important;
+  width: 168px !important;
+  min-width: 168px !important;
+  max-width: 168px !important;
+  min-height: 50px !important;
   padding: 0 12px !important;
   white-space: nowrap !important;
   text-align: center !important;
 }
 
-/* Root page author card: align to the full content width, matching the row of the two product cards above. */
-body #author.author-section .author-card {
-  width: 100% !important;
-  max-width: none !important;
-  grid-template-columns: 172px minmax(0, 1fr) !important;
-  gap: 28px !important;
-  padding: 30px !important;
+body #author.author-section {
+  padding-top: 40px !important;
+  padding-bottom: 54px !important;
 }
 
-/* Author portrait: a controlled rounded-square window, larger than icon size but not page-dominating. */
+body #author.author-section .author-card {
+  width: min(720px, calc(100% - 40px)) !important;
+  max-width: 720px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  grid-template-columns: 150px minmax(0, 1fr) !important;
+  gap: 24px !important;
+  padding: 26px !important;
+  align-items: start !important;
+}
+
 body #author.author-section .author-card img.author-photo,
 body #author.author-section img.author-photo,
 body #author .author-card > img[src*="noboru-ikuta"] {
-  width: 152px !important;
-  height: 152px !important;
-  min-width: 152px !important;
-  min-height: 152px !important;
-  max-width: 152px !important;
-  max-height: 152px !important;
+  width: 132px !important;
+  height: 132px !important;
+  min-width: 132px !important;
+  min-height: 132px !important;
+  max-width: 132px !important;
+  max-height: 132px !important;
   object-fit: cover !important;
-  border-radius: 18px !important;
+  border-radius: 16px !important;
   display: block !important;
 }
 
 @media (max-width: 860px) {
-  body .hero .actions .button,
-  body .lang-card .actions .button,
-  body .split .actions .button {
-    flex: 1 1 156px !important;
+  body .hero-actions-wide .button {
+    flex: 1 1 148px !important;
     width: auto !important;
     min-width: 148px !important;
     max-width: none !important;
   }
 
   body #author.author-section .author-card {
-    grid-template-columns: 116px minmax(0, 1fr) !important;
-    gap: 18px !important;
-    padding: 22px !important;
+    width: min(720px, calc(100% - 28px)) !important;
+    grid-template-columns: 108px minmax(0, 1fr) !important;
+    gap: 16px !important;
+    padding: 20px !important;
   }
 
   body #author.author-section .author-card img.author-photo,
   body #author.author-section img.author-photo,
   body #author .author-card > img[src*="noboru-ikuta"] {
-    width: 104px !important;
-    height: 104px !important;
-    min-width: 104px !important;
-    min-height: 104px !important;
-    max-width: 104px !important;
-    max-height: 104px !important;
-    border-radius: 16px !important;
+    width: 96px !important;
+    height: 96px !important;
+    min-width: 96px !important;
+    min-height: 96px !important;
+    max-width: 96px !important;
+    max-height: 96px !important;
+    border-radius: 14px !important;
   }
 }
-
