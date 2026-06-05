@@ -72,3 +72,46 @@ footer{border-top:1px solid rgba(49,215,255,.16);padding:34px 0 46px;color:var(-
     border-radius: 12px !important;
   }
 }
+
+
+/* kindle-gumroad-adjacent-author-photo-patch
+   Strong final override: make the root author portrait a moderate square photo,
+   not a tiny icon and not a huge page-dominating image. */
+body #author.author-section .author-card {
+  grid-template-columns: 168px minmax(0, 1fr) !important;
+  gap: 24px !important;
+  align-items: start !important;
+}
+
+body #author.author-section .author-card img.author-photo,
+body #author.author-section img.author-photo,
+body #author .author-card > img[src*="noboru-ikuta"] {
+  width: 148px !important;
+  height: 148px !important;
+  min-width: 148px !important;
+  min-height: 148px !important;
+  max-width: 148px !important;
+  max-height: 148px !important;
+  object-fit: cover !important;
+  border-radius: 18px !important;
+  display: block !important;
+}
+
+@media(max-width:860px) {
+  body #author.author-section .author-card {
+    grid-template-columns: 120px minmax(0, 1fr) !important;
+    gap: 18px !important;
+  }
+
+  body #author.author-section .author-card img.author-photo,
+  body #author.author-section img.author-photo,
+  body #author .author-card > img[src*="noboru-ikuta"] {
+    width: 108px !important;
+    height: 108px !important;
+    min-width: 108px !important;
+    min-height: 108px !important;
+    max-width: 108px !important;
+    max-height: 108px !important;
+    border-radius: 16px !important;
+  }
+}

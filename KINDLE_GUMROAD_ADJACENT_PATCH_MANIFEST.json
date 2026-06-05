@@ -1,0 +1,14 @@
+{
+  "patch": "kindle_gumroad_adjacent_author_photo",
+  "changed_files": [
+    "index.html",
+    "en/index.html",
+    "ja/index.html",
+    "css/style.css"
+  ],
+  "buttons": "Gumroad placed adjacent to Kindle buttons",
+  "author_photo": {
+    "desktop": "148x148 rounded square",
+    "mobile": "108x108 rounded square"
+  }
+}
