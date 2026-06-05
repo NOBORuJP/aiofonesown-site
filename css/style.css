@@ -115,3 +115,93 @@ body #author .author-card > img[src*="noboru-ikuta"] {
     border-radius: 16px !important;
   }
 }
+
+
+/* v11 root layout refinement
+   - Make top action buttons the same compact width so future Udemy buttons can sit beside Kindle/Gumroad.
+   - Make the root author card match the site content width, aligned with the two cards above.
+   - Keep the author portrait as a moderate rounded-square photo. */
+body .hero .actions,
+body .lang-card .actions {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 12px !important;
+  align-items: center !important;
+}
+
+body .hero .actions .button {
+  flex: 0 0 176px !important;
+  width: 176px !important;
+  min-width: 176px !important;
+  max-width: 176px !important;
+  min-height: 52px !important;
+  padding: 0 14px !important;
+  white-space: nowrap !important;
+  text-align: center !important;
+}
+
+body .lang-card .actions .button,
+body .split .actions .button {
+  flex: 0 0 160px !important;
+  width: 160px !important;
+  min-width: 160px !important;
+  max-width: 160px !important;
+  min-height: 48px !important;
+  padding: 0 12px !important;
+  white-space: nowrap !important;
+  text-align: center !important;
+}
+
+/* Root page author card: align to the full content width, matching the row of the two product cards above. */
+body #author.author-section .author-card {
+  width: 100% !important;
+  max-width: none !important;
+  grid-template-columns: 172px minmax(0, 1fr) !important;
+  gap: 28px !important;
+  padding: 30px !important;
+}
+
+/* Author portrait: a controlled rounded-square window, larger than icon size but not page-dominating. */
+body #author.author-section .author-card img.author-photo,
+body #author.author-section img.author-photo,
+body #author .author-card > img[src*="noboru-ikuta"] {
+  width: 152px !important;
+  height: 152px !important;
+  min-width: 152px !important;
+  min-height: 152px !important;
+  max-width: 152px !important;
+  max-height: 152px !important;
+  object-fit: cover !important;
+  border-radius: 18px !important;
+  display: block !important;
+}
+
+@media (max-width: 860px) {
+  body .hero .actions .button,
+  body .lang-card .actions .button,
+  body .split .actions .button {
+    flex: 1 1 156px !important;
+    width: auto !important;
+    min-width: 148px !important;
+    max-width: none !important;
+  }
+
+  body #author.author-section .author-card {
+    grid-template-columns: 116px minmax(0, 1fr) !important;
+    gap: 18px !important;
+    padding: 22px !important;
+  }
+
+  body #author.author-section .author-card img.author-photo,
+  body #author.author-section img.author-photo,
+  body #author .author-card > img[src*="noboru-ikuta"] {
+    width: 104px !important;
+    height: 104px !important;
+    min-width: 104px !important;
+    min-height: 104px !important;
+    max-width: 104px !important;
+    max-height: 104px !important;
+    border-radius: 16px !important;
+  }
+}
+

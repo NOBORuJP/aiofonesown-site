@@ -1,0 +1,17 @@
+{
+  "patch": "layout_fix_buttons_author_card",
+  "changed_files": [
+    "index.html",
+    "css/style.css"
+  ],
+  "button_design": {
+    "root_hero_buttons": "176px fixed compact width",
+    "card_buttons": "160px fixed compact width",
+    "future_udemy": "designed to wrap cleanly when more buttons are added"
+  },
+  "author_card": {
+    "width": "100% of container",
+    "photo_desktop": "152x152 rounded square",
+    "photo_mobile": "104x104 rounded square"
+  }
+}
