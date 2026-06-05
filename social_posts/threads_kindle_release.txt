@@ -1,0 +1,15 @@
+AI of One’s Own and 育てるAI are now available on Kindle.
+
+This is not only a book about using AI.
+
+It is a book about building an AI environment of your own — with memory, tools, files, RAG, SQLite, Google integration, Docker, and backups.
+
+English Kindle:
+https://www.amazon.com/dp/B0GX2WFTTZ
+
+Japanese Kindle:
+https://www.amazon.co.jp/dp/B0H3ZSMFMH
+
+https://aiofonesown.com
+
+#AIofOnesOwn #PersonalAI #Kindle

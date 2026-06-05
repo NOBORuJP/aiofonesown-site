@@ -1,0 +1,22 @@
+AI of One’s Own and 育てるAI are now available on Kindle.
+
+This project is about building a personal AI environment — not just using AI, but shaping it, extending it, backing it up, and growing it over time.
+
+The English edition is AI of One’s Own.
+The Japanese edition is 育てるAI.
+
+Both editions are now available on Kindle.
+
+English Kindle:
+https://www.amazon.com/dp/B0GX2WFTTZ
+
+Japanese Kindle:
+https://www.amazon.co.jp/dp/B0H3ZSMFMH
+
+Official site:
+https://aiofonesown.com
+
+Support:
+https://support.aiofonesown.com
+
+#AIofOnesOwn #育てるAI #PersonalAI #Kindle #ArtificialIntelligence #RAG #Docker #MCP

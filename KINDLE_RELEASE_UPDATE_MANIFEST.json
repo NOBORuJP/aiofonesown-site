@@ -1,0 +1,23 @@
+{
+  "patch": "kindle_release_update",
+  "post_date_jst": "June 5, 2026 (JST)",
+  "kindle": {
+    "english": "https://www.amazon.com/dp/B0GX2WFTTZ",
+    "japanese": "https://www.amazon.co.jp/dp/B0H3ZSMFMH"
+  },
+  "gumroad": {
+    "english": "https://noborikuta.gumroad.com/l/aiofonesown-early-access",
+    "japanese": "https://noborikuta.gumroad.com/l/sodateru-ai-early-access"
+  },
+  "website_files": [
+    "updates/index.html",
+    "news/index.html",
+    "news/kindle-release-ai-of-ones-own-and-sodateru-ai.html",
+    "tools/check_kindle_release_update.sh"
+  ],
+  "social_post_files": [
+    "social_posts/x_kindle_release.txt",
+    "social_posts/instagram_kindle_release.txt",
+    "social_posts/threads_kindle_release.txt"
+  ]
+}
