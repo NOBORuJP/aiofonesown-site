@@ -1,0 +1,11 @@
+{
+  "patch": "root_hero_author_width_fix_v13",
+  "changed_files": [
+    "index.html",
+    "css/style.css"
+  ],
+  "hero_image": "restored to the original right-side position",
+  "button_bar": "4 equal buttons in one long row below hero, ready for future 6 buttons",
+  "author_card": "same container width as the two cards section above",
+  "author_photo": "132x132 rounded square"
+}
