@@ -1,0 +1,32 @@
+{
+  "patch": "release_record_promo_fix_v3",
+  "pages": [
+    "/",
+    "/en/",
+    "/ja/",
+    "/updates/",
+    "/news/"
+  ],
+  "videos": [
+    "assets/promo/ai_of_ones_own_promo_en_web.mp4",
+    "assets/promo/sodateru_ai_promo_ja_web.mp4"
+  ],
+  "release_dates": {
+    "2026-06-07": "Udemy courses released",
+    "2026-06-06": "Japanese paperback released",
+    "2026-06-05": "English paperback released",
+    "2026-06-05_kindles": "English and Japanese Kindle ebook editions released",
+    "2026-05-31": "Japanese Gumroad early access released",
+    "2026-05-29": "English Gumroad early access released"
+  },
+  "links": {
+    "en_amazon_paperback": "https://www.amazon.com/dp/B0H46GZN4K",
+    "ja_amazon_paperback": "https://www.amazon.co.jp/dp/B0H4BJBSDR",
+    "en_kindle": "https://www.amazon.com/dp/B0GX2WFTTZ",
+    "ja_kindle": "https://www.amazon.co.jp/dp/B0H3ZSMFMH",
+    "en_udemy": "https://www.udemy.com/course/aiofonesown/",
+    "ja_udemy": "https://www.udemy.com/course/aiofonesown-ja/",
+    "en_gumroad": "https://noborikuta.gumroad.com/l/aiofonesown-early-access",
+    "ja_gumroad": "https://noborikuta.gumroad.com/l/sodateru-ai-early-access"
+  }
+}

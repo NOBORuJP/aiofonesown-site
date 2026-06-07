@@ -1,1 +1,237 @@
-:root{--bg:#050914;--panel:rgba(10,22,43,.78);--panel2:rgba(8,16,31,.92);--line:rgba(52,214,255,.34);--text:#eef7ff;--muted:#b8c7d9;--cyan:#31d7ff;--gold:#f0c75e;--max:1120px}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 70% 5%,rgba(38,168,255,.22),transparent 35%),linear-gradient(180deg,#02040b 0%,var(--bg) 48%,#03050b 100%);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Arial,"Noto Sans JP","Noto Sans",sans-serif;line-height:1.75}a{color:var(--cyan);text-decoration:none;word-break:break-word}a:hover{text-decoration:underline}.container{width:min(var(--max),calc(100% - 40px));margin:0 auto}header.site-header{position:sticky;top:0;z-index:10;backdrop-filter:blur(18px);background:rgba(2,6,16,.72);border-bottom:1px solid rgba(49,215,255,.16)}.nav{display:flex;align-items:center;justify-content:space-between;min-height:68px;gap:18px}.brand{font-weight:800;color:#fff}.nav-links{display:flex;flex-wrap:wrap;gap:16px;font-size:14px}.nav-links a{color:var(--muted)}.hero{padding:56px 0 32px}.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:34px;align-items:center}.kicker{color:var(--gold);font-weight:800;letter-spacing:.12em;text-transform:uppercase;font-size:13px}h1{margin:12px 0 14px;font-size:clamp(42px,7vw,86px);line-height:1.02;letter-spacing:-.05em}h2{margin:0 0 18px;font-size:clamp(28px,4vw,44px);line-height:1.15}.lead{color:#d9e9ff;font-size:clamp(18px,2.2vw,24px);margin:0 0 22px}.muted{color:var(--muted)}.actions,.hero-actions-bar{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}.button{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:10px 18px;border:1px solid var(--line);border-radius:999px;color:#fff;background:rgba(49,215,255,.08);font-weight:800}.button.primary{background:linear-gradient(90deg,rgba(49,215,255,.25),rgba(240,199,94,.22));border-color:rgba(49,215,255,.55)}.hero-image,.lang-card,.update-card,.author-card,.record{border:1px solid var(--line);border-radius:24px;background:var(--panel);box-shadow:0 0 42px rgba(25,179,255,.10);overflow:hidden}.hero-image img,.lang-card img{display:block;width:100%;height:auto}section{padding:52px 0}.lang-cards{display:grid;grid-template-columns:1fr 1fr;gap:22px}.lang-card{padding:22px;background:rgba(255,255,255,.035)}.lang-card img{border-radius:16px;margin:0 0 18px}.update-card,.record{padding:24px;background:var(--panel2)}.update-date{color:var(--muted);font-size:14px;margin:0 0 10px}.timeline-list{display:grid;gap:18px}.author-card{display:grid;grid-template-columns:150px minmax(0,1fr);gap:24px;align-items:start;padding:28px}.author-photo{width:132px;height:132px;object-fit:cover;border-radius:16px;display:block}.hero-actions-bar .button,.lang-card .actions .button,.update-card .actions .button{flex:0 0 170px;width:170px;min-width:170px;max-width:170px}.social-line a,footer a{font-weight:700}footer{border-top:1px solid rgba(49,215,255,.16);padding:34px 0 46px;color:var(--muted);font-size:14px}@media(max-width:860px){.hero-grid,.lang-cards{grid-template-columns:1fr}.nav{align-items:flex-start;flex-direction:column;padding:14px 0}.hero-actions-bar .button,.lang-card .actions .button,.update-card .actions .button{flex:1 1 148px;width:auto;min-width:148px;max-width:none}.author-card{grid-template-columns:108px minmax(0,1fr);gap:16px;padding:20px}.author-photo{width:96px;height:96px;border-radius:14px}}
+:root{
+  --bg:#050914;--panel:rgba(10,22,43,.78);--panel2:rgba(8,16,31,.92);
+  --line:rgba(52,214,255,.34);--text:#eef7ff;--muted:#b8c7d9;
+  --cyan:#31d7ff;--gold:#f0c75e;--max:1120px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:radial-gradient(circle at 70% 5%,rgba(38,168,255,.22),transparent 35%),radial-gradient(circle at 20% 10%,rgba(9,116,255,.18),transparent 30%),linear-gradient(180deg,#02040b 0%,var(--bg) 48%,#03050b 100%);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Arial,"Noto Sans JP","Noto Sans",sans-serif;line-height:1.75}
+a{color:var(--cyan);text-decoration:none;word-break:break-word}a:hover{text-decoration:underline}
+.container{width:min(var(--max),calc(100% - 40px));margin:0 auto}
+header.site-header{position:sticky;top:0;z-index:10;backdrop-filter:blur(18px);background:rgba(2,6,16,.72);border-bottom:1px solid rgba(49,215,255,.16)}
+.nav{display:flex;align-items:center;justify-content:space-between;min-height:68px;gap:18px}.brand{font-weight:800;letter-spacing:.04em;color:#fff}.nav-links{display:flex;flex-wrap:wrap;gap:16px;font-size:14px}.nav-links a{color:var(--muted)}
+.hero{padding:56px 0 32px}.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:34px;align-items:center}
+.kicker{color:var(--gold);font-weight:800;letter-spacing:.12em;text-transform:uppercase;font-size:13px}
+h1{margin:12px 0 14px;font-size:clamp(42px,7vw,86px);line-height:1.02;letter-spacing:-.05em}
+h2{margin:0 0 18px;font-size:clamp(28px,4vw,44px);line-height:1.15}h3{margin-top:0;font-size:22px}
+.lead{color:#d9e9ff;font-size:clamp(18px,2.2vw,24px);margin:0 0 22px}.muted{color:var(--muted)}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}.button{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:10px 18px;border:1px solid var(--line);border-radius:999px;color:#fff;background:rgba(49,215,255,.08);font-weight:800}.button.primary{background:linear-gradient(90deg,rgba(49,215,255,.25),rgba(240,199,94,.22));border-color:rgba(49,215,255,.55)}
+.hero-image,.card,.preview-card,.lang-card,.quote-block,.review-box,.update-card{border:1px solid var(--line);border-radius:24px;background:var(--panel);box-shadow:0 0 42px rgba(25,179,255,.10);overflow:hidden}
+.hero-image img,.lang-card img{display:block;width:100%;height:auto}
+section{padding:52px 0}.split{display:grid;grid-template-columns:.92fr 1.08fr;gap:30px;align-items:center}.lang-cards{display:grid;grid-template-columns:1fr 1fr;gap:22px}.lang-card{padding:22px;background:rgba(255,255,255,.035)}.lang-card img{border-radius:16px;margin:0 0 18px}
+.card-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{padding:24px}.review-box{padding:28px;background:var(--panel2)}
+.quote-block{padding:24px;margin:18px 0 0;background:rgba(240,199,94,.08);border-color:rgba(240,199,94,.35)}
+.quote-block .label{color:var(--gold);font-size:13px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;margin-bottom:10px}
+.quote-block blockquote{margin:0;font-size:clamp(22px,3vw,34px);line-height:1.45;color:#fff}
+.update-list{display:grid;gap:22px}.update-card{padding:24px;background:var(--panel2)}.update-date{color:var(--muted);font-size:14px;margin:0 0 10px}.update-card h2{color:var(--cyan)}
+.notice{border-left:3px solid var(--gold);padding:12px 16px;background:rgba(240,199,94,.08);color:#f6e6b0}.url-line{font-size:15px;color:var(--muted);margin-top:16px}
+footer{border-top:1px solid rgba(49,215,255,.16);padding:34px 0 46px;color:var(--muted);font-size:14px}
+@media(max-width:860px){.hero-grid,.split,.lang-cards{grid-template-columns:1fr}.card-grid{grid-template-columns:1fr}.nav{align-items:flex-start;flex-direction:column;padding:14px 0}}
+
+
+/* v10 image + sns + root-author fix */
+.author-section{padding-top:20px;padding-bottom:56px}
+.author-card{display:grid;grid-template-columns:84px minmax(0,1fr);gap:18px;align-items:start;max-width:860px;margin:0 auto;padding:24px;border:1px solid var(--line);border-radius:24px;background:var(--panel);box-shadow:0 0 42px rgba(25,179,255,.10)}
+.author-photo{display:block;width:72px;height:72px;min-width:72px;min-height:72px;max-width:72px;max-height:72px;object-fit:cover;border-radius:999px;border:1px solid rgba(49,215,255,.24)}
+.social-line a, footer a{word-break:normal}
+.record a{word-break:break-word}
+@media(max-width:860px){.author-card{grid-template-columns:64px minmax(0,1fr);gap:14px}.author-photo{width:56px;height:56px;min-width:56px;min-height:56px;max-width:56px;max-height:56px}}
+
+
+/* kindle-main-author-photo-adjust
+   Kindle is now the main purchase path.
+   Author portrait on root index is a slightly larger square image. */
+#author .author-card {
+  grid-template-columns: 128px minmax(0, 1fr);
+  gap: 22px;
+}
+
+#author .author-photo {
+  width: 112px !important;
+  height: 112px !important;
+  max-width: 112px !important;
+  max-height: 112px !important;
+  min-width: 112px !important;
+  min-height: 112px !important;
+  object-fit: cover;
+  border-radius: 14px !important;
+}
+
+@media(max-width:860px) {
+  #author .author-card {
+    grid-template-columns: 96px minmax(0, 1fr);
+  }
+
+  #author .author-photo {
+    width: 88px !important;
+    height: 88px !important;
+    max-width: 88px !important;
+    max-height: 88px !important;
+    min-width: 88px !important;
+    min-height: 88px !important;
+    border-radius: 12px !important;
+  }
+}
+
+
+/* kindle-gumroad-adjacent-author-photo-patch
+   Strong final override: make the root author portrait a moderate square photo,
+   not a tiny icon and not a huge page-dominating image. */
+body #author.author-section .author-card {
+  grid-template-columns: 168px minmax(0, 1fr) !important;
+  gap: 24px !important;
+  align-items: start !important;
+}
+
+body #author.author-section .author-card img.author-photo,
+body #author.author-section img.author-photo,
+body #author .author-card > img[src*="noboru-ikuta"] {
+  width: 148px !important;
+  height: 148px !important;
+  min-width: 148px !important;
+  min-height: 148px !important;
+  max-width: 148px !important;
+  max-height: 148px !important;
+  object-fit: cover !important;
+  border-radius: 18px !important;
+  display: block !important;
+}
+
+@media(max-width:860px) {
+  body #author.author-section .author-card {
+    grid-template-columns: 120px minmax(0, 1fr) !important;
+    gap: 18px !important;
+  }
+
+  body #author.author-section .author-card img.author-photo,
+  body #author.author-section img.author-photo,
+  body #author .author-card > img[src*="noboru-ikuta"] {
+    width: 108px !important;
+    height: 108px !important;
+    min-width: 108px !important;
+    min-height: 108px !important;
+    max-width: 108px !important;
+    max-height: 108px !important;
+    border-radius: 16px !important;
+  }
+}
+
+
+/* v13 root hero + author width fix
+   1) Restore hero image to the original right-side position.
+   2) Put the four round buttons in one long bar below the hero row, ready for 6 buttons later.
+   3) Make the author card match the width of the two cards section above, instead of stretching wider. */
+
+body .hero-root-grid {
+  align-items: start !important;
+}
+
+body .hero-actions-bar {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 14px !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  width: 100% !important;
+  margin-top: 22px !important;
+}
+
+body .hero-actions-bar .button {
+  flex: 0 0 168px !important;
+  width: 168px !important;
+  min-width: 168px !important;
+  max-width: 168px !important;
+  min-height: 50px !important;
+  padding: 0 12px !important;
+  white-space: nowrap !important;
+  text-align: center !important;
+}
+
+/* Author section width aligned with the same container width used by the two cards above */
+body #author.author-section .container {
+  max-width: 1200px !important;
+}
+
+body #author.author-section .author-card {
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 auto !important;
+  display: grid !important;
+  grid-template-columns: 150px minmax(0, 1fr) !important;
+  gap: 24px !important;
+  align-items: start !important;
+  padding: 28px !important;
+}
+
+body #author.author-section .author-card img.author-photo,
+body #author.author-section img.author-photo,
+body #author .author-card > img[src*="noboru-ikuta"] {
+  width: 132px !important;
+  height: 132px !important;
+  min-width: 132px !important;
+  min-height: 132px !important;
+  max-width: 132px !important;
+  max-height: 132px !important;
+  object-fit: cover !important;
+  border-radius: 16px !important;
+  display: block !important;
+}
+
+/* Keep the root page product card buttons compact and consistent */
+body .lang-card .actions,
+body .split .actions {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 12px !important;
+}
+
+body .lang-card .actions .button,
+body .split .actions .button {
+  flex: 0 0 160px !important;
+  width: 160px !important;
+  min-width: 160px !important;
+  max-width: 160px !important;
+  min-height: 48px !important;
+  padding: 0 12px !important;
+  white-space: nowrap !important;
+  text-align: center !important;
+}
+
+@media (max-width: 860px) {
+  body .hero-actions-bar .button,
+  body .lang-card .actions .button,
+  body .split .actions .button {
+    flex: 1 1 148px !important;
+    width: auto !important;
+    min-width: 148px !important;
+    max-width: none !important;
+  }
+
+  body #author.author-section .author-card {
+    grid-template-columns: 108px minmax(0, 1fr) !important;
+    gap: 16px !important;
+    padding: 20px !important;
+  }
+
+  body #author.author-section .author-card img.author-photo,
+  body #author.author-section img.author-photo,
+  body #author .author-card > img[src*="noboru-ikuta"] {
+    width: 96px !important;
+    height: 96px !important;
+    min-width: 96px !important;
+    min-height: 96px !important;
+    max-width: 96px !important;
+    max-height: 96px !important;
+    border-radius: 14px !important;
+  }
+}
+
+
+/* promo video + release record v3 */
+.promo-stack{display:grid;grid-template-columns:1fr;gap:24px}
+.promo-card{padding:22px;background:rgba(255,255,255,.035)}
+.promo-card video,.promo-panel video{display:block;width:100%;height:auto;border-radius:18px;background:#000;border:1px solid rgba(49,215,255,.22)}
+.promo-panel{padding:18px;border:1px solid var(--line);border-radius:24px;background:var(--panel);box-shadow:0 0 42px rgba(25,179,255,.10);overflow:hidden}
+.promo-text p{margin-top:0}
+.release-split{align-items:start}
+.section-heading{margin-bottom:18px}
