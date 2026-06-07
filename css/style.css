@@ -289,3 +289,12 @@ body .split .actions .button {
 .promo-only-stack video {
   object-fit: contain;
 }
+
+
+/* v6 promo autoplay + thumbnail correction
+   Autoplay is muted because modern browsers block unmuted autoplay.
+   Poster images are generated from each promotion video at around 5 seconds. */
+.promo-only-stack video,
+.hero-video video {
+  object-fit: contain;
+}

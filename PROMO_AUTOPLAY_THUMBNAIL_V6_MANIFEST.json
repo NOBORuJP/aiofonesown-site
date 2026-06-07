@@ -1,0 +1,13 @@
+{
+  "patch": "promo_autoplay_thumbnail_v6",
+  "thumbnail_time_seconds": 5.0,
+  "video_attributes": [
+    "controls",
+    "autoplay",
+    "muted",
+    "loop",
+    "playsinline",
+    "preload=metadata"
+  ],
+  "note": "Muted is required for reliable browser autoplay."
+}
