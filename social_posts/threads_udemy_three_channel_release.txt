@@ -1,0 +1,22 @@
+AI of One’s Own / 育てるAI now has three official channels.
+
+1. Book — Amazon
+2. Screen walkthrough course — Udemy
+3. Template pack — Gumroad
+
+The project is about building your own personal AI environment — not just using AI, but growing it with files, memory, tools, RAG, and backups.
+
+English:
+Amazon: https://www.amazon.com/dp/B0H46GZN4K
+Udemy: https://www.udemy.com/course/aiofonesown/
+Gumroad: https://noborikuta.gumroad.com/l/aiofonesown-early-access
+
+Japanese:
+Amazon: https://www.amazon.co.jp/dp/B0H4BJBSDR
+Udemy: https://www.udemy.com/course/aiofonesown-ja/
+Gumroad: https://noborikuta.gumroad.com/l/sodateru-ai-early-access
+
+Official site:
+https://aiofonesown.com
+
+#AIofOnesOwn #育てるAI #PersonalAI #Udemy #Kindle #Gumroad #Claude #ChatGPT

@@ -1,0 +1,11 @@
+{
+  "patch": "udemy_three_channel_update",
+  "urls": {
+    "en_amazon": "https://www.amazon.com/dp/B0H46GZN4K",
+    "ja_amazon": "https://www.amazon.co.jp/dp/B0H4BJBSDR",
+    "en_udemy": "https://www.udemy.com/course/aiofonesown/",
+    "ja_udemy": "https://www.udemy.com/course/aiofonesown-ja/",
+    "en_gumroad": "https://noborikuta.gumroad.com/l/aiofonesown-early-access",
+    "ja_gumroad": "https://noborikuta.gumroad.com/l/sodateru-ai-early-access"
+  }
+}

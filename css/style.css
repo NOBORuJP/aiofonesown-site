@@ -225,3 +225,21 @@ body .split .actions .button {
     border-radius: 14px !important;
   }
 }
+
+/* paperback-complete-update */
+body .hero-actions-bar .button { flex: 0 0 170px !important; width: 170px !important; min-width: 170px !important; max-width: 170px !important; }
+body .lang-card .actions .button, body .split .actions .button { flex: 0 0 150px !important; width: 150px !important; min-width: 150px !important; max-width: 150px !important; min-height: 48px !important; }
+@media(max-width:860px) { body .hero-actions-bar .button, body .lang-card .actions .button, body .split .actions .button { flex: 1 1 148px !important; width: auto !important; min-width: 148px !important; max-width: none !important; } }
+
+/* paperback-only-amazon-link-adjustment
+   Amazon purchase links point to paperback pages only.
+   Gumroad remains as the template-pack/supporting product link. */
+body .hero-actions-bar .button,
+body .lang-card .actions .button,
+body .split .actions .button {
+  justify-content: center !important;
+}
+
+/* udemy-three-channel-update */
+body .hero-actions-bar .button, body .lang-card .actions .button, body .split .actions .button, body .update-card .actions .button { flex: 0 0 170px !important; width: 170px !important; min-width: 170px !important; max-width: 170px !important; }
+@media(max-width:860px) { body .hero-actions-bar .button, body .lang-card .actions .button, body .split .actions .button, body .update-card .actions .button { flex: 1 1 148px !important; width: auto !important; min-width: 148px !important; max-width: none !important; } }
