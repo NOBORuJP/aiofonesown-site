@@ -235,3 +235,35 @@ body .split .actions .button {
 .promo-text p{margin-top:0}
 .release-split{align-items:start}
 .section-heading{margin-bottom:18px}
+
+/* v4 correction: promo videos only, no redundant explanatory blocks */
+.promo-only-section {
+  padding-top: 24px;
+  padding-bottom: 52px;
+}
+
+.promo-only-stack {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 28px;
+}
+
+.promo-only-stack.single {
+  max-width: 980px;
+}
+
+.promo-only-stack video {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 24px;
+  background: #000;
+  border: 1px solid var(--line);
+  box-shadow: 0 0 42px rgba(25,179,255,.10);
+}
+
+.timeline-list,
+.update-list {
+  display: grid;
+  gap: 22px;
+}

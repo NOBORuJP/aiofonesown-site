@@ -1,17 +1,12 @@
-AI of One’s Own / 育てるAI official release record updated.
+AI of One’s Own / 育てるAI — official release record updated.
 
 Newest first:
-Jun 7, 2026 — Udemy courses released
-Jun 6, 2026 — Japanese paperback released
-Jun 5, 2026 — English paperback released
-Jun 5, 2026 — English & Japanese Kindle editions released
+• Jun 7, 2026: Udemy courses released
+• Jun 7, 2026: Japanese paperback released
+• Jun 6, 2026: English paperback released
+• Jun 4, 2026: English & Japanese Kindle editions released
 
 Official site:
 https://aiofonesown.com
 
-EN Amazon https://www.amazon.com/dp/B0H46GZN4K
-EN Udemy https://www.udemy.com/course/aiofonesown/
-EN Gumroad https://noborikuta.gumroad.com/l/aiofonesown-early-access
-JP Amazon https://www.amazon.co.jp/dp/B0H4BJBSDR
-JP Udemy https://www.udemy.com/course/aiofonesown-ja/
-JP Gumroad https://noborikuta.gumroad.com/l/sodateru-ai-early-access
+#AI #AIofOnesOwn #Claude #ChatGPT

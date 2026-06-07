@@ -1,0 +1,26 @@
+{
+  "patch": "release_record_promo_fix_v4b",
+  "release_dates": {
+    "2026-06-07": [
+      "Udemy screen walkthrough courses released",
+      "Japanese paperback released"
+    ],
+    "2026-06-06": [
+      "English paperback released"
+    ],
+    "2026-06-04": [
+      "English and Japanese Kindle ebook editions released"
+    ],
+    "2026-05-31": [
+      "Japanese Gumroad early access edition released"
+    ],
+    "2026-05-29": [
+      "English Gumroad early access edition released"
+    ]
+  },
+  "videos": [
+    "assets/promo/ai_of_ones_own_promo_en_web.mp4",
+    "assets/promo/sodateru_ai_promo_ja_web.mp4"
+  ],
+  "notes": "Promo sections are video-only; preview sections are preserved."
+}
