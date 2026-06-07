@@ -267,3 +267,25 @@ body .split .actions .button {
   display: grid;
   gap: 22px;
 }
+
+
+/* v5 correction:
+   - Video posters are extracted from the actual top frame of each promo movie.
+   - /en/ and /ja/ place the video in the top-right hero visual slot.
+   - Book preview appears immediately after the hero section again. */
+.hero-video {
+  padding: 0;
+  background: var(--panel);
+}
+
+.hero-video video {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 24px;
+  background: #000;
+}
+
+.promo-only-stack video {
+  object-fit: contain;
+}

@@ -1,0 +1,29 @@
+{
+  "patch": "release_record_promo_fix_v5",
+  "changes": [
+    "move en/ja promo videos into hero visual slot",
+    "remove separate release promo section from en/ja pages",
+    "set posters generated from video top frames",
+    "correct release dates"
+  ],
+  "release_dates": {
+    "2026-06-07": [
+      "Udemy screen walkthrough courses released"
+    ],
+    "2026-06-06": [
+      "Japanese paperback released"
+    ],
+    "2026-06-05": [
+      "English paperback released"
+    ],
+    "2026-06-04": [
+      "English and Japanese Kindle ebook editions released"
+    ],
+    "2026-05-31": [
+      "Japanese Gumroad early access edition released"
+    ],
+    "2026-05-29": [
+      "English Gumroad early access edition released"
+    ]
+  }
+}
