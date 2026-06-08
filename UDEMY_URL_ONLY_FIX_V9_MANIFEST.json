@@ -1,0 +1,18 @@
+{
+  "patch": "udemy_url_only_fix_v9",
+  "purpose": "Fix Udemy URLs only; no CSS, no coupon notice, no layout change.",
+  "base_main_zip": "aiofonesown-site-promo-autoplay-thumbnail-v6.zip",
+  "base_release_zip": "aiofonesown-site-release-record-promo-fix-v5.zip",
+  "patched_files": [
+    "index.html",
+    "en/index.html",
+    "ja/index.html",
+    "updates/index.html",
+    "news/index.html"
+  ],
+  "english_udemy_referral_url": "https://www.udemy.com/course/aionesown/?referralCode=C8E43BDE282665E35B61",
+  "japanese_udemy_referral_url": "https://www.udemy.com/course/aionesown-ja/?referralCode=5F2A4FDAD2C129070F86",
+  "included_css": false,
+  "included_assets": false,
+  "included_coupon_notice": false
+}
