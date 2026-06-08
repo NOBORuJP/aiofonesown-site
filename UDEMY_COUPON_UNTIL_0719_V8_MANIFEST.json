@@ -1,0 +1,19 @@
+{
+  "patch": "udemy_coupon_until_0719_v8",
+  "base_zip": "aiofonesown-site-udemy-url-fix-v7b.zip",
+  "patched_files": [
+    "css/style.css",
+    "en/index.html",
+    "index.html",
+    "ja/index.html"
+  ],
+  "udemy_referral_urls": {
+    "english": "https://www.udemy.com/course/aionesown/?referralCode=C8E43BDE282665E35B61",
+    "japanese": "https://www.udemy.com/course/aionesown-ja/?referralCode=5F2A4FDAD2C129070F86"
+  },
+  "udemy_coupon_urls": {
+    "english_until_july_19": "https://www.udemy.com/course/aionesown/?couponCode=AIOFONESOWN2910",
+    "japanese_until_july_19": "https://www.udemy.com/course/aionesown-ja/?couponCode=AIOFONESOWN2910"
+  },
+  "free_10_seat_coupon_included": false
+}
