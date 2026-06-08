@@ -1,0 +1,15 @@
+{
+  "patch": "udemy_url_fix_v7b",
+  "base_zip": "aiofonesown-site-promo-autoplay-thumbnail-v6.zip",
+  "patched_files": [
+    "index.html",
+    "en/index.html",
+    "ja/index.html"
+  ],
+  "english_udemy_referral_url": "https://www.udemy.com/course/aionesown/?referralCode=C8E43BDE282665E35B61",
+  "japanese_udemy_referral_url": "https://www.udemy.com/course/aionesown-ja/?referralCode=5F2A4FDAD2C129070F86",
+  "english_coupon_url": "https://www.udemy.com/course/aionesown/?couponCode=AIOFONESOWN2910",
+  "japanese_coupon_url": "https://www.udemy.com/course/aionesown-ja/?couponCode=AIOFONESOWN2910",
+  "free_10_seat_coupon_included": false,
+  "note": "Public website uses normal referral URLs. Free coupon URL is intentionally excluded."
+}
