@@ -313,3 +313,149 @@ body .split .actions .button {
   box-shadow: 0 0 42px rgba(240,199,94,.08);
   padding: 24px;
 }
+
+
+/* 2026-06-10 preview PDF placement and button width adjustments
+   - Widen only the free-preview PDF buttons.
+   - Keep the top navigation clean by removing the root Free Preview nav link in HTML.
+   - Allow one-card preview sections on /en/ and /ja/. */
+.free-preview-strip {
+  padding-top: 28px;
+  padding-bottom: 44px;
+}
+
+.single-preview-card {
+  grid-template-columns: minmax(0, 560px) !important;
+  justify-content: center !important;
+}
+
+body #free-preview .lang-card .actions .preview-pdf-button,
+body .free-preview-strip .lang-card .actions .preview-pdf-button {
+  flex: 0 0 auto !important;
+  width: auto !important;
+  min-width: 260px !important;
+  max-width: none !important;
+  min-height: 54px !important;
+  padding: 0 28px !important;
+  white-space: nowrap !important;
+}
+
+body #free-preview .lang-card .actions,
+body .free-preview-strip .lang-card .actions {
+  justify-content: flex-start !important;
+}
+
+.hero-root-video video {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 24px;
+  background: #000;
+}
+
+@media (max-width: 860px) {
+  .single-preview-card {
+    grid-template-columns: 1fr !important;
+  }
+
+  body #free-preview .lang-card .actions .preview-pdf-button,
+  body .free-preview-strip .lang-card .actions .preview-pdf-button {
+    min-width: min(100%, 260px) !important;
+    width: auto !important;
+    max-width: 100% !important;
+  }
+}
+
+
+/* 2026-06-10 top promo Udemy CTA balance
+   - Make the English video section match the surrounding horizontal frame balance.
+   - Add Udemy course buttons under the video inside the same card. */
+body .promo-only-section {
+  padding-top: 34px !important;
+  padding-bottom: 58px !important;
+}
+
+body .promo-only-stack.single {
+  max-width: none !important;
+  width: 100% !important;
+  margin: 0 auto !important;
+}
+
+body .promo-video-card {
+  width: 100% !important;
+  border: 1px solid var(--line) !important;
+  border-radius: 26px !important;
+  background: var(--panel) !important;
+  box-shadow: 0 0 42px rgba(25,179,255,.10) !important;
+  overflow: hidden !important;
+  padding: 18px !important;
+}
+
+body .promo-video-card video {
+  display: block !important;
+  width: 100% !important;
+  height: auto !important;
+  border-radius: 20px !important;
+  border: 1px solid rgba(49,215,255,.24) !important;
+  background: #000 !important;
+  box-shadow: none !important;
+}
+
+body .promo-cta-row {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) auto !important;
+  gap: 24px !important;
+  align-items: center !important;
+  padding: 24px 6px 4px !important;
+}
+
+body .promo-cta-row h2 {
+  margin: 6px 0 8px !important;
+  font-size: clamp(26px, 3.2vw, 38px) !important;
+}
+
+body .promo-cta-row p {
+  margin: 0 !important;
+}
+
+body .promo-cta-actions {
+  margin-top: 0 !important;
+  justify-content: flex-end !important;
+  flex-wrap: wrap !important;
+  min-width: 440px !important;
+}
+
+body .promo-cta-actions .button {
+  flex: 0 0 200px !important;
+  width: 200px !important;
+  min-width: 200px !important;
+  max-width: 200px !important;
+  min-height: 54px !important;
+  padding: 0 16px !important;
+  white-space: nowrap !important;
+}
+
+@media (max-width: 860px) {
+  body .promo-video-card {
+    padding: 14px !important;
+    border-radius: 22px !important;
+  }
+
+  body .promo-cta-row {
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+    padding: 20px 2px 4px !important;
+  }
+
+  body .promo-cta-actions {
+    min-width: 0 !important;
+    justify-content: flex-start !important;
+  }
+
+  body .promo-cta-actions .button {
+    flex: 1 1 180px !important;
+    width: auto !important;
+    min-width: 180px !important;
+    max-width: none !important;
+  }
+}
