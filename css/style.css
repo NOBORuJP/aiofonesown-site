@@ -459,3 +459,89 @@ body .promo-cta-actions .button {
     max-width: none !important;
   }
 }
+
+
+/* 2026-06-10 compact Udemy CTA correction
+   - The previous Udemy CTA under the top-page English promo video was too dominant.
+   - Keep the section, but reduce its visual weight so it balances with the preview cards above and author card below. */
+body .promo-only-section {
+  padding-top: 24px !important;
+  padding-bottom: 46px !important;
+}
+
+body .promo-only-stack.single {
+  max-width: 1120px !important;
+  width: min(100%, 1120px) !important;
+  margin: 0 auto !important;
+}
+
+body .promo-video-card {
+  padding: 14px !important;
+  border-radius: 24px !important;
+}
+
+body .promo-video-card video {
+  border-radius: 18px !important;
+}
+
+body .promo-cta-row {
+  grid-template-columns: minmax(0, 1fr) auto !important;
+  gap: 18px !important;
+  padding: 16px 4px 2px !important;
+}
+
+body .promo-cta-row .kicker {
+  font-size: 12px !important;
+  letter-spacing: .14em !important;
+}
+
+body .promo-cta-row h2 {
+  margin: 4px 0 4px !important;
+  font-size: clamp(20px, 2.1vw, 27px) !important;
+  line-height: 1.15 !important;
+}
+
+body .promo-cta-row p {
+  margin: 0 !important;
+  font-size: 15px !important;
+  line-height: 1.45 !important;
+}
+
+body .promo-cta-actions {
+  min-width: 0 !important;
+  gap: 12px !important;
+}
+
+body .promo-cta-actions .button {
+  flex: 0 0 166px !important;
+  width: 166px !important;
+  min-width: 166px !important;
+  max-width: 166px !important;
+  min-height: 46px !important;
+  padding: 0 12px !important;
+  font-size: 15px !important;
+}
+
+@media (max-width: 860px) {
+  body .promo-only-section {
+    padding-top: 18px !important;
+    padding-bottom: 38px !important;
+  }
+
+  body .promo-video-card {
+    padding: 12px !important;
+  }
+
+  body .promo-cta-row {
+    grid-template-columns: 1fr !important;
+    gap: 12px !important;
+    padding: 14px 2px 2px !important;
+  }
+
+  body .promo-cta-actions .button {
+    flex: 1 1 150px !important;
+    width: auto !important;
+    min-width: 150px !important;
+    max-width: none !important;
+  }
+}
