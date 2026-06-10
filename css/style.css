@@ -545,3 +545,102 @@ body .promo-cta-actions .button {
     max-width: none !important;
   }
 }
+
+
+/* 2026-06-10 /en and /ja hero preview + lower video swap
+   - Move the free-preview PDF card into the top-right hero visual slot.
+   - Move the promo video to the lower section.
+   - Keep the preview card smaller so it balances with the existing left-side hero text. */
+body .hero-preview-card {
+  padding: 18px !important;
+  display: grid !important;
+  grid-template-columns: minmax(118px, 38%) minmax(0, 1fr) !important;
+  gap: 16px !important;
+  align-items: center !important;
+  min-height: 0 !important;
+}
+
+body .hero-preview-card img {
+  width: 100% !important;
+  max-height: 300px !important;
+  object-fit: contain !important;
+  border-radius: 16px !important;
+  margin: 0 !important;
+  background: rgba(255,255,255,.025) !important;
+  border: 1px solid rgba(49,215,255,.18) !important;
+}
+
+body .hero-preview-copy h3 {
+  margin: 8px 0 8px !important;
+  font-size: clamp(21px, 2.1vw, 28px) !important;
+  line-height: 1.15 !important;
+}
+
+body .hero-preview-copy p {
+  margin: 0 !important;
+  color: var(--muted) !important;
+  font-size: 15px !important;
+  line-height: 1.55 !important;
+}
+
+body .hero-preview-copy .actions {
+  margin-top: 14px !important;
+}
+
+body .hero-preview-copy .hero-preview-button {
+  flex: 0 0 auto !important;
+  width: auto !important;
+  min-width: 190px !important;
+  max-width: 100% !important;
+  min-height: 46px !important;
+  padding: 0 18px !important;
+  font-size: 15px !important;
+  white-space: nowrap !important;
+}
+
+body .product-page-video-section {
+  padding-top: 30px !important;
+  padding-bottom: 48px !important;
+}
+
+body .product-page-video-card {
+  max-width: 1000px !important;
+  margin: 0 auto !important;
+  padding: 14px !important;
+  border-radius: 24px !important;
+}
+
+body .product-page-video-card video {
+  display: block !important;
+  width: 100% !important;
+  height: auto !important;
+  border-radius: 18px !important;
+  background: #000 !important;
+  border: 1px solid rgba(49,215,255,.24) !important;
+}
+
+@media (max-width: 860px) {
+  body .hero-preview-card {
+    grid-template-columns: 1fr !important;
+    gap: 14px !important;
+  }
+
+  body .hero-preview-card img {
+    max-width: 260px !important;
+    margin: 0 auto !important;
+  }
+
+  body .hero-preview-copy .hero-preview-button {
+    min-width: min(100%, 220px) !important;
+    width: auto !important;
+  }
+
+  body .product-page-video-section {
+    padding-top: 20px !important;
+    padding-bottom: 38px !important;
+  }
+
+  body .product-page-video-card {
+    padding: 12px !important;
+  }
+}
