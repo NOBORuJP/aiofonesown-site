@@ -1,119 +1,449 @@
 <!DOCTYPE html>
-<html lang="ja"><head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>育てるAI — ChatGPT・Claudeの知能を活かし、記憶は手元に</title>
-  <meta name="description" content="AnythingLLM、MCP、RAG、ローカル記憶を使って、自分専用AIをMac上に構築する実践ガイド。">
-  <link rel="canonical" href="https://www.aiofonesown.com/ja/">
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>育てるAI — 頭脳は借り物。記憶は、あなたのもの。</title>
+<meta name="description" content="ChatGPT・Claudeの知能を借りて、記憶は手元のMacに。AnythingLLM・MCP・RAG・ローカル記憶で自分専用AIを育てる実践ガイド。書籍・Udemy講座・テンプレートパック。">
+<link rel="canonical" href="https://www.aiofonesown.com/ja/">
+<link rel="alternate" hreflang="ja" href="https://www.aiofonesown.com/ja/">
+<link rel="alternate" hreflang="en" href="https://www.aiofonesown.com/">
+<link rel="alternate" hreflang="x-default" href="https://www.aiofonesown.com/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="AI of One's Own / 育てるAI">
+<meta property="og:title" content="育てるAI — 頭脳は借り物。記憶は、あなたのもの。">
+<meta property="og:description" content="ChatGPT・Claudeの知能を借りて、記憶は手元のMacに。自分専用AIを育てる実践ガイド。">
+<meta property="og:url" content="https://www.aiofonesown.com/ja/">
+<meta property="og:image" content="https://www.aiofonesown.com/assets/og/sodateru-ai-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@aiofonesown">
+<meta name="twitter:title" content="育てるAI — 頭脳は借り物。記憶は、あなたのもの。">
+<meta name="twitter:description" content="ChatGPT・Claudeの知能を借りて、記憶は手元のMacに。自分専用AIを育てる実践ガイド。">
+<meta name="twitter:image" content="https://www.aiofonesown.com/assets/og/sodateru-ai-og.jpg">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --midnight:#0D162C; --deep:#04081A; --core:#18254A;
+  --gold-hi:#E1CB91; --gold:#C9A468; --gold-dk:#765F44;
+  --parchment:#E8E4CD; --bronze:#7F532F; --bronze-dk:#5E3D22;
+  --muted:#9AA3B8;
+  --serif:"Noto Serif JP","Hiragino Mincho ProN","Yu Mincho",serif;
+  --sans:-apple-system,BlinkMacSystemFont,"Hiragino Kaku Gothic ProN","Noto Sans JP",sans-serif;
+  --w:1080px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{
+  background:var(--deep);color:var(--parchment);
+  font-family:var(--sans);font-size:16px;line-height:1.9;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:var(--gold-hi);text-decoration:none}
+a:hover{text-decoration:underline}
+a:focus-visible,button:focus-visible{outline:2px solid var(--gold-hi);outline-offset:3px;border-radius:2px}
+.wrap{max-width:var(--w);margin:0 auto;padding:0 24px}
 
-  <meta property="og:site_name" content="AI of One’s Own / 育てるAI">
-  <meta property="og:type" content="website">
-  <meta property="og:locale" content="ja_JP">
-  <meta property="og:url" content="https://www.aiofonesown.com/ja/">
-  <meta property="og:title" content="育てるAI — ChatGPT・Claudeの知能を活かし、記憶は手元に">
-  <meta property="og:description" content="AnythingLLM、MCP、RAG、ローカル記憶を使って、自分専用AIをMac上に構築する実践ガイド。">
-  <meta property="og:image" content="https://www.aiofonesown.com/assets/og/sodateru-ai-og.jpg">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
+/* ---------- header ---------- */
+header{
+  position:sticky;top:0;z-index:10;
+  background:rgba(4,8,26,.82);backdrop-filter:blur(8px);
+  border-bottom:1px solid rgba(201,164,104,.18);
+}
+.nav{display:flex;align-items:center;justify-content:space-between;height:60px}
+.brand{display:flex;align-items:center;gap:10px;color:var(--parchment);font-family:var(--serif);font-weight:600;font-size:15px;letter-spacing:.04em}
+.brand:hover{text-decoration:none}
+.brand .ai{color:var(--gold)}
+.nav-links{display:flex;gap:22px;font-size:13.5px;letter-spacing:.06em}
+.nav-links a{color:var(--muted)}
+.nav-links a[aria-current]{color:var(--gold-hi)}
 
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:site" content="@aiofonesown">
-  <meta name="twitter:creator" content="@aiofonesown">
-  <meta name="twitter:title" content="育てるAI — ChatGPT・Claudeの知能を活かし、記憶は手元に">
-  <meta name="twitter:description" content="AnythingLLM、MCP、RAG、ローカル記憶を使って、自分専用AIをMac上に構築する実践ガイド。">
-  <meta name="twitter:image" content="https://www.aiofonesown.com/assets/og/sodateru-ai-og.jpg">
+/* ---------- hero ---------- */
+.hero{
+  position:relative;overflow:hidden;text-align:center;
+  padding:96px 24px 88px;
+  background:
+    radial-gradient(900px 540px at 50% 28%, var(--core) 0%, var(--midnight) 52%, var(--deep) 100%);
+}
+.starfield,.orbits{position:absolute;inset:0;pointer-events:none}
+.eyebrow{
+  font-family:var(--sans);font-size:12px;letter-spacing:.42em;
+  color:var(--gold);text-transform:uppercase;margin-bottom:34px;
+}
+.hero .symbol{margin:0 auto 38px;width:108px;height:108px;display:block}
+h1{
+  font-family:var(--serif);font-weight:700;
+  font-size:clamp(30px,5.4vw,56px);line-height:1.55;letter-spacing:.02em;
+  margin-bottom:30px;
+}
+h1 .own{color:var(--gold-hi);text-shadow:0 0 28px rgba(225,203,145,.25)}
+.lede{
+  max-width:640px;margin:0 auto 44px;color:var(--muted);
+  font-size:clamp(15px,1.6vw,17.5px);line-height:2.1;
+}
+.lede b{color:var(--parchment);font-weight:600}
+.cta-row{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.btn{
+  display:inline-block;padding:13px 26px;border-radius:3px;
+  font-size:14.5px;letter-spacing:.05em;font-weight:600;
+  border:1px solid var(--gold);color:var(--gold-hi);
+  transition:background .2s,color .2s;
+}
+.btn:hover{background:rgba(201,164,104,.12);text-decoration:none}
+.btn.primary{background:var(--gold);color:#1a1206;border-color:var(--gold)}
+.btn.primary:hover{background:var(--gold-hi)}
+.hero .badge{
+  display:inline-block;margin-top:40px;font-size:12px;letter-spacing:.22em;
+  color:var(--muted);border:1px solid rgba(154,163,184,.35);
+  padding:5px 16px;border-radius:99px;
+}
 
-  <link rel="icon" href="/assets/ja-cover-square.png">
-  <link rel="stylesheet" href="/css/style.css">
-  <link rel="stylesheet" href="/css/preview-carousel.css">
-</head><body><header class="site-header">
-<div class="container nav">
-<a class="brand" href="/">AI of One’s Own / 育てるAI</a>
-<nav aria-label="Primary navigation" class="nav-links">
-<a href="/ja/">日本語</a>
-<a href="/en/">English</a>
-<a href="/updates/">Updates</a>
-<a href="/support/">Support</a>
-</nav>
-</div>
-</header><main><section class="hero"><div class="container hero-grid"><div><div class="kicker">日本語オリジナル版</div><h1>育てるAI</h1><p class="lead">自分専用のAI環境を、安全に、育てていくために。</p><p>書籍、Udemyの画面解説講座、Gumroadのテンプレートパックとして公開中です。</p><div class="actions"><a class="button primary" href="https://www.amazon.co.jp/dp/B0H4BJBSDR" rel="noopener noreferrer" target="_blank">Amazon</a><a class="button" href="https://www.udemy.com/course/aionesown-ja/?referralCode=5F2A4FDAD2C129070F86" rel="noopener noreferrer" target="_blank">Udemy</a><a class="button" href="https://noborikuta.gumroad.com/l/sodateru-ai-early-access" rel="noopener noreferrer" target="_blank">Gumroad</a></div></div><div class="hero-image hero-preview-card"><img alt="育てるAI 立ち読みPDF cover" loading="lazy" src="/assets/previews/AIofOnesOwnFreePreview-Ja-cover.jpg"/><div class="hero-preview-copy"><div class="kicker">立ち読みPDF</div><h3>立ち読みPDF</h3><p>あらすじ、記憶章、4本柱、主要ページを確認できます。</p><div class="actions"><a class="button primary hero-preview-button" href="/assets/previews/AIofOnesOwnFreePreview-Ja.pdf" rel="noopener noreferrer" target="_blank">日本語立ち読み版を開く</a></div></div></div></div></section>
-<section aria-label="育てるAI プロモーション動画" class="promo-only-section product-page-video-section"><div class="container"><div class="promo-video-card product-page-video-card"><video autoplay="True" controls="True" loop="True" muted="True" playsinline="True" poster="/assets/promo/sodateru_ai_promo_thumbnail.jpg" preload="metadata"><source src="/assets/promo/sodateru_ai_promo_ja_web.mp4" type="video/mp4"/>プロモーション動画</video></div></div></section>
-<section class="preview-carousel-section" data-preview-carousel="">
-<div class="preview-carousel-wrap">
-<div class="preview-carousel-heading">
-<div class="preview-carousel-kicker">PREVIEW</div>
-<h2>ブックプレビュー</h2>
-<p>読後ノートからあとがきまで、本書の核となるメッセージを画像で確認できます。</p>
-</div>
-<div class="preview-carousel-shell">
-<button aria-label="Previous preview" class="preview-carousel-button prev" data-preview-prev="">‹</button>
-<div class="preview-carousel-track" data-preview-track="">
-<article class="preview-carousel-slide" data-preview-slide="">
-<img alt="育てるAI プレビュー 02: 読後ノート" loading="lazy" src="/assets/book-preview/ja/02_claude_reviewJA.png"/>
-<div class="preview-carousel-caption">
-<span><strong>02</strong> · 読後ノート</span>
-<span>1 / 6</span>
-</div>
-</article>
-<article class="preview-carousel-slide" data-preview-slide="">
-<img alt="育てるAI プレビュー 03: 序プレビュー" loading="lazy" src="/assets/book-preview/ja/03_synopsisJA.png"/>
-<div class="preview-carousel-caption">
-<span><strong>03</strong> · 序プレビュー</span>
-<span>2 / 6</span>
-</div>
-</article>
-<article class="preview-carousel-slide" data-preview-slide="">
-<img alt="育てるAI プレビュー 04: 汎用AIと専用AI" loading="lazy" src="/assets/book-preview/ja/04_two_AIs.png"/>
-<div class="preview-carousel-caption">
-<span><strong>04</strong> · 汎用AIと専用AI</span>
-<span>3 / 6</span>
-</div>
-</article>
-<article class="preview-carousel-slide" data-preview-slide="">
-<img alt="育てるAI プレビュー 05: 本書は、その答えです" loading="lazy" src="/assets/book-preview/ja/05_the_answer.png"/>
-<div class="preview-carousel-caption">
-<span><strong>05</strong> · 本書は、その答えです</span>
-<span>4 / 6</span>
-</div>
-</article>
-<article class="preview-carousel-slide" data-preview-slide="">
-<img alt="育てるAI プレビュー 06: 本書の中核" loading="lazy" src="/assets/book-preview/ja/06_heart_chapter.png"/>
-<div class="preview-carousel-caption">
-<span><strong>06</strong> · 本書の中核</span>
-<span>5 / 6</span>
-</div>
-</article>
-<article class="preview-carousel-slide" data-preview-slide="">
-<img alt="育てるAI プレビュー 07: あとがき" loading="lazy" src="/assets/book-preview/ja/07_afterwordJA.png"/>
-<div class="preview-carousel-caption">
-<span><strong>07</strong> · あとがき</span>
-<span>6 / 6</span>
-</div>
-</article>
-</div>
-<button aria-label="Next preview" class="preview-carousel-button next" data-preview-next="">›</button>
-</div>
-<div aria-label="Preview navigation" class="preview-carousel-dots">
-<button aria-label="Go to preview 1" class="preview-carousel-dot is-active" data-preview-dot=""></button>
-<button aria-label="Go to preview 2" class="preview-carousel-dot" data-preview-dot=""></button>
-<button aria-label="Go to preview 3" class="preview-carousel-dot" data-preview-dot=""></button>
-<button aria-label="Go to preview 4" class="preview-carousel-dot" data-preview-dot=""></button>
-<button aria-label="Go to preview 5" class="preview-carousel-dot" data-preview-dot=""></button>
-<button aria-label="Go to preview 6" class="preview-carousel-dot" data-preview-dot=""></button>
-</div>
-</div>
-</section><section><div class="container record"><h2>公式リンク</h2><ul><li>公式サイト：<a href="https://aiofonesown.com">https://aiofonesown.com</a></li><li>Amazon（ペーパーブックページ）：<a href="https://www.amazon.co.jp/dp/B0H4BJBSDR" rel="noopener noreferrer" target="_blank">https://www.amazon.co.jp/dp/B0H4BJBSDR</a></li><li>Kindle電子書籍：<a href="https://www.amazon.co.jp/dp/B0H3ZSMFMH" rel="noopener noreferrer" target="_blank">https://www.amazon.co.jp/dp/B0H3ZSMFMH</a></li><li>Udemy：<a href="https://www.udemy.com/course/aionesown-ja/?referralCode=5F2A4FDAD2C129070F86" rel="noopener noreferrer" target="_blank">https://www.udemy.com/course/aionesown-ja/?referralCode=5F2A4FDAD2C129070F86</a></li><li>Gumroad：<a href="https://noborikuta.gumroad.com/l/sodateru-ai-early-access" rel="noopener noreferrer" target="_blank">https://noborikuta.gumroad.com/l/sodateru-ai-early-access</a></li><li>サポート入口：<a href="https://support.aiofonesown.com">https://support.aiofonesown.com</a></li><li>サポートメール：support@aiofonesown.com</li><li>公式SNS：<a href="https://x.com/aiofonesown" rel="noopener noreferrer" target="_blank">X</a> / <a href="https://www.instagram.com/aiofonesown" rel="noopener noreferrer" target="_blank">Instagram</a> / <a href="https://www.threads.net/@aiofonesown" rel="noopener noreferrer" target="_blank">Threads</a> <strong>@aiofonesown</strong></li></ul></div></section></main><footer>
-<div class="container">
-<p><strong>Official Website:</strong> <a href="https://aiofonesown.com">https://aiofonesown.com</a></p>
-<p><strong>Support:</strong> <a href="https://support.aiofonesown.com">https://support.aiofonesown.com</a> / support@aiofonesown.com</p>
-<p><strong>English:</strong> <a href="https://www.amazon.com/dp/B0H46GZN4K" rel="noopener noreferrer" target="_blank">Amazon</a> / <a href="https://www.udemy.com/course/aionesown/?referralCode=C8E43BDE282665E35B61" rel="noopener noreferrer" target="_blank">Udemy</a> / <a href="https://noborikuta.gumroad.com/l/aiofonesown-early-access" rel="noopener noreferrer" target="_blank">Gumroad</a></p>
-<p><strong>Japanese:</strong> <a href="https://www.amazon.co.jp/dp/B0H4BJBSDR" rel="noopener noreferrer" target="_blank">Amazon</a> / <a href="https://www.udemy.com/course/aionesown-ja/?referralCode=5F2A4FDAD2C129070F86" rel="noopener noreferrer" target="_blank">Udemy</a> / <a href="https://noborikuta.gumroad.com/l/sodateru-ai-early-access" rel="noopener noreferrer" target="_blank">Gumroad</a></p>
-<p><strong>Official SNS:</strong>
-<a href="https://x.com/aiofonesown" rel="noopener noreferrer" target="_blank">X</a> /
-      <a href="https://www.instagram.com/aiofonesown" rel="noopener noreferrer" target="_blank">Instagram</a> /
-      <a href="https://www.threads.net/@aiofonesown" rel="noopener noreferrer" target="_blank">Threads</a>
-      · <strong>@aiofonesown</strong>
-</p>
-<p>© 2026 NOBORu IKUTA. All Rights Reserved.</p>
-</div>
-</footer><script src="/js/preview-carousel.js"></script></body></html>
+/* ---------- 借りる / あなたのもの ---------- */
+.section{padding:92px 24px;position:relative}
+.section-head{text-align:center;margin-bottom:56px}
+.section-head .kicker{font-size:12px;letter-spacing:.36em;color:var(--gold);margin-bottom:16px}
+h2{font-family:var(--serif);font-weight:600;font-size:clamp(23px,3.2vw,32px);letter-spacing:.03em}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:2px;max-width:980px;margin:0 auto;border:1px solid rgba(201,164,104,.22)}
+.col{padding:46px 42px;background:var(--midnight)}
+.col.rented{background:#0A1124}
+.col.owned{background:linear-gradient(180deg,#101b3a 0%,var(--midnight) 100%)}
+.col .tag{font-size:12px;letter-spacing:.3em;margin-bottom:18px}
+.col.rented .tag{color:var(--muted)}
+.col.owned .tag{color:var(--gold-hi)}
+.col h3{font-family:var(--serif);font-size:24px;font-weight:600;margin-bottom:18px}
+.col.rented h3{color:var(--parchment)}
+.col.owned h3{color:var(--gold-hi)}
+.col p{color:var(--muted);font-size:15px;line-height:2.05}
+.col.owned p{color:#C9CFE0}
+.col ul{list-style:none;margin-top:20px;font-size:14.5px}
+.col li{padding:7px 0;border-top:1px solid rgba(154,163,184,.14);color:var(--muted)}
+.col.owned li{border-top:1px solid rgba(201,164,104,.22);color:var(--parchment)}
+.col.owned li::before{content:"★ ";color:var(--gold);font-size:11px}
+.col.rented li::before{content:"— ";color:var(--muted)}
+.axiom{
+  text-align:center;margin:54px auto 0;max-width:760px;
+  font-family:var(--serif);font-size:clamp(17px,2.2vw,21px);
+  color:var(--parchment);line-height:2;
+}
+.axiom .gold{color:var(--gold-hi)}
+
+/* ---------- system ---------- */
+.system{background:var(--midnight);border-top:1px solid rgba(201,164,104,.14);border-bottom:1px solid rgba(201,164,104,.14)}
+.system .inner{max-width:860px;margin:0 auto;text-align:center}
+.system p{color:var(--muted);font-size:15.5px;line-height:2.1;margin-top:22px}
+.system p b{color:var(--parchment)}
+.nodes{display:flex;justify-content:center;gap:34px;flex-wrap:wrap;margin-top:40px}
+.node{display:flex;flex-direction:column;align-items:center;gap:10px;font-size:13px;color:var(--muted);letter-spacing:.1em}
+.node .dot{width:54px;height:54px;border:1px solid var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--gold-hi);font-size:18px}
+
+/* ---------- bronze band: 三部構成 ---------- */
+.band{
+  background:linear-gradient(180deg,var(--bronze) 0%,var(--bronze-dk) 100%);
+  padding:84px 24px;
+}
+.band .section-head .kicker{color:#F3DDC0}
+.band h2{color:#FCF4E6}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;max-width:1020px;margin:0 auto}
+.card{
+  background:rgba(13,22,44,.92);border:1px solid rgba(225,203,145,.25);
+  padding:34px 30px;display:flex;flex-direction:column;border-radius:3px;
+}
+.card .no{font-size:12px;letter-spacing:.3em;color:var(--gold);margin-bottom:14px}
+.card h3{font-family:var(--serif);font-size:21px;font-weight:600;color:var(--parchment);margin-bottom:14px}
+.card p{font-size:14px;color:var(--muted);line-height:2;flex:1}
+.card .links{margin-top:24px;display:flex;gap:10px;flex-wrap:wrap}
+.card .links a{
+  font-size:13.5px;border:1px solid var(--gold);padding:9px 16px;border-radius:3px;
+  color:var(--gold-hi);letter-spacing:.04em;
+}
+.card .links a:hover{background:rgba(201,164,104,.14);text-decoration:none}
+
+/* ---------- preview ---------- */
+.carousel{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:14px;max-width:1020px;margin:0 auto}
+.carousel::-webkit-scrollbar{height:8px}
+.carousel::-webkit-scrollbar-thumb{background:rgba(201,164,104,.35);border-radius:4px}
+.slide{flex:0 0 64%;max-width:640px;scroll-snap-align:center}
+.slide img{width:100%;height:auto;display:block;border:1px solid rgba(154,163,184,.22)}
+.slide figcaption{font-size:12.5px;color:var(--muted);margin-top:10px;letter-spacing:.06em}
+.slide figcaption b{color:var(--gold)}
+.pdf-strip{display:grid;grid-template-columns:112px minmax(0,1fr) auto;gap:26px;align-items:center;max-width:820px;margin:44px auto 0;padding:22px 26px;background:var(--midnight);border:1px solid rgba(201,164,104,.22);border-radius:3px}
+.pdf-strip img{width:112px;height:auto;display:block;border:1px solid rgba(154,163,184,.2)}
+.pdf-strip p{font-size:14px;color:var(--muted);line-height:1.9;margin:0}
+
+/* ---------- video ---------- */
+.video-wrap{max-width:920px;margin:0 auto}
+.video-wrap video{width:100%;display:block;border:1px solid rgba(201,164,104,.25)}
+
+/* ---------- closing ---------- */
+.closing{
+  text-align:center;padding:120px 24px;
+  background:radial-gradient(700px 420px at 50% 45%, var(--core) 0%, var(--deep) 75%);
+}
+.closing .statement{
+  font-family:var(--serif);font-weight:700;
+  font-size:clamp(24px,4vw,40px);line-height:1.8;letter-spacing:.02em;
+}
+.closing .statement .own{color:var(--gold-hi)}
+.closing .author{margin-top:46px;color:var(--muted);font-size:14px;line-height:2.1;max-width:560px;margin-left:auto;margin-right:auto}
+.closing .author b{color:var(--parchment)}
+
+/* ---------- footer ---------- */
+footer{border-top:1px solid rgba(201,164,104,.16);padding:64px 24px 56px;background:var(--deep)}
+.flinks{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:36px;max-width:1020px;margin:0 auto 48px}
+.fcol h4{font-size:12px;letter-spacing:.28em;color:var(--gold);margin-bottom:16px;font-weight:600}
+.fcol ul{list-style:none}
+.fcol li{padding:5px 0;font-size:14px}
+.fcol a{color:var(--muted)}
+.fcol a:hover{color:var(--gold-hi)}
+.copyright{text-align:center;font-size:12.5px;color:#5E6679;letter-spacing:.08em}
+
+@media (max-width:840px){
+  .two-col{grid-template-columns:1fr}
+  .cards{grid-template-columns:1fr}
+  .pdf-strip{grid-template-columns:1fr;text-align:center;justify-items:center;gap:16px}
+  .hero{padding:72px 20px 64px}
+  .nav-links{gap:14px;font-size:12.5px}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="/">
+      <svg width="26" height="26" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="29" fill="none" stroke="#C9A468" stroke-width="2" opacity=".7"/><path d="M32 12 L36.4 27.6 L52 32 L36.4 36.4 L32 52 L27.6 36.4 L12 32 L27.6 27.6 Z" fill="#E1CB91"/></svg>
+      <span><span class="ai">AI</span> of One's Own / 育てるAI</span>
+    </a>
+    <nav class="nav-links" aria-label="サイト内">
+      <a href="/ja/" aria-current="page">日本語</a>
+      <a href="/">English</a>
+      <a href="/updates/">Updates</a>
+      <a href="/support/">Support</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<!-- ============ HERO: コアステートメント ============ -->
+<section class="hero">
+  <svg class="orbits" viewBox="0 0 1440 760" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+    <g fill="none" stroke="#C9A468">
+      <circle cx="-60" cy="820" r="430" stroke-opacity=".14" stroke-width="1.4"/>
+      <circle cx="-60" cy="820" r="600" stroke-opacity=".09" stroke-width="1.2"/>
+      <circle cx="1510" cy="-80" r="380" stroke-opacity=".12" stroke-width="1.4"/>
+    </g>
+    <g fill="#E8E4CD">
+      <circle cx="180" cy="120" r="1.4" opacity=".5"/><circle cx="420" cy="80" r="1" opacity=".35"/>
+      <circle cx="730" cy="60" r="1.2" opacity=".4"/><circle cx="1090" cy="110" r="1.5" opacity=".5"/>
+      <circle cx="1320" cy="240" r="1" opacity=".3"/><circle cx="240" cy="430" r="1.1" opacity=".35"/>
+      <circle cx="1180" cy="520" r="1.3" opacity=".45"/><circle cx="90" cy="610" r="1" opacity=".3"/>
+      <circle cx="980" cy="660" r="1.2" opacity=".4"/><circle cx="610" cy="700" r="1" opacity=".3"/>
+      <circle cx="1390" cy="640" r="1.4" opacity=".45"/><circle cx="540" cy="300" r="1" opacity=".25"/>
+    </g>
+  </svg>
+
+  <p class="eyebrow">AI · of · One's · Own</p>
+
+  <svg class="symbol" viewBox="0 0 120 120" aria-hidden="true">
+    <circle cx="60" cy="60" r="56" fill="none" stroke="#C9A468" stroke-opacity=".45" stroke-width="1.6"/>
+    <circle cx="60" cy="60" r="41" fill="none" stroke="#C9A468" stroke-opacity=".8" stroke-width="1.8"/>
+    <path d="M60 86 A 56 56 0 0 0 113 45" fill="none" stroke="#E1CB91" stroke-width="2.4" stroke-linecap="round" opacity=".9"/>
+    <defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F2DCA4"/><stop offset="55%" stop-color="#C9A468"/><stop offset="100%" stop-color="#8A6F47"/>
+    </linearGradient></defs>
+    <path d="M60 32 L66 54 L88 60 L66 66 L60 88 L54 66 L32 60 L54 54 Z" fill="url(#g)"/>
+  </svg>
+
+  <h1>頭脳は借り物。<br><span class="own">記憶は、あなたのもの。</span></h1>
+
+  <p class="lede">
+    ChatGPT・Claudeの頭脳は、借りる。会話も、知識も、記憶も、<b>手元のMacにあなたのものとして残す</b>。<br>
+    『育てるAI』は、その環境をゼロから組み上げるための実践ガイドです。
+  </p>
+
+  <div class="cta-row">
+    <a class="btn primary" href="https://www.amazon.co.jp/dp/B0H3ZSMFMH">Kindleで読む</a>
+    <a class="btn" href="https://www.udemy.com/course/aionesown-ja/?referralCode=5F2A4FDAD2C129070F86">Udemy講座で作る</a>
+    <a class="btn" href="https://noborikuta.gumroad.com/l/sodateru-ai-early-access">テンプレートで始める</a>
+  </div>
+
+  <span class="badge">日本語オリジナル版 · 著 生田 昇</span>
+</section>
+
+<!-- ============ 借りるもの / あなたのもの ============ -->
+<section class="section">
+  <div class="section-head">
+    <p class="kicker">THE DIVISION</p>
+    <h2>借りるもの、あなたのもの。</h2>
+  </div>
+  <div class="two-col">
+    <div class="col rented">
+      <p class="tag">借りるもの</p>
+      <h3>頭脳</h3>
+      <p>ChatGPT、Claude、そしてその次のモデル。月額で借り、いつでも差し替えられる部品として扱います。モデルが進化するほど、あなたのAIはそのまま賢くなる。</p>
+      <ul>
+        <li>クラウドLLM（交換可能）</li>
+        <li>推論・文章力・コーディング力</li>
+        <li>料金は使った分だけ</li>
+      </ul>
+    </div>
+    <div class="col owned">
+      <p class="tag">あなたのもの</p>
+      <h3>記憶</h3>
+      <p>会話の履歴、知識グラフ、文書、埋め込み。すべて手元のMacに保存され、エクスポートでき、バックアップでき、モデルを替えても残り続けます。</p>
+      <ul>
+        <li>長期記憶・知識グラフ</li>
+        <li>文書とRAGの索引</li>
+        <li>設定とワークフロー</li>
+      </ul>
+    </div>
+  </div>
+  <p class="axiom">借り物の頭脳は、交換できる。<br><span class="gold">あなたの記憶は、積み重なる。</span></p>
+</section>
+
+<!-- ============ システム ============ -->
+<section class="section system">
+  <div class="inner">
+    <div class="section-head" style="margin-bottom:8px">
+      <p class="kicker">HOW IT'S BUILT</p>
+      <h2>どう作るのか</h2>
+    </div>
+    <p><b>AnythingLLM + Docker</b> を土台に、6つのMCPサーバー（時刻・記憶・ファイル・検索・SQLite・カレンダー&メール）とローカル長期記憶をつなぎます。必要なのは手元のMacと、本書の手順だけ。Intel Macでも動きます。</p>
+    <div class="nodes" aria-hidden="true">
+      <div class="node"><span class="dot">▤</span>文書</div>
+      <div class="node"><span class="dot">★</span>記憶</div>
+      <div class="node"><span class="dot">▦</span>予定</div>
+      <div class="node"><span class="dot">▶</span>ワークフロー</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 三部構成（ブロンズ帯） ============ -->
+<section class="band">
+  <div class="section-head">
+    <p class="kicker">THREE WAYS IN</p>
+    <h2>三部構成</h2>
+  </div>
+  <div class="cards">
+    <div class="card">
+      <p class="no">01 · 書籍</p>
+      <h3>『育てるAI』</h3>
+      <p>全章＋付録。すべての設定値の正本です。読みながら、自分の手で組み上げる。</p>
+      <div class="links">
+        <a href="https://www.amazon.co.jp/dp/B0H3ZSMFMH">Kindle</a>
+        <a href="https://www.amazon.co.jp/dp/B0H4BJBSDR">ペーパーバック</a>
+      </div>
+    </div>
+    <div class="card">
+      <p class="no">02 · 講座</p>
+      <h3>Udemy 画面解説講座</h3>
+      <p>書籍と同じ順序で、実際の画面そのままに。手を動かす人のための映像版です。</p>
+      <div class="links">
+        <a href="https://www.udemy.com/course/aionesown-ja/?referralCode=5F2A4FDAD2C129070F86">講座を見る</a>
+      </div>
+    </div>
+    <div class="card">
+      <p class="no">03 · テンプレート</p>
+      <h3>Gumroad テンプレートパック</h3>
+      <p>設定ファイルとプロンプトを、そのまま使える形で。最短距離で始めたい人に。</p>
+      <div class="links">
+        <a href="https://noborikuta.gumroad.com/l/sodateru-ai-early-access">Gumroadで入手</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 動画 ============ -->
+<section class="section">
+  <div class="section-head">
+    <p class="kicker">FILM</p>
+    <h2>プロモーション動画</h2>
+  </div>
+  <div class="video-wrap">
+    <video controls preload="metadata" poster="/assets/promo/sodateru_ai_promo_ja_poster.jpg" src="/assets/promo/sodateru_ai_promo_ja_web.mp4"></video>
+  </div>
+</section>
+
+<!-- ============ 立ち読み＋プレビュー ============ -->
+<section class="section" style="padding-top:0">
+  <div class="section-head">
+    <p class="kicker">PREVIEW</p>
+    <h2>立ち読みとブックプレビュー</h2>
+  </div>
+  <div class="carousel" aria-label="ブックプレビュー">
+      <figure class="slide"><img src="/assets/book-preview/ja/02_claude_reviewJA.png" alt="育てるAI プレビュー: 読後ノート" loading="lazy"><figcaption><b>02</b> · 読後ノート</figcaption></figure>
+      <figure class="slide"><img src="/assets/book-preview/ja/03_synopsisJA.png" alt="育てるAI プレビュー: 序" loading="lazy"><figcaption><b>03</b> · 序プレビュー</figcaption></figure>
+      <figure class="slide"><img src="/assets/book-preview/ja/04_two_AIs.png" alt="育てるAI プレビュー: 汎用AIと専用AI" loading="lazy"><figcaption><b>04</b> · 汎用AIと専用AI</figcaption></figure>
+      <figure class="slide"><img src="/assets/book-preview/ja/05_the_answer.png" alt="育てるAI プレビュー: 本書は、その答えです" loading="lazy"><figcaption><b>05</b> · 本書は、その答えです</figcaption></figure>
+      <figure class="slide"><img src="/assets/book-preview/ja/06_heart_chapter.png" alt="育てるAI プレビュー: 本書の中核" loading="lazy"><figcaption><b>06</b> · 本書の中核</figcaption></figure>
+      <figure class="slide"><img src="/assets/book-preview/ja/07_afterwordJA.png" alt="育てるAI プレビュー: あとがき" loading="lazy"><figcaption><b>07</b> · あとがき</figcaption></figure>
+    </div>
+    <div class="pdf-strip">
+      <img src="/assets/previews/AIofOnesOwnFreePreview-Ja-cover.jpg" alt="育てるAI 立ち読みPDF 表紙" loading="lazy">
+      <p>あらすじ、記憶章、4本柱、主要ページを確認できます。</p>
+      <a class="btn" href="/assets/previews/AIofOnesOwnFreePreview-Ja.pdf">立ち読みPDFを開く</a>
+    </div>
+</section>
+
+<!-- ============ 結び ============ -->
+<section class="closing">
+  <p class="statement">頭脳は借り物。<br><span class="own">記憶は、あなたのもの。</span></p>
+  <p class="author">
+    <b>生田 昇</b>（いくた・のぼる）— 東京を拠点とする元ネットワーク／データベースエンジニア、会社創業者。
+    自身のパーソナルAI環境「AI NOBORu」を構築した経験をもとに、本書を執筆。
+  </p>
+</section>
+
+</main>
+
+<footer>
+  <div class="flinks">
+    <div class="fcol">
+      <h4>製品</h4>
+      <ul>
+        <li><a href="https://www.amazon.co.jp/dp/B0H3ZSMFMH">Kindle電子書籍</a></li>
+        <li><a href="https://www.amazon.co.jp/dp/B0H4BJBSDR">ペーパーバック</a></li>
+        <li><a href="https://www.udemy.com/course/aionesown-ja/?referralCode=5F2A4FDAD2C129070F86">Udemy講座</a></li>
+        <li><a href="https://noborikuta.gumroad.com/l/sodateru-ai-early-access">Gumroadテンプレート</a></li>
+      </ul>
+    </div>
+    <div class="fcol">
+      <h4>English Edition</h4>
+      <ul>
+        <li><a href="https://www.amazon.com/dp/B0GX2WFTTZ">Kindle eBook</a></li>
+        <li><a href="https://www.amazon.com/dp/B0H46GZN4K">Paperback</a></li>
+        <li><a href="https://www.udemy.com/course/aionesown/?referralCode=C8E43BDE282665E35B61">Udemy Course</a></li>
+        <li><a href="https://noborikuta.gumroad.com/l/aiofonesown-early-access">Gumroad Templates</a></li>
+      </ul>
+    </div>
+    <div class="fcol">
+      <h4>サポート</h4>
+      <ul>
+        <li><a href="https://support.aiofonesown.com">サポート入口</a></li>
+        <li><a href="mailto:support@aiofonesown.com">support@aiofonesown.com</a></li>
+        <li><a href="/updates/">Updates</a></li>
+      </ul>
+    </div>
+    <div class="fcol">
+      <h4>SNS</h4>
+      <ul>
+        <li><a href="https://x.com/aiofonesown">X @aiofonesown</a></li>
+        <li><a href="https://www.instagram.com/aiofonesown">Instagram</a></li>
+        <li><a href="https://www.threads.net/@aiofonesown">Threads</a></li>
+      </ul>
+    </div>
+  </div>
+  <p class="copyright">© 2026 NOBORu IKUTA. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
