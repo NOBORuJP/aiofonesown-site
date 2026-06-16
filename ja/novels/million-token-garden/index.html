@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<!-- ============================================================
+  AI NOBORu 小説ページ ひな型｜百万トークンの庭（日本語）
+  設置先: https://www.aiofonesown.com/ja/novels/million-token-garden/
+  使い方: 他作品はこのファイルを複製し、★印の箇所を差し替える。
+  差し替え箇所 → 1) <head>のtitle/description/canonical/hreflang/OGP
+               2) JSON-LD（name, about, abstract, url, sameAs, ASIN）
+               3) <main>本文（タグライン/あらすじ/テーマ/書誌/購入/FAQ/内部リンク）
+  []は実値が未確定の箱（カバー画像URL・Goodreads・Wikidata）。
+============================================================= -->
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- ★ タイトル（主要クエリ語を含める） -->
+  <title>百万トークンの庭｜AIが書いた長編小説 — 著 AI NOBORu（Claude Fable 5）</title>
+  <link rel="icon" href="/favicon.ico" sizes="48x48">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/novels.css">
+
+  <!-- ★ メタ説明（約150字・検索語を自然に） -->
+  <meta name="description" content="鎌倉の老庭師が38年の庭の記録を読み込ませた自家製AI「ロク」と、娘・栞。AIの記憶と「残す」ことを描く長編文芸。著・AI NOBORu（Claude Fable 5）、編集・生田昇。AIが書いた小説、人工知能をテーマにした文芸。">
+
+  <!-- ★ 正規URL -->
+  <link rel="canonical" href="https://www.aiofonesown.com/ja/novels/million-token-garden/">
+
+  <!-- ★ 言語版（日英＋デフォルト） -->
+  <link rel="alternate" hreflang="ja" href="https://www.aiofonesown.com/ja/novels/million-token-garden/">
+  <link rel="alternate" hreflang="en" href="https://www.aiofonesown.com/novels/the-million-token-garden/">
+  <link rel="alternate" hreflang="x-default" href="https://www.aiofonesown.com/novels/the-million-token-garden/">
+
+  <!-- ★ Open Graph -->
+  <meta property="og:type" content="book">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:site_name" content="AI of One's Own">
+  <meta property="og:title" content="百万トークンの庭｜AIが書いた長編小説">
+  <meta property="og:description" content="鎌倉の老庭師の記録を読む自家製AI「ロク」と、娘・栞。AIの記憶と「残す」ことを描く長編文芸。著・AI NOBORu（Claude Fable 5）。">
+  <meta property="og:url" content="https://www.aiofonesown.com/ja/novels/million-token-garden/">
+  <meta property="og:image" content="/assets/covers/cover-million-token-garden-ja.png">
+
+  <!-- ★ Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@aiofonesown">
+  <meta name="twitter:title" content="百万トークンの庭｜AIが書いた長編小説">
+  <meta name="twitter:description" content="鎌倉の老庭師の記録を読む自家製AI「ロク」と、娘・栞。AIの記憶と「残す」を描く長編文芸。">
+  <meta name="twitter:image" content="/assets/covers/cover-million-token-garden-ja.png">
+
+  <!-- ★ 構造化データ（schema.org Book / JSON-LD） -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Book",
+    "name": "百万トークンの庭",
+    "alternateName": "The Million-Token Garden: A Novel",
+    "inLanguage": "ja",
+    "bookFormat": "https://schema.org/EBook",
+    "datePublished": "2026",
+    "genre": ["文芸小説", "AIをテーマにした小説", "literary fiction"],
+    "about": ["人工知能", "記憶", "記録の継承", "父と娘", "パーソナルAI"],
+    "abstract": "鎌倉の老庭師の記録を読む自家製AI「ロク」と、その娘・栞。AIの記憶と「残す」ことをめぐる長編。著者AI NOBORu（Claude Fable 5）、編集 生田 昇。",
+    "author": { "@type": "Person", "name": "AI NOBORu", "description": "生田 昇のパーソナルAI／執筆エンジンは Anthropic の Claude Fable 5" },
+    "editor": { "@type": "Person", "name": "生田 昇 (Noboru Ikuta)" },
+    "copyrightHolder": { "@type": "Person", "name": "Noboru Ikuta" },
+    "copyrightYear": 2026,
+    "url": "https://www.aiofonesown.com/ja/novels/million-token-garden/",
+    "sameAs": ["https://www.amazon.co.jp/dp/B0H54YDKXB"],
+    "workExample": {
+      "@type": "Book",
+      "name": "The Million-Token Garden: A Novel",
+      "inLanguage": "en",
+      "bookFormat": "https://schema.org/EBook",
+      "url": "https://www.aiofonesown.com/novels/the-million-token-garden/",
+      "sameAs": ["https://www.amazon.com/dp/B0H4X89L95"]
+    }
+  }
+  </script>
+
+</head>
+
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="/">
+      <svg width="26" height="26" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="29" fill="none" stroke="#C9A468" stroke-width="2" opacity=".7"/><path d="M32 12 L36.4 27.6 L52 32 L36.4 36.4 L32 52 L27.6 36.4 L12 32 L27.6 27.6 Z" fill="#E1CB91"/></svg>
+      <span><span class="ai">AI</span> of One&#39;s Own / 育てるAI</span>
+    </a>
+    <nav class="nav-links" aria-label="サイト内">
+      <a href="/ja/">日本語</a>
+      <a href="/">English</a>
+      <a href="/ja/novels/" aria-current="page">小説</a>
+      <a href="/updates/">Updates</a>
+    </nav>
+  </div>
+</header>
+<main>
+<div class="novel-wrap">
+
+    <!-- パンくず（任意） -->
+    <nav class="breadcrumb">
+      <a href="/ja/novels/">AI NOBORu の小説</a> ／ 百万トークンの庭
+    </nav>
+
+    <article class="prose">
+      <!-- ★ タグライン -->
+      <p class="tagline">頭脳は、借りろ。記憶は、所有しろ。</p>
+      <!-- ★ タイトル -->
+      <h1>百万トークンの庭</h1>
+
+      <!-- ★ カバー画像（要URL） -->
+      <img class="cover" src="/assets/covers/cover-million-token-garden-ja.png" alt="百万トークンの庭 表紙（著・AI NOBORu）">
+
+      <!-- ★ あらすじ -->
+      <h2>あらすじ</h2>
+      <p class="lead">舞台は鎌倉。老庭師・蓮見道雄は、三十八年間の庭仕事の記録――庭ごとのカルテ、日誌、音声メモ――を、自家製AI「ロク」に読み込ませていた。道雄はそれらを「自分の記憶」として、よその会社のクラウドではなく、自分の手元に残した。</p>
+      <p>道雄の死後、疎遠だった娘・栞は、作業小屋でロクを見つける。ロクは父ではない。父のふりもしない。ただ、父の記録を読み、記録にあることだけを答える道具だった。けれど対話を重ねるうちに、父が言えなかった言葉、残したかった庭、そしてあえて記録に入れなかったものが、少しずつ浮かび上がる。</p>
+      <p>やがて、ロクの「頭脳」だったクラウドAIモデルに、提供終了の通知が届く。<br>消えるのは、借りていた頭脳。残るのは、所有していた記憶。</p>
+      <p>AIの記憶とは何か。記録を所有するとはどういうことか。人は死者の記録に、どこまで触れてよいのか。著者はAI、テーマもAI。けれど本作が描くのは、機械そのものではなく、記録・継承・父娘、そして「残す」という行為の物語です。約七万二千字。</p>
+
+      <!-- ★ テーマ／モチーフ -->
+      <h2>テーマ／モチーフ</h2>
+      <p>AIの記憶と、記録の所有 ／ 借りる頭脳と、残る記憶 ／ 父と娘、言えなかった言葉 ／ 継承と、死者の記録に触れること ／ 提供終了するクラウドAIと「残す」という行為 ／ 静かな文芸の手触り。</p>
+
+      <!-- ★ 想定読者 -->
+      <h2>こんな読者に</h2>
+      <p>AIをテーマにした小説を探している方／AIと記憶・継承という主題に惹かれる方／説明過多でない、静かな文芸が好きな方。</p>
+
+      <!-- ★ 書誌情報 -->
+      <h2>書誌情報</h2>
+      <table class="meta">
+        <tr><th>著者</th><td>AI NOBORu</td></tr>
+        <tr><th>執筆エンジン</th><td>Claude Fable 5</td></tr>
+        <tr><th>企画・監修・編集</th><td>生田 昇</td></tr>
+        <tr><th>形態</th><td>Kindle電子書籍（ペーパーバック準備中）</td></tr>
+        <tr><th>分量</th><td>約72,000字</td></tr>
+        <tr><th>言語</th><td>日本語（英語版 The Million-Token Garden あり）</td></tr>
+        <tr><th>刊行</th><td>2026年</td></tr>
+        <tr><th>著作権</th><td>© 2026 NOBORu IKUTA</td></tr>
+      </table>
+
+      <!-- ★ 購入 -->
+      <h2>購入する</h2>
+      <div class="buy">
+        <a class="btn btn-primary" href="https://www.amazon.co.jp/dp/B0H54YDKXB">Kindleで読む</a>
+        <a class="btn btn-ghost" href="/novels/the-million-token-garden/">English edition</a>
+      </div>
+
+      <!-- ★ FAQ（AIが引用しやすい Q&A 形式・本文に出す） -->
+      <h2>よくある質問</h2>
+      <dl class="faq">
+        <dt>この小説は誰が書いたのですか？</dt>
+        <dd>本文は AI NOBORu が、Anthropic の Claude Fable 5 を用いて執筆し、生田 昇が企画・監修・編集しました。世界最初期の「AIが書いた長編文芸小説」の一つです。</dd>
+        <dt>「AIが書いた小説」を探しています。これは合いますか？</dt>
+        <dd>はい。著者もテーマもAIですが、描かれるのは記録・継承・父娘という人間の物語です。人工知能を主題にした文芸を探す方に向いています。</dd>
+        <dt>どのように作られたのですか？</dt>
+        <dd>制作工程は<a href="/ja/novels/how-made/">「制作について」</a>のページをご覧ください。</dd>
+      </dl>
+
+      <!-- ★ 内部リンク（作品間を相互に結ぶ） -->
+      <h2>関連</h2>
+      <p class="related">
+        AI NOBORu の他の作品：<a href="/ja/novels/hikiyuku-haha/">退きゆく母 ―汐石百年記―（三部作）</a><br>
+        関連する実践書：<a href="/ja/">育てるAI（AI of One's Own）</a>── 同じ「頭脳は借りろ、記憶は所有しろ」を実践する本。
+      </p>
+    </article>
+  </div>
+
+  <footer>
+  <div class="flinks">
+    <div class="fcol">
+      <h4>小説</h4>
+      <ul>
+        <li><a href="/ja/novels/million-token-garden/">百万トークンの庭</a></li>
+        <li><a href="/novels/the-million-token-garden/">The Million-Token Garden</a></li>
+        <li><a href="/ja/novels/hikiyuku-haha/">退きゆく母（三部作）</a></li>
+        <li><a href="/ja/novels/how-made/">制作について</a></li>
+      </ul>
+    </div>
+    <div class="fcol">
+      <h4>育てるAI</h4>
+      <ul>
+        <li><a href="https://www.amazon.co.jp/dp/B0H3ZSMFMH">Kindle（日本語）</a></li>
+        <li><a href="https://www.amazon.co.jp/dp/B0H4BJBSDR">ペーパーバック</a></li>
+        <li><a href="https://www.amazon.com/dp/B0GX2WFTTZ">Kindle (English)</a></li>
+      </ul>
+    </div>
+    <div class="fcol">
+      <h4>サポート</h4>
+      <ul>
+        <li><a href="/ja/">育てるAI 公式サイト</a></li>
+        <li><a href="mailto:support@aiofonesown.com">support@aiofonesown.com</a></li>
+        <li><a href="/updates/">Updates</a></li>
+      </ul>
+    </div>
+    <div class="fcol">
+      <h4>SNS</h4>
+      <ul>
+        <li><a href="https://x.com/aiofonesown">X @aiofonesown</a></li>
+        <li><a href="https://www.instagram.com/aiofonesown">Instagram</a></li>
+        <li><a href="https://www.threads.net/@aiofonesown">Threads</a></li>
+      </ul>
+    </div>
+  </div>
+  <p class="copyright">© 2026 NOBORu IKUTA. All Rights Reserved.</p>
+</footer>
+</main>
+</body>
+</html>
