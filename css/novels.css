@@ -438,3 +438,79 @@ footer {
 .fcol a { color: var(--muted); text-decoration: none; }
 .fcol a:hover { color: var(--gold-hi); }
 .copyright { text-align: center; font-size: 12.5px; color: #5E6679; letter-spacing: .08em; }
+
+/* ============================================
+   novels.css — style.css override (higher specificity)
+   Targets elements inside .novel-wrap to win over style.css
+   ============================================ */
+
+/* h1: keep large serif but set novel ink color */
+.novel-wrap h1 {
+  font-family: var(--serif);
+  font-size: clamp(24px, 3.5vw, 34px);
+  font-weight: 700;
+  color: var(--novel-ink);
+  letter-spacing: .01em;
+  line-height: 1.4;
+  margin: 0 0 20px;
+}
+
+/* h2: section label style (small, gold, uppercase) */
+.novel-wrap h2 {
+  font-family: var(--sans);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--gold-dk);
+  border-bottom: 1px solid var(--novel-line);
+  padding-bottom: 8px;
+  margin: 48px 0 18px;
+  line-height: 1.5;
+}
+
+/* h3: card headings */
+.novel-wrap h3 {
+  font-family: var(--serif);
+  font-size: 19px;
+  font-weight: 700;
+  color: var(--novel-ink);
+  margin: 0 0 8px;
+  line-height: 1.4;
+  letter-spacing: .01em;
+}
+
+/* Body text inside novel-wrap */
+.novel-wrap p,
+.novel-wrap .prose p,
+.novel-wrap .lead,
+.novel-wrap .faq dt,
+.novel-wrap .faq dd,
+.novel-wrap .related {
+  color: var(--novel-ink);
+}
+
+/* Muted text */
+.novel-wrap .breadcrumb,
+.novel-wrap .meta th,
+.novel-wrap .vol p,
+.novel-wrap .work p,
+.novel-wrap .spiral p,
+.novel-wrap .spiral {
+  color: var(--novel-muted);
+}
+
+/* Links inside novel-wrap */
+.novel-wrap a { color: var(--gold); }
+.novel-wrap a:hover { color: var(--gold-hi); text-decoration: none; }
+
+/* Buttons — keep their own colors */
+.novel-wrap .btn-primary { color: #1A1206; }
+.novel-wrap .btn-primary:hover { color: #1A1206; }
+
+/* Vol/work card h3 override */
+.novel-wrap .vol h3,
+.novel-wrap .work h3 {
+  font-size: 19px;
+  margin: 0 0 8px;
+}
