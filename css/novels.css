@@ -408,3 +408,33 @@ h2.section {
   .cover { width: 160px; }
   .novel-wrap { padding: 24px 16px 60px; }
 }
+
+/* ============================================
+   Footer grid (flinks/fcol) — from ja/index.html
+   style.css does not include these; novels.css provides them
+   ============================================ */
+footer {
+  border-top: 1px solid rgba(201,164,104,.16);
+  padding: 64px 24px 56px;
+  background: var(--deep);
+}
+.flinks {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 36px;
+  max-width: 1020px;
+  margin: 0 auto 48px;
+}
+.fcol h4 {
+  font-size: 12px;
+  letter-spacing: .28em;
+  color: var(--gold);
+  margin-bottom: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.fcol ul { list-style: none; padding: 0; margin: 0; }
+.fcol li { padding: 5px 0; font-size: 14px; }
+.fcol a { color: var(--muted); text-decoration: none; }
+.fcol a:hover { color: var(--gold-hi); }
+.copyright { text-align: center; font-size: 12.5px; color: #5E6679; letter-spacing: .08em; }
