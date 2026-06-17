@@ -557,3 +557,38 @@ body {
   background: #F5F1E8 !important;
   color: #1A160E !important;
 }
+
+/* ============================================
+   Header layout fix
+   ============================================ */
+header .wrap,
+header .wrap.nav,
+.wrap.nav {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.brand svg {
+  flex-shrink: 0;
+}
+.nav-links {
+  display: flex;
+  gap: 24px;
+  font-size: 13.5px;
+  letter-spacing: .06em;
+  flex-shrink: 0;
+  margin-right: 0;
+  padding-right: 0;
+}
+@media (max-width: 600px) {
+  header .wrap,
+  header .wrap.nav,
+  .wrap.nav { padding: 0 16px; }
+  .nav-links { gap: 16px; font-size: 12px; }
+}
