@@ -26,6 +26,14 @@
 
   <!-- ===== 小説ランディング ===== -->
   <url>
+    <loc>https://www.aiofonesown.com/novels/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.aiofonesown.com/novels/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.aiofonesown.com/ja/novels/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
     <loc>https://www.aiofonesown.com/ja/novels/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
