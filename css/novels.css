@@ -514,3 +514,46 @@ footer {
   font-size: 19px;
   margin: 0 0 8px;
 }
+
+/* ============================================
+   Nav visibility fix for novel pages
+   style.css .nav-links a uses var(--muted) #9AA3B8
+   which reads dim — brighten to parchment on novel pages
+   ============================================ */
+.nav-links a {
+  color: var(--parchment);
+  opacity: 0.75;
+}
+.nav-links a:hover {
+  color: var(--gold-hi);
+  opacity: 1;
+  text-decoration: none;
+}
+.nav-links a[aria-current] {
+  color: var(--gold-hi);
+  opacity: 1;
+}
+/* Brand also slightly brighter */
+.brand {
+  color: var(--parchment);
+}
+
+/* ============================================
+   Header dark background — must be here because
+   this is defined inline in ja/index.html, NOT in style.css
+   ============================================ */
+header {
+  background: rgba(4, 8, 26, 0.95) !important;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(201, 164, 104, .18);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+/* Body background — force parchment (not white, not dark) */
+body {
+  background: #F5F1E8 !important;
+  color: #1A160E !important;
+}
