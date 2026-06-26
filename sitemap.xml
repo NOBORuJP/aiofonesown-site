@@ -84,4 +84,26 @@
     <priority>0.7</priority>
   </url>
 
+  <!-- ===== AI NOBORu Lab / Delta-006 ===== -->
+  <url>
+    <loc>https://www.aiofonesown.com/lab/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.aiofonesown.com/lab/delta006/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.aiofonesown.com/lab/delta006/screensaver-dramatic.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://www.aiofonesown.com/lab/delta006/screensaver-overview.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+
 </urlset>
