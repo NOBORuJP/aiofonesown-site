@@ -1,0 +1,183 @@
+{
+  "artifact_id": "AI_NOBORU_HISTORY_SITE_V0_8_LOCAL_COMPLETE",
+  "cloudflare_changed": false,
+  "files": [
+    {
+      "path": "DEPLOYMENT_README.md",
+      "sha256": "932b0ce1137a28966a7ac0cdc2c72fc25a401469fa4448f9baf00024322fa4b1",
+      "size_bytes": 209
+    },
+    {
+      "path": "README.md",
+      "sha256": "c895838ae72e2df3c363eaca7f576b3a9c7c00366a359549697b9fa47c69600f",
+      "size_bytes": 521
+    },
+    {
+      "path": "_headers",
+      "sha256": "0dafe463a8ab47d2d869bcd1ffb4b6b097858901055d48234714719212c47cf8",
+      "size_bytes": 181
+    },
+    {
+      "path": "assets/app.js",
+      "sha256": "484eb2e8bb05ffb5f2f7ca00b26532c38e0cd487d3a32c02fad5b91286435e41",
+      "size_bytes": 4899
+    },
+    {
+      "path": "assets/component-baseline-app.js",
+      "sha256": "cc27de53fafc515fa27eb6c81c5817524bb313f2b8e0f1bdee9db50afd34abb3",
+      "size_bytes": 1204
+    },
+    {
+      "path": "assets/component-baselines.js",
+      "sha256": "42d4ff779346f79d91ca38501db44be17bde2df3534a6a839d18364c6d5f4e62",
+      "size_bytes": 349
+    },
+    {
+      "path": "assets/dashboard-data.js",
+      "sha256": "3f4412706e3d3c76bf5d284df1b53afc4c3e8f7468ea1a80d0e66eb01cff80aa",
+      "size_bytes": 3717
+    },
+    {
+      "path": "assets/desktop-control-app.js",
+      "sha256": "185ceb58acb756f0fc17d120ab37080e3ebfec6cda68d1a35cbcb71a0e1c832b",
+      "size_bytes": 1161
+    },
+    {
+      "path": "assets/desktop-control-baseline.js",
+      "sha256": "082f965fe353992d372b2a54c374f5da4b059ebd4eddfdab8d924bc23f7ff88a",
+      "size_bytes": 4446
+    },
+    {
+      "path": "assets/eight-slot-readiness.js",
+      "sha256": "da356c7953369c9810cbad7c955aedc286448ba6bd79443543f54d3caebe4973",
+      "size_bytes": 3026
+    },
+    {
+      "path": "assets/final-completion-app.js",
+      "sha256": "5e590a0810458cc1485ad161fe3985ac4078c2de645f60dd41a76a64af7c051f",
+      "size_bytes": 1410
+    },
+    {
+      "path": "assets/final-local-completion.js",
+      "sha256": "2d16b263a79eb187a0919bcfc60f5a0e4639851eb90ef6ca7a273ffea5677524",
+      "size_bytes": 3710
+    },
+    {
+      "path": "assets/future-generation-engine.js",
+      "sha256": "8287dae79156be1eaaca5e61b87c1217b7bd5f06f74fbe0a6a0ddb747f10be3c",
+      "size_bytes": 3398
+    },
+    {
+      "path": "assets/future-generation-validation.js",
+      "sha256": "0e4d5c900d104fc5abc3848384bf1303777e15b47f2d395320b20f588de335f6",
+      "size_bytes": 8218
+    },
+    {
+      "path": "assets/future-validation-app.js",
+      "sha256": "cf78fe49527b89fbc257347666cbe548a31ac54d15812bbc68276a0bbb369ae6",
+      "size_bytes": 1448
+    },
+    {
+      "path": "assets/generation-catalog.js",
+      "sha256": "c74636691de0f69e97beee00508492d3db1b4e292e03a8e5d587d5e52372bdc0",
+      "size_bytes": 11490
+    },
+    {
+      "path": "assets/readiness-app.js",
+      "sha256": "37bcff1500891738bb1e1fd0e71da5867e301c897b5e45c6cda785de0e09d462",
+      "size_bytes": 963
+    },
+    {
+      "path": "assets/resolution-app.js",
+      "sha256": "32758e680dcd88c97f1440ddeef4444ca65660e6e7f19f1c701282266bef04ba",
+      "size_bytes": 1233
+    },
+    {
+      "path": "assets/runtime-app.js",
+      "sha256": "bd4c0535b71b5083e051f44fc6efa74a1c8a39b2cb08c089cb18635335d31aa6",
+      "size_bytes": 1655
+    },
+    {
+      "path": "assets/runtime-status.js",
+      "sha256": "6b98f872bff7bb2f8f98a6960ab4037e4968902564849bce484c432a621af3bc",
+      "size_bytes": 2469
+    },
+    {
+      "path": "assets/source-resolution.js",
+      "sha256": "7f6a3694f3b89e404f8c9fad1f5cb55706d657265528ecc304b60159fbc54bf1",
+      "size_bytes": 40535
+    },
+    {
+      "path": "assets/styles.css",
+      "sha256": "3a646d0f54eccad66d1d052f8393fe435f1c31f3970acced6a1cffa68c7cccf8",
+      "size_bytes": 18575
+    },
+    {
+      "path": "data/component-baselines.json",
+      "sha256": "f336f848dea4b788c748f12a0774717e3ca66bfc6350e78be3d1fb154c47c143",
+      "size_bytes": 369
+    },
+    {
+      "path": "data/current-baseline-validation.json",
+      "sha256": "9fe8042d33058e91e3b48eeb89ef4ffa1ba895e9ce89a5386e381957ab8fcd93",
+      "size_bytes": 3235
+    },
+    {
+      "path": "data/dashboard-data.json",
+      "sha256": "59fbb2ec439ad98ec66aeba153560084261ea96525875c0d984978708d492b45",
+      "size_bytes": 4974
+    },
+    {
+      "path": "data/desktop-control-baseline.json",
+      "sha256": "4de1e7ec29f6f7d4a23b603d899002a25bc91462b1c98a790cae9850888f9366",
+      "size_bytes": 5049
+    },
+    {
+      "path": "data/eight-slot-readiness.json",
+      "sha256": "4be7536029ec9098ed7c93c6fcf7275a250de2fba9679d4c08ce98c5533b22b7",
+      "size_bytes": 3593
+    },
+    {
+      "path": "data/final-local-completion.json",
+      "sha256": "dc5d7b46ec70e080872b9e95fe0c9d516f2579edf25dc3fbf9e54f01faea9068",
+      "size_bytes": 4347
+    },
+    {
+      "path": "data/future-generation-validation.json",
+      "sha256": "72971542283ae66fde67f6970d93228200d0be18929929c9d5c26728cd9165e5",
+      "size_bytes": 9266
+    },
+    {
+      "path": "data/generation-catalog.json",
+      "sha256": "8f474d5cad883643819e0075b4945b3e7528af6d6dd35e22c70bad81b3bceeeb",
+      "size_bytes": 14749
+    },
+    {
+      "path": "data/runtime-status.json",
+      "sha256": "651ca472e0242ac61cb2e302ae77a76d5a46a2dafbfa4cf7ed1a6818980764ca",
+      "size_bytes": 2819
+    },
+    {
+      "path": "data/source-discovery.json",
+      "sha256": "0865e5c191659804a7a52fa1dbb8ec9e5b3d1c398947614b136502b838cafd86",
+      "size_bytes": 48894
+    },
+    {
+      "path": "data/source-resolution.json",
+      "sha256": "5638c33c94e310274a1c88515f09e8b9ddc842c9a2fa971c31f8fd57ff4f41c8",
+      "size_bytes": 55216
+    },
+    {
+      "path": "index.html",
+      "sha256": "abb2b62f41caa2eee7fb44edbcc98999687a6ccf1332efd7f3a10b3f45201f14",
+      "size_bytes": 8728
+    }
+  ],
+  "generated_at": "2026-07-27T00:50:13.450748+00:00",
+  "git_changed": false,
+  "production_restore_allowed": false,
+  "repository_classification": "LOCAL_SITE_REPOSITORY_NOT_FOUND",
+  "result": "PASS_LOCAL_EIGHT_SLOT_COMPLETION",
+  "system_count": 8,
+  "version": "0.8.0"
+}

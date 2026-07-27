@@ -1,0 +1,369 @@
+{
+  "catalog_corrections": [
+    {
+      "main_current": "4bce4e07211d1b5d390421710bae6a97b0280fc2",
+      "main_current_short": "4bce4e0",
+      "non_main_catalog_refs": [],
+      "old_current": "4bce4e07211d1b5d390421710bae6a97b0280fc2",
+      "repository": "ainoboru-infra",
+      "result": "PASS_MAIN_ONLY_CATALOG_REBUILT",
+      "system_id": "anythingllm-docker"
+    },
+    {
+      "main_current": "54b3c731a056abda1191323c0ca276d7296d08bf",
+      "main_current_short": "54b3c73",
+      "non_main_catalog_refs": [
+        {
+          "classification": "NON_MAIN_BRANCH_CONTAMINATION",
+          "commit": "b3e22f9163b31a66ed1d4090e072944991e5453e",
+          "containing_refs": [
+            "refs/heads/judgments/20260723-j3-manual-capture-v1",
+            "refs/remotes/origin/judgments/20260723-j3-manual-capture-v1"
+          ],
+          "deleted": false,
+          "old_generation": "GPT-G008",
+          "preserved": true,
+          "short": "b3e22f9"
+        }
+      ],
+      "old_current": "b3e22f9163b31a66ed1d4090e072944991e5453e",
+      "repository": "ainoboru-knowledge",
+      "result": "PASS_MAIN_ONLY_CATALOG_REBUILT",
+      "system_id": "gpt"
+    },
+    {
+      "main_current": "08f2dd065312db3cde81561133a730df422017ae",
+      "main_current_short": "08f2dd0",
+      "non_main_catalog_refs": [],
+      "old_current": "08f2dd065312db3cde81561133a730df422017ae",
+      "repository": "ainoboru-fable-pipeline",
+      "result": "PASS_MAIN_ONLY_CATALOG_REBUILT",
+      "system_id": "batch"
+    },
+    {
+      "main_current": "85ba6272a3f9e400d9d727ef8c50cb1847f3cb89",
+      "main_current_short": "85ba627",
+      "non_main_catalog_refs": [],
+      "old_current": "85ba6272a3f9e400d9d727ef8c50cb1847f3cb89",
+      "repository": "ainoboru-receipt-ledger",
+      "result": "PASS_MAIN_ONLY_CATALOG_REBUILT",
+      "system_id": "receipt"
+    }
+  ],
+  "common_restore_engine": "/Users/noboruikuta/AI-Workspace/ainoboru-control-plane/tools/backup-restore/common_restore.py",
+  "current_baseline_validation": {
+    "evidence": "/Users/noboruikuta/AI-Workspace/_AUDIT_METADATA/eight-slot-readiness-v0.6/20260726T223808Z/CURRENT_BASELINE_VALIDATION.json",
+    "result": "PASS_CURRENT_BASELINE_ISOLATED_RESTORE_2_SYSTEMS"
+  },
+  "generated_at": "2026-07-26T22:11:47.111911+00:00",
+  "generation_naming": "FABLE uses FABLE-Gxxx only.",
+  "generation_source_policy": {
+    "head_and_feature_branches": "excluded from main generation index",
+    "main_generation_source": "refs/heads/main with refs/remotes/origin/main equality",
+    "non_main_catalog_refs": "preserved as correction evidence, not deleted"
+  },
+  "isolated_restore_validation": {
+    "evidence": "/Users/noboruikuta/AI-Workspace/_AUDIT_METADATA/future-generation-main-only-v0.5.2/20260726T221147Z/FUTURE_GENERATION_VALIDATION.json",
+    "production_restore_allowed": false,
+    "result": "PASS_MAIN_ONLY_FUTURE_GENERATION_ISOLATED_RESTORE_3_SYSTEMS",
+    "system_count": 3
+  },
+  "principle": {
+    "ja": "過去へ巻き戻さず、過去と同じ内容を持つ新しい未来世代を作る",
+    "new_future_generation": true,
+    "preserve_current_and_past": true,
+    "rewind_history": false
+  },
+  "record_type": "eight_slot_generation_catalog",
+  "remaining_slot_source_discovery": {
+    "evidence": "/Users/noboruikuta/AI-Workspace/_AUDIT_METADATA/eight-slot-readiness-v0.6/20260726T223808Z/SOURCE_DISCOVERY.json",
+    "result": "PASS_READ_ONLY_SOURCE_DISCOVERY"
+  },
+  "schema_version": "1.0.0",
+  "systems": [
+    {
+      "catalog_source": "LOCAL_MAIN_EQUALS_ORIGIN_MAIN",
+      "current_generation": "ANYTHINGLLM_DOCKER-G003",
+      "future_restore_rule": "create_new_generation_never_rewind_history",
+      "generation_count": 3,
+      "generations": [
+        {
+          "current": false,
+          "date": "2026-07-15T08:34:15+00:00",
+          "generation": "ANYTHINGLLM_DOCKER-G001",
+          "source_ref": "6aa3988cad2fa924503e1453616c9713be87ce8b",
+          "source_short": "6aa3988",
+          "source_type": "main_first_parent_commit",
+          "title": "chore: initialize ainoboru-infra MCP baseline",
+          "verified": true
+        },
+        {
+          "current": false,
+          "date": "2026-07-15T11:03:21+00:00",
+          "generation": "ANYTHINGLLM_DOCKER-G002",
+          "source_ref": "30806414f50b10be51d5c8ce699d35e9174290d6",
+          "source_short": "3080641",
+          "source_type": "main_first_parent_commit",
+          "title": "chore: add AnythingLLM Docker baseline",
+          "verified": true
+        },
+        {
+          "current": true,
+          "date": "2026-07-17T23:54:27+00:00",
+          "generation": "ANYTHINGLLM_DOCKER-G003",
+          "source_ref": "4bce4e07211d1b5d390421710bae6a97b0280fc2",
+          "source_short": "4bce4e0",
+          "source_type": "main_first_parent_commit",
+          "title": "fix: separate AnythingLLM compose and runtime env",
+          "verified": true
+        }
+      ],
+      "id": "anythingllm-docker",
+      "isolated_restore_status": "PASS",
+      "name": "AnythingLLM Docker",
+      "non_main_catalog_refs_excluded": 0,
+      "production_restore_allowed": false,
+      "repo": "ainoboru-infra",
+      "restored_tree_sha256": "a58feb6e6e7a044496efbc4b088e99b6503547ca6304ddf5e5fbf442afe1c193",
+      "status": "GENERATION_INDEX_READY",
+      "validated_future_generation": "ANYTHINGLLM_DOCKER-G004-RESTORED-FROM-G002",
+      "validated_past_generation": "ANYTHINGLLM_DOCKER-G002"
+    },
+    {
+      "current_generation": null,
+      "future_restore_rule": "create_new_generation_never_rewind_history",
+      "generation_count": 0,
+      "generations": [],
+      "id": "anythingllm-desktop",
+      "isolated_restore_status": "NOT_TESTED",
+      "name": "AnythingLLM Desktop",
+      "production_restore_allowed": false,
+      "repo": null,
+      "restore_capability": "SOURCE_CANDIDATES_FOUND_READ_ONLY",
+      "source_candidate_count": 100,
+      "source_discovery_status": "SOURCE_CANDIDATES_FOUND_READ_ONLY",
+      "status": "NOT_READY_MEMORY_PATH_UNVERIFIED"
+    },
+    {
+      "catalog_source": "LOCAL_MAIN_EQUALS_ORIGIN_MAIN",
+      "current_generation": "GPT-G007",
+      "future_restore_rule": "create_new_generation_never_rewind_history",
+      "generation_count": 7,
+      "generations": [
+        {
+          "current": false,
+          "date": "2026-07-18T12:53:14+00:00",
+          "generation": "GPT-G001",
+          "source_ref": "035fb4ed95ae59dd886a09ad9bdbff775fadd5a3",
+          "source_short": "035fb4e",
+          "source_type": "main_first_parent_commit",
+          "title": "init: ainoboru-knowledge 雛形 (flag schema v0.1)",
+          "verified": true
+        },
+        {
+          "current": false,
+          "date": "2026-07-19T21:03:53+00:00",
+          "generation": "GPT-G002",
+          "source_ref": "8d0c1b98ab06d39fceb28862c875f7efa678d453",
+          "source_short": "8d0c1b9",
+          "source_type": "main_first_parent_commit",
+          "title": "Merge pull request #1 from NOBORuJP/upgrade/v0.2-v0.3",
+          "verified": true
+        },
+        {
+          "current": false,
+          "date": "2026-07-20T03:57:47+00:00",
+          "generation": "GPT-G003",
+          "source_ref": "aea09db7175d76826d12ea682590cc48a1a290b8",
+          "source_short": "aea09db",
+          "source_type": "main_first_parent_commit",
+          "title": "Merge pull request #2 from NOBORuJP/ops/knowledge-initial-canon-v1-20260720",
+          "verified": true
+        },
+        {
+          "current": false,
+          "date": "2026-07-22T21:11:27+00:00",
+          "generation": "GPT-G004",
+          "source_ref": "3cce422cccc8ffff862f09b96a9c0f0c7361379b",
+          "source_short": "3cce422",
+          "source_type": "main_first_parent_commit",
+          "title": "Merge pull request #3 from NOBORuJP/flags/20260722-live-human-ai-autonomy",
+          "verified": true
+        },
+        {
+          "current": false,
+          "date": "2026-07-23T00:28:58+00:00",
+          "generation": "GPT-G005",
+          "source_ref": "c36544364ccea6374ebd299da369045645ea0a4b",
+          "source_short": "c365443",
+          "source_type": "main_first_parent_commit",
+          "title": "Merge pull request #4 from NOBORuJP/judgments/20260723-ai-coding-autonomy-backup",
+          "verified": true
+        },
+        {
+          "current": false,
+          "date": "2026-07-23T02:38:57+00:00",
+          "generation": "GPT-G006",
+          "source_ref": "a0963bae0c70728c12e66b1a1629fadc172b6ed5",
+          "source_short": "a0963ba",
+          "source_type": "main_first_parent_commit",
+          "title": "Merge pull request #5 from NOBORuJP/judgments/20260723-j1-foundation-v1",
+          "verified": true
+        },
+        {
+          "current": true,
+          "date": "2026-07-23T03:57:56+00:00",
+          "generation": "GPT-G007",
+          "source_ref": "54b3c731a056abda1191323c0ca276d7296d08bf",
+          "source_short": "54b3c73",
+          "source_type": "main_first_parent_commit",
+          "title": "Merge pull request #6 from NOBORuJP/judgments/20260723-j2-validator-v1",
+          "verified": true
+        }
+      ],
+      "id": "gpt",
+      "isolated_restore_status": "PASS",
+      "name": "GPT",
+      "non_main_catalog_refs_excluded": 1,
+      "production_restore_allowed": false,
+      "repo": "ainoboru-knowledge",
+      "restored_tree_sha256": "a5f7a39b0d7895a7d1411aebc62e0293dae2434136be501d338eb053da5011da",
+      "status": "GENERATION_INDEX_READY",
+      "validated_future_generation": "GPT-G008-RESTORED-FROM-G006",
+      "validated_past_generation": "GPT-G006"
+    },
+    {
+      "current_baseline_restore_status": "PASS",
+      "current_baseline_tree_sha256": "802ff31bc97554a172535ebe0afcff0b6c22e93092b5bb57d7be7bf7915a60f8",
+      "current_generation": "CLAUDE-G001",
+      "future_restore_rule": "create_new_generation_never_rewind_history",
+      "generation_count": 1,
+      "generations": [
+        {
+          "current": true,
+          "date": "2026-07-26",
+          "generation": "CLAUDE-G001",
+          "source_ref": "40f2e12df68a73bbe57dfb85ef197574a46259d269554f1cda9b95ef63f8b4a8",
+          "source_short": "40f2e12",
+          "source_type": "accepted_artifact",
+          "title": "Opus 5 author-final accepted",
+          "verified": true
+        }
+      ],
+      "id": "claude",
+      "isolated_restore_status": "NOT_TESTED",
+      "name": "Claude",
+      "production_restore_allowed": false,
+      "repo": null,
+      "restore_capability": "CURRENT_BASELINE_VALIDATED",
+      "status": "GENERATION_INDEX_READY"
+    },
+    {
+      "current_generation": null,
+      "future_restore_rule": "create_new_generation_never_rewind_history",
+      "generation_count": 0,
+      "generations": [],
+      "id": "gemini",
+      "isolated_restore_status": "NOT_TESTED",
+      "name": "Gemini",
+      "production_restore_allowed": false,
+      "repo": null,
+      "restore_capability": "SOURCE_CANDIDATES_FOUND_READ_ONLY",
+      "source_candidate_count": 9,
+      "source_discovery_status": "SOURCE_CANDIDATES_FOUND_READ_ONLY",
+      "status": "NOT_READY_MEMORY_PATH_UNVERIFIED"
+    },
+    {
+      "catalog_source": "LOCAL_MAIN_EQUALS_ORIGIN_MAIN",
+      "current_generation": "FABLE-G003",
+      "future_restore_rule": "create_new_generation_never_rewind_history",
+      "generation_count": 3,
+      "generations": [
+        {
+          "current": false,
+          "date": "2026-07-20T04:12:47+00:00",
+          "generation": "FABLE-G001",
+          "source_ref": "147aeb824c66b905db2fa02829a9eea5d8404d1b",
+          "source_short": "147aeb8",
+          "source_type": "main_first_parent_commit",
+          "title": "chore(bootstrap): Fable Batch Runtime v1の初期基盤を作成",
+          "verified": true
+        },
+        {
+          "current": false,
+          "date": "2026-07-20T08:27:14+00:00",
+          "generation": "FABLE-G002",
+          "source_ref": "c494d57ed9da9dad437eb9139ce73db648d651d7",
+          "source_short": "c494d57",
+          "source_type": "main_first_parent_commit",
+          "title": "merge(fable): 設計入力と出典境界を正式登録",
+          "verified": true
+        },
+        {
+          "current": true,
+          "date": "2026-07-20T09:33:40+00:00",
+          "generation": "FABLE-G003",
+          "source_ref": "08f2dd065312db3cde81561133a730df422017ae",
+          "source_short": "08f2dd0",
+          "source_type": "main_first_parent_commit",
+          "title": "merge(fable): Batch Runtime v1のschema契約を正式登録",
+          "verified": true
+        }
+      ],
+      "id": "batch",
+      "isolated_restore_status": "PASS",
+      "name": "FABLE / バッチ処理",
+      "non_main_catalog_refs_excluded": 0,
+      "production_restore_allowed": false,
+      "repo": "ainoboru-fable-pipeline",
+      "restored_tree_sha256": "a2a4b7af420fd1ee606e0b48a8defa30d438b8766baf842fe46c472a7004c4d9",
+      "status": "GENERATION_INDEX_READY",
+      "validated_future_generation": "FABLE-G004-RESTORED-FROM-G002",
+      "validated_past_generation": "FABLE-G002"
+    },
+    {
+      "current_generation": null,
+      "future_restore_rule": "create_new_generation_never_rewind_history",
+      "generation_count": 0,
+      "generations": [],
+      "id": "r6",
+      "isolated_restore_status": "NOT_TESTED",
+      "name": "R6 AI撮影",
+      "production_restore_allowed": false,
+      "repo": null,
+      "restore_capability": "SOURCE_CANDIDATES_FOUND_READ_ONLY",
+      "source_candidate_count": 100,
+      "source_discovery_status": "SOURCE_CANDIDATES_FOUND_READ_ONLY",
+      "status": "PARKED_SLOT_RETAINED"
+    },
+    {
+      "catalog_source": "LOCAL_MAIN_EQUALS_ORIGIN_MAIN",
+      "current_baseline_restore_status": "PASS",
+      "current_baseline_tree_sha256": "a43800eef48641c36a5754c39b47f2b87b72aa1499ab066115ca7978835c9bc2",
+      "current_generation": "RECEIPT-G001",
+      "future_restore_rule": "create_new_generation_never_rewind_history",
+      "generation_count": 1,
+      "generations": [
+        {
+          "current": true,
+          "date": "2026-07-16T00:32:53+00:00",
+          "generation": "RECEIPT-G001",
+          "source_ref": "85ba6272a3f9e400d9d727ef8c50cb1847f3cb89",
+          "source_short": "85ba627",
+          "source_type": "main_first_parent_commit",
+          "title": "chore: establish receipt ledger v1.2.0 baseline",
+          "verified": true
+        }
+      ],
+      "id": "receipt",
+      "isolated_restore_status": "NOT_TESTED",
+      "name": "領収書",
+      "non_main_catalog_refs_excluded": 0,
+      "production_restore_allowed": false,
+      "repo": "ainoboru-receipt-ledger",
+      "restore_capability": "CURRENT_BASELINE_VALIDATED",
+      "status": "GENERATION_INDEX_READY"
+    }
+  ],
+  "version": "0.6.0"
+}
