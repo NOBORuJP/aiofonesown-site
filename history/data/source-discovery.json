@@ -1,0 +1,1085 @@
+{
+  "filesystem_modified": false,
+  "generated_at": "2026-07-26T22:38:14.342238+00:00",
+  "generation_created": false,
+  "record_type": "remaining_slot_source_discovery",
+  "result": "PASS_READ_ONLY_SOURCE_DISCOVERY",
+  "schema_version": "1.0.0",
+  "systems": [
+    {
+      "candidate_count": 100,
+      "candidates": [
+        {
+          "path": "LOCAL_USER_HOME/Library/Application Support/anythingllm-desktop",
+          "source": "direct_path",
+          "type": "directory"
+        },
+        {
+          "path": "ainoboru-infra/anythingllm",
+          "source": "bounded_name_search",
+          "type": "directory"
+        },
+        {
+          "path": "ainoboru-infra/anythingllm/mcp/anythingllm_mcp_servers.template.json",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "ainoboru-infra/docs/anythingllm-mcp-baseline.md",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "ainoboru-infra/docs/anythingllm-docker-baseline.md",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "ainoboru-infra/registry/anythingllm-docker.json",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "ainoboru-infra/registry/anythingllm-mcp.json",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "ainoboru-infra/.git/refs/tags/anythingllm-docker-2026.07.18-v1",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "ainoboru-infra/.git/refs/tags/anythingllm-docker-baseline-20260715-200321",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "ainoboru-infra/.git/refs/tags/anythingllm-mcp-baseline-20260715-173415",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/anythingllm-docker",
+          "source": "bounded_name_search",
+          "type": "directory"
+        },
+        {
+          "path": "_AUDIT_METADATA/ainoboru-anythingllm-bridge",
+          "source": "bounded_name_search",
+          "type": "directory"
+        },
+        {
+          "path": "_AUDIT_METADATA/anythingllm-bridge-http",
+          "source": "bounded_name_search",
+          "type": "directory"
+        },
+        {
+          "path": "_AUDIT_METADATA/anythingllm-docker/discovery/20260715-174611/ANYTHINGLLM_DOCKER_DISCOVERY.txt",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/future-generation-main-only-v0.5.2/20260726T214923Z/git-source/anythingllm-docker-anythingllm-docker-g002",
+          "source": "bounded_name_search",
+          "type": "directory"
+        },
+        {
+          "path": "_AUDIT_METADATA/future-generation-main-only-v0.5.2/20260726T214923Z/git-source/anythingllm-docker-anythingllm-docker-g002/anythingllm",
+          "source": "bounded_name_search",
+          "type": "directory"
+        },
+        {
+          "path": "_AUDIT_METADATA/future-generation-main-only-v0.5.2/20260726T214923Z/git-source/anythingllm-docker-anythingllm-docker-g002/anythingllm/mcp/anythingllm_mcp_servers.template.json",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/future-generation-main-only-v0.5.2/20260726T214923Z/git-source/anythingllm-docker-anythingllm-docker-g002/docs/anythingllm-mcp-baseline.md",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/future-generation-main-only-v0.5.2/20260726T214923Z/git-source/anythingllm-docker-anythingllm-docker-g002/docs/anythingllm-docker-baseline.md",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/future-generation-main-only-v0.5.2/20260726T214923Z/git-source/anythingllm-docker-anythingllm-docker-g002/registry/anythingllm-docker.json",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/future-generation-main-only-v0.5.2/20260726T214923Z/git-source/anythingllm-docker-anythingllm-docker-g002/registry/anythingllm-mcp.json",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/future-generation-main-only-v0.5.2/20260726T214923Z/git-archives/anythingllm-docker-anythingllm-docker-g002.tar",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/future-generation-main-only-v0.5.2/20260726T214923Z/backup/anythingllm-docker-anythingllm-docker-g002",
+          "source": "bounded_name_search",
+          "type": "directory"
+        },
+        {
+          "path": "_AUDIT_METADATA/future-generation-main-only-v0.5.2/20260726T214923Z/backup/anythingllm-docker-anythingllm-docker-g002/future-v052-anythingllm-docker-anythingllm-docker-g002.tar.gz",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/future-generation-main-only-v0.5.2/20260726T214923Z/backup/anythingllm-docker-anythingllm-docker-g002/future-v052-anythingllm-docker-anythingllm-docker-g002.manifest.json",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/future-generation-main-only-v0.5.2/20260726T214923Z/isolated/anythingllm-docker-anythingllm-docker-g002",
+          "source": "bounded_name_search",
+          "type": "directory"
+        },
+        {
+          "path": "_AUDIT_METADATA/future-generation-main-only-v0.5.2/20260726T214923Z/isolated/anythingllm-docker-anythingllm-docker-g002/anythingllm",
+          "source": "bounded_name_search",
+          "type": "directory"
+        },
+        {
+          "path": "_AUDIT_METADATA/future-generation-main-only-v0.5.2/20260726T214923Z/isolated/anythingllm-docker-anythingllm-docker-g002/anythingllm/mcp/anythingllm_mcp_servers.template.json",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/future-generation-main-only-v0.5.2/20260726T214923Z/isolated/anythingllm-docker-anythingllm-docker-g002/docs/anythingllm-mcp-baseline.md",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/future-generation-main-only-v0.5.2/20260726T214923Z/isolated/anythingllm-docker-anythingllm-docker-g002/docs/anythingllm-docker-baseline.md",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/future-generation-main-only-v0.5.2/20260726T214923Z/isolated/anythingllm-docker-anythingllm-docker-g002/registry/anythingllm-docker.json",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/future-generation-main-only-v0.5.2/20260726T214923Z/isolated/anythingllm-docker-anythingllm-docker-g002/registry/anythingllm-mcp.json",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/future-generation-main-only-v0.5.2/20260726T214923Z/reports/execution-units/anythingllm-docker-anythingllm-docker-g002.json",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/future-generation-main-only-v0.5.2/20260726T213807Z/git-source/anythingllm-docker-anythingllm-docker-g002",
+          "source": "bounded_name_search",
+          "type": "directory"
+        },
+        {
+          "path": "_AUDIT_METADATA/future-generation-main-only-v0.5.2/20260726T213807Z/git-source/anythingllm-docker-anythingllm-docker-g002/anythingllm",
+          "source": "bounded_name_search",
+          "type": "directory"
+        },
+        {
+          "path": "_AUDIT_METADATA/future-generation-main-only-v0.5.2/20260726T213807Z/git-source/anythingllm-docker-anythingllm-docker-g002/anythingllm/mcp/anythingllm_mcp_servers.template.json",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/future-generation-main-only-v0.5.2/20260726T213807Z/git-source/anythingllm-docker-anythingllm-docker-g002/docs/anythingllm-mcp-baseline.md",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/future-generation-main-only-v0.5.2/20260726T213807Z/git-source/anythingllm-docker-anythingllm-docker-g002/docs/anythingllm-docker-baseline.md",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/future-generation-main-only-v0.5.2/20260726T213807Z/git-source/anythingllm-docker-anythingllm-docker-g002/registry/anythingllm-docker.json",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/future-generation-main-only-v0.5.2/20260726T213807Z/git-source/anythingllm-docker-anythingllm-docker-g002/registry/anythingllm-mcp.json",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/future-generation-main-only-v0.5.2/20260726T213807Z/git-archives/anythingllm-docker-anythingllm-docker-g002.tar",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/future-generation-main-only-v0.5.2/20260726T213807Z/backup/anythingllm-docker-anythingllm-docker-g002",
+          "source": "bounded_name_search",
+          "type": "directory"
+        },
+        {
+          "path": "_AUDIT_METADATA/future-generation-main-only-v0.5.2/20260726T213807Z/backup/anythingllm-docker-anythingllm-docker-g002/future-v052-anythingllm-docker-anythingllm-docker-g002.tar.gz",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/future-generation-main-only-v0.5.2/20260726T213807Z/backup/anythingllm-docker-anythingllm-docker-g002/future-v052-anythingllm-docker-anythingllm-docker-g002.manifest.json",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/future-generation-main-only-v0.5.2/20260726T213807Z/isolated/anythingllm-docker-anythingllm-docker-g002",
+          "source": "bounded_name_search",
+          "type": "directory"
+        },
+        {
+          "path": "_AUDIT_METADATA/future-generation-main-only-v0.5.2/20260726T213807Z/isolated/anythingllm-docker-anythingllm-docker-g002/anythingllm",
+          "source": "bounded_name_search",
+          "type": "directory"
+        },
+        {
+          "path": "_AUDIT_METADATA/future-generation-main-only-v0.5.2/20260726T213807Z/isolated/anythingllm-docker-anythingllm-docker-g002/anythingllm/mcp/anythingllm_mcp_servers.template.json",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/future-generation-main-only-v0.5.2/20260726T213807Z/isolated/anythingllm-docker-anythingllm-docker-g002/docs/anythingllm-mcp-baseline.md",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/future-generation-main-only-v0.5.2/20260726T213807Z/isolated/anythingllm-docker-anythingllm-docker-g002/docs/anythingllm-docker-baseline.md",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/future-generation-main-only-v0.5.2/20260726T213807Z/isolated/anythingllm-docker-anythingllm-docker-g002/registry/anythingllm-docker.json",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/future-generation-main-only-v0.5.2/20260726T213807Z/isolated/anythingllm-docker-anythingllm-docker-g002/registry/anythingllm-mcp.json",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/future-generation-main-only-v0.5.2/20260726T213807Z/reports/execution-units/anythingllm-docker-anythingllm-docker-g002.json",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/future-generation-main-only-v0.5.2/20260726T221147Z/git-source/anythingllm-docker-anythingllm-docker-g002",
+          "source": "bounded_name_search",
+          "type": "directory"
+        },
+        {
+          "path": "_AUDIT_METADATA/future-generation-main-only-v0.5.2/20260726T221147Z/git-source/anythingllm-docker-anythingllm-docker-g002/anythingllm",
+          "source": "bounded_name_search",
+          "type": "directory"
+        },
+        {
+          "path": "_AUDIT_METADATA/future-generation-main-only-v0.5.2/20260726T221147Z/git-source/anythingllm-docker-anythingllm-docker-g002/anythingllm/mcp/anythingllm_mcp_servers.template.json",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/future-generation-main-only-v0.5.2/20260726T221147Z/git-source/anythingllm-docker-anythingllm-docker-g002/docs/anythingllm-mcp-baseline.md",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/future-generation-main-only-v0.5.2/20260726T221147Z/git-source/anythingllm-docker-anythingllm-docker-g002/docs/anythingllm-docker-baseline.md",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/future-generation-main-only-v0.5.2/20260726T221147Z/git-source/anythingllm-docker-anythingllm-docker-g002/registry/anythingllm-docker.json",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/future-generation-main-only-v0.5.2/20260726T221147Z/git-source/anythingllm-docker-anythingllm-docker-g002/registry/anythingllm-mcp.json",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/future-generation-main-only-v0.5.2/20260726T221147Z/git-archives/anythingllm-docker-anythingllm-docker-g002.tar",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/future-generation-main-only-v0.5.2/20260726T221147Z/backup/anythingllm-docker-anythingllm-docker-g002",
+          "source": "bounded_name_search",
+          "type": "directory"
+        },
+        {
+          "path": "_AUDIT_METADATA/future-generation-main-only-v0.5.2/20260726T221147Z/backup/anythingllm-docker-anythingllm-docker-g002/future-v052-anythingllm-docker-anythingllm-docker-g002.tar.gz",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/future-generation-main-only-v0.5.2/20260726T221147Z/backup/anythingllm-docker-anythingllm-docker-g002/future-v052-anythingllm-docker-anythingllm-docker-g002.manifest.json",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/future-generation-main-only-v0.5.2/20260726T221147Z/isolated/anythingllm-docker-anythingllm-docker-g002",
+          "source": "bounded_name_search",
+          "type": "directory"
+        },
+        {
+          "path": "_AUDIT_METADATA/future-generation-main-only-v0.5.2/20260726T221147Z/isolated/anythingllm-docker-anythingllm-docker-g002/anythingllm",
+          "source": "bounded_name_search",
+          "type": "directory"
+        },
+        {
+          "path": "_AUDIT_METADATA/future-generation-main-only-v0.5.2/20260726T221147Z/isolated/anythingllm-docker-anythingllm-docker-g002/anythingllm/mcp/anythingllm_mcp_servers.template.json",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/future-generation-main-only-v0.5.2/20260726T221147Z/isolated/anythingllm-docker-anythingllm-docker-g002/docs/anythingllm-mcp-baseline.md",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/future-generation-main-only-v0.5.2/20260726T221147Z/isolated/anythingllm-docker-anythingllm-docker-g002/docs/anythingllm-docker-baseline.md",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/future-generation-main-only-v0.5.2/20260726T221147Z/isolated/anythingllm-docker-anythingllm-docker-g002/registry/anythingllm-docker.json",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/future-generation-main-only-v0.5.2/20260726T221147Z/isolated/anythingllm-docker-anythingllm-docker-g002/registry/anythingllm-mcp.json",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/future-generation-main-only-v0.5.2/20260726T221147Z/reports/execution-units/anythingllm-docker-anythingllm-docker-g002.json",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/future-generation-isolated-restore-v0.5/20260726T125445Z/git-source/anythingllm-docker-anythingllm-docker-g002",
+          "source": "bounded_name_search",
+          "type": "directory"
+        },
+        {
+          "path": "_AUDIT_METADATA/future-generation-isolated-restore-v0.5/20260726T125445Z/git-source/anythingllm-docker-anythingllm-docker-g002/anythingllm",
+          "source": "bounded_name_search",
+          "type": "directory"
+        },
+        {
+          "path": "_AUDIT_METADATA/future-generation-isolated-restore-v0.5/20260726T125445Z/git-source/anythingllm-docker-anythingllm-docker-g002/anythingllm/mcp/anythingllm_mcp_servers.template.json",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/future-generation-isolated-restore-v0.5/20260726T125445Z/git-source/anythingllm-docker-anythingllm-docker-g002/docs/anythingllm-mcp-baseline.md",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/future-generation-isolated-restore-v0.5/20260726T125445Z/git-source/anythingllm-docker-anythingllm-docker-g002/docs/anythingllm-docker-baseline.md",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/future-generation-isolated-restore-v0.5/20260726T125445Z/git-source/anythingllm-docker-anythingllm-docker-g002/registry/anythingllm-docker.json",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/future-generation-isolated-restore-v0.5/20260726T125445Z/git-source/anythingllm-docker-anythingllm-docker-g002/registry/anythingllm-mcp.json",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/future-generation-isolated-restore-v0.5/20260726T125445Z/git-archives/anythingllm-docker-anythingllm-docker-g002.tar",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/future-generation-isolated-restore-v0.5/20260726T125445Z/backup/anythingllm-docker-anythingllm-docker-g002",
+          "source": "bounded_name_search",
+          "type": "directory"
+        },
+        {
+          "path": "_AUDIT_METADATA/future-generation-isolated-restore-v0.5/20260726T125445Z/backup/anythingllm-docker-anythingllm-docker-g002/future-generation-v0.5-anythingllm-docker-anythingllm_docker-g002.tar.gz",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/future-generation-isolated-restore-v0.5/20260726T125445Z/backup/anythingllm-docker-anythingllm-docker-g002/future-generation-v0.5-anythingllm-docker-anythingllm_docker-g002.manifest.json",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/project-binding-system/20260720T052354Z_rag-project-binding-inventory-v1/ANYTHINGLLM_SEARCH_ROOTS.txt",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/project-binding-system/20260720T052354Z_rag-project-binding-inventory-v1/ANYTHINGLLM_DB_CANDIDATES.txt",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/project-binding-system/20260720T052354Z_rag-project-binding-inventory-v1/ANYTHINGLLM_DOCKER_INSPECT_RAW.json",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/project-binding-system/20260720T052354Z_rag-project-binding-inventory-v1/ANYTHINGLLM_DOCKER_INSPECT_RAW.stderr",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/project-binding-system/20260720T052354Z_rag-project-binding-inventory-v1/ANYTHINGLLM_DOCKER_SUMMARY.json",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/project-binding-system/20260720T052354Z_rag-project-binding-inventory-v1/ANYTHINGLLM_STORAGE_CANDIDATES.txt",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/project-binding-system/20260720T052354Z_rag-project-binding-inventory-v1/ANYTHINGLLM_MOUNT_SOURCES.txt",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/project-binding-system/20260720T081437Z_active-rag-ops-runner-preflight-v1/ANYTHINGLLM_INSPECT_RAW.stderr",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/project-binding-system/20260720T081437Z_active-rag-ops-runner-preflight-v1/ANYTHINGLLM_INSPECT_RAW.json",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/project-binding-system/20260720T081513Z_active-rag-ops-runner-preflight-v1/ANYTHINGLLM_INSPECT_RAW.stderr",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/project-binding-system/20260720T081513Z_active-rag-ops-runner-preflight-v1/ANYTHINGLLM_INSPECT_RAW.json",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/project-binding-system/20260720T052810Z_rag-project-binding-inventory-v1/ANYTHINGLLM_SEARCH_ROOTS.txt",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/project-binding-system/20260720T052810Z_rag-project-binding-inventory-v1/ANYTHINGLLM_DB_CANDIDATES.txt",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/project-binding-system/20260720T052810Z_rag-project-binding-inventory-v1/ANYTHINGLLM_DOCKER_INSPECT_RAW.json",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/project-binding-system/20260720T052810Z_rag-project-binding-inventory-v1/ANYTHINGLLM_DOCKER_INSPECT_RAW.stderr",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/project-binding-system/20260720T052810Z_rag-project-binding-inventory-v1/ANYTHINGLLM_DOCKER_SUMMARY.json",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/project-binding-system/20260720T052810Z_rag-project-binding-inventory-v1/ANYTHINGLLM_STORAGE_CANDIDATES.txt",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/project-binding-system/20260720T052810Z_rag-project-binding-inventory-v1/ANYTHINGLLM_MOUNT_SOURCES.txt",
+          "source": "bounded_name_search",
+          "type": "file"
+        }
+      ],
+      "generation_created": false,
+      "name": "AnythingLLM Desktop",
+      "search_mode": "READ_ONLY",
+      "status": "SOURCE_CANDIDATES_FOUND_READ_ONLY",
+      "system_id": "anythingllm-desktop"
+    },
+    {
+      "candidate_count": 9,
+      "candidates": [
+        {
+          "path": "mcp/anythingllm-bridge-http/gemini_manual_adapter.py",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "mcp/anythingllm-bridge-http/gemini-minimal-bridge.log",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "mcp/anythingllm-bridge-http/server.js.pre-gemini-manual.bak",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "mcp/anythingllm-bridge-http/gemini_mailbox_bridge.mjs",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "mcp/anythingllm-bridge-http/gemini_manual_bridge.mjs",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "mcp/anythingllm-bridge-http/server.js.pre-gemini-mailbox.20260724T022243Z.bak",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "mcp/anythingllm-bridge-http/server.js.pre-gemini-manual.20260724T010035Z.bak",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/ainoboru-infra/anythingllm-isolated-start/20260718-085925/isolated-storage/models/gemini",
+          "source": "bounded_name_search",
+          "type": "directory"
+        },
+        {
+          "path": "_AUDIT_METADATA/mediaindex/noboru-media-review-discovery/20260723T032326Z/GEMINI_ROADMAP_CANDIDATES.json",
+          "source": "bounded_name_search",
+          "type": "file"
+        }
+      ],
+      "generation_created": false,
+      "name": "Gemini",
+      "search_mode": "READ_ONLY",
+      "status": "SOURCE_CANDIDATES_FOUND_READ_ONLY",
+      "system_id": "gemini"
+    },
+    {
+      "candidate_count": 100,
+      "candidates": [
+        {
+          "path": "MEDIA_INDEX_AI_KNOWLEDGE_UPGRADE_PHASE_1",
+          "source": "bounded_name_search",
+          "type": "directory"
+        },
+        {
+          "path": "MEDIAINDEX_THUMBNAIL_REVIEW_V1_0_20260723T112945Z",
+          "source": "bounded_name_search",
+          "type": "directory"
+        },
+        {
+          "path": "MEDIAINDEX_THUMBNAIL_REVIEW_V1_2_20260723T202830Z",
+          "source": "bounded_name_search",
+          "type": "directory"
+        },
+        {
+          "path": "MEDIAINDEX_THUMBNAIL_TERMINAL_WORKER_V1_4_20260723T213801Z",
+          "source": "bounded_name_search",
+          "type": "directory"
+        },
+        {
+          "path": "MEDIAINDEX_MEDIA_SERVER_TERMINAL_V1_5_20260724T003513Z",
+          "source": "bounded_name_search",
+          "type": "directory"
+        },
+        {
+          "path": "MEDIAINDEX_THUMBNAIL_REVIEW_V1_1_20260723T115952Z",
+          "source": "bounded_name_search",
+          "type": "directory"
+        },
+        {
+          "path": "MEDIAINDEX_SEARCH_PORTAL_RECOVERY_LAN_V1_2_20260723T023059Z",
+          "source": "bounded_name_search",
+          "type": "directory"
+        },
+        {
+          "path": "MEDIAINDEX_THUMBNAIL_TERMINAL_WORKER_V1_4_20260723T213818Z",
+          "source": "bounded_name_search",
+          "type": "directory"
+        },
+        {
+          "path": "MEDIAINDEX_THUMBNAIL_TERMINAL_WORKER_V1_4_20260723T213755Z",
+          "source": "bounded_name_search",
+          "type": "directory"
+        },
+        {
+          "path": "MEDIAINDEX_MEDIA_PREVIEW_V1_4_20260723T231511Z",
+          "source": "bounded_name_search",
+          "type": "directory"
+        },
+        {
+          "path": "MEDIAINDEX_MANUAL_TAGGING_V1_0_20260724T005048Z",
+          "source": "bounded_name_search",
+          "type": "directory"
+        },
+        {
+          "path": "claude_media_index",
+          "source": "bounded_name_search",
+          "type": "directory"
+        },
+        {
+          "path": "MEDIAINDEX_SEARCH_PORTAL_RECOVERY_LAN_V1_3_20260723T023634Z",
+          "source": "bounded_name_search",
+          "type": "directory"
+        },
+        {
+          "path": "MEDIAINDEX_THUMBNAIL_REVIEW_V1_3_20260723T210748Z",
+          "source": "bounded_name_search",
+          "type": "directory"
+        },
+        {
+          "path": "MEDIAINDEX_THUMBNAIL_TERMINAL_WORKER_V1_4_20260723T214035Z",
+          "source": "bounded_name_search",
+          "type": "directory"
+        },
+        {
+          "path": "_AUDIT_METADATA/mediaindex",
+          "source": "bounded_name_search",
+          "type": "directory"
+        },
+        {
+          "path": "_AUDIT_METADATA/mediaindex/e7-mediaindex-record-state-resolver",
+          "source": "bounded_name_search",
+          "type": "directory"
+        },
+        {
+          "path": "_AUDIT_METADATA/mediaindex/runner-03-finalizer/20260722T022014Z/20_runner03_mediaindex_scale_tranche_0001_finalizer.command",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/mediaindex/e7-e8-git-seal/20260721T135831Z/08_e7_e8_mediaindex_commit_push_seal.command",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/mediaindex/e7-e8-git-seal/20260721T135659Z/08_e7_e8_mediaindex_commit_push_seal.command",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/mediaindex/who-where-what/MEDIAINDEX_WHO_WHERE_WHAT_V1_0_20260725T015255Z.zip",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/mediaindex/who-where-what/MEDIAINDEX_WHO_WHERE_WHAT_V1_0_20260725T015255Z",
+          "source": "bounded_name_search",
+          "type": "directory"
+        },
+        {
+          "path": "_AUDIT_METADATA/mediaindex/thumbnail-review-install/MEDIAINDEX_THUMBNAIL_REVIEW_V1_0_20260723T112945Z.zip",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/mediaindex/thumbnail-review-install/MEDIAINDEX_THUMBNAIL_REVIEW_V1_0_20260723T112945Z",
+          "source": "bounded_name_search",
+          "type": "directory"
+        },
+        {
+          "path": "_AUDIT_METADATA/mediaindex/gpt-subscription-pilot-exporter/20260722T114507Z/25_runner05_mediaindex_gpt_subscription_pilot_0100_exporter.command",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/mediaindex/manual-tagging-ui/MEDIAINDEX_MANUAL_TAGGING_V1_0_20260724T005048Z",
+          "source": "bounded_name_search",
+          "type": "directory"
+        },
+        {
+          "path": "_AUDIT_METADATA/mediaindex/manual-tagging-ui/MEDIAINDEX_MANUAL_TAGGING_V1_0_20260724T005048Z.zip",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/mediaindex/thumbnail-engine-fix/MEDIAINDEX_THUMBNAIL_REVIEW_V1_2_20260723T202830Z",
+          "source": "bounded_name_search",
+          "type": "directory"
+        },
+        {
+          "path": "_AUDIT_METADATA/mediaindex/terminal-context-media-server/MEDIAINDEX_MEDIA_SERVER_TERMINAL_V1_5_20260724T003513Z",
+          "source": "bounded_name_search",
+          "type": "directory"
+        },
+        {
+          "path": "_AUDIT_METADATA/mediaindex/terminal-context-media-server/MEDIAINDEX_MEDIA_SERVER_TERMINAL_V1_5_20260724T003513Z.zip",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/mediaindex/runner-03-scale-tranche-0001/20260721T212155Z/19_runner03_mediaindex_local_ai_scale_tranche_0001_v1_1.command",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/mediaindex/runner-03-scale-tranche-0001/20260721T211827Z/19_runner03_mediaindex_local_ai_scale_tranche_0001.command",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/mediaindex/runner-03-scale-tranche-0001/20260721T213558Z/19_runner03_mediaindex_local_ai_scale_tranche_0001_v1_2.command",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/mediaindex/runner-02-finalizer/20260721T211059Z/18_runner02_mediaindex_ai_pilot_finalizer.command",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/mediaindex/runner-02-finalizer/20260721T210627Z/18_runner02_mediaindex_ai_pilot_finalizer.command",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/mediaindex/thumbnail-review-pathmap-fix/MEDIAINDEX_THUMBNAIL_REVIEW_V1_1_20260723T115952Z",
+          "source": "bounded_name_search",
+          "type": "directory"
+        },
+        {
+          "path": "_AUDIT_METADATA/mediaindex/thumbnail-review-pathmap-fix/MEDIAINDEX_THUMBNAIL_REVIEW_V1_1_20260723T115952Z.zip",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/mediaindex/runner-04-scale-tranche-0002/20260722T031157Z/21_runner04_mediaindex_local_ai_scale_tranche_0002_delta.command",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/mediaindex/e7-e8-control-plane-apply/20260721T135314Z/CANDIDATE_MEDIAINDEX_RUNTIME_RECORD.json",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/mediaindex/e7-e8-control-plane-apply/20260721T135314Z/07_e7_e8_mediaindex_control_plane_register_and_seal_v1_1.command",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/mediaindex/gpt-subscription-pilot-validate-import-seal/20260722T202220Z/29_runner06_mediaindex_gpt_subscription_pilot_0100_validate_import_search_seal_v1_1.command",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/mediaindex/runner-01-cli-ai-baseline/20260721T152351Z/16_runner01_mediaindex_cli_reconstruction_and_ai_baseline.command",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/mediaindex/tag-modal-close/MEDIAINDEX_TAG_MODAL_CLOSE_CONTINUE_V1_3_20260724T023059Z.zip",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/mediaindex/tag-modal-close/MEDIAINDEX_TAG_MODAL_CLOSE_CONTINUE_V1_3_20260724T023059Z",
+          "source": "bounded_name_search",
+          "type": "directory"
+        },
+        {
+          "path": "_AUDIT_METADATA/mediaindex/tag-modal-close/MEDIAINDEX_TAG_MODAL_CLOSE_V1_1_20260724T022552Z",
+          "source": "bounded_name_search",
+          "type": "directory"
+        },
+        {
+          "path": "_AUDIT_METADATA/mediaindex/tag-modal-close/MEDIAINDEX_TAG_MODAL_CLOSE_V1_1_20260724T022034Z",
+          "source": "bounded_name_search",
+          "type": "directory"
+        },
+        {
+          "path": "_AUDIT_METADATA/mediaindex/runner-00-freeze/20260721T143431Z/MEDIAINDEX_FREEZE_MANIFEST.json",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/mediaindex/runner-00-freeze/20260721T143431Z/13_runner00_mediaindex_post_cleanup_freeze.command",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/mediaindex/gpt-subscription-pilot-exporter-v1-2/20260722T124335Z/27_runner05_mediaindex_gpt_subscription_pilot_0100_exporter_v1_2.command",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/mediaindex/git-checkpoints/MEDIAINDEX_GIT_CHECKPOINT_20260724T020610Z",
+          "source": "bounded_name_search",
+          "type": "directory"
+        },
+        {
+          "path": "_AUDIT_METADATA/mediaindex/git-checkpoints/MEDIAINDEX_GIT_CHECKPOINT_20260724T020610Z/runtime_db_snapshot/mediaindex_search_75275.sqlite3",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/mediaindex/terminal-context-worker-patch/MEDIAINDEX_THUMBNAIL_TERMINAL_WORKER_V1_4_20260723T213801Z",
+          "source": "bounded_name_search",
+          "type": "directory"
+        },
+        {
+          "path": "_AUDIT_METADATA/mediaindex/terminal-context-worker-patch/MEDIAINDEX_THUMBNAIL_TERMINAL_WORKER_V1_4_20260723T213818Z",
+          "source": "bounded_name_search",
+          "type": "directory"
+        },
+        {
+          "path": "_AUDIT_METADATA/mediaindex/terminal-context-worker-patch/MEDIAINDEX_THUMBNAIL_TERMINAL_WORKER_V1_4_20260723T213755Z",
+          "source": "bounded_name_search",
+          "type": "directory"
+        },
+        {
+          "path": "_AUDIT_METADATA/mediaindex/terminal-context-worker-patch/MEDIAINDEX_THUMBNAIL_TERMINAL_WORKER_V1_4_20260723T214035Z.zip",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/mediaindex/terminal-context-worker-patch/MEDIAINDEX_THUMBNAIL_TERMINAL_WORKER_V1_4_20260723T214035Z",
+          "source": "bounded_name_search",
+          "type": "directory"
+        },
+        {
+          "path": "_AUDIT_METADATA/mediaindex/control-plane-registration/20260723T011707Z/MEDIAINDEX_CONTROL_PLANE_REGISTRATION_PLAN_V1_0.json",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/mediaindex/e7-mediaindex-record-state-resolver/20260721T134003Z/ALL_MEDIAINDEX_CANDIDATES.json",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/mediaindex/e7-mediaindex-record-state-resolver/20260721T134003Z/MEDIAINDEX_STATE_TOKEN_MATRIX.json",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/mediaindex/e7-mediaindex-record-state-resolver/20260721T134003Z/MEDIAINDEX_FIELD_CONVENTIONS.json",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/mediaindex/e7-mediaindex-record-state-resolver/20260721T134003Z/E7_MEDIAINDEX_RECORD_STATE_RESOLVER_SUMMARY.env",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/mediaindex/e7-mediaindex-record-state-resolver/20260721T134003Z/E7_MEDIAINDEX_RECORD_STATE_RESOLVER_RESULT.json",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/mediaindex/e7-mediaindex-record-state-resolver/20260721T134003Z/06_e7_mediaindex_record_state_resolver.command",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/mediaindex/e7-mediaindex-record-state-resolver/20260721T134003Z/SELECTED_MEDIAINDEX_RECORD.json",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/mediaindex/e7-mediaindex-record-state-resolver/20260721T134003Z/E7_MEDIAINDEX_RECORD_STATE_RESOLVER_REPORT.txt",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/mediaindex/gpt-subscription-pilot-validate-import-seal-v1-2/20260722T204849Z/31_runner06_mediaindex_gpt_subscription_pilot_0100_validate_import_search_seal_v1_2.command",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/mediaindex/e7-ledger-route-resolver/20260721T133553Z/MEDIAINDEX_ACTIVE_RECORD.json",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/mediaindex/decoupled-thumbnail-worker/MEDIAINDEX_THUMBNAIL_REVIEW_V1_3_20260723T210748Z",
+          "source": "bounded_name_search",
+          "type": "directory"
+        },
+        {
+          "path": "_AUDIT_METADATA/mediaindex/runner-00-orchestrator/20260721T150425Z/15_runner00_mediaindex_autobranch_freeze_orchestrator_v1_2.command",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/mediaindex/runner-00-orchestrator/20260721T145039Z/15_runner00_mediaindex_autobranch_freeze_orchestrator_v1_1.command",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/mediaindex/runner-00-orchestrator/20260721T145039Z/SNAPSHOT/RAW_STABLE_FILESET/media_index.sqlite3-shm",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/mediaindex/runner-00-orchestrator/20260721T145039Z/SNAPSHOT/RAW_STABLE_FILESET/media_index.sqlite3",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/mediaindex/runner-00-orchestrator/20260721T145039Z/SNAPSHOT/RAW_STABLE_FILESET/media_index.sqlite3-wal",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/mediaindex/runner-00-orchestrator/20260721T145039Z/SNAPSHOT/SQLITE_WORKING_COPY/media_index.sqlite3-shm",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/mediaindex/runner-00-orchestrator/20260721T145039Z/SNAPSHOT/SQLITE_WORKING_COPY/media_index.sqlite3",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/mediaindex/runner-00-orchestrator/20260721T145039Z/SNAPSHOT/SQLITE_WORKING_COPY/media_index.sqlite3-wal",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/mediaindex/runner-00-orchestrator/20260721T150446Z/MEDIAINDEX_CANONICAL_FREEZE_MANIFEST.json",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/mediaindex/runner-00-orchestrator/20260721T150446Z/15_runner00_mediaindex_autobranch_freeze_orchestrator_v1_2.command",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/mediaindex/runner-00-orchestrator/20260721T150446Z/SNAPSHOT/RAW_STABLE_FILESET/media_index.sqlite3-shm",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/mediaindex/runner-00-orchestrator/20260721T150446Z/SNAPSHOT/RAW_STABLE_FILESET/media_index.sqlite3",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/mediaindex/runner-00-orchestrator/20260721T150446Z/SNAPSHOT/RAW_STABLE_FILESET/media_index.sqlite3-wal",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/mediaindex/runner-00-orchestrator/20260721T150446Z/SNAPSHOT/SQLITE_WORKING_COPY/media_index.sqlite3-shm",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/mediaindex/runner-00-orchestrator/20260721T150446Z/SNAPSHOT/SQLITE_WORKING_COPY/media_index.sqlite3",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/mediaindex/runner-00-orchestrator/20260721T150446Z/SNAPSHOT/SQLITE_WORKING_COPY/media_index.sqlite3-wal",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/mediaindex/media-preview-selection-split/MEDIAINDEX_MEDIA_PREVIEW_V1_4_20260723T231511Z",
+          "source": "bounded_name_search",
+          "type": "directory"
+        },
+        {
+          "path": "_AUDIT_METADATA/mediaindex/gpt-pilot-quality-review-0500-decision/20260722T205536Z/32_runner07_mediaindex_gpt_pilot_quality_review_and_0500_decision.command",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/mediaindex/runner-02-ai-pilot/20260721T154659Z/17_runner02_mediaindex_ai_enrichment_pilot_derivative_v1_1.command",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/mediaindex/runner-02-ai-pilot/20260721T155610Z/17_runner02_mediaindex_ai_enrichment_pilot_derivative_v1_3.command",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/mediaindex/runner-02-ai-pilot/20260721T153456Z/17_runner02_mediaindex_ai_enrichment_pilot_derivative.command",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/mediaindex/runner-02-ai-pilot/20260721T154128Z/17_runner02_mediaindex_ai_enrichment_pilot_derivative.command",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/mediaindex/runner-02-ai-pilot/20260721T153130Z/17_runner02_mediaindex_ai_enrichment_pilot_derivative.command",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/mediaindex/runner-02-ai-pilot/20260721T155005Z/17_runner02_mediaindex_ai_enrichment_pilot_derivative_v1_2.command",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/mediaindex/runner-00-scope-diagnostic/20260721T143941Z/14_runner00_mediaindex_freeze_scope_diagnostic.command",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/mediaindex/search-portal-install/20260723T022125Z/MEDIAINDEX_SEARCH_PORTAL_PLAN_V1_0.json",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/mediaindex/search-portal-install/20260723T022125Z/48_runner17_mediaindex_search_portal_v1_0.py",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/mediaindex/search-portal-install/20260723T023059Z/MEDIAINDEX_SEARCH_PORTAL_RECOVERY_LAN_PLAN_V1_2.json",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/mediaindex/search-portal-install/20260723T023059Z/49_runner17_mediaindex_search_portal_recovery_lan_v1_2.py",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/mediaindex/search-portal-install/20260723T023634Z/50_runner17_mediaindex_search_portal_recovery_lan_v1_3.py",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/mediaindex/search-portal-install/20260723T023634Z/MEDIAINDEX_SEARCH_PORTAL_RECOVERY_LAN_PLAN_V1_3.json",
+          "source": "bounded_name_search",
+          "type": "file"
+        },
+        {
+          "path": "_AUDIT_METADATA/mediaindex/qwen-baseline-finalizer-v1-2/20260722T113147Z/MEDIAINDEX_AI_PROVIDER_POLICY_V1_0.json",
+          "source": "bounded_name_search",
+          "type": "file"
+        }
+      ],
+      "generation_created": false,
+      "name": "R6 AI撮影",
+      "search_mode": "READ_ONLY",
+      "status": "SOURCE_CANDIDATES_FOUND_READ_ONLY",
+      "system_id": "r6"
+    }
+  ]
+}

@@ -1,0 +1,214 @@
+{
+  "artifact_id": "AI_NOBORU_HISTORY_SITE_V0_9_1_PUBLIC_SANITIZED",
+  "cloudflare_publish_performed": false,
+  "files": [
+    {
+      "path": "DEPLOYMENT_README.md",
+      "sha256": "932b0ce1137a28966a7ac0cdc2c72fc25a401469fa4448f9baf00024322fa4b1",
+      "size_bytes": 209
+    },
+    {
+      "path": "PUBLIC_RELEASE.json",
+      "sha256": "dce6ce6619a7248b61b0b70361cc7876c8847389fa5d1dd863d9f2112178ea8d",
+      "size_bytes": 546
+    },
+    {
+      "path": "README.md",
+      "sha256": "c895838ae72e2df3c363eaca7f576b3a9c7c00366a359549697b9fa47c69600f",
+      "size_bytes": 521
+    },
+    {
+      "path": "_headers",
+      "sha256": "0dafe463a8ab47d2d869bcd1ffb4b6b097858901055d48234714719212c47cf8",
+      "size_bytes": 181
+    },
+    {
+      "path": "assets/app.js",
+      "sha256": "484eb2e8bb05ffb5f2f7ca00b26532c38e0cd487d3a32c02fad5b91286435e41",
+      "size_bytes": 4899
+    },
+    {
+      "path": "assets/component-baseline-app.js",
+      "sha256": "cc27de53fafc515fa27eb6c81c5817524bb313f2b8e0f1bdee9db50afd34abb3",
+      "size_bytes": 1204
+    },
+    {
+      "path": "assets/component-baselines.js",
+      "sha256": "42d4ff779346f79d91ca38501db44be17bde2df3534a6a839d18364c6d5f4e62",
+      "size_bytes": 349
+    },
+    {
+      "path": "assets/dashboard-data.js",
+      "sha256": "3f4412706e3d3c76bf5d284df1b53afc4c3e8f7468ea1a80d0e66eb01cff80aa",
+      "size_bytes": 3717
+    },
+    {
+      "path": "assets/desktop-control-app.js",
+      "sha256": "185ceb58acb756f0fc17d120ab37080e3ebfec6cda68d1a35cbcb71a0e1c832b",
+      "size_bytes": 1161
+    },
+    {
+      "path": "assets/desktop-control-baseline.js",
+      "sha256": "9e89735e4a9994d380f829810287f6ce697e67d291dd59180de9122459c8e42e",
+      "size_bytes": 4344
+    },
+    {
+      "path": "assets/eight-slot-readiness.js",
+      "sha256": "da356c7953369c9810cbad7c955aedc286448ba6bd79443543f54d3caebe4973",
+      "size_bytes": 3026
+    },
+    {
+      "path": "assets/final-completion-app.js",
+      "sha256": "5e590a0810458cc1485ad161fe3985ac4078c2de645f60dd41a76a64af7c051f",
+      "size_bytes": 1410
+    },
+    {
+      "path": "assets/final-local-completion.js",
+      "sha256": "360b5ed584afbe799f0fe17ec0842ddcfa8770aa1dcab63841bc0ae0542a2340",
+      "size_bytes": 3824
+    },
+    {
+      "path": "assets/future-generation-engine.js",
+      "sha256": "8287dae79156be1eaaca5e61b87c1217b7bd5f06f74fbe0a6a0ddb747f10be3c",
+      "size_bytes": 3398
+    },
+    {
+      "path": "assets/future-generation-validation.js",
+      "sha256": "de4d424804572c4a55a73b5138235bf54c53e814737a88f48eaa019df0614fee",
+      "size_bytes": 7990
+    },
+    {
+      "path": "assets/future-validation-app.js",
+      "sha256": "cf78fe49527b89fbc257347666cbe548a31ac54d15812bbc68276a0bbb369ae6",
+      "size_bytes": 1448
+    },
+    {
+      "path": "assets/generation-catalog.js",
+      "sha256": "2ebdd4d464d932468bdd079bc4e5a8ffedb3b0a4e2fb9d866ab85bcad5bb6c92",
+      "size_bytes": 11442
+    },
+    {
+      "path": "assets/readiness-app.js",
+      "sha256": "37bcff1500891738bb1e1fd0e71da5867e301c897b5e45c6cda785de0e09d462",
+      "size_bytes": 963
+    },
+    {
+      "path": "assets/resolution-app.js",
+      "sha256": "32758e680dcd88c97f1440ddeef4444ca65660e6e7f19f1c701282266bef04ba",
+      "size_bytes": 1233
+    },
+    {
+      "path": "assets/restore-control-app.js",
+      "sha256": "59a8b3690a935ee632874df18243f0386bd7e3b4eb6b7294da6fc0eda2a3ef0e",
+      "size_bytes": 727
+    },
+    {
+      "path": "assets/restore-operations.js",
+      "sha256": "c1fa11d8e32fe3a18067f8ce573ed88616741e0aaaa1eca0f9d1fe2c5d7ddc1d",
+      "size_bytes": 3465
+    },
+    {
+      "path": "assets/runtime-app.js",
+      "sha256": "bd4c0535b71b5083e051f44fc6efa74a1c8a39b2cb08c089cb18635335d31aa6",
+      "size_bytes": 1655
+    },
+    {
+      "path": "assets/runtime-status.js",
+      "sha256": "65f5c2eb61cd46314cad697f65d1609153d0cb96c6f00b28413f8c135a34fb13",
+      "size_bytes": 2477
+    },
+    {
+      "path": "assets/source-resolution.js",
+      "sha256": "9cf9ec6fe6fdc9bcddee2285ee29d3f7b552e94e62f66ffee1e8a1093c5c92b1",
+      "size_bytes": 39431
+    },
+    {
+      "path": "assets/styles.css",
+      "sha256": "b0b31efd413b917eefdeea7d718a0ff9d6f242498f0fe0d6dafd1a213cddae6b",
+      "size_bytes": 19615
+    },
+    {
+      "path": "data/component-baselines.json",
+      "sha256": "f336f848dea4b788c748f12a0774717e3ca66bfc6350e78be3d1fb154c47c143",
+      "size_bytes": 369
+    },
+    {
+      "path": "data/current-baseline-validation.json",
+      "sha256": "ca466db44a604a06d0f24611b1e8d749d0c79bdcb309e8ed1aa8202233c4f0b2",
+      "size_bytes": 3151
+    },
+    {
+      "path": "data/dashboard-data.json",
+      "sha256": "59fbb2ec439ad98ec66aeba153560084261ea96525875c0d984978708d492b45",
+      "size_bytes": 4974
+    },
+    {
+      "path": "data/desktop-control-baseline.json",
+      "sha256": "56cace1aa92a4e78b81ec7bc2fbf6b86df2f44803189249a88a2aff0f313b5f6",
+      "size_bytes": 4947
+    },
+    {
+      "path": "data/eight-slot-readiness.json",
+      "sha256": "4be7536029ec9098ed7c93c6fcf7275a250de2fba9679d4c08ce98c5533b22b7",
+      "size_bytes": 3593
+    },
+    {
+      "path": "data/final-local-completion.json",
+      "sha256": "007cf809b58a121a5116a1ad6747be15dee77f516c0ca73a6d23d78007409448",
+      "size_bytes": 4498
+    },
+    {
+      "path": "data/future-generation-validation.json",
+      "sha256": "d3c0a38c69040afd624ca3974163cc7cc3560b8153a10b4c783d129d5aba3b75",
+      "size_bytes": 9038
+    },
+    {
+      "path": "data/generation-catalog.json",
+      "sha256": "e588bfd3ce4e8aca406cdd8cd6caf51c5b32d178518568d86d818e52dc87a159",
+      "size_bytes": 14701
+    },
+    {
+      "path": "data/restore-operations.json",
+      "sha256": "b1568f18bc57c28f3d6dd7bcfcc5c094919ecf6225bce2645bf744cf367392ba",
+      "size_bytes": 4121
+    },
+    {
+      "path": "data/runtime-status.json",
+      "sha256": "8f1fb30eafde5572b721eacf9de9956dc64c8c063b37227ce45aa132e19532bf",
+      "size_bytes": 2833
+    },
+    {
+      "path": "data/source-discovery.json",
+      "sha256": "6120908bd188681ee9c3083d8f050bb332bdef29c45ff7484b11f96ee6007116",
+      "size_bytes": 48891
+    },
+    {
+      "path": "data/source-resolution.json",
+      "sha256": "e43e3cf302b5a39bda1679b40134e2b8d78dfd354035226f249873c9b3b10588",
+      "size_bytes": 54112
+    },
+    {
+      "path": "index.html",
+      "sha256": "e1534120e6e4871846c40e5e5eb7e900c16118861b11d9d5ad835bc773e1d6e9",
+      "size_bytes": 9503
+    }
+  ],
+  "generated_at": "2026-07-27T13:22:36.251838+00:00",
+  "local_isolated_restore_control": true,
+  "production_restore_allowed": false,
+  "public_sanitization": {
+    "absolute_user_paths_removed": true,
+    "external_volume_paths_removed": true,
+    "replacement_counts": {
+      "ai_workspace_path": 83,
+      "external_volume_path": 228,
+      "local_mcp_endpoint": 2,
+      "tunnel_id": 2,
+      "user_home_path": 39
+    },
+    "status": "PASS",
+    "tunnel_ids_removed": true
+  },
+  "system_count": 8,
+  "version": "0.9.1"
+}
