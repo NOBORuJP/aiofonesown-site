@@ -1,5 +1,5 @@
 {
-  "artifact_id": "AI_NOBORU_HISTORY_SITE_V0_9_1_PUBLIC_SANITIZED",
+  "artifact_id": "AI_NOBORU_HISTORY_SITE_V0_9_1_1_PUBLIC_JSON",
   "cloudflare_publish_performed": false,
   "files": [
     {
@@ -8,9 +8,19 @@
       "size_bytes": 209
     },
     {
+      "path": "PUBLIC_MANIFEST.v0.9.1.json",
+      "sha256": "fdd5618740c78f06542911b7d4cb27067d6ac0040ba472fc223c429ec7475fe1",
+      "size_bytes": 776
+    },
+    {
       "path": "PUBLIC_RELEASE.json",
-      "sha256": "dce6ce6619a7248b61b0b70361cc7876c8847389fa5d1dd863d9f2112178ea8d",
-      "size_bytes": 546
+      "sha256": "ef1b76e71df1f5bb89e2cbc0fae566857587f73a5a6760d766f6ec5cc75b390b",
+      "size_bytes": 1083
+    },
+    {
+      "path": "PUBLIC_RESTORE_OPERATIONS.v0.9.1.json",
+      "sha256": "0c345d1719262415abb0eb002684682a8f705f94a200c618cbe08cb77c798c03",
+      "size_bytes": 4305
     },
     {
       "path": "README.md",
@@ -193,7 +203,7 @@
       "size_bytes": 9503
     }
   ],
-  "generated_at": "2026-07-27T13:22:36.251838+00:00",
+  "generated_at": "2026-07-27T23:13:41.934800+00:00",
   "local_isolated_restore_control": true,
   "production_restore_allowed": false,
   "public_sanitization": {
@@ -209,6 +219,11 @@
     "status": "PASS",
     "tunnel_ids_removed": true
   },
+  "strict_public_json": {
+    "manifest": "/history/PUBLIC_MANIFEST.v0.9.1.json",
+    "restore_operations": "/history/PUBLIC_RESTORE_OPERATIONS.v0.9.1.json",
+    "root_headers": true
+  },
   "system_count": 8,
-  "version": "0.9.1"
+  "version": "0.9.1.1"
 }
