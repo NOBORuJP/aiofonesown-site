@@ -24,7 +24,7 @@
   <main>
     <header class="topbar">
       <div><span class="eyebrow">History / Recovery</span><h1>AI NOBORU 履歴画面</h1></div>
-      <div class="badges"><span class="badge preview">v0.8.0 本線復帰</span><span class="badge safe">復元実行は無効</span></div>
+      <div class="badges"><span class="badge preview">v0.9.0 本線復帰</span><span class="badge safe">復元実行は無効</span></div>
     </header>
 
     <section class="notice">
@@ -107,14 +107,14 @@
 
 
     <section id="desktop-control" class="section">
-      <div class="section-head"><div><span class="eyebrow">AnythingLLM Desktop / v0.8.0.1</span><h2>現行制御基準の隔離復元</h2></div><span class="hint">DBスナップショット＋データ目録。本体データ復元は未実施</span></div>
+      <div class="section-head"><div><span class="eyebrow">AnythingLLM Desktop / v0.9.0.1</span><h2>現行制御基準の隔離復元</h2></div><span class="hint">DBスナップショット＋データ目録。本体データ復元は未実施</span></div>
       <div id="desktop-control-baseline"></div>
     </section>
 
 
     <section id="component-baseline" class="section">
       <div class="section-head">
-        <div><span class="eyebrow">Gemini / R6 / v0.8.0</span><h2>transport基準と保留状態</h2></div>
+        <div><span class="eyebrow">Gemini / R6 / v0.9.0</span><h2>transport基準と保留状態</h2></div>
         <span class="hint">Gemini世代・R6仮原本は作成しない</span>
       </div>
       <div id="component-baselines" class="component-baseline-grid"></div>
@@ -123,11 +123,23 @@
 
     <section id="final-local-completion" class="section">
       <div class="section-head">
-        <div><span class="eyebrow">v0.8.0 / Local completion</span><h2>8枠の統合完了状態</h2></div>
+        <div><span class="eyebrow">v0.9.0 / Local completion</span><h2>8枠の統合完了状態</h2></div>
         <span class="hint">次の承認点：既存site接続とCloudflare公開</span>
       </div>
       <div id="final-completion-banner" class="final-completion-banner"></div>
       <div id="final-eight-summary" class="final-eight-summary"></div>
+    </section>
+
+
+    <section id="restore-control" class="section">
+      <div class="section-head">
+        <div><span class="eyebrow">v0.9 / Local safety bridge</span><h2>ローカル隔離復元</h2></div>
+        <a class="hint" href="ainoboru-restore://status">iMacロック状態を確認</a>
+      </div>
+      <div class="restore-control-warning">
+        この画面から実行できるのは、iMac上の既存Runnerを通す隔離復元試験だけです。ローカル確認ダイアログが必須で、本番復元、mainへのmerge、RAG更新は行いません。
+      </div>
+      <div id="restore-control-grid" class="restore-control-grid"></div>
     </section>
 
     <section id="runtime-status" class="section">
@@ -135,7 +147,7 @@
       <div id="runtime-status-grid" class="runtime-status-grid"></div>
     </section>
 
-    <footer><span>AI NOBORU 履歴画面 v0.8.0</span><span>実データ: FABLE Git 2世代 / Memory・Tunnel・GitHub・Claude状態反映 / 復元はシミュレーションのみ</span></footer>
+    <footer><span>AI NOBORU 履歴画面 v0.9.0</span><span>実データ: FABLE Git 2世代 / Memory・Tunnel・GitHub・Claude状態反映 / 復元はシミュレーションのみ</span></footer>
   </main>
 </div>
 
@@ -153,6 +165,7 @@
 <script src="assets/desktop-control-baseline.js"></script>
 <script src="assets/component-baselines.js"></script>
 <script src="assets/final-local-completion.js"></script>
+<script src="assets/restore-operations.js"></script>
 <script src="assets/app.js"></script>
 <script src="assets/runtime-app.js"></script>
 <script src="assets/future-generation-engine.js"></script>
@@ -163,5 +176,6 @@
 <script src="assets/desktop-control-app.js"></script>
 <script src="assets/component-baseline-app.js"></script>
 <script src="assets/final-completion-app.js"></script>
+<script src="assets/restore-control-app.js"></script>
 </body>
 </html>

@@ -1,6 +1,6 @@
 {
-  "artifact_id": "AI_NOBORU_HISTORY_SITE_V0_8_LOCAL_COMPLETE",
-  "cloudflare_changed": false,
+  "artifact_id": "AI_NOBORU_HISTORY_SITE_V0_9_LOCAL_RESTORE_CONTROL",
+  "cloudflare_publish_performed": false,
   "files": [
     {
       "path": "DEPLOYMENT_README.md",
@@ -93,6 +93,16 @@
       "size_bytes": 1233
     },
     {
+      "path": "assets/restore-control-app.js",
+      "sha256": "59a8b3690a935ee632874df18243f0386bd7e3b4eb6b7294da6fc0eda2a3ef0e",
+      "size_bytes": 727
+    },
+    {
+      "path": "assets/restore-operations.js",
+      "sha256": "bbd48bcad45cf0cfe308f0c37377ee49660952a1d24e6481cd399f7a42d902b7",
+      "size_bytes": 3465
+    },
+    {
       "path": "assets/runtime-app.js",
       "sha256": "bd4c0535b71b5083e051f44fc6efa74a1c8a39b2cb08c089cb18635335d31aa6",
       "size_bytes": 1655
@@ -109,8 +119,8 @@
     },
     {
       "path": "assets/styles.css",
-      "sha256": "3a646d0f54eccad66d1d052f8393fe435f1c31f3970acced6a1cffa68c7cccf8",
-      "size_bytes": 18575
+      "sha256": "b0b31efd413b917eefdeea7d718a0ff9d6f242498f0fe0d6dafd1a213cddae6b",
+      "size_bytes": 19615
     },
     {
       "path": "data/component-baselines.json",
@@ -153,6 +163,11 @@
       "size_bytes": 14749
     },
     {
+      "path": "data/restore-operations.json",
+      "sha256": "417ede0d83d89b5660fb29b4e1feabe027a1f9d9cddc4859ebafbf535035b21f",
+      "size_bytes": 4121
+    },
+    {
       "path": "data/runtime-status.json",
       "sha256": "651ca472e0242ac61cb2e302ae77a76d5a46a2dafbfa4cf7ed1a6818980764ca",
       "size_bytes": 2819
@@ -169,15 +184,13 @@
     },
     {
       "path": "index.html",
-      "sha256": "abb2b62f41caa2eee7fb44edbcc98999687a6ccf1332efd7f3a10b3f45201f14",
-      "size_bytes": 8728
+      "sha256": "e1534120e6e4871846c40e5e5eb7e900c16118861b11d9d5ad835bc773e1d6e9",
+      "size_bytes": 9503
     }
   ],
-  "generated_at": "2026-07-27T00:50:13.450748+00:00",
-  "git_changed": false,
+  "generated_at": "2026-07-27T04:09:32.554022+00:00",
+  "local_isolated_restore_control": true,
   "production_restore_allowed": false,
-  "repository_classification": "LOCAL_SITE_REPOSITORY_NOT_FOUND",
-  "result": "PASS_LOCAL_EIGHT_SLOT_COMPLETION",
   "system_count": 8,
-  "version": "0.8.0"
+  "version": "0.9.0"
 }
