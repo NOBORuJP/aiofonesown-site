@@ -20,18 +20,18 @@
               "is_symlink": false,
               "link_target": null,
               "mtime_ns": 1784879640746240771,
-              "path": "/Volumes/AnythingLLMDesktop/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/anythingllm.db",
-              "resolved": "/Volumes/AnythingLLMDesktop/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/anythingllm.db",
+              "path": "LOCAL_EXTERNAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/anythingllm.db",
+              "resolved": "LOCAL_EXTERNAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/anythingllm.db",
               "size_bytes": 15908864,
               "type": "file"
             },
             "shm": {
               "exists": false,
-              "path": "/Volumes/AnythingLLMDesktop/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/anythingllm.db-shm"
+              "path": "LOCAL_EXTERNAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/anythingllm.db-shm"
             },
             "wal": {
               "exists": false,
-              "path": "/Volumes/AnythingLLMDesktop/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/anythingllm.db-wal"
+              "path": "LOCAL_EXTERNAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/anythingllm.db-wal"
             }
           },
           "before": {
@@ -42,18 +42,18 @@
               "is_symlink": false,
               "link_target": null,
               "mtime_ns": 1784879640746240771,
-              "path": "/Volumes/AnythingLLMDesktop/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/anythingllm.db",
-              "resolved": "/Volumes/AnythingLLMDesktop/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/anythingllm.db",
+              "path": "LOCAL_EXTERNAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/anythingllm.db",
+              "resolved": "LOCAL_EXTERNAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/anythingllm.db",
               "size_bytes": 15908864,
               "type": "file"
             },
             "shm": {
               "exists": false,
-              "path": "/Volumes/AnythingLLMDesktop/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/anythingllm.db-shm"
+              "path": "LOCAL_EXTERNAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/anythingllm.db-shm"
             },
             "wal": {
               "exists": false,
-              "path": "/Volumes/AnythingLLMDesktop/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/anythingllm.db-wal"
+              "path": "LOCAL_EXTERNAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/anythingllm.db-wal"
             }
           },
           "counts": {
@@ -64,7 +64,7 @@
             "workspaces": 8
           },
           "open_mode": "mode=ro + PRAGMA query_only=ON",
-          "path": "/Volumes/AnythingLLMDesktop/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/anythingllm.db",
+          "path": "LOCAL_EXTERNAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/anythingllm.db",
           "status": "READ_ONLY_OPEN_PASS",
           "table_count": 41,
           "tables_sha256": "799960e93213132a9b4edd267c0fad279d0600133f7e6aa7f5c1add12113d96c",
@@ -86,8 +86,8 @@
           "is_symlink": false,
           "link_target": null,
           "mtime_ns": 1783259217041922462,
-          "path": "/Volumes/AnythingLLMDesktop/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/documents",
-          "resolved": "/Volumes/AnythingLLMDesktop/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/documents",
+          "path": "LOCAL_EXTERNAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/documents",
+          "resolved": "LOCAL_EXTERNAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/documents",
           "size_bytes": 224,
           "type": "directory"
         },
@@ -98,12 +98,12 @@
           "is_symlink": false,
           "link_target": null,
           "mtime_ns": 1784004863021813909,
-          "path": "/Volumes/AnythingLLMDesktop/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/.env",
-          "resolved": "/Volumes/AnythingLLMDesktop/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/.env",
+          "path": "LOCAL_EXTERNAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/.env",
+          "resolved": "LOCAL_EXTERNAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/.env",
           "size_bytes": 1628,
           "type": "file"
         },
-        "input_root": "/Users/noboruikuta/Library/Application Support/anythingllm-desktop",
+        "input_root": "LOCAL_USER_HOME/Library/Application Support/anythingllm-desktop",
         "lancedb": {
           "device": 16777246,
           "exists": true,
@@ -111,26 +111,26 @@
           "is_symlink": false,
           "link_target": null,
           "mtime_ns": 1783264029600893692,
-          "path": "/Volumes/AnythingLLMDesktop/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/lancedb",
-          "resolved": "/Volumes/AnythingLLMDesktop/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/lancedb",
+          "path": "LOCAL_EXTERNAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/lancedb",
+          "resolved": "LOCAL_EXTERNAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/lancedb",
           "size_bytes": 320,
           "type": "directory"
         },
         "mount": {
-          "df_last_line": "/dev/disk8s1  976549560 486578976 489565992    50%    /Volumes/AnythingLLMDesktop",
+          "df_last_line": "/dev/disk8s1  976549560 486578976 489565992    50%    LOCAL_EXTERNAL_VOLUME",
           "df_returncode": 0,
-          "existing_parent": "/Users/noboruikuta/Library/Application Support/anythingllm-desktop",
-          "probe_path": "/Users/noboruikuta/Library/Application Support/anythingllm-desktop"
+          "existing_parent": "LOCAL_USER_HOME/Library/Application Support/anythingllm-desktop",
+          "probe_path": "LOCAL_USER_HOME/Library/Application Support/anythingllm-desktop"
         },
         "root": {
           "device": 16777246,
           "exists": true,
           "inode": 335526,
           "is_symlink": true,
-          "link_target": "/Volumes/AnythingLLMDesktop/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218",
+          "link_target": "LOCAL_EXTERNAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218",
           "mtime_ns": 1785039461249653351,
-          "path": "/Users/noboruikuta/Library/Application Support/anythingllm-desktop",
-          "resolved": "/Volumes/AnythingLLMDesktop/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218",
+          "path": "LOCAL_USER_HOME/Library/Application Support/anythingllm-desktop",
+          "resolved": "LOCAL_EXTERNAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218",
           "size_bytes": 1184,
           "type": "directory"
         },
@@ -141,13 +141,13 @@
           "is_symlink": false,
           "link_target": null,
           "mtime_ns": 1783852583944363468,
-          "path": "/Volumes/AnythingLLMDesktop/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/vector-cache",
-          "resolved": "/Volumes/AnythingLLMDesktop/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/vector-cache",
+          "path": "LOCAL_EXTERNAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/vector-cache",
+          "resolved": "LOCAL_EXTERNAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/vector-cache",
           "size_bytes": 64,
           "type": "directory"
         }
       },
-      "active_source": "/Volumes/AnythingLLMDesktop/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218",
+      "active_source": "LOCAL_EXTERNAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218",
       "application": {
         "bundle_identifier": "com.anythingllm",
         "bundle_version": "1.12.1",
@@ -166,18 +166,18 @@
                 "is_symlink": false,
                 "link_target": null,
                 "mtime_ns": 1784879640746240771,
-                "path": "/Volumes/AnythingLLMDesktop/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/anythingllm.db",
-                "resolved": "/Volumes/AnythingLLMDesktop/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/anythingllm.db",
+                "path": "LOCAL_EXTERNAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/anythingllm.db",
+                "resolved": "LOCAL_EXTERNAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/anythingllm.db",
                 "size_bytes": 15908864,
                 "type": "file"
               },
               "shm": {
                 "exists": false,
-                "path": "/Volumes/AnythingLLMDesktop/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/anythingllm.db-shm"
+                "path": "LOCAL_EXTERNAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/anythingllm.db-shm"
               },
               "wal": {
                 "exists": false,
-                "path": "/Volumes/AnythingLLMDesktop/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/anythingllm.db-wal"
+                "path": "LOCAL_EXTERNAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/anythingllm.db-wal"
               }
             },
             "before": {
@@ -188,18 +188,18 @@
                 "is_symlink": false,
                 "link_target": null,
                 "mtime_ns": 1784879640746240771,
-                "path": "/Volumes/AnythingLLMDesktop/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/anythingllm.db",
-                "resolved": "/Volumes/AnythingLLMDesktop/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/anythingllm.db",
+                "path": "LOCAL_EXTERNAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/anythingllm.db",
+                "resolved": "LOCAL_EXTERNAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/anythingllm.db",
                 "size_bytes": 15908864,
                 "type": "file"
               },
               "shm": {
                 "exists": false,
-                "path": "/Volumes/AnythingLLMDesktop/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/anythingllm.db-shm"
+                "path": "LOCAL_EXTERNAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/anythingllm.db-shm"
               },
               "wal": {
                 "exists": false,
-                "path": "/Volumes/AnythingLLMDesktop/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/anythingllm.db-wal"
+                "path": "LOCAL_EXTERNAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/anythingllm.db-wal"
               }
             },
             "counts": {
@@ -210,7 +210,7 @@
               "workspaces": 8
             },
             "open_mode": "mode=ro + PRAGMA query_only=ON",
-            "path": "/Volumes/AnythingLLMDesktop/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/anythingllm.db",
+            "path": "LOCAL_EXTERNAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/anythingllm.db",
             "status": "READ_ONLY_OPEN_PASS",
             "table_count": 41,
             "tables_sha256": "799960e93213132a9b4edd267c0fad279d0600133f7e6aa7f5c1add12113d96c",
@@ -232,8 +232,8 @@
             "is_symlink": false,
             "link_target": null,
             "mtime_ns": 1783259217041922462,
-            "path": "/Volumes/AnythingLLMDesktop/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/documents",
-            "resolved": "/Volumes/AnythingLLMDesktop/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/documents",
+            "path": "LOCAL_EXTERNAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/documents",
+            "resolved": "LOCAL_EXTERNAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/documents",
             "size_bytes": 224,
             "type": "directory"
           },
@@ -244,12 +244,12 @@
             "is_symlink": false,
             "link_target": null,
             "mtime_ns": 1784004863021813909,
-            "path": "/Volumes/AnythingLLMDesktop/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/.env",
-            "resolved": "/Volumes/AnythingLLMDesktop/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/.env",
+            "path": "LOCAL_EXTERNAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/.env",
+            "resolved": "LOCAL_EXTERNAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/.env",
             "size_bytes": 1628,
             "type": "file"
           },
-          "input_root": "/Users/noboruikuta/Library/Application Support/anythingllm-desktop",
+          "input_root": "LOCAL_USER_HOME/Library/Application Support/anythingllm-desktop",
           "lancedb": {
             "device": 16777246,
             "exists": true,
@@ -257,26 +257,26 @@
             "is_symlink": false,
             "link_target": null,
             "mtime_ns": 1783264029600893692,
-            "path": "/Volumes/AnythingLLMDesktop/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/lancedb",
-            "resolved": "/Volumes/AnythingLLMDesktop/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/lancedb",
+            "path": "LOCAL_EXTERNAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/lancedb",
+            "resolved": "LOCAL_EXTERNAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/lancedb",
             "size_bytes": 320,
             "type": "directory"
           },
           "mount": {
-            "df_last_line": "/dev/disk8s1  976549560 486578976 489565992    50%    /Volumes/AnythingLLMDesktop",
+            "df_last_line": "/dev/disk8s1  976549560 486578976 489565992    50%    LOCAL_EXTERNAL_VOLUME",
             "df_returncode": 0,
-            "existing_parent": "/Users/noboruikuta/Library/Application Support/anythingllm-desktop",
-            "probe_path": "/Users/noboruikuta/Library/Application Support/anythingllm-desktop"
+            "existing_parent": "LOCAL_USER_HOME/Library/Application Support/anythingllm-desktop",
+            "probe_path": "LOCAL_USER_HOME/Library/Application Support/anythingllm-desktop"
           },
           "root": {
             "device": 16777246,
             "exists": true,
             "inode": 335526,
             "is_symlink": true,
-            "link_target": "/Volumes/AnythingLLMDesktop/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218",
+            "link_target": "LOCAL_EXTERNAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218",
             "mtime_ns": 1785039461249653351,
-            "path": "/Users/noboruikuta/Library/Application Support/anythingllm-desktop",
-            "resolved": "/Volumes/AnythingLLMDesktop/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218",
+            "path": "LOCAL_USER_HOME/Library/Application Support/anythingllm-desktop",
+            "resolved": "LOCAL_EXTERNAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218",
             "size_bytes": 1184,
             "type": "directory"
           },
@@ -287,8 +287,8 @@
             "is_symlink": false,
             "link_target": null,
             "mtime_ns": 1783852583944363468,
-            "path": "/Volumes/AnythingLLMDesktop/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/vector-cache",
-            "resolved": "/Volumes/AnythingLLMDesktop/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/vector-cache",
+            "path": "LOCAL_EXTERNAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/vector-cache",
+            "resolved": "LOCAL_EXTERNAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/vector-cache",
             "size_bytes": 64,
             "type": "directory"
           }
@@ -303,18 +303,18 @@
                 "is_symlink": false,
                 "link_target": null,
                 "mtime_ns": 1783772260503731813,
-                "path": "/Volumes/AnythingLLMDesktop/AnythingLLM/Desktop/anythingllm-desktop/storage/anythingllm.db",
-                "resolved": "/Volumes/AnythingLLMDesktop/AnythingLLM/Desktop/anythingllm-desktop/storage/anythingllm.db",
+                "path": "LOCAL_EXTERNAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop/storage/anythingllm.db",
+                "resolved": "LOCAL_EXTERNAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop/storage/anythingllm.db",
                 "size_bytes": 15622144,
                 "type": "file"
               },
               "shm": {
                 "exists": false,
-                "path": "/Volumes/AnythingLLMDesktop/AnythingLLM/Desktop/anythingllm-desktop/storage/anythingllm.db-shm"
+                "path": "LOCAL_EXTERNAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop/storage/anythingllm.db-shm"
               },
               "wal": {
                 "exists": false,
-                "path": "/Volumes/AnythingLLMDesktop/AnythingLLM/Desktop/anythingllm-desktop/storage/anythingllm.db-wal"
+                "path": "LOCAL_EXTERNAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop/storage/anythingllm.db-wal"
               }
             },
             "before": {
@@ -325,18 +325,18 @@
                 "is_symlink": false,
                 "link_target": null,
                 "mtime_ns": 1783772260503731813,
-                "path": "/Volumes/AnythingLLMDesktop/AnythingLLM/Desktop/anythingllm-desktop/storage/anythingllm.db",
-                "resolved": "/Volumes/AnythingLLMDesktop/AnythingLLM/Desktop/anythingllm-desktop/storage/anythingllm.db",
+                "path": "LOCAL_EXTERNAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop/storage/anythingllm.db",
+                "resolved": "LOCAL_EXTERNAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop/storage/anythingllm.db",
                 "size_bytes": 15622144,
                 "type": "file"
               },
               "shm": {
                 "exists": false,
-                "path": "/Volumes/AnythingLLMDesktop/AnythingLLM/Desktop/anythingllm-desktop/storage/anythingllm.db-shm"
+                "path": "LOCAL_EXTERNAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop/storage/anythingllm.db-shm"
               },
               "wal": {
                 "exists": false,
-                "path": "/Volumes/AnythingLLMDesktop/AnythingLLM/Desktop/anythingllm-desktop/storage/anythingllm.db-wal"
+                "path": "LOCAL_EXTERNAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop/storage/anythingllm.db-wal"
               }
             },
             "counts": {
@@ -347,7 +347,7 @@
               "workspaces": 8
             },
             "open_mode": "mode=ro + PRAGMA query_only=ON",
-            "path": "/Volumes/AnythingLLMDesktop/AnythingLLM/Desktop/anythingllm-desktop/storage/anythingllm.db",
+            "path": "LOCAL_EXTERNAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop/storage/anythingllm.db",
             "status": "READ_ONLY_OPEN_PASS",
             "table_count": 41,
             "tables_sha256": "799960e93213132a9b4edd267c0fad279d0600133f7e6aa7f5c1add12113d96c",
@@ -369,8 +369,8 @@
             "is_symlink": false,
             "link_target": null,
             "mtime_ns": 1783259217041922462,
-            "path": "/Volumes/AnythingLLMDesktop/AnythingLLM/Desktop/anythingllm-desktop/storage/documents",
-            "resolved": "/Volumes/AnythingLLMDesktop/AnythingLLM/Desktop/anythingllm-desktop/storage/documents",
+            "path": "LOCAL_EXTERNAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop/storage/documents",
+            "resolved": "LOCAL_EXTERNAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop/storage/documents",
             "size_bytes": 224,
             "type": "directory"
           },
@@ -381,12 +381,12 @@
             "is_symlink": false,
             "link_target": null,
             "mtime_ns": 1783772460812023685,
-            "path": "/Volumes/AnythingLLMDesktop/AnythingLLM/Desktop/anythingllm-desktop/storage/.env",
-            "resolved": "/Volumes/AnythingLLMDesktop/AnythingLLM/Desktop/anythingllm-desktop/storage/.env",
+            "path": "LOCAL_EXTERNAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop/storage/.env",
+            "resolved": "LOCAL_EXTERNAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop/storage/.env",
             "size_bytes": 1613,
             "type": "file"
           },
-          "input_root": "/Volumes/AnythingLLMDesktop/AnythingLLM/Desktop/anythingllm-desktop",
+          "input_root": "LOCAL_EXTERNAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop",
           "lancedb": {
             "device": 16777246,
             "exists": true,
@@ -394,16 +394,16 @@
             "is_symlink": false,
             "link_target": null,
             "mtime_ns": 1783264029600893692,
-            "path": "/Volumes/AnythingLLMDesktop/AnythingLLM/Desktop/anythingllm-desktop/storage/lancedb",
-            "resolved": "/Volumes/AnythingLLMDesktop/AnythingLLM/Desktop/anythingllm-desktop/storage/lancedb",
+            "path": "LOCAL_EXTERNAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop/storage/lancedb",
+            "resolved": "LOCAL_EXTERNAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop/storage/lancedb",
             "size_bytes": 320,
             "type": "directory"
           },
           "mount": {
-            "df_last_line": "/dev/disk8s1  976549560 486578976 489565992    50%    /Volumes/AnythingLLMDesktop",
+            "df_last_line": "/dev/disk8s1  976549560 486578976 489565992    50%    LOCAL_EXTERNAL_VOLUME",
             "df_returncode": 0,
-            "existing_parent": "/Volumes/AnythingLLMDesktop/AnythingLLM/Desktop/anythingllm-desktop",
-            "probe_path": "/Volumes/AnythingLLMDesktop/AnythingLLM/Desktop/anythingllm-desktop"
+            "existing_parent": "LOCAL_EXTERNAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop",
+            "probe_path": "LOCAL_EXTERNAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop"
           },
           "root": {
             "device": 16777246,
@@ -412,8 +412,8 @@
             "is_symlink": false,
             "link_target": null,
             "mtime_ns": 1783781137322589118,
-            "path": "/Volumes/AnythingLLMDesktop/AnythingLLM/Desktop/anythingllm-desktop",
-            "resolved": "/Volumes/AnythingLLMDesktop/AnythingLLM/Desktop/anythingllm-desktop",
+            "path": "LOCAL_EXTERNAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop",
+            "resolved": "LOCAL_EXTERNAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop",
             "size_bytes": 1056,
             "type": "directory"
           },
@@ -424,8 +424,8 @@
             "is_symlink": false,
             "link_target": null,
             "mtime_ns": 1783426549424745140,
-            "path": "/Volumes/AnythingLLMDesktop/AnythingLLM/Desktop/anythingllm-desktop/storage/vector-cache",
-            "resolved": "/Volumes/AnythingLLMDesktop/AnythingLLM/Desktop/anythingllm-desktop/storage/vector-cache",
+            "path": "LOCAL_EXTERNAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop/storage/vector-cache",
+            "resolved": "LOCAL_EXTERNAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop/storage/vector-cache",
             "size_bytes": 2880,
             "type": "directory"
           }
@@ -440,18 +440,18 @@
                 "is_symlink": false,
                 "link_target": null,
                 "mtime_ns": 1784879640746240771,
-                "path": "/Volumes/AnythingLLMDesktop/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/anythingllm.db",
-                "resolved": "/Volumes/AnythingLLMDesktop/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/anythingllm.db",
+                "path": "LOCAL_EXTERNAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/anythingllm.db",
+                "resolved": "LOCAL_EXTERNAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/anythingllm.db",
                 "size_bytes": 15908864,
                 "type": "file"
               },
               "shm": {
                 "exists": false,
-                "path": "/Volumes/AnythingLLMDesktop/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/anythingllm.db-shm"
+                "path": "LOCAL_EXTERNAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/anythingllm.db-shm"
               },
               "wal": {
                 "exists": false,
-                "path": "/Volumes/AnythingLLMDesktop/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/anythingllm.db-wal"
+                "path": "LOCAL_EXTERNAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/anythingllm.db-wal"
               }
             },
             "before": {
@@ -462,18 +462,18 @@
                 "is_symlink": false,
                 "link_target": null,
                 "mtime_ns": 1784879640746240771,
-                "path": "/Volumes/AnythingLLMDesktop/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/anythingllm.db",
-                "resolved": "/Volumes/AnythingLLMDesktop/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/anythingllm.db",
+                "path": "LOCAL_EXTERNAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/anythingllm.db",
+                "resolved": "LOCAL_EXTERNAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/anythingllm.db",
                 "size_bytes": 15908864,
                 "type": "file"
               },
               "shm": {
                 "exists": false,
-                "path": "/Volumes/AnythingLLMDesktop/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/anythingllm.db-shm"
+                "path": "LOCAL_EXTERNAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/anythingllm.db-shm"
               },
               "wal": {
                 "exists": false,
-                "path": "/Volumes/AnythingLLMDesktop/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/anythingllm.db-wal"
+                "path": "LOCAL_EXTERNAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/anythingllm.db-wal"
               }
             },
             "counts": {
@@ -484,7 +484,7 @@
               "workspaces": 8
             },
             "open_mode": "mode=ro + PRAGMA query_only=ON",
-            "path": "/Volumes/AnythingLLMDesktop/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/anythingllm.db",
+            "path": "LOCAL_EXTERNAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/anythingllm.db",
             "status": "READ_ONLY_OPEN_PASS",
             "table_count": 41,
             "tables_sha256": "799960e93213132a9b4edd267c0fad279d0600133f7e6aa7f5c1add12113d96c",
@@ -506,8 +506,8 @@
             "is_symlink": false,
             "link_target": null,
             "mtime_ns": 1783259217041922462,
-            "path": "/Volumes/AnythingLLMDesktop/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/documents",
-            "resolved": "/Volumes/AnythingLLMDesktop/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/documents",
+            "path": "LOCAL_EXTERNAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/documents",
+            "resolved": "LOCAL_EXTERNAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/documents",
             "size_bytes": 224,
             "type": "directory"
           },
@@ -518,12 +518,12 @@
             "is_symlink": false,
             "link_target": null,
             "mtime_ns": 1784004863021813909,
-            "path": "/Volumes/AnythingLLMDesktop/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/.env",
-            "resolved": "/Volumes/AnythingLLMDesktop/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/.env",
+            "path": "LOCAL_EXTERNAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/.env",
+            "resolved": "LOCAL_EXTERNAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/.env",
             "size_bytes": 1628,
             "type": "file"
           },
-          "input_root": "/Volumes/AnythingLLMDesktop/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218",
+          "input_root": "LOCAL_EXTERNAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218",
           "lancedb": {
             "device": 16777246,
             "exists": true,
@@ -531,16 +531,16 @@
             "is_symlink": false,
             "link_target": null,
             "mtime_ns": 1783264029600893692,
-            "path": "/Volumes/AnythingLLMDesktop/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/lancedb",
-            "resolved": "/Volumes/AnythingLLMDesktop/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/lancedb",
+            "path": "LOCAL_EXTERNAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/lancedb",
+            "resolved": "LOCAL_EXTERNAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/lancedb",
             "size_bytes": 320,
             "type": "directory"
           },
           "mount": {
-            "df_last_line": "/dev/disk8s1  976549560 486578976 489565992    50%    /Volumes/AnythingLLMDesktop",
+            "df_last_line": "/dev/disk8s1  976549560 486578976 489565992    50%    LOCAL_EXTERNAL_VOLUME",
             "df_returncode": 0,
-            "existing_parent": "/Volumes/AnythingLLMDesktop/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218",
-            "probe_path": "/Volumes/AnythingLLMDesktop/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218"
+            "existing_parent": "LOCAL_EXTERNAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218",
+            "probe_path": "LOCAL_EXTERNAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218"
           },
           "root": {
             "device": 16777246,
@@ -549,8 +549,8 @@
             "is_symlink": false,
             "link_target": null,
             "mtime_ns": 1785039461249653351,
-            "path": "/Volumes/AnythingLLMDesktop/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218",
-            "resolved": "/Volumes/AnythingLLMDesktop/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218",
+            "path": "LOCAL_EXTERNAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218",
+            "resolved": "LOCAL_EXTERNAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218",
             "size_bytes": 1184,
             "type": "directory"
           },
@@ -561,8 +561,8 @@
             "is_symlink": false,
             "link_target": null,
             "mtime_ns": 1783852583944363468,
-            "path": "/Volumes/AnythingLLMDesktop/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/vector-cache",
-            "resolved": "/Volumes/AnythingLLMDesktop/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/vector-cache",
+            "path": "LOCAL_EXTERNAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/vector-cache",
+            "resolved": "LOCAL_EXTERNAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/vector-cache",
             "size_bytes": 64,
             "type": "directory"
           }
@@ -577,18 +577,18 @@
                 "is_symlink": false,
                 "link_target": null,
                 "mtime_ns": 1779015377456537521,
-                "path": "/Volumes/32tbRAID10/AnythingLLM/Desktop/anythingllm-desktop/storage/anythingllm.db",
-                "resolved": "/Volumes/32tbRAID10/AnythingLLM/Desktop/anythingllm-desktop/storage/anythingllm.db",
+                "path": "LOCAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop/storage/anythingllm.db",
+                "resolved": "LOCAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop/storage/anythingllm.db",
                 "size_bytes": 552960,
                 "type": "file"
               },
               "shm": {
                 "exists": false,
-                "path": "/Volumes/32tbRAID10/AnythingLLM/Desktop/anythingllm-desktop/storage/anythingllm.db-shm"
+                "path": "LOCAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop/storage/anythingllm.db-shm"
               },
               "wal": {
                 "exists": false,
-                "path": "/Volumes/32tbRAID10/AnythingLLM/Desktop/anythingllm-desktop/storage/anythingllm.db-wal"
+                "path": "LOCAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop/storage/anythingllm.db-wal"
               }
             },
             "before": {
@@ -599,18 +599,18 @@
                 "is_symlink": false,
                 "link_target": null,
                 "mtime_ns": 1779015377456537521,
-                "path": "/Volumes/32tbRAID10/AnythingLLM/Desktop/anythingllm-desktop/storage/anythingllm.db",
-                "resolved": "/Volumes/32tbRAID10/AnythingLLM/Desktop/anythingllm-desktop/storage/anythingllm.db",
+                "path": "LOCAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop/storage/anythingllm.db",
+                "resolved": "LOCAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop/storage/anythingllm.db",
                 "size_bytes": 552960,
                 "type": "file"
               },
               "shm": {
                 "exists": false,
-                "path": "/Volumes/32tbRAID10/AnythingLLM/Desktop/anythingllm-desktop/storage/anythingllm.db-shm"
+                "path": "LOCAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop/storage/anythingllm.db-shm"
               },
               "wal": {
                 "exists": false,
-                "path": "/Volumes/32tbRAID10/AnythingLLM/Desktop/anythingllm-desktop/storage/anythingllm.db-wal"
+                "path": "LOCAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop/storage/anythingllm.db-wal"
               }
             },
             "counts": {
@@ -621,7 +621,7 @@
               "workspaces": 6
             },
             "open_mode": "mode=ro + PRAGMA query_only=ON",
-            "path": "/Volumes/32tbRAID10/AnythingLLM/Desktop/anythingllm-desktop/storage/anythingllm.db",
+            "path": "LOCAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop/storage/anythingllm.db",
             "status": "READ_ONLY_OPEN_PASS",
             "table_count": 32,
             "tables_sha256": "3052847620a7a070da5fdf82a7ccb862be9f0a531fb9b81d4a1d4c808888bed8",
@@ -643,8 +643,8 @@
             "is_symlink": false,
             "link_target": null,
             "mtime_ns": 1778650547751912426,
-            "path": "/Volumes/32tbRAID10/AnythingLLM/Desktop/anythingllm-desktop/storage/documents",
-            "resolved": "/Volumes/32tbRAID10/AnythingLLM/Desktop/anythingllm-desktop/storage/documents",
+            "path": "LOCAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop/storage/documents",
+            "resolved": "LOCAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop/storage/documents",
             "size_bytes": 96,
             "type": "directory"
           },
@@ -655,12 +655,12 @@
             "is_symlink": false,
             "link_target": null,
             "mtime_ns": 1779013793600917378,
-            "path": "/Volumes/32tbRAID10/AnythingLLM/Desktop/anythingllm-desktop/storage/.env",
-            "resolved": "/Volumes/32tbRAID10/AnythingLLM/Desktop/anythingllm-desktop/storage/.env",
+            "path": "LOCAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop/storage/.env",
+            "resolved": "LOCAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop/storage/.env",
             "size_bytes": 1135,
             "type": "file"
           },
-          "input_root": "/Volumes/32tbRAID10/AnythingLLM/Desktop/anythingllm-desktop",
+          "input_root": "LOCAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop",
           "lancedb": {
             "device": 16777242,
             "exists": true,
@@ -668,16 +668,16 @@
             "is_symlink": false,
             "link_target": null,
             "mtime_ns": 1778650547758808350,
-            "path": "/Volumes/32tbRAID10/AnythingLLM/Desktop/anythingllm-desktop/storage/lancedb",
-            "resolved": "/Volumes/32tbRAID10/AnythingLLM/Desktop/anythingllm-desktop/storage/lancedb",
+            "path": "LOCAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop/storage/lancedb",
+            "resolved": "LOCAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop/storage/lancedb",
             "size_bytes": 256,
             "type": "directory"
           },
           "mount": {
-            "df_last_line": "/dev/disk7s1 62502977456 27375582840 35119417504    44%    /Volumes/32tbRAID10",
+            "df_last_line": "/dev/disk7s1 62502977456 27375582840 35119417504    44%    LOCAL_VOLUME",
             "df_returncode": 0,
-            "existing_parent": "/Volumes/32tbRAID10/AnythingLLM/Desktop/anythingllm-desktop",
-            "probe_path": "/Volumes/32tbRAID10/AnythingLLM/Desktop/anythingllm-desktop"
+            "existing_parent": "LOCAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop",
+            "probe_path": "LOCAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop"
           },
           "root": {
             "device": 16777242,
@@ -686,8 +686,8 @@
             "is_symlink": false,
             "link_target": null,
             "mtime_ns": 1784428918076907785,
-            "path": "/Volumes/32tbRAID10/AnythingLLM/Desktop/anythingllm-desktop",
-            "resolved": "/Volumes/32tbRAID10/AnythingLLM/Desktop/anythingllm-desktop",
+            "path": "LOCAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop",
+            "resolved": "LOCAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop",
             "size_bytes": 704,
             "type": "directory"
           },
@@ -698,8 +698,8 @@
             "is_symlink": false,
             "link_target": null,
             "mtime_ns": 1778650547766283976,
-            "path": "/Volumes/32tbRAID10/AnythingLLM/Desktop/anythingllm-desktop/storage/vector-cache",
-            "resolved": "/Volumes/32tbRAID10/AnythingLLM/Desktop/anythingllm-desktop/storage/vector-cache",
+            "path": "LOCAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop/storage/vector-cache",
+            "resolved": "LOCAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop/storage/vector-cache",
             "size_bytes": 544,
             "type": "directory"
           }
@@ -714,18 +714,18 @@
                 "is_symlink": false,
                 "link_target": null,
                 "mtime_ns": 1779015377000000000,
-                "path": "/Volumes/HardDisk8TB/AnythingLLM/Desktop/anythingllm-desktop/storage/anythingllm.db",
-                "resolved": "/Volumes/HardDisk8TB/AnythingLLM/Desktop/anythingllm-desktop/storage/anythingllm.db",
+                "path": "LOCAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop/storage/anythingllm.db",
+                "resolved": "LOCAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop/storage/anythingllm.db",
                 "size_bytes": 552960,
                 "type": "file"
               },
               "shm": {
                 "exists": false,
-                "path": "/Volumes/HardDisk8TB/AnythingLLM/Desktop/anythingllm-desktop/storage/anythingllm.db-shm"
+                "path": "LOCAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop/storage/anythingllm.db-shm"
               },
               "wal": {
                 "exists": false,
-                "path": "/Volumes/HardDisk8TB/AnythingLLM/Desktop/anythingllm-desktop/storage/anythingllm.db-wal"
+                "path": "LOCAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop/storage/anythingllm.db-wal"
               }
             },
             "before": {
@@ -736,18 +736,18 @@
                 "is_symlink": false,
                 "link_target": null,
                 "mtime_ns": 1779015377000000000,
-                "path": "/Volumes/HardDisk8TB/AnythingLLM/Desktop/anythingllm-desktop/storage/anythingllm.db",
-                "resolved": "/Volumes/HardDisk8TB/AnythingLLM/Desktop/anythingllm-desktop/storage/anythingllm.db",
+                "path": "LOCAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop/storage/anythingllm.db",
+                "resolved": "LOCAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop/storage/anythingllm.db",
                 "size_bytes": 552960,
                 "type": "file"
               },
               "shm": {
                 "exists": false,
-                "path": "/Volumes/HardDisk8TB/AnythingLLM/Desktop/anythingllm-desktop/storage/anythingllm.db-shm"
+                "path": "LOCAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop/storage/anythingllm.db-shm"
               },
               "wal": {
                 "exists": false,
-                "path": "/Volumes/HardDisk8TB/AnythingLLM/Desktop/anythingllm-desktop/storage/anythingllm.db-wal"
+                "path": "LOCAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop/storage/anythingllm.db-wal"
               }
             },
             "counts": {
@@ -758,7 +758,7 @@
               "workspaces": 6
             },
             "open_mode": "mode=ro + PRAGMA query_only=ON",
-            "path": "/Volumes/HardDisk8TB/AnythingLLM/Desktop/anythingllm-desktop/storage/anythingllm.db",
+            "path": "LOCAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop/storage/anythingllm.db",
             "status": "READ_ONLY_OPEN_PASS",
             "table_count": 32,
             "tables_sha256": "3052847620a7a070da5fdf82a7ccb862be9f0a531fb9b81d4a1d4c808888bed8",
@@ -780,8 +780,8 @@
             "is_symlink": false,
             "link_target": null,
             "mtime_ns": 1778650547000000000,
-            "path": "/Volumes/HardDisk8TB/AnythingLLM/Desktop/anythingllm-desktop/storage/documents",
-            "resolved": "/Volumes/HardDisk8TB/AnythingLLM/Desktop/anythingllm-desktop/storage/documents",
+            "path": "LOCAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop/storage/documents",
+            "resolved": "LOCAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop/storage/documents",
             "size_bytes": 102,
             "type": "directory"
           },
@@ -792,12 +792,12 @@
             "is_symlink": false,
             "link_target": null,
             "mtime_ns": 1779013793000000000,
-            "path": "/Volumes/HardDisk8TB/AnythingLLM/Desktop/anythingllm-desktop/storage/.env",
-            "resolved": "/Volumes/HardDisk8TB/AnythingLLM/Desktop/anythingllm-desktop/storage/.env",
+            "path": "LOCAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop/storage/.env",
+            "resolved": "LOCAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop/storage/.env",
             "size_bytes": 1135,
             "type": "file"
           },
-          "input_root": "/Volumes/HardDisk8TB/AnythingLLM/Desktop/anythingllm-desktop",
+          "input_root": "LOCAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop",
           "lancedb": {
             "device": 16777230,
             "exists": true,
@@ -805,16 +805,16 @@
             "is_symlink": false,
             "link_target": null,
             "mtime_ns": 1778650547000000000,
-            "path": "/Volumes/HardDisk8TB/AnythingLLM/Desktop/anythingllm-desktop/storage/lancedb",
-            "resolved": "/Volumes/HardDisk8TB/AnythingLLM/Desktop/anythingllm-desktop/storage/lancedb",
+            "path": "LOCAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop/storage/lancedb",
+            "resolved": "LOCAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop/storage/lancedb",
             "size_bytes": 272,
             "type": "directory"
           },
           "mount": {
-            "df_last_line": "/dev/disk2s2 15627757568 11490428752 4137328816    74%    /Volumes/HardDisk8TB",
+            "df_last_line": "/dev/disk2s2 15627757568 11490428752 4137328816    74%    LOCAL_VOLUME",
             "df_returncode": 0,
-            "existing_parent": "/Volumes/HardDisk8TB/AnythingLLM/Desktop/anythingllm-desktop",
-            "probe_path": "/Volumes/HardDisk8TB/AnythingLLM/Desktop/anythingllm-desktop"
+            "existing_parent": "LOCAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop",
+            "probe_path": "LOCAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop"
           },
           "root": {
             "device": 16777230,
@@ -823,8 +823,8 @@
             "is_symlink": false,
             "link_target": null,
             "mtime_ns": 1784317221000000000,
-            "path": "/Volumes/HardDisk8TB/AnythingLLM/Desktop/anythingllm-desktop",
-            "resolved": "/Volumes/HardDisk8TB/AnythingLLM/Desktop/anythingllm-desktop",
+            "path": "LOCAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop",
+            "resolved": "LOCAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop",
             "size_bytes": 714,
             "type": "directory"
           },
@@ -835,8 +835,8 @@
             "is_symlink": false,
             "link_target": null,
             "mtime_ns": 1778650547000000000,
-            "path": "/Volumes/HardDisk8TB/AnythingLLM/Desktop/anythingllm-desktop/storage/vector-cache",
-            "resolved": "/Volumes/HardDisk8TB/AnythingLLM/Desktop/anythingllm-desktop/storage/vector-cache",
+            "path": "LOCAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop/storage/vector-cache",
+            "resolved": "LOCAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop/storage/vector-cache",
             "size_bytes": 578,
             "type": "directory"
           }
@@ -855,18 +855,18 @@
               "is_symlink": false,
               "link_target": null,
               "mtime_ns": 1784879640746240771,
-              "path": "/Volumes/AnythingLLMDesktop/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/anythingllm.db",
-              "resolved": "/Volumes/AnythingLLMDesktop/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/anythingllm.db",
+              "path": "LOCAL_EXTERNAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/anythingllm.db",
+              "resolved": "LOCAL_EXTERNAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/anythingllm.db",
               "size_bytes": 15908864,
               "type": "file"
             },
             "shm": {
               "exists": false,
-              "path": "/Volumes/AnythingLLMDesktop/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/anythingllm.db-shm"
+              "path": "LOCAL_EXTERNAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/anythingllm.db-shm"
             },
             "wal": {
               "exists": false,
-              "path": "/Volumes/AnythingLLMDesktop/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/anythingllm.db-wal"
+              "path": "LOCAL_EXTERNAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/anythingllm.db-wal"
             }
           },
           "before": {
@@ -877,18 +877,18 @@
               "is_symlink": false,
               "link_target": null,
               "mtime_ns": 1784879640746240771,
-              "path": "/Volumes/AnythingLLMDesktop/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/anythingllm.db",
-              "resolved": "/Volumes/AnythingLLMDesktop/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/anythingllm.db",
+              "path": "LOCAL_EXTERNAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/anythingllm.db",
+              "resolved": "LOCAL_EXTERNAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/anythingllm.db",
               "size_bytes": 15908864,
               "type": "file"
             },
             "shm": {
               "exists": false,
-              "path": "/Volumes/AnythingLLMDesktop/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/anythingllm.db-shm"
+              "path": "LOCAL_EXTERNAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/anythingllm.db-shm"
             },
             "wal": {
               "exists": false,
-              "path": "/Volumes/AnythingLLMDesktop/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/anythingllm.db-wal"
+              "path": "LOCAL_EXTERNAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/anythingllm.db-wal"
             }
           },
           "counts": {
@@ -899,7 +899,7 @@
             "workspaces": 8
           },
           "open_mode": "mode=ro + PRAGMA query_only=ON",
-          "path": "/Volumes/AnythingLLMDesktop/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/anythingllm.db",
+          "path": "LOCAL_EXTERNAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/anythingllm.db",
           "status": "READ_ONLY_OPEN_PASS",
           "table_count": 41,
           "tables_sha256": "799960e93213132a9b4edd267c0fad279d0600133f7e6aa7f5c1add12113d96c",
@@ -921,8 +921,8 @@
           "is_symlink": false,
           "link_target": null,
           "mtime_ns": 1783259217041922462,
-          "path": "/Volumes/AnythingLLMDesktop/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/documents",
-          "resolved": "/Volumes/AnythingLLMDesktop/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/documents",
+          "path": "LOCAL_EXTERNAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/documents",
+          "resolved": "LOCAL_EXTERNAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/documents",
           "size_bytes": 224,
           "type": "directory"
         },
@@ -933,12 +933,12 @@
           "is_symlink": false,
           "link_target": null,
           "mtime_ns": 1784004863021813909,
-          "path": "/Volumes/AnythingLLMDesktop/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/.env",
-          "resolved": "/Volumes/AnythingLLMDesktop/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/.env",
+          "path": "LOCAL_EXTERNAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/.env",
+          "resolved": "LOCAL_EXTERNAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/.env",
           "size_bytes": 1628,
           "type": "file"
         },
-        "input_root": "/Users/noboruikuta/Library/Application Support/anythingllm-desktop",
+        "input_root": "LOCAL_USER_HOME/Library/Application Support/anythingllm-desktop",
         "lancedb": {
           "device": 16777246,
           "exists": true,
@@ -946,26 +946,26 @@
           "is_symlink": false,
           "link_target": null,
           "mtime_ns": 1783264029600893692,
-          "path": "/Volumes/AnythingLLMDesktop/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/lancedb",
-          "resolved": "/Volumes/AnythingLLMDesktop/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/lancedb",
+          "path": "LOCAL_EXTERNAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/lancedb",
+          "resolved": "LOCAL_EXTERNAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/lancedb",
           "size_bytes": 320,
           "type": "directory"
         },
         "mount": {
-          "df_last_line": "/dev/disk8s1  976549560 486578976 489565992    50%    /Volumes/AnythingLLMDesktop",
+          "df_last_line": "/dev/disk8s1  976549560 486578976 489565992    50%    LOCAL_EXTERNAL_VOLUME",
           "df_returncode": 0,
-          "existing_parent": "/Users/noboruikuta/Library/Application Support/anythingllm-desktop",
-          "probe_path": "/Users/noboruikuta/Library/Application Support/anythingllm-desktop"
+          "existing_parent": "LOCAL_USER_HOME/Library/Application Support/anythingllm-desktop",
+          "probe_path": "LOCAL_USER_HOME/Library/Application Support/anythingllm-desktop"
         },
         "root": {
           "device": 16777246,
           "exists": true,
           "inode": 335526,
           "is_symlink": true,
-          "link_target": "/Volumes/AnythingLLMDesktop/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218",
+          "link_target": "LOCAL_EXTERNAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218",
           "mtime_ns": 1785039461249653351,
-          "path": "/Users/noboruikuta/Library/Application Support/anythingllm-desktop",
-          "resolved": "/Volumes/AnythingLLMDesktop/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218",
+          "path": "LOCAL_USER_HOME/Library/Application Support/anythingllm-desktop",
+          "resolved": "LOCAL_EXTERNAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218",
           "size_bytes": 1184,
           "type": "directory"
         },
@@ -976,17 +976,17 @@
           "is_symlink": false,
           "link_target": null,
           "mtime_ns": 1783852583944363468,
-          "path": "/Volumes/AnythingLLMDesktop/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/vector-cache",
-          "resolved": "/Volumes/AnythingLLMDesktop/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/vector-cache",
+          "path": "LOCAL_EXTERNAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/vector-cache",
+          "resolved": "LOCAL_EXTERNAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/vector-cache",
           "size_bytes": 64,
           "type": "directory"
         }
       },
-      "evidence_short": "/Volumes/AnythingLLMDesktop/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218",
+      "evidence_short": "LOCAL_EXTERNAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218",
       "filesystem_modified": false,
       "name": "AnythingLLM Desktop",
       "open_database_paths": [
-        "/Volumes/AnythingLLMDesktop/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/anythingllm.db"
+        "LOCAL_EXTERNAL_VOLUME/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218/storage/anythingllm.db"
       ],
       "resolution_basis": [
         "OPEN_DATABASE_BY_RUNNING_APP"
@@ -997,31 +997,31 @@
           "pid": 545
         },
         {
-          "command": "/Applications/AnythingLLM.app/Contents/Frameworks/AnythingLLM Helper (GPU).app/Contents/MacOS/AnythingLLM Helper (GPU) --type=gpu-process --user-data-dir=/Users/noboruikuta/Library/Application Support/anythingllm-desktop --gpu-preferences=WAAAAAAAAAAgAAAEAAAAAAAAAAAAAAAAAABgAAEAAAA4AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAaAcAAAAAAABoBwAAAAAAAHgCAABOAAAAcAIAAAAAAAB4AgAAAAAAAIACAAAAAAAAiAIAAAAAAACQAgAAAAAAAJgCAAAAAAAAoAIAAAAAAACoAgAAAAAAALACAAAAAAAAuAIAAAAAAADAAgAAAAAAAMgCAAAAAAAA0AIAAAAAAADYAgAAAAAAAOACAAAAAAAA6AIAAAAAAADwAgAAAAAAAPgCAAAAAAAAAAMAAAAAAAAIAwAAAAAAABADAAAAAAAAGAMAAAAAAAAgAwAAAAAAACgDAAAAAAAAMAMAAAAAAAA4AwAAAAAAAEADAAAAAAAASAMAAAAAAABQAwAAAAAAAFgDAAAAAAAAYAMAAAAAAABoAwAAAAAAAHADAAAAAAAAeAMAAAAAAACAAwAAAAAAAIgDAAAAAAAAkAMAAAAAAACYAwAAAAAAAKADAAAAAAAAqAMAAAAAAACwAwAAAAAAALgDAAAAAAAAwAMAAAAAAADIAwAAAAAAANADAAAAAAAA2AMAAAAAAADgAwAAAAAAAOgDAAAAAAAA8AMAAAAAAAD4AwAAAAAAAAAEAAAAAAAACAQAAAAAAAAQBAAAAAAAABgEAAAAAAAAIAQAAAAAAAAoBAAAAAAAADAEAAAAAAAAOAQAAAAAAABABAAAAAAAAEgEAAAAAAAAUAQAAAAAAABYBAAAAAAAAGAEAAAAAAAAaAQAAAAAAABwBAAAAAAAAHgEAAAAAAAAgAQAAAAAAACIBAAAAAAAAJAEAAAAAAAAmAQAAAAAAACgBAAAAAAAAKgEAAAAAAAAsAQAAAAAAAC4BAAAAAAAAMAEAAAAAAAAyAQAAAAAAADQBAAAAAAAANgEAAAAAAAAEAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAEAAAAQAAAAAAAAAAAAAAACAAAAEAAAAAAAAAAAAAAAAwAAABAAAAAAAAAAAAAAAAYAAAAQAAAAAAAAAAAAAAAHAAAAEAAAAAAAAAAAAAAACAAAABAAAAAAAAAAAAAAAAkAAAAQAAAAAAAAAAAAAAALAAAAEAAAAAAAAAAAAAAADAAAABAAAAAAAAAAAAAAAA4AAAAQAAAAAAAAAAAAAAAPAAAAEAAAAAAAAAAAAAAAEAAAABAAAAAAAAAAAQAAAAAAAAAQAAAAAAAAAAEAAAABAAAAEAAAAAAAAAABAAAAAgAAABAAAAAAAAAAAQAAAAMAAAAQAAAAAAAAAAEAAAAGAAAAEAAAAAAAAAABAAAABwAAABAAAAAAAAAAAQAAAAgAAAAQAAAAAAAAAAEAAAAJAAAAEAAAAAAAAAABAAAACwAAABAAAAAAAAAAAQAAAAwAAAAQAAAAAAAAAAEAAAAOAAAAEAAAAAAAAAABAAAADwAAABAAAAAAAAAAAQAAABAAAAAQAAAAAAAAAAQAAAAAAAAAEAAAAAAAAAAEAAAAAQAAABAAAAAAAAAABAAAAAIAAAAQAAAAAAAAAAQAAAADAAAAEAAAAAAAAAAEAAAABgAAABAAAAAAAAAABAAAAAcAAAAQAAAAAAAAAAQAAAAIAAAAEAAAAAAAAAAEAAAACQAAABAAAAAAAAAABAAAAAsAAAAQAAAAAAAAAAQAAAAMAAAAEAAAAAAAAAAEAAAADgAAABAAAAAAAAAABAAAAA8AAAAQAAAAAAAAAAQAAAAQAAAAEAAAAAAAAAAIAAAAAAAAABAAAAAAAAAACAAAAAEAAAAQAAAAAAAAAAgAAAACAAAAEAAAAAAAAAAIAAAAAwAAABAAAAAAAAAACAAAAAYAAAAQAAAAAAAAAAgAAAAHAAAAEAAAAAAAAAAIAAAACAAAABAAAAAAAAAACAAAAAkAAAAQAAAAAAAAAAgAAAALAAAAEAAAAAAAAAAIAAAADAAAABAAAAAAAAAACAAAAA4AAAAQAAAAAAAAAAgAAAAPAAAAEAAAAAAAAAAIAAAAEAAAABAAAAAAAAAACQAAAAAAAAAQAAAAAAAAAAkAAAABAAAAEAAAAAAAAAAJAAAAAgAAABAAAAAAAAAACQAAAAMAAAAQAAAAAAAAAAkAAAAGAAAAEAAAAAAAAAAJAAAABwAAABAAAAAAAAAACQAAAAgAAAAQAAAAAAAAAAkAAAAJAAAAEAAAAAAAAAAJAAAACwAAABAAAAAAAAAACQAAAAwAAAAQAAAAAAAAAAkAAAAOAAAAEAAAAAAAAAAJAAAADwAAABAAAAAAAAAACQAAABAAAAAQAAAAAAAAAAsAAAAAAAAAEAAAAAAAAAALAAAAAQAAABAAAAAAAAAACwAAAAIAAAAQAAAAAAAAAAsAAAADAAAAEAAAAAAAAAALAAAABgAAABAAAAAAAAAACwAAAAcAAAAQAAAAAAAAAAsAAAAIAAAAEAAAAAAAAAALAAAACQAAABAAAAAAAAAACwAAAAsAAAAQAAAAAAAAAAsAAAAMAAAAEAAAAAAAAAALAAAADgAAABAAAAAAAAAACwAAAA8AAAAQAAAAAAAAAAsAAAAQAAAACAAAAAAAAAAIAAAAAAAAAA== --shared-files --field-trial-handle=1718379636,r,14425001046629594628,14170423942078809591,262144 --enable-features=MacLoopbackAudioForScreenShare,MacSckSystemAudioLoopbackOverride,PulseaudioLoopbackForScreenShare,ScreenCaptureKitPickerScreen,ScreenCaptureKitStreamPickerSonoma --disable-features=SpareRendererForSitePerProcess --variations-seed-version --seatbelt-client=35",
+          "command": "/Applications/AnythingLLM.app/Contents/Frameworks/AnythingLLM Helper (GPU).app/Contents/MacOS/AnythingLLM Helper (GPU) --type=gpu-process --user-data-dir=LOCAL_USER_HOME/Library/Application Support/anythingllm-desktop --gpu-preferences=WAAAAAAAAAAgAAAEAAAAAAAAAAAAAAAAAABgAAEAAAA4AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAaAcAAAAAAABoBwAAAAAAAHgCAABOAAAAcAIAAAAAAAB4AgAAAAAAAIACAAAAAAAAiAIAAAAAAACQAgAAAAAAAJgCAAAAAAAAoAIAAAAAAACoAgAAAAAAALACAAAAAAAAuAIAAAAAAADAAgAAAAAAAMgCAAAAAAAA0AIAAAAAAADYAgAAAAAAAOACAAAAAAAA6AIAAAAAAADwAgAAAAAAAPgCAAAAAAAAAAMAAAAAAAAIAwAAAAAAABADAAAAAAAAGAMAAAAAAAAgAwAAAAAAACgDAAAAAAAAMAMAAAAAAAA4AwAAAAAAAEADAAAAAAAASAMAAAAAAABQAwAAAAAAAFgDAAAAAAAAYAMAAAAAAABoAwAAAAAAAHADAAAAAAAAeAMAAAAAAACAAwAAAAAAAIgDAAAAAAAAkAMAAAAAAACYAwAAAAAAAKADAAAAAAAAqAMAAAAAAACwAwAAAAAAALgDAAAAAAAAwAMAAAAAAADIAwAAAAAAANADAAAAAAAA2AMAAAAAAADgAwAAAAAAAOgDAAAAAAAA8AMAAAAAAAD4AwAAAAAAAAAEAAAAAAAACAQAAAAAAAAQBAAAAAAAABgEAAAAAAAAIAQAAAAAAAAoBAAAAAAAADAEAAAAAAAAOAQAAAAAAABABAAAAAAAAEgEAAAAAAAAUAQAAAAAAABYBAAAAAAAAGAEAAAAAAAAaAQAAAAAAABwBAAAAAAAAHgEAAAAAAAAgAQAAAAAAACIBAAAAAAAAJAEAAAAAAAAmAQAAAAAAACgBAAAAAAAAKgEAAAAAAAAsAQAAAAAAAC4BAAAAAAAAMAEAAAAAAAAyAQAAAAAAADQBAAAAAAAANgEAAAAAAAAEAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAEAAAAQAAAAAAAAAAAAAAACAAAAEAAAAAAAAAAAAAAAAwAAABAAAAAAAAAAAAAAAAYAAAAQAAAAAAAAAAAAAAAHAAAAEAAAAAAAAAAAAAAACAAAABAAAAAAAAAAAAAAAAkAAAAQAAAAAAAAAAAAAAALAAAAEAAAAAAAAAAAAAAADAAAABAAAAAAAAAAAAAAAA4AAAAQAAAAAAAAAAAAAAAPAAAAEAAAAAAAAAAAAAAAEAAAABAAAAAAAAAAAQAAAAAAAAAQAAAAAAAAAAEAAAABAAAAEAAAAAAAAAABAAAAAgAAABAAAAAAAAAAAQAAAAMAAAAQAAAAAAAAAAEAAAAGAAAAEAAAAAAAAAABAAAABwAAABAAAAAAAAAAAQAAAAgAAAAQAAAAAAAAAAEAAAAJAAAAEAAAAAAAAAABAAAACwAAABAAAAAAAAAAAQAAAAwAAAAQAAAAAAAAAAEAAAAOAAAAEAAAAAAAAAABAAAADwAAABAAAAAAAAAAAQAAABAAAAAQAAAAAAAAAAQAAAAAAAAAEAAAAAAAAAAEAAAAAQAAABAAAAAAAAAABAAAAAIAAAAQAAAAAAAAAAQAAAADAAAAEAAAAAAAAAAEAAAABgAAABAAAAAAAAAABAAAAAcAAAAQAAAAAAAAAAQAAAAIAAAAEAAAAAAAAAAEAAAACQAAABAAAAAAAAAABAAAAAsAAAAQAAAAAAAAAAQAAAAMAAAAEAAAAAAAAAAEAAAADgAAABAAAAAAAAAABAAAAA8AAAAQAAAAAAAAAAQAAAAQAAAAEAAAAAAAAAAIAAAAAAAAABAAAAAAAAAACAAAAAEAAAAQAAAAAAAAAAgAAAACAAAAEAAAAAAAAAAIAAAAAwAAABAAAAAAAAAACAAAAAYAAAAQAAAAAAAAAAgAAAAHAAAAEAAAAAAAAAAIAAAACAAAABAAAAAAAAAACAAAAAkAAAAQAAAAAAAAAAgAAAALAAAAEAAAAAAAAAAIAAAADAAAABAAAAAAAAAACAAAAA4AAAAQAAAAAAAAAAgAAAAPAAAAEAAAAAAAAAAIAAAAEAAAABAAAAAAAAAACQAAAAAAAAAQAAAAAAAAAAkAAAABAAAAEAAAAAAAAAAJAAAAAgAAABAAAAAAAAAACQAAAAMAAAAQAAAAAAAAAAkAAAAGAAAAEAAAAAAAAAAJAAAABwAAABAAAAAAAAAACQAAAAgAAAAQAAAAAAAAAAkAAAAJAAAAEAAAAAAAAAAJAAAACwAAABAAAAAAAAAACQAAAAwAAAAQAAAAAAAAAAkAAAAOAAAAEAAAAAAAAAAJAAAADwAAABAAAAAAAAAACQAAABAAAAAQAAAAAAAAAAsAAAAAAAAAEAAAAAAAAAALAAAAAQAAABAAAAAAAAAACwAAAAIAAAAQAAAAAAAAAAsAAAADAAAAEAAAAAAAAAALAAAABgAAABAAAAAAAAAACwAAAAcAAAAQAAAAAAAAAAsAAAAIAAAAEAAAAAAAAAALAAAACQAAABAAAAAAAAAACwAAAAsAAAAQAAAAAAAAAAsAAAAMAAAAEAAAAAAAAAALAAAADgAAABAAAAAAAAAACwAAAA8AAAAQAAAAAAAAAAsAAAAQAAAACAAAAAAAAAAIAAAAAAAAAA== --shared-files --field-trial-handle=1718379636,r,14425001046629594628,14170423942078809591,262144 --enable-features=MacLoopbackAudioForScreenShare,MacSckSystemAudioLoopbackOverride,PulseaudioLoopbackForScreenShare,ScreenCaptureKitPickerScreen,ScreenCaptureKitStreamPickerSonoma --disable-features=SpareRendererForSitePerProcess --variations-seed-version --seatbelt-client=35",
           "pid": 987
         },
         {
-          "command": "/Applications/AnythingLLM.app/Contents/Frameworks/AnythingLLM Helper.app/Contents/MacOS/AnythingLLM Helper --type=utility --utility-sub-type=network.mojom.NetworkService --lang=ja --service-sandbox-type=network --user-data-dir=/Users/noboruikuta/Library/Application Support/anythingllm-desktop --shared-files --field-trial-handle=1718379636,r,14425001046629594628,14170423942078809591,262144 --enable-features=MacLoopbackAudioForScreenShare,MacSckSystemAudioLoopbackOverride,PulseaudioLoopbackForScreenShare,ScreenCaptureKitPickerScreen,ScreenCaptureKitStreamPickerSonoma --disable-features=SpareRendererForSitePerProcess --variations-seed-version --seatbelt-client=35",
+          "command": "/Applications/AnythingLLM.app/Contents/Frameworks/AnythingLLM Helper.app/Contents/MacOS/AnythingLLM Helper --type=utility --utility-sub-type=network.mojom.NetworkService --lang=ja --service-sandbox-type=network --user-data-dir=LOCAL_USER_HOME/Library/Application Support/anythingllm-desktop --shared-files --field-trial-handle=1718379636,r,14425001046629594628,14170423942078809591,262144 --enable-features=MacLoopbackAudioForScreenShare,MacSckSystemAudioLoopbackOverride,PulseaudioLoopbackForScreenShare,ScreenCaptureKitPickerScreen,ScreenCaptureKitStreamPickerSonoma --disable-features=SpareRendererForSitePerProcess --variations-seed-version --seatbelt-client=35",
           "pid": 988
         },
         {
-          "command": "/Applications/AnythingLLM.app/Contents/Frameworks/AnythingLLM Helper.app/Contents/MacOS/AnythingLLM Helper --type=utility --utility-sub-type=node.mojom.NodeService --lang=ja --service-sandbox-type=none --user-data-dir=/Users/noboruikuta/Library/Application Support/anythingllm-desktop --shared-files --field-trial-handle=1718379636,r,14425001046629594628,14170423942078809591,262144 --enable-features=MacLoopbackAudioForScreenShare,MacSckSystemAudioLoopbackOverride,PulseaudioLoopbackForScreenShare,ScreenCaptureKitPickerScreen,ScreenCaptureKitStreamPickerSonoma --disable-features=SpareRendererForSitePerProcess --variations-seed-version",
+          "command": "/Applications/AnythingLLM.app/Contents/Frameworks/AnythingLLM Helper.app/Contents/MacOS/AnythingLLM Helper --type=utility --utility-sub-type=node.mojom.NodeService --lang=ja --service-sandbox-type=none --user-data-dir=LOCAL_USER_HOME/Library/Application Support/anythingllm-desktop --shared-files --field-trial-handle=1718379636,r,14425001046629594628,14170423942078809591,262144 --enable-features=MacLoopbackAudioForScreenShare,MacSckSystemAudioLoopbackOverride,PulseaudioLoopbackForScreenShare,ScreenCaptureKitPickerScreen,ScreenCaptureKitStreamPickerSonoma --disable-features=SpareRendererForSitePerProcess --variations-seed-version",
           "pid": 1024
         },
         {
-          "command": "/Applications/AnythingLLM.app/Contents/Frameworks/AnythingLLM Helper.app/Contents/MacOS/AnythingLLM Helper --type=utility --utility-sub-type=node.mojom.NodeService --lang=ja --service-sandbox-type=none --user-data-dir=/Users/noboruikuta/Library/Application Support/anythingllm-desktop --shared-files --field-trial-handle=1718379636,r,14425001046629594628,14170423942078809591,262144 --enable-features=MacLoopbackAudioForScreenShare,MacSckSystemAudioLoopbackOverride,PulseaudioLoopbackForScreenShare,ScreenCaptureKitPickerScreen,ScreenCaptureKitStreamPickerSonoma --disable-features=SpareRendererForSitePerProcess --variations-seed-version",
+          "command": "/Applications/AnythingLLM.app/Contents/Frameworks/AnythingLLM Helper.app/Contents/MacOS/AnythingLLM Helper --type=utility --utility-sub-type=node.mojom.NodeService --lang=ja --service-sandbox-type=none --user-data-dir=LOCAL_USER_HOME/Library/Application Support/anythingllm-desktop --shared-files --field-trial-handle=1718379636,r,14425001046629594628,14170423942078809591,262144 --enable-features=MacLoopbackAudioForScreenShare,MacSckSystemAudioLoopbackOverride,PulseaudioLoopbackForScreenShare,ScreenCaptureKitPickerScreen,ScreenCaptureKitStreamPickerSonoma --disable-features=SpareRendererForSitePerProcess --variations-seed-version",
           "pid": 1025
         },
         {
-          "command": "/Applications/AnythingLLM.app/Contents/Frameworks/AnythingLLM Helper (Renderer).app/Contents/MacOS/AnythingLLM Helper (Renderer) --type=renderer --user-data-dir=/Users/noboruikuta/Library/Application Support/anythingllm-desktop --app-path=/Applications/AnythingLLM.app/Contents/Resources/app.asar --no-sandbox --no-zygote --lang=ja --num-raster-threads=4 --enable-zero-copy --enable-gpu-memory-buffer-compositor-resources --enable-main-frame-before-activation --renderer-client-id=4 --time-ticks-at-unix-epoch=-1785039335088096 --launch-time-ticks=34592100 --shared-files --field-trial-handle=1718379636,r,14425001046629594628,14170423942078809591,262144 --enable-features=MacLoopbackAudioForScreenShare,MacSckSystemAudioLoopbackOverride,PulseaudioLoopbackForScreenShare,ScreenCaptureKitPickerScreen,ScreenCaptureKitStreamPickerSonoma --disable-features=SpareRendererForSitePerProcess --variations-seed-version",
+          "command": "/Applications/AnythingLLM.app/Contents/Frameworks/AnythingLLM Helper (Renderer).app/Contents/MacOS/AnythingLLM Helper (Renderer) --type=renderer --user-data-dir=LOCAL_USER_HOME/Library/Application Support/anythingllm-desktop --app-path=/Applications/AnythingLLM.app/Contents/Resources/app.asar --no-sandbox --no-zygote --lang=ja --num-raster-threads=4 --enable-zero-copy --enable-gpu-memory-buffer-compositor-resources --enable-main-frame-before-activation --renderer-client-id=4 --time-ticks-at-unix-epoch=-1785039335088096 --launch-time-ticks=34592100 --shared-files --field-trial-handle=1718379636,r,14425001046629594628,14170423942078809591,262144 --enable-features=MacLoopbackAudioForScreenShare,MacSckSystemAudioLoopbackOverride,PulseaudioLoopbackForScreenShare,ScreenCaptureKitPickerScreen,ScreenCaptureKitStreamPickerSonoma --disable-features=SpareRendererForSitePerProcess --variations-seed-version",
           "pid": 1026
         },
         {
-          "command": "/Applications/AnythingLLM.app/Contents/Frameworks/AnythingLLM Helper (Renderer).app/Contents/MacOS/AnythingLLM Helper (Renderer) --type=renderer --user-data-dir=/Users/noboruikuta/Library/Application Support/anythingllm-desktop --app-path=/Applications/AnythingLLM.app/Contents/Resources/app.asar --no-sandbox --no-zygote --lang=ja --num-raster-threads=4 --enable-zero-copy --enable-gpu-memory-buffer-compositor-resources --enable-main-frame-before-activation --renderer-client-id=7 --time-ticks-at-unix-epoch=-1785039335088096 --launch-time-ticks=35054706 --shared-files --field-trial-handle=1718379636,r,14425001046629594628,14170423942078809591,262144 --enable-features=MacLoopbackAudioForScreenShare,MacSckSystemAudioLoopbackOverride,PulseaudioLoopbackForScreenShare,ScreenCaptureKitPickerScreen,ScreenCaptureKitStreamPickerSonoma --disable-features=SpareRendererForSitePerProcess --variations-seed-version",
+          "command": "/Applications/AnythingLLM.app/Contents/Frameworks/AnythingLLM Helper (Renderer).app/Contents/MacOS/AnythingLLM Helper (Renderer) --type=renderer --user-data-dir=LOCAL_USER_HOME/Library/Application Support/anythingllm-desktop --app-path=/Applications/AnythingLLM.app/Contents/Resources/app.asar --no-sandbox --no-zygote --lang=ja --num-raster-threads=4 --enable-zero-copy --enable-gpu-memory-buffer-compositor-resources --enable-main-frame-before-activation --renderer-client-id=7 --time-ticks-at-unix-epoch=-1785039335088096 --launch-time-ticks=35054706 --shared-files --field-trial-handle=1718379636,r,14425001046629594628,14170423942078809591,262144 --enable-features=MacLoopbackAudioForScreenShare,MacSckSystemAudioLoopbackOverride,PulseaudioLoopbackForScreenShare,ScreenCaptureKitPickerScreen,ScreenCaptureKitStreamPickerSonoma --disable-features=SpareRendererForSitePerProcess --variations-seed-version",
           "pid": 1031
         },
         {
-          "command": "/Applications/AnythingLLM.app/Contents/Frameworks/AnythingLLM Helper.app/Contents/MacOS/AnythingLLM Helper --type=utility --utility-sub-type=audio.mojom.AudioService --lang=ja --service-sandbox-type=audio --message-loop-type-ui --user-data-dir=/Users/noboruikuta/Library/Application Support/anythingllm-desktop --shared-files --field-trial-handle=1718379636,r,14425001046629594628,14170423942078809591,262144 --enable-features=MacLoopbackAudioForScreenShare,MacSckSystemAudioLoopbackOverride,PulseaudioLoopbackForScreenShare,ScreenCaptureKitPickerScreen,ScreenCaptureKitStreamPickerSonoma --disable-features=SpareRendererForSitePerProcess --variations-seed-version --seatbelt-client=63",
+          "command": "/Applications/AnythingLLM.app/Contents/Frameworks/AnythingLLM Helper.app/Contents/MacOS/AnythingLLM Helper --type=utility --utility-sub-type=audio.mojom.AudioService --lang=ja --service-sandbox-type=audio --message-loop-type-ui --user-data-dir=LOCAL_USER_HOME/Library/Application Support/anythingllm-desktop --shared-files --field-trial-handle=1718379636,r,14425001046629594628,14170423942078809591,262144 --enable-features=MacLoopbackAudioForScreenShare,MacSckSystemAudioLoopbackOverride,PulseaudioLoopbackForScreenShare,ScreenCaptureKitPickerScreen,ScreenCaptureKitStreamPickerSonoma --disable-features=SpareRendererForSitePerProcess --variations-seed-version --seatbelt-client=63",
           "pid": 1193
         }
       ],
@@ -1033,25 +1033,25 @@
       "components": [
         {
           "exists": true,
-          "path": "/Users/noboruikuta/AI-Workspace/mcp/anythingllm-bridge-http/gemini_manual_adapter.py",
+          "path": "LOCAL_EVIDENCE_ROOT/mcp/anythingllm-bridge-http/gemini_manual_adapter.py",
           "sha256": "36f0c6a8d9df40173d6c9167b430492cf82ccb2454f0a545862970f6ec418c2b",
           "size_bytes": 3233
         },
         {
           "exists": true,
-          "path": "/Users/noboruikuta/AI-Workspace/mcp/anythingllm-bridge-http/gemini_manual_bridge.mjs",
+          "path": "LOCAL_EVIDENCE_ROOT/mcp/anythingllm-bridge-http/gemini_manual_bridge.mjs",
           "sha256": "ac59eed455d7b7fbb198c9a501b62c2b991965291b8016e7709dc1e6767cf378",
           "size_bytes": 5680
         },
         {
           "exists": true,
-          "path": "/Users/noboruikuta/AI-Workspace/mcp/anythingllm-bridge-http/gemini_mailbox_bridge.mjs",
+          "path": "LOCAL_EVIDENCE_ROOT/mcp/anythingllm-bridge-http/gemini_mailbox_bridge.mjs",
           "sha256": "1b203c8e2e4a8741c4a2bd2cb03ae727052ece6044baf27f4d70d8dbe6684c2f",
           "size_bytes": 6080
         },
         {
           "exists": true,
-          "path": "/Users/noboruikuta/AI-Workspace/scripts/ai_external_router.py",
+          "path": "LOCAL_EVIDENCE_ROOT/scripts/ai_external_router.py",
           "sha256": "d2bf5dd50a576a74a4d9574d06622cc2fbfa09564a989df0c0785da1e7b99e06",
           "size_bytes": 13435
         }

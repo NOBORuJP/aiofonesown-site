@@ -94,6 +94,6 @@
   "production_restore_allowed": false,
   "record_type": "public_local_restore_operations",
   "schema_version": "1.0.0",
-  "version": "0.9.0",
+  "version": "0.9.1",
   "web_shell_execution_allowed": false
 }

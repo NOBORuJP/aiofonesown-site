@@ -1,11 +1,16 @@
 {
-  "artifact_id": "AI_NOBORU_HISTORY_SITE_V0_9_LOCAL_RESTORE_CONTROL",
+  "artifact_id": "AI_NOBORU_HISTORY_SITE_V0_9_1_PUBLIC_SANITIZED",
   "cloudflare_publish_performed": false,
   "files": [
     {
       "path": "DEPLOYMENT_README.md",
       "sha256": "932b0ce1137a28966a7ac0cdc2c72fc25a401469fa4448f9baf00024322fa4b1",
       "size_bytes": 209
+    },
+    {
+      "path": "PUBLIC_RELEASE.json",
+      "sha256": "dce6ce6619a7248b61b0b70361cc7876c8847389fa5d1dd863d9f2112178ea8d",
+      "size_bytes": 546
     },
     {
       "path": "README.md",
@@ -44,8 +49,8 @@
     },
     {
       "path": "assets/desktop-control-baseline.js",
-      "sha256": "082f965fe353992d372b2a54c374f5da4b059ebd4eddfdab8d924bc23f7ff88a",
-      "size_bytes": 4446
+      "sha256": "9e89735e4a9994d380f829810287f6ce697e67d291dd59180de9122459c8e42e",
+      "size_bytes": 4344
     },
     {
       "path": "assets/eight-slot-readiness.js",
@@ -59,8 +64,8 @@
     },
     {
       "path": "assets/final-local-completion.js",
-      "sha256": "2d16b263a79eb187a0919bcfc60f5a0e4639851eb90ef6ca7a273ffea5677524",
-      "size_bytes": 3710
+      "sha256": "360b5ed584afbe799f0fe17ec0842ddcfa8770aa1dcab63841bc0ae0542a2340",
+      "size_bytes": 3824
     },
     {
       "path": "assets/future-generation-engine.js",
@@ -69,8 +74,8 @@
     },
     {
       "path": "assets/future-generation-validation.js",
-      "sha256": "0e4d5c900d104fc5abc3848384bf1303777e15b47f2d395320b20f588de335f6",
-      "size_bytes": 8218
+      "sha256": "de4d424804572c4a55a73b5138235bf54c53e814737a88f48eaa019df0614fee",
+      "size_bytes": 7990
     },
     {
       "path": "assets/future-validation-app.js",
@@ -79,8 +84,8 @@
     },
     {
       "path": "assets/generation-catalog.js",
-      "sha256": "c74636691de0f69e97beee00508492d3db1b4e292e03a8e5d587d5e52372bdc0",
-      "size_bytes": 11490
+      "sha256": "2ebdd4d464d932468bdd079bc4e5a8ffedb3b0a4e2fb9d866ab85bcad5bb6c92",
+      "size_bytes": 11442
     },
     {
       "path": "assets/readiness-app.js",
@@ -99,7 +104,7 @@
     },
     {
       "path": "assets/restore-operations.js",
-      "sha256": "bbd48bcad45cf0cfe308f0c37377ee49660952a1d24e6481cd399f7a42d902b7",
+      "sha256": "c1fa11d8e32fe3a18067f8ce573ed88616741e0aaaa1eca0f9d1fe2c5d7ddc1d",
       "size_bytes": 3465
     },
     {
@@ -109,13 +114,13 @@
     },
     {
       "path": "assets/runtime-status.js",
-      "sha256": "6b98f872bff7bb2f8f98a6960ab4037e4968902564849bce484c432a621af3bc",
-      "size_bytes": 2469
+      "sha256": "65f5c2eb61cd46314cad697f65d1609153d0cb96c6f00b28413f8c135a34fb13",
+      "size_bytes": 2477
     },
     {
       "path": "assets/source-resolution.js",
-      "sha256": "7f6a3694f3b89e404f8c9fad1f5cb55706d657265528ecc304b60159fbc54bf1",
-      "size_bytes": 40535
+      "sha256": "9cf9ec6fe6fdc9bcddee2285ee29d3f7b552e94e62f66ffee1e8a1093c5c92b1",
+      "size_bytes": 39431
     },
     {
       "path": "assets/styles.css",
@@ -129,8 +134,8 @@
     },
     {
       "path": "data/current-baseline-validation.json",
-      "sha256": "9fe8042d33058e91e3b48eeb89ef4ffa1ba895e9ce89a5386e381957ab8fcd93",
-      "size_bytes": 3235
+      "sha256": "ca466db44a604a06d0f24611b1e8d749d0c79bdcb309e8ed1aa8202233c4f0b2",
+      "size_bytes": 3151
     },
     {
       "path": "data/dashboard-data.json",
@@ -139,8 +144,8 @@
     },
     {
       "path": "data/desktop-control-baseline.json",
-      "sha256": "4de1e7ec29f6f7d4a23b603d899002a25bc91462b1c98a790cae9850888f9366",
-      "size_bytes": 5049
+      "sha256": "56cace1aa92a4e78b81ec7bc2fbf6b86df2f44803189249a88a2aff0f313b5f6",
+      "size_bytes": 4947
     },
     {
       "path": "data/eight-slot-readiness.json",
@@ -149,38 +154,38 @@
     },
     {
       "path": "data/final-local-completion.json",
-      "sha256": "dc5d7b46ec70e080872b9e95fe0c9d516f2579edf25dc3fbf9e54f01faea9068",
-      "size_bytes": 4347
+      "sha256": "007cf809b58a121a5116a1ad6747be15dee77f516c0ca73a6d23d78007409448",
+      "size_bytes": 4498
     },
     {
       "path": "data/future-generation-validation.json",
-      "sha256": "72971542283ae66fde67f6970d93228200d0be18929929c9d5c26728cd9165e5",
-      "size_bytes": 9266
+      "sha256": "d3c0a38c69040afd624ca3974163cc7cc3560b8153a10b4c783d129d5aba3b75",
+      "size_bytes": 9038
     },
     {
       "path": "data/generation-catalog.json",
-      "sha256": "8f474d5cad883643819e0075b4945b3e7528af6d6dd35e22c70bad81b3bceeeb",
-      "size_bytes": 14749
+      "sha256": "e588bfd3ce4e8aca406cdd8cd6caf51c5b32d178518568d86d818e52dc87a159",
+      "size_bytes": 14701
     },
     {
       "path": "data/restore-operations.json",
-      "sha256": "417ede0d83d89b5660fb29b4e1feabe027a1f9d9cddc4859ebafbf535035b21f",
+      "sha256": "b1568f18bc57c28f3d6dd7bcfcc5c094919ecf6225bce2645bf744cf367392ba",
       "size_bytes": 4121
     },
     {
       "path": "data/runtime-status.json",
-      "sha256": "651ca472e0242ac61cb2e302ae77a76d5a46a2dafbfa4cf7ed1a6818980764ca",
-      "size_bytes": 2819
+      "sha256": "8f1fb30eafde5572b721eacf9de9956dc64c8c063b37227ce45aa132e19532bf",
+      "size_bytes": 2833
     },
     {
       "path": "data/source-discovery.json",
-      "sha256": "0865e5c191659804a7a52fa1dbb8ec9e5b3d1c398947614b136502b838cafd86",
-      "size_bytes": 48894
+      "sha256": "6120908bd188681ee9c3083d8f050bb332bdef29c45ff7484b11f96ee6007116",
+      "size_bytes": 48891
     },
     {
       "path": "data/source-resolution.json",
-      "sha256": "5638c33c94e310274a1c88515f09e8b9ddc842c9a2fa971c31f8fd57ff4f41c8",
-      "size_bytes": 55216
+      "sha256": "e43e3cf302b5a39bda1679b40134e2b8d78dfd354035226f249873c9b3b10588",
+      "size_bytes": 54112
     },
     {
       "path": "index.html",
@@ -188,9 +193,22 @@
       "size_bytes": 9503
     }
   ],
-  "generated_at": "2026-07-27T04:09:32.554022+00:00",
+  "generated_at": "2026-07-27T13:22:36.251838+00:00",
   "local_isolated_restore_control": true,
   "production_restore_allowed": false,
+  "public_sanitization": {
+    "absolute_user_paths_removed": true,
+    "external_volume_paths_removed": true,
+    "replacement_counts": {
+      "ai_workspace_path": 83,
+      "external_volume_path": 228,
+      "local_mcp_endpoint": 2,
+      "tunnel_id": 2,
+      "user_home_path": 39
+    },
+    "status": "PASS",
+    "tunnel_ids_removed": true
+  },
   "system_count": 8,
-  "version": "0.9.0"
+  "version": "0.9.1"
 }

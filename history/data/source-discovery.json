@@ -10,7 +10,7 @@
       "candidate_count": 100,
       "candidates": [
         {
-          "path": "/Users/noboruikuta/Library/Application Support/anythingllm-desktop",
+          "path": "LOCAL_USER_HOME/Library/Application Support/anythingllm-desktop",
           "source": "direct_path",
           "type": "directory"
         },

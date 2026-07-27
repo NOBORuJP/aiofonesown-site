@@ -1,72 +1,73 @@
 {
-  "schema_version": "1.1.1",
-  "generated_at": "2026-07-26T11:04:01.353594+00:00",
-  "memory_connector": {
-    "status": "PASS",
-    "detail": "ChatGPT → 正しいnoho Tunnel → 127.0.0.1:8787/mcp → memory.db のread-back PASS",
-    "classification": "読取り正常",
-    "memory_absence": false,
-    "memory_role_id": 615
-  },
-  "tunnel": {
-    "status": "PASS",
-    "profile": "ainoboru-noho-chatgpt",
-    "tunnel_id": "tunnel_6a32ca2549948191ada77f579677cded",
-    "launchagent": "com.ainoboru.tunnel-client-noho-chatgpt",
-    "health": "live / ready",
-    "wrong_local_tunnel_disabled": true,
-    "wrong_cloud_tunnel_deleted": false
-  },
-  "github": {
-    "repository": "NOBORuJP/ainoboru-anythingllm-bridge",
-    "pr_number": 1,
-    "pr_state": "MERGED",
-    "checkpoint_sha": "b61e0ef0a24ce7aa4985f0d59345de9e07b418e4",
-    "merge_commit_sha": "353308863159ad6374b34a07a656519a1ff68956",
-    "github_main_sha": "353308863159ad6374b34a07a656519a1ff68956",
-    "checkpoint_is_ancestor": true,
-    "offsite_status": "PR #1 merged・GitHub main read-back PASS",
-    "url": "https://github.com/NOBORuJP/ainoboru-anythingllm-bridge/pull/1",
-    "branch_deleted": false,
-    "force_used": false
+  "claude48": {
+    "api_used": false,
+    "application_report_metadata_accepted": false,
+    "article_accepted": true,
+    "audit_sha256": "57a892d35e26d16b6a51bf0b0462c2191b23011c1f3fc8089d69f4daf5e91b00",
+    "automatic_resubmission": false,
+    "batch_used": false,
+    "corrected_build_method": "PROGRAMMATIC_EDIT_OF_SOURCE_FINAL_MD_WITH_TWO_BOUNDED_AJ002_CONSEQUENTIAL_EDITS",
+    "job_id": "claude48-20260726T071719Z-author-final-retry1",
+    "publication_allowed": false,
+    "result_sha256": "40f2e12df68a73bbe57dfb85ef197574a46259d269554f1cda9b95ef63f8b4a8",
+    "run_id": "g56-20260724T044926Z-distribution-is-not-evidence",
+    "source_verification_ledger_status": "NOT_PERFORMED",
+    "status": "ARTICLE_ACCEPTED"
   },
   "documentation_pr": {
-    "repository": "NOBORuJP/ainoboru-anythingllm-bridge",
+    "changed_files": 2,
+    "commit_sha": "3c5e1315d6070c401e31e0c7c08b734eccb0e4ea",
+    "merge_performed": false,
+    "merge_state": "CLEAN",
+    "mergeable": "MERGEABLE",
     "pr_number": 2,
     "pr_state": "OPEN",
-    "mergeable": "MERGEABLE",
-    "merge_state": "CLEAN",
-    "commit_sha": "3c5e1315d6070c401e31e0c7c08b734eccb0e4ea",
-    "changed_files": 2,
     "purpose": "8787をChatGPT Memory接続専用MCP Bridgeとして記録",
-    "merge_performed": false,
+    "repository": "NOBORuJP/ainoboru-anythingllm-bridge",
     "url": "https://github.com/NOBORuJP/ainoboru-anythingllm-bridge/pull/2"
   },
-  "claude48": {
-    "job_id": "claude48-20260726T071719Z-author-final-retry1",
-    "run_id": "g56-20260724T044926Z-distribution-is-not-evidence",
-    "status": "ARTICLE_ACCEPTED",
-    "article_accepted": true,
-    "application_report_metadata_accepted": false,
-    "result_sha256": "40f2e12df68a73bbe57dfb85ef197574a46259d269554f1cda9b95ef63f8b4a8",
-    "audit_sha256": "57a892d35e26d16b6a51bf0b0462c2191b23011c1f3fc8089d69f4daf5e91b00",
-    "corrected_build_method": "PROGRAMMATIC_EDIT_OF_SOURCE_FINAL_MD_WITH_TWO_BOUNDED_AJ002_CONSEQUENTIAL_EDITS",
-    "source_verification_ledger_status": "NOT_PERFORMED",
-    "publication_allowed": false,
-    "automatic_resubmission": false,
-    "api_used": false,
-    "batch_used": false
-  },
   "fable": {
+    "current_generation": "FABLE-G002",
     "manifest_status": "ISOLATED_DRAFT_VALIDATED",
     "restore_execution_enabled": false,
-    "current_generation": "FABLE-G002",
     "simulation_target": "FABLE-G003-RESTORED-FROM-G001"
   },
+  "generated_at": "2026-07-26T11:04:01.353594+00:00",
+  "github": {
+    "branch_deleted": false,
+    "checkpoint_is_ancestor": true,
+    "checkpoint_sha": "b61e0ef0a24ce7aa4985f0d59345de9e07b418e4",
+    "force_used": false,
+    "github_main_sha": "353308863159ad6374b34a07a656519a1ff68956",
+    "merge_commit_sha": "353308863159ad6374b34a07a656519a1ff68956",
+    "offsite_status": "PR #1 merged・GitHub main read-back PASS",
+    "pr_number": 1,
+    "pr_state": "MERGED",
+    "repository": "NOBORuJP/ainoboru-anythingllm-bridge",
+    "url": "https://github.com/NOBORuJP/ainoboru-anythingllm-bridge/pull/1"
+  },
   "history_site": {
-    "version": "0.3.1.1",
-    "source_copy_sha256": "1c94fbf8f987187cedce97f1273f315a284bd09c7195f223a3160389ead0dd28",
+    "cloudflare_published": false,
     "live_restore_enabled": false,
-    "cloudflare_published": false
+    "public_sanitized": true,
+    "source_copy_sha256": "1c94fbf8f987187cedce97f1273f315a284bd09c7195f223a3160389ead0dd28",
+    "version": "0.9.1"
+  },
+  "memory_connector": {
+    "classification": "読取り正常",
+    "detail": "ChatGPT → 正しいnoho Tunnel → LOCAL_MEMORY_MCP_ENDPOINT → memory.db のread-back PASS",
+    "memory_absence": false,
+    "memory_role_id": 615,
+    "status": "PASS"
+  },
+  "schema_version": "1.1.1",
+  "tunnel": {
+    "health": "live / ready",
+    "launchagent": "com.ainoboru.tunnel-client-noho-chatgpt",
+    "profile": "ainoboru-noho-chatgpt",
+    "status": "PASS",
+    "tunnel_id": "REDACTED_TUNNEL_ID",
+    "wrong_cloud_tunnel_deleted": false,
+    "wrong_local_tunnel_disabled": true
   }
 }

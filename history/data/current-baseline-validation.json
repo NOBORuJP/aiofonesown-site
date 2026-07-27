@@ -1,14 +1,14 @@
 {
   "claude_artifact_unchanged": true,
   "cloudflare_changed": false,
-  "common_restore_plan": "/Users/noboruikuta/AI-Workspace/_AUDIT_METADATA/eight-slot-readiness-v0.6/20260726T223808Z/common-restore-plan.json",
+  "common_restore_plan": "LOCAL_EVIDENCE_ROOT/_AUDIT_METADATA/eight-slot-readiness-v0.6/20260726T223808Z/common-restore-plan.json",
   "common_restore_plan_sha256": "dc5b9a5d6f66fd38adc6baca4dc500955866a82c1cd8d84214f7c10252cc7a4c",
-  "execution_report": "/Users/noboruikuta/AI-Workspace/_AUDIT_METADATA/eight-slot-readiness-v0.6/20260726T223808Z/reports/execution.json",
+  "execution_report": "LOCAL_EVIDENCE_ROOT/_AUDIT_METADATA/eight-slot-readiness-v0.6/20260726T223808Z/reports/execution.json",
   "execution_report_sha256": "d6a166ea7bd40ec7628077484b11298f960236ffcf3f213930e031cd6df0deb2",
   "generated_at": "2026-07-26T22:38:14.344058+00:00",
   "git_changed": false,
   "memory_db_changed": false,
-  "plan_validation_report": "/Users/noboruikuta/AI-Workspace/_AUDIT_METADATA/eight-slot-readiness-v0.6/20260726T223808Z/reports/plan-validation.json",
+  "plan_validation_report": "LOCAL_EVIDENCE_ROOT/_AUDIT_METADATA/eight-slot-readiness-v0.6/20260726T223808Z/reports/plan-validation.json",
   "plan_validation_report_sha256": "6fd9e669bc1382a437a0a0713c5bc8d7fb13d1b9c4581ec84b4fa1d518028264",
   "production_restore_allowed": false,
   "rag_changed": false,
@@ -19,9 +19,9 @@
   "system_count": 2,
   "systems": [
     {
-      "backup_archive": "/Users/noboruikuta/AI-Workspace/_AUDIT_METADATA/eight-slot-readiness-v0.6/20260726T223808Z/backup/claude/current-baseline-v06-claude-g001.tar.gz",
+      "backup_archive": "LOCAL_EVIDENCE_ROOT/_AUDIT_METADATA/eight-slot-readiness-v0.6/20260726T223808Z/backup/claude/current-baseline-v06-claude-g001.tar.gz",
       "backup_archive_sha256": "b0496f2656906a9de3049ce1e60684f10bce39480ebe855797175855e502bb28",
-      "backup_manifest": "/Users/noboruikuta/AI-Workspace/_AUDIT_METADATA/eight-slot-readiness-v0.6/20260726T223808Z/backup/claude/current-baseline-v06-claude-g001.manifest.json",
+      "backup_manifest": "LOCAL_EVIDENCE_ROOT/_AUDIT_METADATA/eight-slot-readiness-v0.6/20260726T223808Z/backup/claude/current-baseline-v06-claude-g001.manifest.json",
       "backup_manifest_sha256": "2249d3fa03b1863b98a0d540867fdac5624396087d26429a7766de7375a05790",
       "capability": "CURRENT_BASELINE_VALIDATED",
       "generation": "CLAUDE-G001",
@@ -33,9 +33,9 @@
       "verified_file_count": 4
     },
     {
-      "backup_archive": "/Users/noboruikuta/AI-Workspace/_AUDIT_METADATA/eight-slot-readiness-v0.6/20260726T223808Z/backup/receipt/current-baseline-v06-receipt-g001.tar.gz",
+      "backup_archive": "LOCAL_EVIDENCE_ROOT/_AUDIT_METADATA/eight-slot-readiness-v0.6/20260726T223808Z/backup/receipt/current-baseline-v06-receipt-g001.tar.gz",
       "backup_archive_sha256": "f16ce98bc0dc653cc66643f499006e55299093835980261242ddc806b6d7fd1b",
-      "backup_manifest": "/Users/noboruikuta/AI-Workspace/_AUDIT_METADATA/eight-slot-readiness-v0.6/20260726T223808Z/backup/receipt/current-baseline-v06-receipt-g001.manifest.json",
+      "backup_manifest": "LOCAL_EVIDENCE_ROOT/_AUDIT_METADATA/eight-slot-readiness-v0.6/20260726T223808Z/backup/receipt/current-baseline-v06-receipt-g001.manifest.json",
       "backup_manifest_sha256": "a94a83dc3f78658876ce7441d4a4fd037224c2ac4ee8bb123305a770ab7b109b",
       "capability": "CURRENT_BASELINE_VALIDATED",
       "generation": "RECEIPT-G001",

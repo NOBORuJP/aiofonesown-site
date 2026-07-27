@@ -3,31 +3,31 @@
   "evidence": [
     {
       "label": "v0_5_2",
-      "path": "/Users/noboruikuta/AI-Workspace/_AUDIT_METADATA/future-generation-main-only-v0.5.2/20260726T221147Z/FUTURE_GENERATION_VALIDATION.json",
+      "path": "LOCAL_EVIDENCE_ROOT/_AUDIT_METADATA/future-generation-main-only-v0.5.2/20260726T221147Z/FUTURE_GENERATION_VALIDATION.json",
       "result": "PASS_MAIN_ONLY_FUTURE_GENERATION_ISOLATED_RESTORE_3_SYSTEMS",
       "sha256": "72971542283ae66fde67f6970d93228200d0be18929929c9d5c26728cd9165e5"
     },
     {
       "label": "v0_6",
-      "path": "/Users/noboruikuta/AI-Workspace/_AUDIT_METADATA/eight-slot-readiness-v0.6/20260726T223808Z/CURRENT_BASELINE_VALIDATION.json",
+      "path": "LOCAL_EVIDENCE_ROOT/_AUDIT_METADATA/eight-slot-readiness-v0.6/20260726T223808Z/CURRENT_BASELINE_VALIDATION.json",
       "result": "PASS_CURRENT_BASELINE_ISOLATED_RESTORE_2_SYSTEMS",
       "sha256": "9fe8042d33058e91e3b48eeb89ef4ffa1ba895e9ce89a5386e381957ab8fcd93"
     },
     {
       "label": "v0_7",
-      "path": "/Users/noboruikuta/AI-Workspace/_AUDIT_METADATA/source-resolution-v0.7/20260726T225344Z/SOURCE_RESOLUTION.json",
+      "path": "LOCAL_EVIDENCE_ROOT/_AUDIT_METADATA/source-resolution-v0.7/20260726T225344Z/SOURCE_RESOLUTION.json",
       "result": "PASS_REMAINING_THREE_SLOT_SOURCE_RESOLUTION",
       "sha256": "5638c33c94e310274a1c88515f09e8b9ddc842c9a2fa971c31f8fd57ff4f41c8"
     },
     {
       "label": "v0_7_1",
-      "path": "/Users/noboruikuta/AI-Workspace/_AUDIT_METADATA/desktop-control-baseline-v0.7.1/20260727T001355Z/DESKTOP_CONTROL_BASELINE_VALIDATION.json",
+      "path": "LOCAL_EVIDENCE_ROOT/_AUDIT_METADATA/desktop-control-baseline-v0.7.1/20260727T001355Z/DESKTOP_CONTROL_BASELINE_VALIDATION.json",
       "result": "PASS_DESKTOP_CONTROL_BASELINE_ISOLATED_RESTORE",
       "sha256": "4de1e7ec29f6f7d4a23b603d899002a25bc91462b1c98a790cae9850888f9366"
     },
     {
       "label": "v0_7_2",
-      "path": "/Users/noboruikuta/AI-Workspace/_AUDIT_METADATA/gemini-transport-r6-parked-v0.7.2/20260727T002120Z/GEMINI_TRANSPORT_R6_PARKED_VALIDATION.json",
+      "path": "LOCAL_EVIDENCE_ROOT/_AUDIT_METADATA/gemini-transport-r6-parked-v0.7.2/20260727T002120Z/GEMINI_TRANSPORT_R6_PARKED_VALIDATION.json",
       "result": "PASS_GEMINI_TRANSPORT_BASELINE_AND_R6_PARKED",
       "sha256": "1862d7b6843278f42856bfea6342723529777ebc3249e8db0b8cce05719e7cff"
     }
@@ -52,6 +52,13 @@
     "selected_repository": null
   },
   "result": "PASS_LOCAL_EIGHT_SLOT_COMPLETION",
+  "safety_core": {
+    "direction_lock": "IDLE",
+    "items_7_to_17": "PASS_IMPLEMENTED_SAFE_SCOPE",
+    "production_restore_allowed": false,
+    "rag_changed": false,
+    "version": "0.9.1"
+  },
   "schema_version": "1.0.0",
   "system_count": 8,
   "systems": [
@@ -63,8 +70,8 @@
     },
     {
       "name": "AnythingLLM Desktop",
-      "status": "CURRENT_CONTROL_BASELINE_VALIDATED",
-      "summary": "現行DBのオンライン・スナップショットを隔離復元済み。documents・LanceDB本体の完全復元は未検証。",
+      "status": "FULL_CONTENT_DATA_RESTORE_VALIDATED",
+      "summary": "DB・documents・LanceDB・vector-cacheの完全コンテンツ隔離復元を検証済み。実アプリ起動読取は工程18で検証する。",
       "system_id": "anythingllm-desktop"
     },
     {

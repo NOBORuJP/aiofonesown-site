@@ -50,9 +50,9 @@
       "system_id": "receipt"
     }
   ],
-  "common_restore_engine": "/Users/noboruikuta/AI-Workspace/ainoboru-control-plane/tools/backup-restore/common_restore.py",
+  "common_restore_engine": "LOCAL_EVIDENCE_ROOT/ainoboru-control-plane/tools/backup-restore/common_restore.py",
   "current_baseline_validation": {
-    "evidence": "/Users/noboruikuta/AI-Workspace/_AUDIT_METADATA/eight-slot-readiness-v0.6/20260726T223808Z/CURRENT_BASELINE_VALIDATION.json",
+    "evidence": "LOCAL_EVIDENCE_ROOT/_AUDIT_METADATA/eight-slot-readiness-v0.6/20260726T223808Z/CURRENT_BASELINE_VALIDATION.json",
     "result": "PASS_CURRENT_BASELINE_ISOLATED_RESTORE_2_SYSTEMS"
   },
   "generated_at": "2026-07-26T22:11:47.111911+00:00",
@@ -63,7 +63,7 @@
     "non_main_catalog_refs": "preserved as correction evidence, not deleted"
   },
   "isolated_restore_validation": {
-    "evidence": "/Users/noboruikuta/AI-Workspace/_AUDIT_METADATA/future-generation-main-only-v0.5.2/20260726T221147Z/FUTURE_GENERATION_VALIDATION.json",
+    "evidence": "LOCAL_EVIDENCE_ROOT/_AUDIT_METADATA/future-generation-main-only-v0.5.2/20260726T221147Z/FUTURE_GENERATION_VALIDATION.json",
     "production_restore_allowed": false,
     "result": "PASS_MAIN_ONLY_FUTURE_GENERATION_ISOLATED_RESTORE_3_SYSTEMS",
     "system_count": 3
@@ -76,7 +76,7 @@
   },
   "record_type": "eight_slot_generation_catalog",
   "remaining_slot_source_discovery": {
-    "evidence": "/Users/noboruikuta/AI-Workspace/_AUDIT_METADATA/eight-slot-readiness-v0.6/20260726T223808Z/SOURCE_DISCOVERY.json",
+    "evidence": "LOCAL_EVIDENCE_ROOT/_AUDIT_METADATA/eight-slot-readiness-v0.6/20260726T223808Z/SOURCE_DISCOVERY.json",
     "result": "PASS_READ_ONLY_SOURCE_DISCOVERY"
   },
   "schema_version": "1.0.0",

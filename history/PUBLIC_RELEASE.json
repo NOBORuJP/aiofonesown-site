@@ -1,0 +1,14 @@
+{
+  "enabled_isolated_operation_count": 7,
+  "generated_at": "2026-07-27T13:22:36.240378+00:00",
+  "local_absolute_paths_published": false,
+  "local_confirmation_required": true,
+  "production_restore_allowed": false,
+  "public_sanitized": true,
+  "record_type": "ai_noboru_history_public_release",
+  "release_id": "AI_NOBORU_HISTORY_PUBLIC_V0_9_1_20260727",
+  "schema_version": "1.0.0",
+  "secret_values_published": false,
+  "source_head_before_sanitization": "35412fc24dbd9db56f259629d6ddb02096742f78",
+  "web_shell_execution_allowed": false
+}
