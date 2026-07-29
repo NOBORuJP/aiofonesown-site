@@ -1,0 +1,36 @@
+{
+  "recordType": "step22_eight_card_current_state",
+  "taskId": "HISTORY_STEP22_EIGHT_CARD_UI_CURRENT_STATE",
+  "candidateStatus": "AWAITING_NOBORU_APPROVAL",
+  "generatedAt": "2026-07-29",
+  "source": "dashboard-data.json",
+  "systemIds": [
+    "anythingllm-docker",
+    "anythingllm-desktop",
+    "gpt",
+    "claude",
+    "gemini",
+    "fable-batch",
+    "r6",
+    "receipt"
+  ],
+  "systemNames": [
+    "AnythingLLM Docker版",
+    "AnythingLLM Desktop版",
+    "GPT",
+    "Claude",
+    "Gemini",
+    "FABLEバッチ",
+    "R6 AI撮影",
+    "領収書"
+  ],
+  "systemCount": 8,
+  "dashboardInputsSemanticallyIdentical": true,
+  "generationIdsCreated": 0,
+  "gitWrites": 0,
+  "publicationWrites": 0,
+  "cloudflarePublishPerformed": false,
+  "step23Started": false,
+  "productionRestoreActionAvailable": false,
+  "restoreNotice": "復元候補は工程23で作成"
+}

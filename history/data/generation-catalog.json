@@ -75,6 +75,22 @@
     "rewind_history": false
   },
   "record_type": "eight_slot_generation_catalog",
+  "step22_current_frame": {
+    "scope": "CURRENT_FRAME_STATUS_SEPARATE_FROM_HISTORICAL_COMPONENT_CATALOG",
+    "current_generation_ids_created": 0,
+    "production_restore_allowed": false,
+    "step23_started": false,
+    "systems": {
+      "anythingllm-docker": "CURRENT_FRAME_GENERATION_NOT_ESTABLISHED",
+      "anythingllm-desktop": "CURRENT_FRAME_GENERATION_NOT_ESTABLISHED",
+      "gpt": "OVERALL_GENERATION_NOT_ESTABLISHED_KNOWLEDGE_COMPONENT_HISTORY_SEPARATE",
+      "claude": "OVERALL_GENERATION_NOT_ESTABLISHED",
+      "gemini": "OVERALL_GENERATION_NOT_ESTABLISHED",
+      "fable-batch": "CURRENT_RUNTIME_GENERATION_NOT_ESTABLISHED_FABLE_G003_IS_CATALOG_REFERENCE_ONLY",
+      "r6": "RESERVED_PARKED_GENERATION_NOT_ESTABLISHED",
+      "receipt": "CURRENT_RUNTIME_GENERATION_NOT_ESTABLISHED_COMPONENT_HISTORY_SEPARATE"
+    }
+  },
   "remaining_slot_source_discovery": {
     "evidence": "/Users/noboruikuta/AI-Workspace/_AUDIT_METADATA/eight-slot-readiness-v0.6/20260726T223808Z/SOURCE_DISCOVERY.json",
     "result": "PASS_READ_ONLY_SOURCE_DISCOVERY"
