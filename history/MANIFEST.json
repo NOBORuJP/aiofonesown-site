@@ -1,5 +1,5 @@
 {
-  "artifact_id": "AI_NOBORU_HISTORY_STEP22_EIGHT_CARD_CURRENT_STATE_CANDIDATE",
+  "artifact_id": "AI_NOBORU_HISTORY_STEP23_RESTORE_PREFLIGHT_CANDIDATE",
   "candidate_status": "AWAITING_NOBORU_APPROVAL",
   "cloudflare_publish_performed": false,
   "files": [
@@ -169,6 +169,11 @@
       "size_bytes": 869
     },
     {
+      "path": "data/step23-restore-preflight-candidate.json",
+      "sha256": "4f7cc947358b86191caf36765e89142af59a29a2ce38d7a6acad289fcafed62b",
+      "size_bytes": 27166
+    },
+    {
       "path": "data/restore-operations.json",
       "sha256": "417ede0d83d89b5660fb29b4e1feabe027a1f9d9cddc4859ebafbf535035b21f",
       "size_bytes": 4121
@@ -197,14 +202,20 @@
       "path": "tests/test_step22_eight_card_ui.py",
       "sha256": "9ea3668315ed0365141731f3a7aab86d75b74953d1f36ab7dd427a17bf14f235",
       "size_bytes": 15631
+    },
+    {
+      "path": "tests/test_step23_restore_preflight_candidate.py",
+      "sha256": "b5877ba1df98ba53f80b07beb650f07e84703dc7f316844a4e8fd55cf5746c46",
+      "size_bytes": 14037
     }
   ],
-  "generated_at": "2026-07-29",
+  "generated_at": "2026-07-30",
   "git_writes": 0,
   "local_isolated_restore_control": false,
   "publication_writes": 0,
   "production_restore_allowed": false,
-  "step23_started": false,
+  "step23_started": true,
+  "step24_started": false,
   "system_count": 8,
-  "version": "1.0.0-step22"
+  "version": "1.0.0-step23"
 }

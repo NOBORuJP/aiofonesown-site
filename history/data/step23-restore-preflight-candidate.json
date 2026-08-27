@@ -1,0 +1,730 @@
+{
+  "schema_version": "1.0.0",
+  "record_type": "step23_restore_preflight_candidate",
+  "step": 23,
+  "candidate_status": "AWAITING_NOBORU_APPROVAL",
+  "mode": "PRE_RESTORE_INSPECTION_AND_ISOLATED_CANDIDATE_ONLY",
+  "generated_at": "2026-07-30T08:35:00+09:00",
+  "production_restore_allowed": false,
+  "production_restore_performed": false,
+  "isolated_restore_executed": false,
+  "git_writes": 0,
+  "publication_writes": 0,
+  "rag_changed": false,
+  "new_repository_created": false,
+  "production_runtime_changed": false,
+  "production_database_changed": false,
+  "github_changed": false,
+  "cloudflare_changed": false,
+  "direction_lock_changed": false,
+  "step24_started": false,
+  "principle": {
+    "ja": "過去へ巻き戻さず、現在履歴の先に過去と同じ内容を持つ新しい未来世代を作る。",
+    "preserve_current": true,
+    "preserve_past": true,
+    "new_future_generation": true,
+    "rewind_history": false
+  },
+  "direction_lock": {
+    "evidence": "/Users/noboruikuta/AI-Workspace/_RUNS/history-steps-19-25/direction-lock.json",
+    "current_state": "IDLE",
+    "observed_direction": null,
+    "required_for_execution": true,
+    "execution_direction": "GIT_TO_AI",
+    "opposite_direction_simultaneous": false,
+    "failure_state": "FAILED_LOCKED"
+  },
+  "isolation_root": "/Users/noboruikuta/AI-Workspace/_RUNS/history-steps-19-25/step23/isolated",
+  "global_preconditions": [
+    {
+      "id": "PRESERVE_CURRENT_STATE_SNAPSHOT",
+      "required": true,
+      "satisfied": false,
+      "status": "NOT_STARTED",
+      "description_ja": "実行直前の現在状態を退避し、復元候補とは別に保持する。"
+    },
+    {
+      "id": "PIN_RESTORE_SOURCE_GENERATION",
+      "required": true,
+      "satisfied": false,
+      "status": "PENDING_EXECUTION_PREFLIGHT",
+      "description_ja": "復元元の検証済み過去世代とsource_refを固定する。"
+    },
+    {
+      "id": "DISPLAY_NEWER_INFORMATION_IMPACT",
+      "required": true,
+      "satisfied": false,
+      "status": "PENDING_NOBORU_REVIEW",
+      "description_ja": "現在世代にのみ存在し、復元内容には含まれない新しい情報をNOBORUへ表示する。"
+    },
+    {
+      "id": "NOBORU_EXPLICIT_APPROVAL",
+      "required": true,
+      "satisfied": false,
+      "status": "AWAITING_NOBORU_APPROVAL",
+      "description_ja": "NOBORUの明示承認なしに隔離復元またはproduction復元を実行しない。"
+    },
+    {
+      "id": "ISOLATED_ACCEPTANCE_PASS",
+      "required": true,
+      "satisfied": false,
+      "status": "PENDING_STEP24_NOT_STARTED",
+      "description_ja": "工程24の一方向隔離受入試験がPASSするまでproduction対象へ進まない。"
+    },
+    {
+      "id": "EXCLUDE_SECRET_DB_WAL_SHM",
+      "required": true,
+      "satisfied": true,
+      "status": "ENFORCED_BY_CANDIDATE_SCOPE",
+      "description_ja": "秘密実値、production database、WAL、SHMを候補と復元対象から除外する。"
+    }
+  ],
+  "evidence_sources": [
+    "history/data/generation-catalog.json",
+    "/Users/noboruikuta/AI-Workspace/_WORKTREES/ainoboru-control-plane-management-records-phase-b1-memory-prompt/registry/management-records/data/eight-frame-current-state.json",
+    "/Users/noboruikuta/AI-Workspace/_AUDIT_METADATA/future-generation-main-only-v0.5.2/20260726T221147Z/FUTURE_GENERATION_VALIDATION.json",
+    "/Users/noboruikuta/AI-Workspace/_AUDIT_METADATA/eight-slot-readiness-v0.6/20260726T223808Z/CURRENT_BASELINE_VALIDATION.json",
+    "/Users/noboruikuta/AI-Workspace/_AUDIT_METADATA/eight-slot-readiness-v0.6/20260726T223808Z/SOURCE_DISCOVERY.json",
+    "/Users/noboruikuta/AI-Workspace/ainoboru-control-plane/tools/backup-restore/common_restore.py",
+    "/Users/noboruikuta/AI-Workspace/_RUNS/history-steps-19-25/direction-lock.json"
+  ],
+  "systems": [
+    {
+      "id": "anythingllm-docker",
+      "current_generation": "ANYTHINGLLM_DOCKER-G003",
+      "selected_past_generation": "ANYTHINGLLM_DOCKER-G002",
+      "source_ref": "30806414f50b10be51d5c8ce699d35e9174290d6",
+      "current_ref": "4bce4e07211d1b5d390421710bae6a97b0280fc2",
+      "proposed_future_generation": "ANYTHINGLLM_DOCKER-G004-RESTORED-FROM-G002",
+      "repository": "/Users/noboruikuta/AI-Workspace/ainoboru-infra",
+      "repository_readback": {
+        "performed": true,
+        "read_only": true,
+        "git_optional_locks": 0,
+        "branch": "main",
+        "head": "4bce4e07211d1b5d390421710bae6a97b0280fc2",
+        "main_ref": "4bce4e07211d1b5d390421710bae6a97b0280fc2",
+        "status_porcelain_count": 0,
+        "clean": true,
+        "catalog_current_matches_head": true,
+        "catalog_current_matches_main": true
+      },
+      "newer_information_impact": {
+        "count": 3,
+        "name_status": [
+          {
+            "status": "M",
+            "path": "anythingllm/docker/.env.example"
+          },
+          {
+            "status": "M",
+            "path": "anythingllm/docker/docker-compose.template.yml"
+          },
+          {
+            "status": "A",
+            "path": "anythingllm/docker/runtime.env.example"
+          }
+        ],
+        "reason": "source_ref..current_refのread-only git diff --name-status。候補内容へ置換せず、現在世代側の新しい情報として表示する。"
+      },
+      "isolation_destination_candidate": "/Users/noboruikuta/AI-Workspace/_RUNS/history-steps-19-25/step23/isolated/anythingllm-docker-g002",
+      "production_target": "/Users/noboruikuta/AI-Workspace/ainoboru-infra",
+      "excluded_targets": [
+        "PRODUCTION_DATABASE",
+        "DATABASE_WAL",
+        "DATABASE_SHM",
+        "SECRET_VALUES",
+        "RUNTIME_CACHE",
+        "PRODUCTION_RUNTIME"
+      ],
+      "evidence": [
+        {
+          "path": "history/data/generation-catalog.json",
+          "result": "VERIFIED_PAST_AND_CURRENT_GENERATIONS"
+        },
+        {
+          "path": "/Users/noboruikuta/AI-Workspace/_AUDIT_METADATA/future-generation-main-only-v0.5.2/20260726T221147Z/FUTURE_GENERATION_VALIDATION.json",
+          "result": "PASS_ISOLATED_BACKUP_RESTORE_TEST"
+        },
+        {
+          "path": "/Users/noboruikuta/AI-Workspace/ainoboru-infra",
+          "result": "READ_ONLY_MAIN_HEAD_CLEAN_AND_CATALOG_CURRENT_MATCH"
+        }
+      ],
+      "blockers": [],
+      "candidate_status": "READY_FOR_ISOLATED_CANDIDATE"
+    },
+    {
+      "id": "anythingllm-desktop",
+      "current_generation": null,
+      "selected_past_generation": null,
+      "source_ref": null,
+      "current_ref": null,
+      "proposed_future_generation": null,
+      "repository": null,
+      "repository_readback": {
+        "performed": false,
+        "read_only": true,
+        "git_optional_locks": 0,
+        "branch": null,
+        "head": null,
+        "main_ref": null,
+        "status_porcelain_count": null,
+        "clean": null,
+        "catalog_current_matches_head": null,
+        "catalog_current_matches_main": null
+      },
+      "newer_information_impact": {
+        "count": 0,
+        "name_status": [],
+        "reason": "検証済み過去世代とrepository bindingがなく、世代間git diffは該当しない。"
+      },
+      "isolation_destination_candidate": null,
+      "production_target": "/Users/noboruikuta/Library/Application Support/anythingllm-desktop",
+      "excluded_targets": [
+        "PRODUCTION_DATABASE",
+        "DATABASE_WAL",
+        "DATABASE_SHM",
+        "SECRET_VALUES",
+        "DESKTOP_USER_DATA",
+        "RUNTIME_CACHE",
+        "APPLICATION_BINARY"
+      ],
+    "evidence": [
+      {
+        "path": "/Users/noboruikuta/AI-Workspace/_WORKTREES/ainoboru-control-plane-management-records-phase-b1-memory-prompt/registry/management-records/data/eight-frame-current-state.json",
+        "observed_symlink_path": "/Users/noboruikuta/Library/Application Support/anythingllm-desktop",
+        "observed_symlink_target": "/Volumes/AnythingLLMDesktop/AnythingLLM/Desktop/anythingllm-desktop-test-1.12.1-20260711-223218",
+        "result": "STANDARD_USER_DATA_SYMLINK_AND_EXTERNAL_SSD_TARGET_OBSERVED"
+      },
+        {
+          "path": "/Users/noboruikuta/AI-Workspace/_AUDIT_METADATA/eight-slot-readiness-v0.6/20260726T223808Z/SOURCE_DISCOVERY.json",
+          "result": "SOURCE_CANDIDATES_FOUND_READ_ONLY_NO_GENERATION_CREATED"
+        }
+      ],
+      "blockers": [
+        "NO_VERIFIED_PAST_GENERATION",
+        "MEMORY_638_READBACK_REQUIRED_BEFORE_EXECUTION",
+        "MOUNT_SYMLINK_RUNTIME_READBACK_REQUIRED_BEFORE_EXECUTION"
+      ],
+      "candidate_status": "BLOCKED_NO_VERIFIED_PAST_GENERATION"
+    },
+    {
+      "id": "gpt",
+      "current_generation": "GPT-G007",
+      "selected_past_generation": "GPT-G006",
+      "source_ref": "a0963bae0c70728c12e66b1a1629fadc172b6ed5",
+      "current_ref": "54b3c731a056abda1191323c0ca276d7296d08bf",
+      "proposed_future_generation": "GPT-G008-RESTORED-FROM-G006",
+      "repository": "/Users/noboruikuta/AI-Workspace/ainoboru-knowledge",
+      "repository_readback": {
+        "performed": true,
+        "read_only": true,
+        "git_optional_locks": 0,
+        "branch": "judgments/20260723-j3-manual-capture-v1",
+        "head": "b3e22f9163b31a66ed1d4090e072944991e5453e",
+        "main_ref": "54b3c731a056abda1191323c0ca276d7296d08bf",
+        "status_porcelain_count": 0,
+        "clean": true,
+        "catalog_current_matches_head": false,
+        "catalog_current_matches_main": true
+      },
+      "newer_information_impact": {
+        "count": 21,
+        "name_status": [
+          {
+            "status": "A",
+            "path": "judgments/evidence/J2_VALIDATOR_TESTS.json"
+          },
+          {
+            "status": "A",
+            "path": "judgments/fixtures/invalid/J-20260723-901_missing-key.md"
+          },
+          {
+            "status": "A",
+            "path": "judgments/fixtures/invalid/J-20260723-902_bad-id.md"
+          },
+          {
+            "status": "A",
+            "path": "judgments/fixtures/invalid/J-20260723-903_unapproved.md"
+          },
+          {
+            "status": "A",
+            "path": "judgments/fixtures/invalid/J-20260723-904_validator-not-pass.md"
+          },
+          {
+            "status": "A",
+            "path": "judgments/fixtures/invalid/J-20260723-905_hash-mismatch.md"
+          },
+          {
+            "status": "A",
+            "path": "judgments/fixtures/invalid/J-20260723-906_one-option.md"
+          },
+          {
+            "status": "A",
+            "path": "judgments/fixtures/invalid/J-20260723-907_missing-rejection-reason.md"
+          },
+          {
+            "status": "A",
+            "path": "judgments/fixtures/invalid/J-20260723-908_facts-assumptions-conflated.md"
+          },
+          {
+            "status": "A",
+            "path": "judgments/fixtures/invalid/J-20260723-909_local-only-remote.md"
+          },
+          {
+            "status": "A",
+            "path": "judgments/fixtures/invalid/J-20260723-910_credential-pattern.md"
+          },
+          {
+            "status": "A",
+            "path": "judgments/fixtures/invalid/J-20260723-911_dangling-evidence.md"
+          },
+          {
+            "status": "A",
+            "path": "judgments/fixtures/invalid/J-20260723-912_prediction-mismatch.md"
+          },
+          {
+            "status": "A",
+            "path": "judgments/fixtures/invalid/J-20260723-913_rag-gate.md"
+          },
+          {
+            "status": "A",
+            "path": "judgments/fixtures/invalid/J-20260723-914_dangling-supersession.md"
+          },
+          {
+            "status": "A",
+            "path": "judgments/fixtures/invalid/duplicate/J-20260723-915_a.md"
+          },
+          {
+            "status": "A",
+            "path": "judgments/fixtures/invalid/duplicate/J-20260723-915_b.md"
+          },
+          {
+            "status": "A",
+            "path": "judgments/fixtures/support/approval-valid.md"
+          },
+          {
+            "status": "A",
+            "path": "judgments/fixtures/valid/J-20260723-900_valid-canonical.md"
+          },
+          {
+            "status": "A",
+            "path": "judgments/tools/run_validator_fixture_suite.py"
+          },
+          {
+            "status": "A",
+            "path": "judgments/tools/validate_judgment.py"
+          }
+        ],
+        "reason": "G006 source_ref..G007 catalog current_refのread-only git diff --name-status。現行checkout不一致のため、隔離候補をREADYにしない。"
+      },
+      "isolation_destination_candidate": null,
+      "production_target": "/Users/noboruikuta/AI-Workspace/ainoboru-knowledge",
+      "excluded_targets": [
+        "LIVE_MEMORY_DATABASE",
+        "LIVE_MEMORY_DATABASE_WAL",
+        "LIVE_MEMORY_DATABASE_SHM",
+        "SECRET_VALUES",
+        "SESSION_COOKIES",
+        "BROWSER_PROFILE",
+        "PRODUCTION_RUNTIME"
+      ],
+      "evidence": [
+        {
+          "path": "history/data/generation-catalog.json",
+          "result": "VERIFIED_PAST_AND_CATALOG_CURRENT_GENERATIONS"
+        },
+        {
+          "path": "/Users/noboruikuta/AI-Workspace/_AUDIT_METADATA/future-generation-main-only-v0.5.2/20260726T221147Z/FUTURE_GENERATION_VALIDATION.json",
+          "result": "PASS_ISOLATED_BACKUP_RESTORE_TEST"
+        },
+        {
+          "path": "/Users/noboruikuta/AI-Workspace/ainoboru-knowledge",
+          "result": "READ_ONLY_CHECKOUT_HEAD_MISMATCH_WITH_CATALOG_CURRENT"
+        }
+      ],
+      "blockers": [
+        "CURRENT_CHECKOUT_BRANCH_IS_NOT_MAIN",
+        "CURRENT_CHECKOUT_HEAD_DIFFERS_FROM_CATALOG_CURRENT",
+        "LIVE_MEMORY_DATABASE_EXCLUDED_HUMAN_READABLE_EXPORT_ONLY"
+      ],
+      "candidate_status": "BLOCKED_CURRENT_STATE_MISMATCH"
+    },
+    {
+      "id": "claude",
+      "current_generation": "CLAUDE-G001",
+      "selected_past_generation": null,
+      "source_ref": null,
+      "current_ref": "40f2e12df68a73bbe57dfb85ef197574a46259d269554f1cda9b95ef63f8b4a8",
+      "proposed_future_generation": null,
+      "repository": null,
+      "repository_readback": {
+        "performed": false,
+        "read_only": true,
+        "git_optional_locks": 0,
+        "branch": null,
+        "head": null,
+        "main_ref": null,
+        "status_porcelain_count": null,
+        "clean": null,
+        "catalog_current_matches_head": null,
+        "catalog_current_matches_main": null
+      },
+      "newer_information_impact": {
+        "count": 0,
+        "name_status": [],
+        "reason": "検証済み過去世代がなく、世代間git diffは該当しない。共有bridgeの未commit変更は保護対象であり候補へ含めない。"
+      },
+      "isolation_destination_candidate": null,
+      "production_target": "/Users/noboruikuta/AI-Workspace/mcp/anythingllm-bridge-http",
+      "excluded_targets": [
+        "SHARED_BRIDGE_UNCOMMITTED_CHANGES",
+        "SECRET_VALUES",
+        "SESSION_COOKIES",
+        "BROWSER_PROFILE",
+        "FULL_RUNTIME_LOG"
+      ],
+      "evidence": [
+        {
+          "path": "history/data/generation-catalog.json",
+          "result": "CURRENT_BASELINE_ONLY_NO_VERIFIED_PAST_GENERATION"
+        },
+        {
+          "path": "/Users/noboruikuta/AI-Workspace/_AUDIT_METADATA/eight-slot-readiness-v0.6/20260726T223808Z/CURRENT_BASELINE_VALIDATION.json",
+          "result": "PASS_CURRENT_BASELINE_ISOLATED_RESTORE_TEST_ONLY"
+        },
+        {
+          "path": "/Users/noboruikuta/AI-Workspace/_WORKTREES/ainoboru-control-plane-management-records-phase-b1-memory-prompt/registry/management-records/data/eight-frame-current-state.json",
+          "result": "SHARED_BRIDGE_UNCOMMITTED_CHANGES_RECORDED_FOR_PROTECTION"
+        }
+      ],
+      "blockers": [
+        "NO_VERIFIED_PAST_GENERATION",
+        "SHARED_BRIDGE_UNCOMMITTED_CHANGES_MUST_BE_PRESERVED"
+      ],
+      "candidate_status": "BLOCKED_NO_VERIFIED_PAST_GENERATION"
+    },
+    {
+      "id": "gemini",
+      "current_generation": null,
+      "selected_past_generation": null,
+      "source_ref": null,
+      "current_ref": null,
+      "proposed_future_generation": null,
+      "repository": null,
+      "repository_readback": {
+        "performed": false,
+        "read_only": true,
+        "git_optional_locks": 0,
+        "branch": null,
+        "head": null,
+        "main_ref": null,
+        "status_porcelain_count": null,
+        "clean": null,
+        "catalog_current_matches_head": null,
+        "catalog_current_matches_main": null
+      },
+      "newer_information_impact": {
+        "count": 0,
+        "name_status": [],
+        "reason": "世代と専用repository bindingがなく、世代間git diffは該当しない。共有bridgeとcurrent Promptは未確認。"
+      },
+      "isolation_destination_candidate": null,
+      "production_target": null,
+      "excluded_targets": [
+        "SHARED_BRIDGE_UNCOMMITTED_CHANGES",
+        "UNVERIFIED_CURRENT_PROMPT",
+        "SECRET_VALUES",
+        "SESSION_COOKIES",
+        "BROWSER_PROFILE"
+      ],
+      "evidence": [
+        {
+          "path": "history/data/generation-catalog.json",
+          "result": "NO_GENERATION"
+        },
+        {
+          "path": "/Users/noboruikuta/AI-Workspace/_AUDIT_METADATA/eight-slot-readiness-v0.6/20260726T223808Z/SOURCE_DISCOVERY.json",
+          "result": "SOURCE_CANDIDATES_FOUND_READ_ONLY_NO_GENERATION_CREATED"
+        },
+        {
+          "path": "/Users/noboruikuta/AI-Workspace/_WORKTREES/ainoboru-control-plane-management-records-phase-b1-memory-prompt/registry/management-records/data/eight-frame-current-state.json",
+          "result": "SHARED_BRIDGE_AND_CURRENT_PROMPT_UNVERIFIED"
+        }
+      ],
+      "blockers": [
+        "NO_GENERATION",
+        "NO_VERIFIED_CURRENT_STATE",
+        "NO_EXPLICIT_REPOSITORY_BINDING"
+      ],
+      "candidate_status": "BLOCKED_NO_GENERATION_AND_CURRENT_STATE_UNVERIFIED"
+    },
+    {
+      "id": "fable-batch",
+      "current_generation": "FABLE-G003",
+      "selected_past_generation": "FABLE-G002",
+      "source_ref": "c494d57ed9da9dad437eb9139ce73db648d651d7",
+      "current_ref": "08f2dd065312db3cde81561133a730df422017ae",
+      "proposed_future_generation": "FABLE-G004-RESTORED-FROM-G002",
+      "repository": "/Users/noboruikuta/AI-Workspace/ainoboru-fable-pipeline",
+      "repository_readback": {
+        "performed": true,
+        "read_only": true,
+        "git_optional_locks": 0,
+        "branch": "main",
+        "head": "08f2dd065312db3cde81561133a730df422017ae",
+        "main_ref": "08f2dd065312db3cde81561133a730df422017ae",
+        "status_porcelain_count": 0,
+        "clean": true,
+        "catalog_current_matches_head": true,
+        "catalog_current_matches_main": true
+      },
+      "newer_information_impact": {
+        "count": 24,
+        "name_status": [
+          {
+            "status": "A",
+            "path": "docs/schema/SCHEMA_CONTRACT.md"
+          },
+          {
+            "status": "A",
+            "path": "schemas/fable-cost.schema.json"
+          },
+          {
+            "status": "A",
+            "path": "schemas/fable-handoff-manifest.schema.json"
+          },
+          {
+            "status": "A",
+            "path": "schemas/fable-job-request.schema.json"
+          },
+          {
+            "status": "A",
+            "path": "schemas/fable-job-state.schema.json"
+          },
+          {
+            "status": "A",
+            "path": "schemas/fable-result.schema.json"
+          },
+          {
+            "status": "A",
+            "path": "tests/fixtures/invalid/cost.invalid-currency.json"
+          },
+          {
+            "status": "A",
+            "path": "tests/fixtures/invalid/cost.invalid-total-mismatch.json"
+          },
+          {
+            "status": "A",
+            "path": "tests/fixtures/invalid/handoff.invalid-approval-false.json"
+          },
+          {
+            "status": "A",
+            "path": "tests/fixtures/invalid/handoff.invalid-consumer.json"
+          },
+          {
+            "status": "A",
+            "path": "tests/fixtures/invalid/handoff.invalid-fable-decision.json"
+          },
+          {
+            "status": "A",
+            "path": "tests/fixtures/invalid/job-request.invalid-bad-job-id.json"
+          },
+          {
+            "status": "A",
+            "path": "tests/fixtures/invalid/job-request.invalid-budget-output-mismatch.json"
+          },
+          {
+            "status": "A",
+            "path": "tests/fixtures/invalid/job-request.invalid-empty-inputs.json"
+          },
+          {
+            "status": "A",
+            "path": "tests/fixtures/invalid/job-state.invalid-submitted-without-provider-id.json"
+          },
+          {
+            "status": "A",
+            "path": "tests/fixtures/invalid/job-state.invalid-transition.json"
+          },
+          {
+            "status": "A",
+            "path": "tests/fixtures/invalid/result.invalid-bad-sha.json"
+          },
+          {
+            "status": "A",
+            "path": "tests/fixtures/invalid/result.invalid-failure-without-error.json"
+          },
+          {
+            "status": "A",
+            "path": "tests/fixtures/valid/cost.valid.json"
+          },
+          {
+            "status": "A",
+            "path": "tests/fixtures/valid/handoff-manifest.valid.json"
+          },
+          {
+            "status": "A",
+            "path": "tests/fixtures/valid/job-request.valid.json"
+          },
+          {
+            "status": "A",
+            "path": "tests/fixtures/valid/job-state.valid.json"
+          },
+          {
+            "status": "A",
+            "path": "tests/fixtures/valid/result.valid.json"
+          },
+          {
+            "status": "A",
+            "path": "tools/validate_schema_fixtures.py"
+          }
+        ],
+        "reason": "source_ref..current_refのread-only git diff --name-status。候補内容へ置換せず、現在世代側の新しい情報として表示する。"
+      },
+      "isolation_destination_candidate": "/Users/noboruikuta/AI-Workspace/_RUNS/history-steps-19-25/step23/isolated/fable-g002",
+      "production_target": "/Users/noboruikuta/AI-Workspace/ainoboru-fable-pipeline",
+      "excluded_targets": [
+        "SECRET_VALUES",
+        "PROVIDER_CREDENTIALS",
+        "RUNTIME_CACHE",
+        "GENERATED_BINARIES",
+        "PRODUCTION_RUNTIME"
+      ],
+      "evidence": [
+        {
+          "path": "history/data/generation-catalog.json",
+          "result": "VERIFIED_PAST_AND_CURRENT_GENERATIONS"
+        },
+        {
+          "path": "/Users/noboruikuta/AI-Workspace/_AUDIT_METADATA/future-generation-main-only-v0.5.2/20260726T221147Z/FUTURE_GENERATION_VALIDATION.json",
+          "result": "PASS_ISOLATED_BACKUP_RESTORE_TEST"
+        },
+        {
+          "path": "/Users/noboruikuta/AI-Workspace/ainoboru-fable-pipeline",
+          "result": "READ_ONLY_MAIN_HEAD_CLEAN_AND_CATALOG_CURRENT_MATCH"
+        }
+      ],
+      "blockers": [],
+      "candidate_status": "READY_FOR_ISOLATED_CANDIDATE"
+    },
+    {
+      "id": "r6-ai-photography",
+      "current_generation": null,
+      "selected_past_generation": null,
+      "source_ref": null,
+      "current_ref": null,
+      "proposed_future_generation": null,
+      "repository": null,
+      "repository_readback": {
+        "performed": false,
+        "read_only": true,
+        "git_optional_locks": 0,
+        "branch": null,
+        "head": null,
+        "main_ref": null,
+        "status_porcelain_count": null,
+        "clean": null,
+        "catalog_current_matches_head": null,
+        "catalog_current_matches_main": null
+      },
+      "newer_information_impact": {
+        "count": 0,
+        "name_status": [],
+        "reason": "専用binding、current generation、restore targetがなく、世代間git diffは該当しない。"
+      },
+      "isolation_destination_candidate": null,
+      "production_target": null,
+      "excluded_targets": [
+        "RAW_PHOTOS",
+        "RAW_VIDEO",
+        "PERSONAL_INFORMATION",
+        "LOCATION_INFORMATION",
+        "SECRET_VALUES",
+        "PROCESSING_CACHE"
+      ],
+      "evidence": [
+        {
+          "path": "history/data/generation-catalog.json",
+          "result": "PARKED_SLOT_NO_GENERATION"
+        },
+        {
+          "path": "/Users/noboruikuta/AI-Workspace/_AUDIT_METADATA/eight-slot-readiness-v0.6/20260726T223808Z/SOURCE_DISCOVERY.json",
+          "result": "READ_ONLY_CANDIDATES_NOT_PROMOTED_TO_R6_BINDING"
+        },
+        {
+          "path": "/Users/noboruikuta/AI-Workspace/_WORKTREES/ainoboru-control-plane-management-records-phase-b1-memory-prompt/registry/management-records/data/eight-frame-current-state.json",
+          "result": "NO_DEDICATED_REPOSITORY_GENERATION_OR_RESTORE_TARGET"
+        }
+      ],
+      "blockers": [
+        "NO_EXPLICIT_BINDING",
+        "NO_CURRENT_GENERATION",
+        "NO_RESTORE_TARGET"
+      ],
+      "candidate_status": "PARKED_NO_EXPLICIT_BINDING"
+    },
+    {
+      "id": "receipt",
+      "current_generation": "RECEIPT-G001",
+      "selected_past_generation": null,
+      "source_ref": null,
+      "current_ref": "85ba6272a3f9e400d9d727ef8c50cb1847f3cb89",
+      "proposed_future_generation": null,
+      "repository": "/Users/noboruikuta/AI-Workspace/ainoboru-receipt-ledger",
+      "repository_readback": {
+        "performed": false,
+        "read_only": true,
+        "git_optional_locks": 0,
+        "branch": null,
+        "head": null,
+        "main_ref": null,
+        "status_porcelain_count": null,
+        "clean": null,
+        "catalog_current_matches_head": null,
+        "catalog_current_matches_main": null
+      },
+      "newer_information_impact": {
+        "count": 0,
+        "name_status": [],
+        "reason": "検証済み過去世代がなく、世代間git diffは該当しない。"
+      },
+      "isolation_destination_candidate": null,
+      "production_target": "/Users/noboruikuta/AI-Workspace/ainoboru-receipt-ledger",
+      "excluded_targets": [
+        "RAW_RECEIPT_IMAGES",
+        "PERSONAL_INFORMATION",
+        "REAL_RECEIPT_DATA",
+        "SECRET_VALUES",
+        "PRODUCTION_DATABASE",
+        "OCR_CACHE"
+      ],
+      "evidence": [
+        {
+          "path": "history/data/generation-catalog.json",
+          "result": "CURRENT_BASELINE_ONLY_NO_VERIFIED_PAST_GENERATION"
+        },
+        {
+          "path": "/Users/noboruikuta/AI-Workspace/_AUDIT_METADATA/eight-slot-readiness-v0.6/20260726T223808Z/CURRENT_BASELINE_VALIDATION.json",
+          "result": "PASS_CURRENT_BASELINE_ISOLATED_RESTORE_TEST_ONLY"
+        },
+        {
+          "path": "/Users/noboruikuta/AI-Workspace/_WORKTREES/ainoboru-control-plane-management-records-phase-b1-memory-prompt/registry/management-records/data/eight-frame-current-state.json",
+          "result": "RAW_IMAGES_PERSONAL_INFORMATION_REAL_DATA_AND_SECRET_VALUES_EXCLUDED"
+        }
+      ],
+      "blockers": [
+        "NO_VERIFIED_PAST_GENERATION"
+      ],
+      "candidate_status": "BLOCKED_NO_VERIFIED_PAST_GENERATION"
+    }
+  ],
+  "summary": {
+    "ready_count": 2,
+    "blocked_count": 5,
+    "parked_count": 1,
+    "approval_required": true,
+    "next_step": "工程24の一方向隔離受入試験。ただし工程24はまだ開始しない。",
+    "step24_started": false
+  }
+}
