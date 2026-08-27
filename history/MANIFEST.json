@@ -1,5 +1,6 @@
 {
-  "artifact_id": "AI_NOBORU_HISTORY_SITE_V0_9_LOCAL_RESTORE_CONTROL",
+  "artifact_id": "AI_NOBORU_HISTORY_STEP22_EIGHT_CARD_CURRENT_STATE_CANDIDATE",
+  "candidate_status": "AWAITING_NOBORU_APPROVAL",
   "cloudflare_publish_performed": false,
   "files": [
     {
@@ -9,8 +10,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "c895838ae72e2df3c363eaca7f576b3a9c7c00366a359549697b9fa47c69600f",
-      "size_bytes": 521
+      "sha256": "aa22e12e0c7d239d63279f4e6ab8acbaf2265b71caaca74d20264b35c088f73c",
+      "size_bytes": 1052
     },
     {
       "path": "_headers",
@@ -19,8 +20,8 @@
     },
     {
       "path": "assets/app.js",
-      "sha256": "484eb2e8bb05ffb5f2f7ca00b26532c38e0cd487d3a32c02fad5b91286435e41",
-      "size_bytes": 4899
+      "sha256": "7b494b9f7503902d2f3c25bcf3fde13ba01bbdf7eebbb4e9f96825573cb8962a",
+      "size_bytes": 8638
     },
     {
       "path": "assets/component-baseline-app.js",
@@ -34,8 +35,8 @@
     },
     {
       "path": "assets/dashboard-data.js",
-      "sha256": "3f4412706e3d3c76bf5d284df1b53afc4c3e8f7468ea1a80d0e66eb01cff80aa",
-      "size_bytes": 3717
+      "sha256": "0eeafa989496da0d424ab0290ac3f842b3662a17d4d8632e9341dacc68b66807",
+      "size_bytes": 15321
     },
     {
       "path": "assets/desktop-control-app.js",
@@ -119,8 +120,8 @@
     },
     {
       "path": "assets/styles.css",
-      "sha256": "b0b31efd413b917eefdeea7d718a0ff9d6f242498f0fe0d6dafd1a213cddae6b",
-      "size_bytes": 19615
+      "sha256": "c1d79aea1ffff03020388c8cdf00cdeb160bccfa68d396dc83c24262c6874399",
+      "size_bytes": 22163
     },
     {
       "path": "data/component-baselines.json",
@@ -134,8 +135,8 @@
     },
     {
       "path": "data/dashboard-data.json",
-      "sha256": "59fbb2ec439ad98ec66aeba153560084261ea96525875c0d984978708d492b45",
-      "size_bytes": 4974
+      "sha256": "1715085d8c93bb99d655ffd3c0fda771204de13ed9c3321d32e031fefa7645de",
+      "size_bytes": 15296
     },
     {
       "path": "data/desktop-control-baseline.json",
@@ -159,8 +160,13 @@
     },
     {
       "path": "data/generation-catalog.json",
-      "sha256": "8f474d5cad883643819e0075b4945b3e7528af6d6dd35e22c70bad81b3bceeeb",
-      "size_bytes": 14749
+      "sha256": "aa250e52f368cefd5e2cd9f5e0842627cca66d8b0de4e71657cf554cd7809ec8",
+      "size_bytes": 15588
+    },
+    {
+      "path": "data/step22-eight-card-current-state.json",
+      "sha256": "e487a1cb84ea506f609bcc2f83f9cd6906cd642899ddde5702e18d40633e1cef",
+      "size_bytes": 869
     },
     {
       "path": "data/restore-operations.json",
@@ -184,13 +190,21 @@
     },
     {
       "path": "index.html",
-      "sha256": "e1534120e6e4871846c40e5e5eb7e900c16118861b11d9d5ad835bc773e1d6e9",
-      "size_bytes": 9503
+      "sha256": "55c737a14fcf3167cfe042fd2c8fefe3baacde36b91bda6d1422efcff08b5901",
+      "size_bytes": 4006
+    },
+    {
+      "path": "tests/test_step22_eight_card_ui.py",
+      "sha256": "9ea3668315ed0365141731f3a7aab86d75b74953d1f36ab7dd427a17bf14f235",
+      "size_bytes": 15631
     }
   ],
-  "generated_at": "2026-07-27T04:09:32.554022+00:00",
-  "local_isolated_restore_control": true,
+  "generated_at": "2026-07-29",
+  "git_writes": 0,
+  "local_isolated_restore_control": false,
+  "publication_writes": 0,
   "production_restore_allowed": false,
+  "step23_started": false,
   "system_count": 8,
-  "version": "0.9.0"
+  "version": "1.0.0-step22"
 }
