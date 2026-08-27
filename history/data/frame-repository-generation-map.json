@@ -1,0 +1,647 @@
+{
+  "schemaVersion": "1.0.0",
+  "recordType": "frame_repository_generation_map",
+  "updatedAt": "2026-07-30",
+  "currentStatus": {
+    "frameRepositoryLinks": {
+      "state": "一部確認",
+      "label": "8枠repositoryリンク",
+      "summary": "部分完成"
+    },
+    "generationBundle": {
+      "state": "未接続",
+      "label": "世代束ね",
+      "summary": "未完成"
+    },
+    "memoryGitExport": {
+      "state": "一部確認",
+      "label": "Memory Git export",
+      "summary": "成立だが差分あり"
+    },
+    "githubAndPublication": {
+      "state": "未接続",
+      "label": "GitHub / 公開",
+      "summary": "未完"
+    }
+  },
+  "modelNotes": [
+    "8枠はrepositoryではありません。",
+    "1枠に複数repository、1repositoryに複数枠が対応し得ます。",
+    "repositoryは8カードの参照先であり、トップカードにはしません。"
+  ],
+  "statusDefinitions": {
+    "確認済み": "現物または既存の検証記録で確認済み",
+    "一部確認": "経路または一部の証拠はあるが、全体の一致は未確認",
+    "未接続": "対応または参照経路がまだ確立していない",
+    "保留": "枠を保持したまま、確立作業を進めていない"
+  },
+  "generationCatalog": {
+    "source": "generation-catalog.json",
+    "principle": "過去へ巻き戻さず、過去と同じ内容を持つ新しい未来世代を作る",
+    "bundleState": "未接続",
+    "note": "既存の世代IDとsource_refを参照する。未確立の枠に世代IDを生成しない。"
+  },
+  "memoryExport": {
+    "repositoryId": "ainoboru-memory-bridge",
+    "path": "mcp/memory-bridge/exports/SUMMARY.json",
+    "maxMemoryId": 640,
+    "memoryCount": 633,
+    "historyStart": "2026-07-29T22:00:53+09:00",
+    "observedCurrentAtLeastId": 653,
+    "state": "一部確認",
+    "displayStatus": "Git保存経路は成立・最新差分未書出し",
+    "synchronization": "完全同期ではない",
+    "excludedFromGit": [
+      "live SQLite",
+      "WAL",
+      "SHM"
+    ]
+  },
+  "repositories": {
+    "ainoboru-control-plane": {
+      "name": "ainoboru-control-plane",
+      "roleJa": "8枠・横断索引・管理記録の定義／対応／状態軸",
+      "githubCopyStatus": "未確認",
+      "localNameState": "確認済み"
+    },
+    "ainoboru-memory-bridge": {
+      "name": "ainoboru-memory-bridge",
+      "roleJa": "Memory/TEMP_ export・保存・復元接続（主に第1〜5枠）",
+      "githubCopyStatus": "一部確認（Git保存経路は成立、最新差分は未書出し）",
+      "localNameState": "確認済み"
+    },
+    "ainoboru-infra": {
+      "name": "ainoboru-infra",
+      "roleJa": "Docker/Desktop runtime・storage・mount（主に第1・第2枠）",
+      "githubCopyStatus": "世代catalog時点のみ確認済み／現在写し未確認",
+      "localNameState": "確認済み"
+    },
+    "ainoboru-knowledge": {
+      "name": "ainoboru-knowledge",
+      "roleJa": "RAG Git原本（主に第1〜5枠）",
+      "githubCopyStatus": "世代catalog時点のみ確認済み／現在写し未確認",
+      "localNameState": "確認済み"
+    },
+    "ainoboru-anythingllm-bridge": {
+      "name": "ainoboru-anythingllm-bridge",
+      "roleJa": "AI/AnythingLLM/Memory接続（主に第1〜5枠）",
+      "githubCopyStatus": "未確認",
+      "localNameState": "確認済み"
+    },
+    "ainoboru-ops-runner": {
+      "name": "ainoboru-ops-runner",
+      "roleJa": "承認済みbackup/restore/applyと証拠（第1〜8枠横断）",
+      "githubCopyStatus": "未確認",
+      "localNameState": "確認済み"
+    },
+    "ainoboru-fable-pipeline": {
+      "name": "ainoboru-fable-pipeline",
+      "roleJa": "第6枠 FABLEバッチ本体",
+      "githubCopyStatus": "世代catalog時点のみ確認済み／現在写し未確認",
+      "localNameState": "確認済み"
+    },
+    "ainoboru-receipt-ledger": {
+      "name": "ainoboru-receipt-ledger",
+      "roleJa": "第8枠 領収書本体",
+      "githubCopyStatus": "世代catalog時点のみ確認済み／現在写し未確認",
+      "localNameState": "確認済み"
+    },
+    "aiofonesown-site": {
+      "name": "aiofonesown-site",
+      "roleJa": "第1〜8枠を表示する履歴管理画面",
+      "githubCopyStatus": "未確認／公開未完",
+      "localNameState": "確認済み"
+    }
+  },
+  "frames": [
+    {
+      "slot": 1,
+      "systemId": "anythingllm-docker",
+      "nameJa": "AnythingLLM Docker版",
+      "shortName": "Docker版",
+      "mappingState": "一部確認",
+      "currentState": "Docker runtimeの稼働・構成は既存証拠で確認済み。repository横断の束ねは一部確認。",
+      "generationCatalogSystemId": "anythingllm-docker",
+      "githubCopyStatus": "世代catalog時点のみ確認済み／現在写し未確認",
+      "referenceStates": {
+        "memory": "一部確認",
+        "prompt": "未接続",
+        "rag": "一部確認",
+        "settings": "一部確認"
+      },
+      "repositoryBindings": [
+        {
+          "repositoryId": "ainoboru-infra",
+          "path": "anythingllm/",
+          "sourceRef": "4bce4e07211d1b5d390421710bae6a97b0280fc2",
+          "confirmationState": "確認済み",
+          "note": "ANYTHINGLLM_DOCKER-G003のsource_ref"
+        },
+        {
+          "repositoryId": "ainoboru-memory-bridge",
+          "path": "mcp/memory-bridge/exports/SUMMARY.json",
+          "sourceRef": null,
+          "confirmationState": "一部確認",
+          "note": "export経路は成立、最新差分未書出し"
+        },
+        {
+          "repositoryId": "ainoboru-knowledge",
+          "path": "枠別path未確認",
+          "sourceRef": null,
+          "confirmationState": "一部確認",
+          "note": "RAG Git原本との対応範囲は未確定"
+        },
+        {
+          "repositoryId": "ainoboru-anythingllm-bridge",
+          "path": "枠別path未確認",
+          "sourceRef": null,
+          "confirmationState": "一部確認",
+          "note": "接続repository名のみ確認済み"
+        },
+        {
+          "repositoryId": "ainoboru-control-plane",
+          "path": "枠別path未確認",
+          "sourceRef": null,
+          "confirmationState": "一部確認",
+          "note": "対応・状態軸の管理先"
+        },
+        {
+          "repositoryId": "ainoboru-ops-runner",
+          "path": "枠別path未確認",
+          "sourceRef": null,
+          "confirmationState": "未接続",
+          "note": "承認済み操作の証拠参照は未接続"
+        },
+        {
+          "repositoryId": "aiofonesown-site",
+          "path": "history/",
+          "sourceRef": null,
+          "confirmationState": "確認済み",
+          "note": "この履歴画面"
+        }
+      ],
+      "unverifiedItems": [
+        "repository横断の現在source_ref",
+        "現在GitHub写し",
+        "Promptの管理path"
+      ]
+    },
+    {
+      "slot": 2,
+      "systemId": "anythingllm-desktop",
+      "nameJa": "AnythingLLM Desktop版",
+      "shortName": "Desktop版",
+      "mappingState": "一部確認",
+      "currentState": "Desktop runtime・storage・mountの既存証拠あり。確立済み世代はない。",
+      "generationCatalogSystemId": "anythingllm-desktop",
+      "githubCopyStatus": "未確認",
+      "referenceStates": {
+        "memory": "一部確認",
+        "prompt": "未接続",
+        "rag": "一部確認",
+        "settings": "一部確認"
+      },
+      "repositoryBindings": [
+        {
+          "repositoryId": "ainoboru-infra",
+          "path": "Desktop runtime/storage/mountの個別path未確認",
+          "sourceRef": null,
+          "confirmationState": "一部確認",
+          "note": "repository役割と枠対応を確認"
+        },
+        {
+          "repositoryId": "ainoboru-memory-bridge",
+          "path": "mcp/memory-bridge/exports/SUMMARY.json",
+          "sourceRef": null,
+          "confirmationState": "一部確認",
+          "note": "export経路は成立、Desktop固有範囲は未確定"
+        },
+        {
+          "repositoryId": "ainoboru-knowledge",
+          "path": "枠別path未確認",
+          "sourceRef": null,
+          "confirmationState": "一部確認",
+          "note": "RAG Git原本との対応範囲は未確定"
+        },
+        {
+          "repositoryId": "ainoboru-anythingllm-bridge",
+          "path": "枠別path未確認",
+          "sourceRef": null,
+          "confirmationState": "一部確認",
+          "note": "接続repository名のみ確認済み"
+        },
+        {
+          "repositoryId": "ainoboru-control-plane",
+          "path": "枠別path未確認",
+          "sourceRef": null,
+          "confirmationState": "一部確認",
+          "note": "対応・状態軸の管理先"
+        },
+        {
+          "repositoryId": "ainoboru-ops-runner",
+          "path": "枠別path未確認",
+          "sourceRef": null,
+          "confirmationState": "未接続",
+          "note": "承認済み操作の証拠参照は未接続"
+        },
+        {
+          "repositoryId": "aiofonesown-site",
+          "path": "history/",
+          "sourceRef": null,
+          "confirmationState": "確認済み",
+          "note": "この履歴画面"
+        }
+      ],
+      "unverifiedItems": [
+        "現在世代（未確立）",
+        "Desktop固有のrepository path/source_ref",
+        "現在GitHub写し"
+      ]
+    },
+    {
+      "slot": 3,
+      "systemId": "gpt",
+      "nameJa": "GPT",
+      "shortName": "GPT",
+      "mappingState": "一部確認",
+      "currentState": "GPTの既存世代とMemory export経路を参照。Memory exportは現在Memoryに追随していない。",
+      "generationCatalogSystemId": "gpt",
+      "githubCopyStatus": "世代catalog時点のみ確認済み／Memory最新差分は未書出し",
+      "referenceStates": {
+        "memory": "一部確認",
+        "prompt": "未接続",
+        "rag": "確認済み",
+        "settings": "一部確認"
+      },
+      "repositoryBindings": [
+        {
+          "repositoryId": "ainoboru-knowledge",
+          "path": "repository root（枠別path未確認）",
+          "sourceRef": "54b3c731a056abda1191323c0ca276d7296d08bf",
+          "confirmationState": "確認済み",
+          "note": "GPT-G007のsource_ref"
+        },
+        {
+          "repositoryId": "ainoboru-memory-bridge",
+          "path": "mcp/memory-bridge/exports/SUMMARY.json",
+          "sourceRef": null,
+          "confirmationState": "一部確認",
+          "note": "max ID 640、現在Memoryは少なくとも653"
+        },
+        {
+          "repositoryId": "ainoboru-anythingllm-bridge",
+          "path": "枠別path未確認",
+          "sourceRef": null,
+          "confirmationState": "一部確認",
+          "note": "接続repository名のみ確認済み"
+        },
+        {
+          "repositoryId": "ainoboru-control-plane",
+          "path": "枠別path未確認",
+          "sourceRef": null,
+          "confirmationState": "一部確認",
+          "note": "対応・状態軸の管理先"
+        },
+        {
+          "repositoryId": "ainoboru-ops-runner",
+          "path": "枠別path未確認",
+          "sourceRef": null,
+          "confirmationState": "未接続",
+          "note": "承認済み操作の証拠参照は未接続"
+        },
+        {
+          "repositoryId": "aiofonesown-site",
+          "path": "history/",
+          "sourceRef": null,
+          "confirmationState": "確認済み",
+          "note": "この履歴画面"
+        }
+      ],
+      "unverifiedItems": [
+        "Memory ID 641以降のGit export",
+        "Promptの管理path",
+        "repository横断の現在source_ref"
+      ]
+    },
+    {
+      "slot": 4,
+      "systemId": "claude",
+      "nameJa": "Claude",
+      "shortName": "Claude",
+      "mappingState": "一部確認",
+      "currentState": "CLAUDE-G001の受入artifact履歴あり。独立Memory取得とrepository横断の束ねは未確認。",
+      "generationCatalogSystemId": "claude",
+      "githubCopyStatus": "未確認",
+      "referenceStates": {
+        "memory": "一部確認",
+        "prompt": "未接続",
+        "rag": "一部確認",
+        "settings": "未接続"
+      },
+      "repositoryBindings": [
+        {
+          "repositoryId": "ainoboru-memory-bridge",
+          "path": "mcp/memory-bridge/exports/SUMMARY.json",
+          "sourceRef": null,
+          "confirmationState": "一部確認",
+          "note": "共通export経路のみ。Claude独立取得は未確認"
+        },
+        {
+          "repositoryId": "ainoboru-knowledge",
+          "path": "枠別path未確認",
+          "sourceRef": null,
+          "confirmationState": "一部確認",
+          "note": "RAG Git原本との対応範囲は未確定"
+        },
+        {
+          "repositoryId": "ainoboru-anythingllm-bridge",
+          "path": "枠別path未確認",
+          "sourceRef": null,
+          "confirmationState": "一部確認",
+          "note": "接続repository名のみ確認済み"
+        },
+        {
+          "repositoryId": "ainoboru-control-plane",
+          "path": "枠別path未確認",
+          "sourceRef": null,
+          "confirmationState": "一部確認",
+          "note": "対応・状態軸の管理先"
+        },
+        {
+          "repositoryId": "ainoboru-ops-runner",
+          "path": "枠別path未確認",
+          "sourceRef": null,
+          "confirmationState": "未接続",
+          "note": "承認済み操作の証拠参照は未接続"
+        },
+        {
+          "repositoryId": "aiofonesown-site",
+          "path": "history/",
+          "sourceRef": null,
+          "confirmationState": "確認済み",
+          "note": "この履歴画面"
+        }
+      ],
+      "unverifiedItems": [
+        "CLAUDE-G001のrepository binding",
+        "独立Memory取得",
+        "現在GitHub写し"
+      ]
+    },
+    {
+      "slot": 5,
+      "systemId": "gemini",
+      "nameJa": "Gemini",
+      "shortName": "Gemini",
+      "mappingState": "一部確認",
+      "currentState": "連絡経路の既存証拠あり。確立済み世代と独立Memory取得はない。",
+      "generationCatalogSystemId": "gemini",
+      "githubCopyStatus": "未確認",
+      "referenceStates": {
+        "memory": "一部確認",
+        "prompt": "未接続",
+        "rag": "一部確認",
+        "settings": "未接続"
+      },
+      "repositoryBindings": [
+        {
+          "repositoryId": "ainoboru-memory-bridge",
+          "path": "mcp/memory-bridge/exports/SUMMARY.json",
+          "sourceRef": null,
+          "confirmationState": "一部確認",
+          "note": "共通export経路のみ。Gemini独立取得は未確認"
+        },
+        {
+          "repositoryId": "ainoboru-knowledge",
+          "path": "枠別path未確認",
+          "sourceRef": null,
+          "confirmationState": "一部確認",
+          "note": "RAG Git原本との対応範囲は未確定"
+        },
+        {
+          "repositoryId": "ainoboru-anythingllm-bridge",
+          "path": "枠別path未確認",
+          "sourceRef": null,
+          "confirmationState": "一部確認",
+          "note": "接続repository名のみ確認済み"
+        },
+        {
+          "repositoryId": "ainoboru-control-plane",
+          "path": "枠別path未確認",
+          "sourceRef": null,
+          "confirmationState": "一部確認",
+          "note": "対応・状態軸の管理先"
+        },
+        {
+          "repositoryId": "ainoboru-ops-runner",
+          "path": "枠別path未確認",
+          "sourceRef": null,
+          "confirmationState": "未接続",
+          "note": "承認済み操作の証拠参照は未接続"
+        },
+        {
+          "repositoryId": "aiofonesown-site",
+          "path": "history/",
+          "sourceRef": null,
+          "confirmationState": "確認済み",
+          "note": "この履歴画面"
+        }
+      ],
+      "unverifiedItems": [
+        "現在世代（未確立）",
+        "独立Memory取得",
+        "現在GitHub写し"
+      ]
+    },
+    {
+      "slot": 6,
+      "systemId": "fable-batch",
+      "nameJa": "FABLEバッチ",
+      "shortName": "FABLE",
+      "mappingState": "一部確認",
+      "currentState": "FABLEバッチ本体repositoryとFABLE-G001〜G003を確認。現在runtime状態は未確認。",
+      "generationCatalogSystemId": "batch",
+      "githubCopyStatus": "世代catalog時点のみ確認済み／現在写し未確認",
+      "referenceStates": {
+        "memory": "未接続",
+        "prompt": "未接続",
+        "rag": "未接続",
+        "settings": "一部確認"
+      },
+      "repositoryBindings": [
+        {
+          "repositoryId": "ainoboru-fable-pipeline",
+          "path": "repository root（詳細path未確認）",
+          "sourceRef": "08f2dd065312db3cde81561133a730df422017ae",
+          "confirmationState": "確認済み",
+          "note": "FABLE-G003のsource_ref"
+        },
+        {
+          "repositoryId": "ainoboru-control-plane",
+          "path": "枠別path未確認",
+          "sourceRef": null,
+          "confirmationState": "一部確認",
+          "note": "対応・状態軸の管理先"
+        },
+        {
+          "repositoryId": "ainoboru-ops-runner",
+          "path": "枠別path未確認",
+          "sourceRef": null,
+          "confirmationState": "未接続",
+          "note": "承認済み操作の証拠参照は未接続"
+        },
+        {
+          "repositoryId": "aiofonesown-site",
+          "path": "history/",
+          "sourceRef": null,
+          "confirmationState": "確認済み",
+          "note": "この履歴画面"
+        }
+      ],
+      "unverifiedItems": [
+        "現在runtime状態",
+        "現在GitHub写し",
+        "Memory/Prompt/RAGの接続"
+      ]
+    },
+    {
+      "slot": 7,
+      "systemId": "r6",
+      "nameJa": "R6 AI撮影",
+      "shortName": "R6",
+      "mappingState": "保留",
+      "currentState": "第7枠として保持。確立済み世代はなく、本体repository bindingも保留。",
+      "generationCatalogSystemId": "r6",
+      "githubCopyStatus": "未確認",
+      "referenceStates": {
+        "memory": "保留",
+        "prompt": "保留",
+        "rag": "保留",
+        "settings": "保留"
+      },
+      "repositoryBindings": [
+        {
+          "repositoryId": "ainoboru-control-plane",
+          "path": "枠別path未確認",
+          "sourceRef": null,
+          "confirmationState": "保留",
+          "note": "枠定義のみ保持"
+        },
+        {
+          "repositoryId": "ainoboru-ops-runner",
+          "path": "枠別path未確認",
+          "sourceRef": null,
+          "confirmationState": "保留",
+          "note": "承認済み操作の証拠参照は保留"
+        },
+        {
+          "repositoryId": "aiofonesown-site",
+          "path": "history/",
+          "sourceRef": null,
+          "confirmationState": "確認済み",
+          "note": "この履歴画面"
+        }
+      ],
+      "unverifiedItems": [
+        "本体repository",
+        "管理対象path/source_ref",
+        "現在世代（未確立）",
+        "Memory/Prompt/RAG/設定の参照"
+      ]
+    },
+    {
+      "slot": 8,
+      "systemId": "receipt",
+      "nameJa": "領収書",
+      "shortName": "領収書",
+      "mappingState": "一部確認",
+      "currentState": "領収書本体repositoryとRECEIPT-G001を確認。横断参照と現在写しは一部未確認。",
+      "generationCatalogSystemId": "receipt",
+      "githubCopyStatus": "世代catalog時点のみ確認済み／現在写し未確認",
+      "referenceStates": {
+        "memory": "未接続",
+        "prompt": "未接続",
+        "rag": "未接続",
+        "settings": "一部確認"
+      },
+      "repositoryBindings": [
+        {
+          "repositoryId": "ainoboru-receipt-ledger",
+          "path": "repository root（詳細path未確認）",
+          "sourceRef": "85ba6272a3f9e400d9d727ef8c50cb1847f3cb89",
+          "confirmationState": "確認済み",
+          "note": "RECEIPT-G001のsource_ref"
+        },
+        {
+          "repositoryId": "ainoboru-control-plane",
+          "path": "枠別path未確認",
+          "sourceRef": null,
+          "confirmationState": "一部確認",
+          "note": "対応・状態軸の管理先"
+        },
+        {
+          "repositoryId": "ainoboru-ops-runner",
+          "path": "枠別path未確認",
+          "sourceRef": null,
+          "confirmationState": "未接続",
+          "note": "承認済み操作の証拠参照は未接続"
+        },
+        {
+          "repositoryId": "aiofonesown-site",
+          "path": "history/",
+          "sourceRef": null,
+          "confirmationState": "確認済み",
+          "note": "この履歴画面"
+        }
+      ],
+      "unverifiedItems": [
+        "repository横断の現在source_ref",
+        "現在GitHub写し",
+        "Memory/Prompt/RAGの接続"
+      ]
+    }
+  ],
+  "crossReferences": {
+    "memory": {
+      "indexNumber": 9,
+      "title": "メモリー横断参照索引",
+      "displayMode": "横断参照ビュー（トップカードではない）",
+      "summary": "第1〜5枠にMemory/TEMP_ export経路を参照。export max ID 640に対し、現在Memoryは少なくともID 653まで存在するため完全同期ではない。",
+      "frameStates": {
+        "anythingllm-docker": "一部確認",
+        "anythingllm-desktop": "一部確認",
+        "gpt": "一部確認",
+        "claude": "一部確認",
+        "gemini": "一部確認",
+        "fable-batch": "未接続",
+        "r6": "保留",
+        "receipt": "未接続"
+      }
+    },
+    "prompt": {
+      "indexNumber": 10,
+      "title": "プロンプト横断参照索引",
+      "displayMode": "横断参照ビュー（トップカードではない）",
+      "summary": "Promptの横断管理pathとsource_refは未確立。未確認値を生成しない。",
+      "frameStates": {
+        "anythingllm-docker": "未接続",
+        "anythingllm-desktop": "未接続",
+        "gpt": "未接続",
+        "claude": "未接続",
+        "gemini": "未接続",
+        "fable-batch": "未接続",
+        "r6": "保留",
+        "receipt": "未接続"
+      }
+    }
+  },
+  "provenance": {
+    "legacyStep22Candidate": {
+      "source": "step22-eight-card-current-state.json",
+      "candidateStatus": "AWAITING_NOBORU_APPROVAL",
+      "step23Started": false,
+      "useAsCurrentState": false,
+      "note": "古い候補の来歴としてのみ保持し、現在状態表示には使用しない。"
+    }
+  }
+}

@@ -1,6 +1,6 @@
 {
-  "artifact_id": "AI_NOBORU_HISTORY_STEP22_EIGHT_CARD_CURRENT_STATE_CANDIDATE",
-  "candidate_status": "AWAITING_NOBORU_APPROVAL",
+  "artifact_id": "AI_NOBORU_HISTORY_EIGHT_FRAME_REPOSITORY_GENERATION_LINK_CANDIDATE",
+  "candidate_status": "LOCAL_CANDIDATE_READ_ONLY",
   "cloudflare_publish_performed": false,
   "files": [
     {
@@ -10,8 +10,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "aa22e12e0c7d239d63279f4e6ab8acbaf2265b71caaca74d20264b35c088f73c",
-      "size_bytes": 1052
+      "sha256": "d22ef7973362a62c4f31f40406e8e1480d9b4fc8488e0a7129d20cd3728a9e2d",
+      "size_bytes": 2125
     },
     {
       "path": "_headers",
@@ -20,8 +20,8 @@
     },
     {
       "path": "assets/app.js",
-      "sha256": "7b494b9f7503902d2f3c25bcf3fde13ba01bbdf7eebbb4e9f96825573cb8962a",
-      "size_bytes": 8638
+      "sha256": "48b7429292c22a3b15360eea87a904462cb7e3ef5736daf7e83c23f8f12169b8",
+      "size_bytes": 12517
     },
     {
       "path": "assets/component-baseline-app.js",
@@ -35,8 +35,8 @@
     },
     {
       "path": "assets/dashboard-data.js",
-      "sha256": "0eeafa989496da0d424ab0290ac3f842b3662a17d4d8632e9341dacc68b66807",
-      "size_bytes": 15321
+      "sha256": "6e0671d69a824a9e8a0340325ed925bc7d88e9ffe5eb93573a0707cd7aebc2d0",
+      "size_bytes": 75
     },
     {
       "path": "assets/desktop-control-app.js",
@@ -120,8 +120,8 @@
     },
     {
       "path": "assets/styles.css",
-      "sha256": "c1d79aea1ffff03020388c8cdf00cdeb160bccfa68d396dc83c24262c6874399",
-      "size_bytes": 22163
+      "sha256": "42fda6cb2dacd0ad0504711784781e6f0a1fdb1c88d0652dea1d46d4924953d9",
+      "size_bytes": 27454
     },
     {
       "path": "data/component-baselines.json",
@@ -135,8 +135,13 @@
     },
     {
       "path": "data/dashboard-data.json",
-      "sha256": "1715085d8c93bb99d655ffd3c0fda771204de13ed9c3321d32e031fefa7645de",
-      "size_bytes": 15296
+      "sha256": "c3c63494fe7d0a6b0b1b79234f87ad03d5d1c3327f044d405e6953401428206f",
+      "size_bytes": 250
+    },
+    {
+      "path": "data/frame-repository-generation-map.json",
+      "sha256": "788f166aa2b6ce37054d149292782e7d524696e0ec940d226fc3e47f72c9c477",
+      "size_bytes": 22715
     },
     {
       "path": "data/desktop-control-baseline.json",
@@ -190,21 +195,20 @@
     },
     {
       "path": "index.html",
-      "sha256": "55c737a14fcf3167cfe042fd2c8fefe3baacde36b91bda6d1422efcff08b5901",
-      "size_bytes": 4006
+      "sha256": "29c67349368a99e113b60bd5dd01c3b0b93e0f369162cd8565c071930240443e",
+      "size_bytes": 5189
     },
     {
       "path": "tests/test_step22_eight_card_ui.py",
-      "sha256": "9ea3668315ed0365141731f3a7aab86d75b74953d1f36ab7dd427a17bf14f235",
-      "size_bytes": 15631
+      "sha256": "ee15db3ff7f5ce8fb156d55c4a8c3683e72161d69c7f16c5b2dd89ddd7c823a8",
+      "size_bytes": 19170
     }
   ],
-  "generated_at": "2026-07-29",
+  "generated_at": "2026-07-30",
   "git_writes": 0,
   "local_isolated_restore_control": false,
   "publication_writes": 0,
   "production_restore_allowed": false,
-  "step23_started": false,
   "system_count": 8,
-  "version": "1.0.0-step22"
+  "version": "1.1.0-eight-frame-link"
 }

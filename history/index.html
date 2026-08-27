@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>AI NOBORU 履歴 — 工程22</title>
-  <meta name="description" content="AI NOBORUの8つの管理単位について、確認済みの現在状態と復元準備状態を表示する工程22候補。">
+  <title>AI NOBORU 履歴 — 8枠参照</title>
+  <meta name="description" content="AI NOBORUの8実体枠から関連repositoryと世代履歴を参照するローカル履歴管理画面。">
   <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
@@ -12,75 +12,95 @@
   <aside class="sidebar">
     <div class="brand">
       <span class="brand-mark" aria-hidden="true">N</span>
-      <div><strong>AI NOBORU</strong><small>履歴 / 工程22</small></div>
+      <div><strong>AI NOBORU</strong><small>履歴 / 8枠参照</small></div>
     </div>
     <nav class="main-nav" aria-label="履歴画面ナビゲーション">
       <button class="active" type="button" aria-current="page">現在状態</button>
     </nav>
-    <div class="side-title">8つの管理単位</div>
+    <div class="side-title">8つの実体枠</div>
     <div id="side-systems" class="side-systems"></div>
     <div class="side-rule">
-      <strong>工程22は読み取り専用</strong>
-      <span>復元候補は工程23で作成。この画面に復元・書込み操作はありません。</span>
+      <strong>読み取り専用</strong>
+      <span>この画面にGit書込み、publication、復元、runtime/database操作はありません。</span>
     </div>
   </aside>
 
   <main>
     <header class="topbar">
       <div>
-        <span class="eyebrow">Eight-card current state</span>
-        <h1>AI NOBORU 履歴画面</h1>
+        <span class="eyebrow">Eight frames / reference only</span>
+        <h1>AI NOBORU 履歴管理</h1>
       </div>
-      <div class="badges" aria-label="候補状態">
-        <span class="badge preview">工程22 candidate</span>
-        <span class="badge safe">AWAITING_NOBORU_APPROVAL</span>
+      <div class="badges" aria-label="現在状態">
+        <span class="badge preview">LOCAL PREVIEW</span>
+        <span class="badge safe">READ ONLY</span>
       </div>
     </header>
 
-    <section class="notice" aria-label="工程状態">
+    <section class="notice" aria-label="データ構造">
       <div class="notice-mark" aria-hidden="true">i</div>
       <div>
-        <strong>8カードの現在状態を確認する画面です。</strong>
-        <span>工程23は未着手です。Git書込みとpublicationは0。世代IDが確立していない管理単位には新しいIDを設定していません。</span>
+        <strong>8枠はrepositoryではありません。</strong>
+        <span>1枠に複数repository、1repositoryに複数枠が対応し得ます。repositoryは各カード詳細の参照先です。</span>
       </div>
     </section>
 
-    <section class="summary-grid" aria-label="確認概要">
-      <article class="summary primary">
-        <span class="label">工程22の状態</span>
-        <div class="summary-title">
-          <strong>8つの管理単位を固定</strong>
-          <code>8 / 8</code>
+    <section class="current-overview" aria-labelledby="overview-title">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">Current position</span>
+          <h2 id="overview-title">現在地</h2>
         </div>
-        <p>Docker版とDesktop版を分離し、現在状態・世代状態・GitHub写し・保存対象・未確認事項・復元準備をカード詳細で確認できます。</p>
-        <div class="chips">
-          <span>Read only</span>
-          <span>Git writes 0</span>
-          <span>Publication 0</span>
-          <span class="warn">Step 23 not started</span>
-        </div>
-      </article>
-      <article class="summary">
-        <span class="label">復元準備</span>
-        <h2 class="summary-callout">復元候補は工程23で作成</h2>
-        <p>この候補は状態表示だけを行います。実際の復元、書込み、候補作成の操作はありません。</p>
-      </article>
+        <span class="hint">未確認値は生成しません</span>
+      </div>
+      <div class="overview-grid">
+        <div><span>8枠repositoryリンク</span><strong>部分完成</strong><i class="warning">一部確認</i></div>
+        <div><span>世代束ね</span><strong>未完成</strong><i class="neutral">未接続</i></div>
+        <div><span>Memory Git export</span><strong>成立だが差分あり</strong><i class="warning">一部確認</i></div>
+        <div><span>GitHub / 公開</span><strong>未完</strong><i class="neutral">未接続</i></div>
+      </div>
+      <div class="memory-warning">
+        <strong>Memoryは完全同期ではありません。</strong>
+        <span>export: 633 records / max ID 640 / history start 2026-07-29T22:00:53+09:00。現在Memoryは少なくともID 653まで存在します。「Git保存経路は成立・最新差分未書出し」です。</span>
+      </div>
+      <div class="status-legend" aria-label="確認状態の凡例">
+        <span class="success">確認済み</span>
+        <span class="warning">一部確認</span>
+        <span class="neutral">未接続</span>
+        <span class="hold">保留</span>
+      </div>
     </section>
 
     <section class="section" aria-labelledby="systems-title">
       <div class="section-head">
         <div>
-          <span class="eyebrow">Current management units</span>
-          <h2 id="systems-title">8つの管理単位</h2>
+          <span class="eyebrow">Frame → repository → generation</span>
+          <h2 id="systems-title">8つの実体枠</h2>
         </div>
         <span class="hint">カードをクリック、またはEnter / Spaceで詳細を表示</span>
       </div>
       <div id="system-grid" class="system-grid"></div>
     </section>
 
+    <section class="section cross-reference-section" aria-labelledby="cross-title">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">Cross-reference views</span>
+          <h2 id="cross-title">横断参照</h2>
+        </div>
+        <span class="hint">第9・第10は追加カードではありません</span>
+      </div>
+      <div id="cross-reference" class="cross-reference"></div>
+    </section>
+
+    <section class="preview-note" aria-label="閲覧先">
+      <strong>正しいローカル閲覧先: <code>http://localhost:8080/history/</code></strong>
+      <span>旧固定WORKBENCH previewは自動更新されません。リポジトリ直下で <code>sh ./preview.command</code> を実行してください。</span>
+    </section>
+
     <footer>
-      <span>AI NOBORU 履歴画面 — 工程22 candidate</span>
-      <span>AWAITING_NOBORU_APPROVAL / non-publication</span>
+      <span>AI NOBORU 履歴管理 — local candidate</span>
+      <span>Git / publication / production restore writes: 0</span>
     </footer>
   </main>
 </div>
@@ -100,6 +120,7 @@
   <div id="modal-content"></div>
 </section>
 
+<script src="assets/generation-catalog.js"></script>
 <script src="assets/dashboard-data.js"></script>
 <script src="assets/app.js"></script>
 </body>
