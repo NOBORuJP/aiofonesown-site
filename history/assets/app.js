@@ -1,51 +1,316 @@
 (() => {
-const data=window.AINOBORU_DATA;
-const q=(s)=>document.querySelector(s);
-const qa=(s)=>[...document.querySelectorAll(s)];
-const esc=(v)=>String(v??"").replaceAll("&","&amp;").replaceAll("<","&lt;").replaceAll(">","&gt;").replaceAll('"',"&quot;").replaceAll("'","&#039;");
-const systemGrid=q("#system-grid"),side=q("#side-systems"),rows=q("#fable-rows"),roadmap=q("#roadmap-list");
-const modal=q("#generation-modal"),backdrop=q("#modal-backdrop"),content=q("#modal-content");
+  "use strict";
 
-function renderSystems(){
- systemGrid.innerHTML=data.systems.map(s=>`<article class="system-card ${s.featured?"featured":""}" data-system="${esc(s.id)}" tabindex="0">
- <div class="system-head"><h3>${esc(s.name)}</h3><span class="pill ${esc(s.tone)}">${esc(s.status)}</span></div>
- <p>${esc(s.summary)}</p><div class="system-foot"><span>${esc(s.current)}</span><span>履歴 ${s.historyCount}</span></div></article>`).join("");
- side.innerHTML=data.systems.map(s=>`<button data-side="${esc(s.id)}"><span><i class="dot ${esc(s.tone)}"></i>${esc(s.short)}</span><span>›</span></button>`).join("");
- qa("[data-system]").forEach(card=>card.addEventListener("click",()=>{if(card.dataset.system==="batch")q("#fable-history").scrollIntoView({behavior:"smooth"});}));
- qa("[data-side]").forEach(button=>button.addEventListener("click",()=>{const card=q(`[data-system="${button.dataset.side}"]`);card?.scrollIntoView({behavior:"smooth",block:"center"});}));
-}
-function renderRows(){
- rows.innerHTML=data.fable.generations.map(g=>`<article class="history-row">
- <div><span class="state ${esc(g.statusTone)}">${g.current?"●":"○"} ${esc(g.status)}</span></div>
- <div class="generation"><strong>${esc(g.generation)} — ${esc(g.title)}</strong><span><code>${esc(g.shaShort)}</code> · ${esc(g.type)}</span></div>
- <div class="source">${esc(g.source)}</div><div class="date">${esc(g.date)}</div>
- <button class="view-button" data-generation="${esc(g.generation)}">詳細</button></article>`).join("");
- qa("[data-generation]").forEach(btn=>btn.addEventListener("click",()=>openGeneration(btn.dataset.generation)));
-}
-function renderRoadmap(){
- roadmap.innerHTML=data.roadmap.map((r,i)=>`<div class="roadmap-item ${esc(r.status)}"><i>${r.status==="done"?"✓":i+1}</i><span>${esc(r.name)}</span></div>`).join("");
-}
-function openModal(html){content.innerHTML=html;backdrop.hidden=false;modal.classList.add("open");modal.setAttribute("aria-hidden","false")}
-function closeModal(){modal.classList.remove("open");modal.setAttribute("aria-hidden","true");setTimeout(()=>backdrop.hidden=true,160)}
-function openGeneration(id){
- const g=data.fable.generations.find(x=>x.generation===id);
- const canRestore=!g.current;
- openModal(`<span class="eyebrow">FABLE generation</span><h2>${esc(g.generation)} — ${esc(g.title)}</h2>
- <div class="modal-sha">${esc(g.sha)}</div>
- <div class="modal-section"><h3>概要</h3><p>${esc(g.summary)}</p></div>
- <div class="modal-section"><h3>証拠</h3><ul>${g.evidence.map(e=>`<li>${esc(e)}</li>`).join("")}</ul></div>
- ${canRestore?`<div class="action-row"><button id="simulate" class="primary-button">復元シミュレーション</button><button class="disabled-button" disabled>実際に復元する（未接続）</button></div><div id="simulation-slot"></div>`:`<div class="action-row"><button class="disabled-button" disabled>現在の世代です</button></div>`}`);
- if(canRestore)q("#simulate").addEventListener("click",()=>simulate(g));
-}
-function simulate(g){
- const next=`FABLE-G${String(data.fable.nextGenerationNumber).padStart(3,"0")}-RESTORED-FROM-${g.generation.replace("FABLE-","")}`;
- q("#simulation-slot").innerHTML=`<div class="simulation"><span class="eyebrow">Restore simulation</span>
- <div class="simulation-grid"><div class="simulation-box"><strong>${esc(data.fable.currentGeneration)}</strong><span>現在</span></div><b>→</b><div class="simulation-box"><strong>${esc(next)}</strong><span>${esc(g.generation)}の内容を再現</span></div></div>
- <div class="modal-section"><h3>変更するもの</h3><ul><li>FABLE repositoryの内容を${esc(g.shaShort)}相当にする新しいcommit</li><li>世代manifestと復元理由</li><li>復元後の検証記録</li></ul></div>
- <div class="modal-section"><h3>変更しないもの</h3><ul><li>FABLE-G002を含む既存履歴</li><li>他の7枠</li><li>Memory Bridge、Memory DB、RAG</li></ul></div>
- <p class="simulation-note">この画面ではシミュレーションのみです。実装後もNOBORUの最終承認までは書込みません。</p></div>`;
-}
-q("#modal-close").addEventListener("click",closeModal);backdrop.addEventListener("click",closeModal);document.addEventListener("keydown",e=>{if(e.key==="Escape")closeModal()});
-qa("[data-scroll]").forEach(b=>b.addEventListener("click",()=>q(`#${b.dataset.scroll}`)?.scrollIntoView({behavior:"smooth"})));
-renderSystems();renderRows();renderRoadmap();
+  const q = (selector) => document.querySelector(selector);
+  const qa = (selector) => [...document.querySelectorAll(selector)];
+  const esc = (value) => String(value ?? "")
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&#039;");
+
+  function initialize(data) {
+    const systemGrid = q("#system-grid");
+    const sideSystems = q("#side-systems");
+    const pageShell = q(".shell");
+    const backdrop = q("#modal-backdrop");
+    const modal = q("#system-modal");
+    const modalContent = q("#modal-content");
+    const modalClose = q("#modal-close");
+    const modalFocusableSelector = [
+      "a[href]",
+      "button:not([disabled])",
+      "input:not([disabled])",
+      "select:not([disabled])",
+      "textarea:not([disabled])",
+      '[tabindex]:not([tabindex="-1"])'
+    ].join(",");
+    let returnFocus = null;
+
+    function display(value, fallback = "未確立") {
+      return value === null || value === undefined || value === "" ? fallback : value;
+    }
+
+    function renderList(items, emptyText = "なし") {
+      if (!items || items.length === 0) {
+        return `<p class="empty-value">${esc(emptyText)}</p>`;
+      }
+      return `<ul>${items.map((item) => `<li>${esc(item)}</li>`).join("")}</ul>`;
+    }
+
+    function renderCounts(system) {
+      const labels = {
+        memory: "Memory",
+        prompt: "Prompt",
+        rag: "RAG",
+        settings: "Settings"
+      };
+      const countRows = Object.entries(labels).map(([key, label]) => {
+        const count = system.counts[key];
+        const value = count.value === null ? "未確認" : count.value;
+        const maxId = count.maxId === undefined ? "" : ` / max ID ${esc(count.maxId)}`;
+        const reason = count.reason ? `<small>${esc(count.reason)}</small>` : "";
+        return `<div class="detail-metric"><span>${esc(label)}</span><strong>${esc(value)}${maxId}</strong>${reason}</div>`;
+      }).join("");
+
+      const operationalCounts = system.operationalCounts
+        ? `<div class="operational-counts">
+            <h4>Desktop recovered counts</h4>
+            <div class="detail-metrics">
+              ${Object.entries(system.operationalCounts).map(([key, value]) =>
+                `<div class="detail-metric"><span>${esc(key)}</span><strong>${esc(value)}</strong></div>`
+              ).join("")}
+            </div>
+          </div>`
+        : "";
+
+      return `<div class="detail-metrics">${countRows}</div>${operationalCounts}`;
+    }
+
+    function renderComponents(components) {
+      if (!components.length) {
+        return '<p class="empty-value">確認済みのrepository / commit bindingなし</p>';
+      }
+      return `<div class="component-list">${components.map((component) => `
+        <div class="component-row">
+          <strong>${esc(display(component.repository, "repository名未確立"))}</strong>
+          <code>${esc(component.commit)}</code>
+          <span>${esc(component.status)}</span>
+        </div>`).join("")}</div>`;
+    }
+
+    function renderRestoreCandidate(system) {
+      const candidate = system.restoreCandidate;
+      const body = candidate
+        ? `<p class="candidate-disclaimer">これは工程23で作成した<strong>候補</strong>です。復元は実施していません。production restoreは未実施かつ未承認で、この画面に復元操作はありません。</p>
+          <div class="candidate-facts">
+            <div><span>candidateClass</span><strong>${esc(candidate.candidateClass)}</strong></div>
+            <div><span>evidenceLevel</span><strong>${esc(candidate.evidenceLevel)}</strong></div>
+            <div><span>復元先</span><strong>${esc(candidate.restoreDestination)}</strong></div>
+            <div><span>復元先の状態</span><strong>${esc(candidate.destinationStatus)}</strong></div>
+          </div>
+          <p class="candidate-summary">${esc(candidate.candidateSummary)}</p>
+          <div class="detail-columns">
+            <div class="candidate-block">
+              <h4>前提条件</h4>
+              ${renderList(candidate.preconditions, "前提条件なし")}
+            </div>
+            <div class="candidate-block">
+              <h4>停止条件</h4>
+              ${renderList(candidate.stopConditions, "停止条件なし")}
+            </div>
+          </div>
+          <div class="detail-columns">
+            <div class="candidate-block">
+              <h4>復元入力の候補</h4>
+              ${renderList(candidate.restoreInputs, "復元入力を設定しない")}
+            </div>
+            <div class="candidate-block">
+              <h4>復元入力から除外</h4>
+              ${renderList(candidate.excludedInputs)}
+            </div>
+          </div>
+          <div class="candidate-block">
+            <h4>検証計画</h4>
+            ${renderList(candidate.verificationPlan)}
+          </div>
+          <div class="candidate-block">
+            <h4>候補の未確認事項</h4>
+            ${renderList(candidate.unresolvedItems, "未確認事項なし")}
+          </div>
+          <div class="candidate-block">
+            <h4>rollback境界</h4>
+            <p>${esc(candidate.rollbackBoundary)}</p>
+          </div>
+          <div class="candidate-flags">
+            <span>production restore実施: なし</span>
+            <span>production restore承認: なし</span>
+            <span>RAG更新承認: なし</span>
+            <span>Git書込み承認: なし</span>
+          </div>`
+        : '<p class="empty-value">この管理単位の復元候補記録はありません。</p>';
+      return `<section class="restore-candidate" aria-label="復元候補">
+        <h3>復元候補</h3>
+        <div class="candidate-body">
+          ${body}
+        </div>
+      </section>`;
+    }
+
+    function openSystem(system, trigger) {
+      returnFocus = trigger || document.activeElement;
+      modalContent.innerHTML = `
+        <span class="eyebrow">Current state detail</span>
+        <h2 id="modal-title">${esc(system.name)}</h2>
+        <div class="detail-status-line">
+          <span class="pill ${esc(system.tone)}">${esc(system.status)}</span>
+          <span>確度: ${esc(system.currentStateConfidence)}</span>
+        </div>
+        <section class="modal-section">
+          <h3>現在状態</h3>
+          <p>${esc(system.currentState)}</p>
+          <p>${esc(system.summary)}</p>
+        </section>
+        <div class="detail-facts">
+          <div><span>現在世代</span><strong>${esc(display(system.currentGeneration))}</strong></div>
+          <div><span>世代状態</span><strong>${esc(system.generationStatus)}</strong></div>
+          <div><span>GitHub写し</span><strong>${esc(system.githubCopyStatus)}</strong></div>
+          <div><span>最終確認時刻</span><strong>${esc(display(system.lastVerifiedAt, "時刻記録なし"))}</strong></div>
+        </div>
+        <section class="modal-section">
+          <h3>件数</h3>
+          ${renderCounts(system)}
+        </section>
+        <section class="modal-section">
+          <h3>関連commit / reference</h3>
+          ${renderComponents(system.relatedComponents)}
+        </section>
+        <div class="detail-columns">
+          <section class="modal-section">
+            <h3>保存対象の概要</h3>
+            ${renderList(system.saveTargetsSummary)}
+          </section>
+          <section class="modal-section">
+            <h3>保存対象外</h3>
+            ${renderList(system.excludedTargetsSummary)}
+          </section>
+        </div>
+        <section class="modal-section">
+          <h3>未確認事項</h3>
+          ${renderList(system.unresolvedItems)}
+        </section>
+        ${renderRestoreCandidate(system)}
+        <section class="restore-readiness" aria-label="復元準備状態">
+          <h3>復元準備状態</h3>
+          <span>${esc(system.restoreReadiness.status)}</span>
+          <strong>${esc(system.restoreReadiness.summary)}</strong>
+        </section>`;
+
+      backdrop.hidden = false;
+      modal.hidden = false;
+      modal.setAttribute("aria-hidden", "false");
+      pageShell.inert = true;
+      pageShell.setAttribute("inert", "");
+      document.body.classList.add("modal-open");
+      modalClose.focus();
+    }
+
+    function getModalFocusableElements() {
+      return [...modal.querySelectorAll(modalFocusableSelector)]
+        .filter((element) => !element.closest("[hidden]"));
+    }
+
+    function trapModalFocus(event) {
+      if (modal.hidden || event.key !== "Tab") {
+        return;
+      }
+
+      const focusableElements = getModalFocusableElements();
+      if (focusableElements.length === 0) {
+        event.preventDefault();
+        modal.focus();
+        return;
+      }
+
+      const first = focusableElements[0];
+      const last = focusableElements[focusableElements.length - 1];
+      const focusIsOutside = !modal.contains(document.activeElement);
+      if (event.shiftKey && (document.activeElement === first || focusIsOutside)) {
+        event.preventDefault();
+        last.focus();
+      } else if (!event.shiftKey && (document.activeElement === last || focusIsOutside)) {
+        event.preventDefault();
+        first.focus();
+      }
+    }
+
+    function closeModal() {
+      if (modal.hidden) {
+        return;
+      }
+      modal.hidden = true;
+      backdrop.hidden = true;
+      modal.setAttribute("aria-hidden", "true");
+      pageShell.inert = false;
+      pageShell.removeAttribute("inert");
+      document.body.classList.remove("modal-open");
+      returnFocus?.focus();
+      returnFocus = null;
+    }
+
+    function activateCard(card) {
+      const system = data.systems.find((item) => item.id === card.dataset.system);
+      if (system) {
+        openSystem(system, card);
+      }
+    }
+
+    function renderSystems() {
+      systemGrid.innerHTML = data.systems.map((system) => `
+        <article
+          class="system-card"
+          data-system="${esc(system.id)}"
+          role="button"
+          tabindex="0"
+          aria-haspopup="dialog"
+          aria-controls="system-modal"
+          aria-label="${esc(system.name)}の詳細を開く"
+        >
+          <div class="system-head">
+            <h3>${esc(system.name)}</h3>
+            <span class="pill ${esc(system.tone)}">${esc(system.status)}</span>
+          </div>
+          <p>${esc(system.summary)}</p>
+          <div class="system-foot">
+            <span>現在世代: ${esc(display(system.currentGeneration))}</span>
+            <span>確度: ${esc(system.currentStateConfidence)}</span>
+          </div>
+        </article>`).join("");
+
+      sideSystems.innerHTML = data.systems.map((system) => `
+        <button type="button" data-side="${esc(system.id)}" aria-label="${esc(system.name)}へ移動">
+          <span><i class="dot ${esc(system.tone)}" aria-hidden="true"></i>${esc(system.short)}</span>
+          <span aria-hidden="true">›</span>
+        </button>`).join("");
+
+      qa("[data-system]").forEach((card) => {
+        card.addEventListener("click", () => activateCard(card));
+        card.addEventListener("keydown", (event) => {
+          if (event.key === "Enter" || event.key === " ") {
+            event.preventDefault();
+            activateCard(card);
+          }
+        });
+      });
+
+      qa("[data-side]").forEach((button) => {
+        button.addEventListener("click", () => {
+          const card = q(`[data-system="${button.dataset.side}"]`);
+          card?.scrollIntoView({behavior: "smooth", block: "center"});
+          card?.focus();
+        });
+      });
+    }
+
+    modalClose.addEventListener("click", closeModal);
+    backdrop.addEventListener("click", closeModal);
+    document.addEventListener("keydown", (event) => {
+      trapModalFocus(event);
+      if (event.key === "Escape") {
+        closeModal();
+      }
+    });
+
+    renderSystems();
+  }
+
+  if (window.AINOBORU_DATA) {
+    initialize(window.AINOBORU_DATA);
+  } else {
+    window.AINOBORU_DATA_READY.then(initialize).catch((error) => {
+      const grid = q("#system-grid");
+      grid.innerHTML = `<p class="data-error" role="alert">current-state dataを読み込めませんでした: ${esc(error.message)}</p>`;
+    });
+  }
 })();

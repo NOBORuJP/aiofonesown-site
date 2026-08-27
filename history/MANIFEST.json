@@ -1,5 +1,6 @@
 {
-  "artifact_id": "AI_NOBORU_HISTORY_SITE_V0_9_LOCAL_RESTORE_CONTROL",
+  "artifact_id": "AI_NOBORU_HISTORY_STEP23_EIGHT_RESTORE_CANDIDATES",
+  "candidate_status": "AWAITING_56_REVIEW",
   "cloudflare_publish_performed": false,
   "files": [
     {
@@ -9,8 +10,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "c895838ae72e2df3c363eaca7f576b3a9c7c00366a359549697b9fa47c69600f",
-      "size_bytes": 521
+      "sha256": "faa8a46440ab386247e14899a53a6fe1c0e4faa11ec646df67f55f25dd766af9",
+      "size_bytes": 4538
     },
     {
       "path": "_headers",
@@ -19,8 +20,8 @@
     },
     {
       "path": "assets/app.js",
-      "sha256": "484eb2e8bb05ffb5f2f7ca00b26532c38e0cd487d3a32c02fad5b91286435e41",
-      "size_bytes": 4899
+      "sha256": "1864c70041675e64b52d7c1a450b3056a6a40daf4c50881d1b99dfb90880802e",
+      "size_bytes": 12224
     },
     {
       "path": "assets/component-baseline-app.js",
@@ -34,8 +35,8 @@
     },
     {
       "path": "assets/dashboard-data.js",
-      "sha256": "3f4412706e3d3c76bf5d284df1b53afc4c3e8f7468ea1a80d0e66eb01cff80aa",
-      "size_bytes": 3717
+      "sha256": "b5b4c3c4804628ab35df42ce443d746bf24a58fe705e6f6d8ff6a6a23c95339c",
+      "size_bytes": 560
     },
     {
       "path": "assets/desktop-control-app.js",
@@ -119,8 +120,8 @@
     },
     {
       "path": "assets/styles.css",
-      "sha256": "b0b31efd413b917eefdeea7d718a0ff9d6f242498f0fe0d6dafd1a213cddae6b",
-      "size_bytes": 19615
+      "sha256": "4b398c82c195aa67b9a380dc7b5809693bd6022b3189b746afdc667a26fe0d53",
+      "size_bytes": 23824
     },
     {
       "path": "data/component-baselines.json",
@@ -134,8 +135,8 @@
     },
     {
       "path": "data/dashboard-data.json",
-      "sha256": "59fbb2ec439ad98ec66aeba153560084261ea96525875c0d984978708d492b45",
-      "size_bytes": 4974
+      "sha256": "5b059cbe86483bda293e7fd224b01bc452133c8faeead5ca676be64becb9a56e",
+      "size_bytes": 35603
     },
     {
       "path": "data/desktop-control-baseline.json",
@@ -159,8 +160,8 @@
     },
     {
       "path": "data/generation-catalog.json",
-      "sha256": "8f474d5cad883643819e0075b4945b3e7528af6d6dd35e22c70bad81b3bceeeb",
-      "size_bytes": 14749
+      "sha256": "aa250e52f368cefd5e2cd9f5e0842627cca66d8b0de4e71657cf554cd7809ec8",
+      "size_bytes": 15588
     },
     {
       "path": "data/restore-operations.json",
@@ -183,14 +184,49 @@
       "size_bytes": 55216
     },
     {
+      "path": "data/step22-eight-card-current-state.json",
+      "sha256": "c09f356f3ddf19b4b6e893d367b7b6c7fa60bf117303f626da14be73b497ba5a",
+      "size_bytes": 878
+    },
+    {
+      "path": "data/step23-restore-candidate-status.json",
+      "sha256": "893104e2eb3f1843db5f554ac4ec6c8b56e4f2e1540c80e467d1fecb87fb27cd",
+      "size_bytes": 856
+    },
+    {
+      "path": "data/step23-restore-candidates.json",
+      "sha256": "d46bc9d0c5974caab31c3dcfdd526b5a2b29611b4a644f0cd35564a46d9124da",
+      "size_bytes": 21850
+    },
+    {
       "path": "index.html",
-      "sha256": "e1534120e6e4871846c40e5e5eb7e900c16118861b11d9d5ad835bc773e1d6e9",
-      "size_bytes": 9503
+      "sha256": "61f23818d671ed88982f09ddd4fc371281355b30e041446299624dd35b84cd82",
+      "size_bytes": 4520
+    },
+    {
+      "path": "tests/test_step22_eight_card_ui.py",
+      "sha256": "bcf4ef2911a7de799b354106ac0dbec82ac61a6da714ab727f0ccf5f272276ee",
+      "size_bytes": 15104
+    },
+    {
+      "path": "tests/test_step23_restore_candidates.py",
+      "sha256": "7827ea4ef2df494de5c7fe221ace7a2cffebb0365881f4b634441805347ba93f",
+      "size_bytes": 27293
     }
   ],
-  "generated_at": "2026-07-27T04:09:32.554022+00:00",
-  "local_isolated_restore_control": true,
+  "generated_at": "2026-07-30",
+  "generation_ids_created": 0,
+  "git_writes": 0,
+  "local_isolated_restore_control": false,
   "production_restore_allowed": false,
+  "production_restore_performed": false,
+  "publication_writes": 0,
+  "rag_writes": 0,
+  "restore_candidate_count": 8,
+  "runtime_writes": 0,
+  "source_step": 22,
+  "step23_started": true,
+  "step24_started": false,
   "system_count": 8,
-  "version": "0.9.0"
+  "version": "1.0.0-step23"
 }

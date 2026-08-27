@@ -1,0 +1,526 @@
+{
+  "schemaVersion": 1,
+  "recordType": "step23_restore_candidates",
+  "taskId": "HISTORY_STEP23_EIGHT_RESTORE_CANDIDATES",
+  "candidateStatus": "AWAITING_56_REVIEW",
+  "generatedAt": "2026-07-30",
+  "sourceStep": 22,
+  "sourceTaskId": "HISTORY_STEP22_EIGHT_CARD_UI_CURRENT_STATE_RECOVERY",
+  "systemCount": 8,
+  "restoreCandidateCount": 8,
+  "candidateClassEnum": [
+    "READY_FOR_ISOLATED_RESTORE_PLAN",
+    "CONDITIONAL_RESTORE_PLAN",
+    "BLOCKED_PENDING_VERIFICATION",
+    "PARKED_NO_RESTORE_PLAN"
+  ],
+  "productionRestorePerformed": false,
+  "productionRestoreAuthorized": false,
+  "publicationPerformed": false,
+  "ragUpdatePerformed": false,
+  "gitWritePerformed": false,
+  "runtimeWritePerformed": false,
+  "generationIdsCreated": 0,
+  "step24Started": false,
+  "notice": "工程23は復元候補の作成のみ。production restore、publication、RAG更新、Git書込み、runtime変更はいずれも未実施かつ未承認。READYはproduction restoreの承認を意味しない。",
+  "sourceEvidence": {
+    "baseCommit": "35412fc24dbd9db56f259629d6ddb02096742f78",
+    "step22FinalDiffSha256": "ca4dd214e0761d256a21e626a3f488705917164cb7b433dd69dbf4765faf00c1",
+    "step22AuditVerdict": "PASS",
+    "memoryBridgeLocalOriginGithubMain": "e868c3bfcc80ea96cc5af33432874b02a95c2b8d",
+    "reconciliationResult": "PASS_STEP21_MEMORY_BRIDGE_PR_API_RECONCILIATION",
+    "directionLock": "IDLE",
+    "historicalComponentCatalogPolicy": "HISTORICAL_COMPONENT_CATALOG_IS_NOT_CURRENT_RUNTIME_PROOF"
+  },
+  "restoreCandidates": [
+    {
+      "systemId": "anythingllm-docker",
+      "systemName": "AnythingLLM Docker版",
+      "order": 1,
+      "candidateClass": "READY_FOR_ISOLATED_RESTORE_PLAN",
+      "evidenceLevel": "VERIFIED_CURRENT_RUNTIME",
+      "sourceState": "PASS_ANYTHINGLLM_DOCKER_RECOVERED。image mintplexlabs/anythingllm:1.15.0、host 3002 / container 3001、online=true、restart alwaysを直接read-backで確認済み。",
+      "sourceReferences": [
+        {
+          "type": "runtime_readback",
+          "ref": "container image / port mapping / online / restart policy",
+          "status": "VERIFIED_CURRENT_RUNTIME"
+        },
+        {
+          "type": "historical_component_catalog",
+          "ref": "ainoboru-infra@4bce4e07211d1b5d390421710bae6a97b0280fc2",
+          "status": "HISTORICAL_COMPONENT_CATALOG_REFERENCE_NOT_RUNTIME_PROOF"
+        }
+      ],
+      "restoreInputs": [
+        "コンテナ構成の宣言値",
+        "イメージ参照 mintplexlabs/anythingllm:1.15.0",
+        "ポート対応 host 3002 / container 3001",
+        "再起動方針 always",
+        "人が読める検証記録"
+      ],
+      "excludedInputs": [
+        "raw DB",
+        "WAL",
+        "SHM",
+        "cache",
+        "env secret values",
+        "credential",
+        "cookie",
+        "token"
+      ],
+      "restoreDestination": "隔離環境の非production destination",
+      "destinationStatus": "ISOLATED_DESTINATION_NOT_DESIGNATED",
+      "preconditions": [
+        "隔離destinationの指定とNOBORU承認",
+        "現在runtimeのGitHub写し状態の確認",
+        "安全な集計値の確立方法の確定"
+      ],
+      "verificationPlan": [
+        "隔離環境でimage参照とport対応をread-back",
+        "online状態とrestart方針をread-back",
+        "raw DBを開かず構成値のみを比較",
+        "結果を人が読める記録として保存"
+      ],
+      "stopConditions": [
+        "production containerへの書込みが発生する場合",
+        "raw DB / WAL / SHM / secretの取得が必要になった場合",
+        "NOBORU承認が無い状態でrestoreが要求された場合",
+        "隔離destinationが未指定のまま実行が要求された場合"
+      ],
+      "rollbackBoundary": "隔離destinationのみ。production containerとhost 3002は対象外。",
+      "unresolvedItems": [
+        "全体世代ID",
+        "現在runtimeのGitHub写し状態",
+        "安全な集計値"
+      ],
+      "productionRestoreAuthorized": false,
+      "ragUpdateAuthorized": false,
+      "gitWriteAuthorized": false,
+      "candidateCreated": true,
+      "candidateSummary": "現在runtimeは確認済みで、隔離restore planの作成は可能。production restoreは未実施かつ未承認。"
+    },
+    {
+      "systemId": "anythingllm-desktop",
+      "systemName": "AnythingLLM Desktop版",
+      "order": 2,
+      "candidateClass": "READY_FOR_ISOLATED_RESTORE_PLAN",
+      "evidenceLevel": "VERIFIED_CURRENT_RUNTIME",
+      "sourceState": "PASS_ANYTHINGLLM_DESKTOP_RECOVERED。external SSD mount read-back、user data symlink target、quick_check=ok、backend 3001 / collector 8888 listenersを確認済み。workspaces=8、workspace_documents=83、workspace_chats=228、workspace_threads=45。",
+      "sourceReferences": [
+        {
+          "type": "runtime_readback",
+          "ref": "external SSD mount / user data symlink / listener 3001・8888",
+          "status": "VERIFIED_CURRENT_RUNTIME"
+        },
+        {
+          "type": "repository_binding",
+          "ref": "未確立",
+          "status": "NO_VERIFIED_REPOSITORY_BINDING"
+        }
+      ],
+      "restoreInputs": [
+        "external SSD接続先情報",
+        "user data symlink構成",
+        "listener構成 backend 3001 / collector 8888",
+        "件数の検証記録 workspaces 8 / documents 83 / chats 228 / threads 45",
+        "人が読める検証記録"
+      ],
+      "excludedInputs": [
+        "raw DB",
+        "WAL",
+        "SHM",
+        "cache",
+        "credential",
+        "cookie",
+        "token"
+      ],
+      "restoreDestination": "隔離環境の非production destination",
+      "destinationStatus": "ISOLATED_DESTINATION_NOT_DESIGNATED",
+      "preconditions": [
+        "隔離destinationの指定とNOBORU承認",
+        "Docker版と分離した状態であることの再確認",
+        "repository bindingの確認",
+        "external SSDを読み取りのみで参照する方針の確定"
+      ],
+      "verificationPlan": [
+        "隔離環境でmount先とsymlink構成をread-back",
+        "listener構成をread-back",
+        "件数はraw DBを開かず既存の検証記録と照合",
+        "結果を人が読める記録として保存"
+      ],
+      "stopConditions": [
+        "production user dataへの書込みが発生する場合",
+        "raw DB / WAL / SHMの取得が必要になった場合",
+        "Docker版と混同した復元が要求された場合",
+        "NOBORU承認が無い状態でrestoreが要求された場合"
+      ],
+      "rollbackBoundary": "隔離destinationのみ。production user dataとexternal SSDの実体は対象外。",
+      "unresolvedItems": [
+        "全体世代ID",
+        "repository binding",
+        "GitHub写し状態"
+      ],
+      "productionRestoreAuthorized": false,
+      "ragUpdateAuthorized": false,
+      "gitWriteAuthorized": false,
+      "candidateCreated": true,
+      "candidateSummary": "現在runtimeと接続先は確認済みで、隔離restore planの作成は可能。production restoreは未実施かつ未承認。"
+    },
+    {
+      "systemId": "gpt",
+      "systemName": "GPT",
+      "order": 3,
+      "candidateClass": "READY_FOR_ISOLATED_RESTORE_PLAN",
+      "evidenceLevel": "VERIFIED_CURRENT_RUNTIME_AND_VERIFIED_GITHUB_COPY",
+      "sourceState": "direct Memory retrieval verified。Memory exportは633 records、max memory ID 640。Memory Bridge local / origin / GitHub mainはe868c3bfcc80ea96cc5af33432874b02a95c2b8dで一致し、PR #5 merged、direction lock IDLE。",
+      "sourceReferences": [
+        {
+          "type": "memory_bridge_reconciliation",
+          "ref": "e868c3bfcc80ea96cc5af33432874b02a95c2b8d",
+          "status": "LOCAL_EQUALS_GITHUB_MAIN_CURRENT_VERIFIED_PR_5_MERGED"
+        },
+        {
+          "type": "direction_lock",
+          "ref": "PASS_STEP21_MEMORY_BRIDGE_PR_API_RECONCILIATION",
+          "status": "IDLE"
+        },
+        {
+          "type": "historical_component_catalog",
+          "ref": "ainoboru-knowledge@54b3c731a056abda1191323c0ca276d7296d08bf",
+          "status": "HISTORICAL_COMPONENT_CATALOG_REFERENCE_NOT_RUNTIME_PROOF"
+        }
+      ],
+      "restoreInputs": [
+        "Memory Bridge実装と構成",
+        "人が読めるMemory export 633 records / max ID 640",
+        "direction lock検証記録",
+        "GitHub整合性記録 e868c3bfcc80ea96cc5af33432874b02a95c2b8d"
+      ],
+      "excludedInputs": [
+        "raw memory DB",
+        "WAL",
+        "SHM",
+        "credential",
+        "cookie",
+        "token"
+      ],
+      "restoreDestination": "隔離環境の非production destination",
+      "destinationStatus": "ISOLATED_DESTINATION_NOT_DESIGNATED",
+      "preconditions": [
+        "隔離destinationの指定とNOBORU承認",
+        "direction lockがIDLEであることの実行前後の再確認",
+        "GPT全体の現在世代IDの確立方法の確定"
+      ],
+      "verificationPlan": [
+        "隔離環境でMemory export件数とmax IDをread-back",
+        "local SHAとGitHub main SHAの一致を再確認",
+        "direction lockのstateを実行前後でread-back",
+        "結果を人が読める記録として保存"
+      ],
+      "stopConditions": [
+        "direction lockがIDLE以外の場合",
+        "Memory DBへの書込みが必要になった場合",
+        "GitHubへのGit書込みが必要になった場合",
+        "RAG更新が必要になった場合"
+      ],
+      "rollbackBoundary": "隔離destinationのみ。ainoboru-memory-bridgeのlocal main / origin / GitHub mainは対象外。",
+      "unresolvedItems": [
+        "GPT全体の現在世代ID",
+        "prompt・RAG・settingsの安全な集計値"
+      ],
+      "productionRestoreAuthorized": false,
+      "ragUpdateAuthorized": false,
+      "gitWriteAuthorized": false,
+      "candidateCreated": true,
+      "candidateSummary": "GitHub写しは現在状態と一致し、隔離restore planの作成は可能。production restoreは未実施かつ未承認。"
+    },
+    {
+      "systemId": "claude",
+      "systemName": "Claude",
+      "order": 4,
+      "candidateClass": "BLOCKED_PENDING_VERIFICATION",
+      "evidenceLevel": "PARTIAL_TRANSPORT_EVIDENCE_ONLY",
+      "sourceState": "subscription UI transport / bridge / artifact evidenceあり。direct independent Memory 638 retrievalは未確認。",
+      "sourceReferences": [
+        {
+          "type": "transport_route_evidence",
+          "ref": "subscription UI transport / bridge / artifact route",
+          "status": "PARTIAL_EVIDENCE_NOT_RUNTIME_PROOF"
+        }
+      ],
+      "restoreInputs": [
+        "transport route構成",
+        "bridge / artifact route構成",
+        "人が読める実行証拠"
+      ],
+      "excludedInputs": [
+        "cookie",
+        "token",
+        "session values",
+        "credential",
+        "raw DB",
+        "WAL",
+        "SHM"
+      ],
+      "restoreDestination": "未指定",
+      "destinationStatus": "NOT_DESIGNATED_PENDING_VERIFICATION",
+      "preconditions": [
+        "direct independent Memory 638 retrievalの確認",
+        "現在の全体世代の確立",
+        "GitHub写し状態の確立",
+        "隔離destinationの指定とNOBORU承認"
+      ],
+      "verificationPlan": [
+        "subscription UIに依存しない独立経路でMemory件数を取得できるか確認",
+        "取得経路と結果を人が読める記録として保存",
+        "証拠が揃うまでrestore planを作成しない"
+      ],
+      "stopConditions": [
+        "cookie / token / session値の取得が必要になった場合",
+        "独立取得が確認できない状態でrestoreが要求された場合",
+        "subscription UI操作の自動化が必要になった場合"
+      ],
+      "rollbackBoundary": "restore planを作成しないためrollback対象なし。",
+      "unresolvedItems": [
+        "direct independent Memory 638 retrieval",
+        "現在の全体世代",
+        "GitHub写し状態"
+      ],
+      "productionRestoreAuthorized": false,
+      "ragUpdateAuthorized": false,
+      "gitWriteAuthorized": false,
+      "candidateCreated": true,
+      "candidateSummary": "候補枠は記録したが、独立Memory取得が未確認のためrestore planは作成しない。production restoreは未実施かつ未承認。"
+    },
+    {
+      "systemId": "gemini",
+      "systemName": "Gemini",
+      "order": 5,
+      "candidateClass": "BLOCKED_PENDING_VERIFICATION",
+      "evidenceLevel": "PARTIAL_TRANSPORT_EVIDENCE_ONLY",
+      "sourceState": "manual / mailbox evidenceあり。direct independent Memory 638 retrievalは未確認。",
+      "sourceReferences": [
+        {
+          "type": "transport_route_evidence",
+          "ref": "manual / mailbox route",
+          "status": "PARTIAL_EVIDENCE_NOT_RUNTIME_PROOF"
+        }
+      ],
+      "restoreInputs": [
+        "manual / mailbox route構成",
+        "人が読める実行証拠"
+      ],
+      "excludedInputs": [
+        "provider secret values",
+        "credential",
+        "cookie",
+        "token",
+        "raw DB",
+        "WAL",
+        "SHM"
+      ],
+      "restoreDestination": "未指定",
+      "destinationStatus": "NOT_DESIGNATED_PENDING_VERIFICATION",
+      "preconditions": [
+        "direct independent Memory 638 retrievalの確認",
+        "現在の全体世代の確立",
+        "GitHub写し状態の確立",
+        "隔離destinationの指定とNOBORU承認"
+      ],
+      "verificationPlan": [
+        "manual / mailbox経路に依存しない独立経路でMemory件数を取得できるか確認",
+        "取得経路と結果を人が読める記録として保存",
+        "証拠が揃うまでrestore planを作成しない"
+      ],
+      "stopConditions": [
+        "provider secretの取得が必要になった場合",
+        "独立取得が確認できない状態でrestoreが要求された場合",
+        "外部web検索や外部送信が必要になった場合"
+      ],
+      "rollbackBoundary": "restore planを作成しないためrollback対象なし。",
+      "unresolvedItems": [
+        "direct independent Memory 638 retrieval",
+        "現在の全体世代",
+        "GitHub写し状態"
+      ],
+      "productionRestoreAuthorized": false,
+      "ragUpdateAuthorized": false,
+      "gitWriteAuthorized": false,
+      "candidateCreated": true,
+      "candidateSummary": "候補枠は記録したが、独立Memory取得が未確認のためrestore planは作成しない。production restoreは未実施かつ未承認。"
+    },
+    {
+      "systemId": "fable-batch",
+      "systemName": "FABLEバッチ",
+      "order": 6,
+      "candidateClass": "CONDITIONAL_RESTORE_PLAN",
+      "evidenceLevel": "HISTORICAL_COMPONENT_REFERENCE_ONLY",
+      "sourceState": "frame / component historyあり。現在runtime / process stateは未確認。catalog最新のFABLE-G003はhistorical component referenceであり現在runtimeの証拠ではない。",
+      "sourceReferences": [
+        {
+          "type": "historical_component_catalog",
+          "ref": "ainoboru-fable-pipeline@08f2dd065312db3cde81561133a730df422017ae",
+          "status": "HISTORICAL_COMPONENT_CATALOG_LATEST_FABLE_G003_NOT_RUNTIME_PROOF"
+        }
+      ],
+      "restoreInputs": [
+        "pipeline実装",
+        "schemaと構成",
+        "historical component catalogの参照値のみ",
+        "人が読める検証記録"
+      ],
+      "excludedInputs": [
+        "未整理のruntime生成物",
+        "credential",
+        "raw DB",
+        "WAL",
+        "SHM",
+        "cookie",
+        "token"
+      ],
+      "restoreDestination": "隔離環境の非production destination",
+      "destinationStatus": "ISOLATED_DESTINATION_NOT_DESIGNATED_PENDING_RUNTIME_VERIFICATION",
+      "preconditions": [
+        "現在runtime / process stateの確認",
+        "現在runtimeの世代の確立",
+        "現在runtimeのGitHub写し状態の確認",
+        "隔離destinationの指定とNOBORU承認"
+      ],
+      "verificationPlan": [
+        "runtime / process stateを読み取りのみで確認",
+        "historical component catalogを現在runtimeの証拠として扱わないことを記録に明記",
+        "隔離環境でpipeline構成をread-back",
+        "結果を人が読める記録として保存"
+      ],
+      "stopConditions": [
+        "FABLE-G003を現在runtimeの世代として扱う必要が生じた場合",
+        "production pipelineへの書込みが発生する場合",
+        "credentialの取得が必要になった場合",
+        "runtime未確認のままrestoreが要求された場合"
+      ],
+      "rollbackBoundary": "隔離destinationのみ。production pipelineとcatalog本体は対象外。",
+      "unresolvedItems": [
+        "現在runtime/process state",
+        "現在runtimeの世代",
+        "現在runtimeのGitHub写し状態"
+      ],
+      "productionRestoreAuthorized": false,
+      "ragUpdateAuthorized": false,
+      "gitWriteAuthorized": false,
+      "candidateCreated": true,
+      "candidateSummary": "component historyは参照可能。runtime確認を条件とした条件付き復元候補として記録。production restoreは未実施かつ未承認。"
+    },
+    {
+      "systemId": "r6",
+      "systemName": "R6 AI撮影",
+      "order": 7,
+      "candidateClass": "PARKED_NO_RESTORE_PLAN",
+      "evidenceLevel": "RESERVED_FRAME_ONLY",
+      "sourceState": "RESERVED / PARKED。管理枠は維持されている。repository binding、runtime、restore destination、generationは未確認。",
+      "sourceReferences": [],
+      "restoreInputs": [],
+      "excludedInputs": [
+        "raw photo assets",
+        "raw video assets",
+        "credential",
+        "cookie",
+        "token",
+        "raw DB",
+        "WAL",
+        "SHM"
+      ],
+      "restoreDestination": "指定しない",
+      "destinationStatus": "NOT_DESIGNATED_RESERVED_PARKED",
+      "preconditions": [
+        "repository bindingの確認",
+        "runtimeの確認",
+        "restore destinationの確定",
+        "generationの確立"
+      ],
+      "verificationPlan": [
+        "予約枠の定義と将来確認する項目一覧を維持",
+        "証拠が揃うまで実装対象へ昇格させない"
+      ],
+      "stopConditions": [
+        "証拠なしに実装対象へ昇格させる指示が来た場合",
+        "raw photo / video assetsの取得が必要になった場合",
+        "予約枠を9番目の管理枠へ分割する必要が生じた場合"
+      ],
+      "rollbackBoundary": "restore planを作成しないためrollback対象なし。",
+      "unresolvedItems": [
+        "repository binding",
+        "runtime",
+        "restore destination",
+        "generation"
+      ],
+      "productionRestoreAuthorized": false,
+      "ragUpdateAuthorized": false,
+      "gitWriteAuthorized": false,
+      "candidateCreated": true,
+      "candidateSummary": "予約枠を維持し、復元計画は作成しない。production restoreは未実施かつ未承認。"
+    },
+    {
+      "systemId": "receipt",
+      "systemName": "領収書",
+      "order": 8,
+      "candidateClass": "CONDITIONAL_RESTORE_PLAN",
+      "evidenceLevel": "HISTORICAL_COMPONENT_REFERENCE_ONLY",
+      "sourceState": "receipt-ledger component historyあり。現在runtime / processとoriginal-image policyは未確認。",
+      "sourceReferences": [
+        {
+          "type": "historical_component_catalog",
+          "ref": "ainoboru-receipt-ledger@85ba6272a3f9e400d9d727ef8c50cb1847f3cb89",
+          "status": "HISTORICAL_COMPONENT_CATALOG_REFERENCE_NOT_RUNTIME_PROOF"
+        }
+      ],
+      "restoreInputs": [
+        "ledger実装と構成",
+        "historical component catalogの参照値のみ",
+        "人が読める検証記録"
+      ],
+      "excludedInputs": [
+        "original images until policy verification",
+        "credential",
+        "raw DB",
+        "WAL",
+        "SHM",
+        "cookie",
+        "token"
+      ],
+      "restoreDestination": "隔離環境の非production destination",
+      "destinationStatus": "ISOLATED_DESTINATION_NOT_DESIGNATED_PENDING_RUNTIME_AND_POLICY_VERIFICATION",
+      "preconditions": [
+        "現在runtime / process stateの確認",
+        "original-image policyの確認",
+        "現在runtimeの世代の確立",
+        "現在runtimeのGitHub写し状態の確認",
+        "隔離destinationの指定とNOBORU承認"
+      ],
+      "verificationPlan": [
+        "runtime / process stateを読み取りのみで確認",
+        "original-image policyを確認し、未確認のままならimagesを対象外として維持",
+        "隔離環境でledger構成をread-back",
+        "結果を人が読める記録として保存"
+      ],
+      "stopConditions": [
+        "original-image policyが未確認のままimagesの取得が要求された場合",
+        "production ledgerへの書込みが発生する場合",
+        "runtime未確認のままrestoreが要求された場合",
+        "credentialの取得が必要になった場合"
+      ],
+      "rollbackBoundary": "隔離destinationのみ。production ledgerとoriginal imagesは対象外。",
+      "unresolvedItems": [
+        "現在runtime/process state",
+        "original-image policy",
+        "現在runtimeの世代",
+        "現在runtimeのGitHub写し状態"
+      ],
+      "productionRestoreAuthorized": false,
+      "ragUpdateAuthorized": false,
+      "gitWriteAuthorized": false,
+      "candidateCreated": true,
+      "candidateSummary": "領収書として個別に条件付き復元候補を記録。original imagesはpolicy確認まで対象外。production restoreは未実施かつ未承認。"
+    }
+  ]
+}

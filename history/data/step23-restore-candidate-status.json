@@ -1,0 +1,26 @@
+{
+  "recordType": "step23_restore_candidate_status",
+  "taskId": "HISTORY_STEP23_EIGHT_RESTORE_CANDIDATES",
+  "status": "AWAITING_56_REVIEW",
+  "generatedAt": "2026-07-30",
+  "sourceStep": 22,
+  "baseCommit": "35412fc24dbd9db56f259629d6ddb02096742f78",
+  "systemCount": 8,
+  "restoreCandidateCount": 8,
+  "candidateClassCounts": {
+    "READY_FOR_ISOLATED_RESTORE_PLAN": 3,
+    "CONDITIONAL_RESTORE_PLAN": 2,
+    "BLOCKED_PENDING_VERIFICATION": 2,
+    "PARKED_NO_RESTORE_PLAN": 1
+  },
+  "productionRestorePerformed": false,
+  "productionRestoreAuthorized": false,
+  "generationIdsCreated": 0,
+  "gitWrites": 0,
+  "publicationWrites": 0,
+  "ragWrites": 0,
+  "runtimeWrites": 0,
+  "step24Started": false,
+  "restoreActionAvailableInUi": false,
+  "notice": "工程23は復元候補の作成のみで停止。次はNOBORU / 56によるdiff・証拠監査。"
+}
