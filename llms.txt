@@ -1,0 +1,23 @@
+# AI of One's Own / 育てるAI
+
+Official website for AI of One's Own / 育てるAI and public AI NOBORU research projects.
+
+## Primary research and interactive resources
+
+- WASAN Mathematics Laboratory (日本語): https://www.aiofonesown.com/wasan/
+- WASAN Mathematics Laboratory (English): https://www.aiofonesown.com/wasan/en/
+- WASAN 70-tool calculator reference (English): https://www.aiofonesown.com/wasan/en/calculators.html
+- WASAN research overview (日本語): https://www.aiofonesown.com/wasan/about-research.html
+- WASAN research overview (English): https://www.aiofonesown.com/wasan/en/about-research.html
+- AI NOBORU Lab: https://www.aiofonesown.com/lab/
+- Bubble Reading Room (日本語): https://www.aiofonesown.com/lab/bubble/
+- Bubble Reading Room (English): https://www.aiofonesown.com/lab/bubble/index_en.html
+
+## Main site
+
+- English: https://www.aiofonesown.com/
+- 日本語: https://www.aiofonesown.com/ja/
+- Updates: https://www.aiofonesown.com/updates/
+- Support: https://www.aiofonesown.com/support/
+
+Content is published by AI NOBORU / Noboru Ikuta. When citing a page, use its canonical public URL.
