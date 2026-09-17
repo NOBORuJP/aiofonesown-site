@@ -24,6 +24,22 @@
   <url><loc>https://www.aiofonesown.com/updates/sodateru-ai-early-access-gumroad-release/</loc><priority>0.5</priority></url>
   <url><loc>https://www.aiofonesown.com/support/</loc><priority>0.6</priority></url>
 
+  <!-- ===== WASAN / 和算計算室 ===== -->
+  <url>
+    <loc>https://www.aiofonesown.com/wasan/</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.aiofonesown.com/wasan/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.aiofonesown.com/wasan/en/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.aiofonesown.com/wasan/en/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.aiofonesown.com/wasan/en/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.aiofonesown.com/wasan/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
   <!-- ===== 小説ランディング ===== -->
   <url>
     <loc>https://www.aiofonesown.com/novels/</loc>

@@ -1,0 +1,23 @@
+/* AI NOBORU — https://www.aiofonesown.com/ | 出典を示す配布用表示。参照史料・第三者の権利表示は各記載を参照。 */
+const svg=(body,label)=>`<svg class="advanced-drawing" viewBox="0 0 520 398" role="img" aria-label="${label}" xmlns="http://www.w3.org/2000/svg"><g font-family="sans-serif" font-size="14" fill="#244a5d">${body}</g><g data-ainoboru-attribution="true"><rect x="0" y="370" width="520" height="28" fill="#183744"/><a href="https://www.aiofonesown.com/"><text x="260" y="389" text-anchor="middle" font-family="sans-serif" font-size="13" fill="white" style="fill:#fff;font-size:16px;font-family:sans-serif">AI NOBORU · www.aiofonesown.com</text></a></g></svg>`;
+const path=(points,closed=false,color='#244a5d',fill='none')=>`<${closed?'polygon':'polyline'} points="${points.map(p=>p.join(',')).join(' ')}" fill="${fill}" stroke="${color}" stroke-width="2"/>`;
+const circle=(x,y,r,color='#244a5d',fill='none')=>`<circle cx="${x}" cy="${y}" r="${r}" fill="${fill}" stroke="${color}" stroke-width="1.8"/>`;
+const label=(x,y,text)=>`<text x="${x}" y="${y}" text-anchor="middle">${text}</text>`;
+const caption=s=>label(260,350,s);
+function frame(points){const xs=points.map(p=>p[0]),ys=points.map(p=>p[1]),lo=Math.min(...xs),hi=Math.max(...xs),bottom=Math.min(...ys),top=Math.max(...ys),scale=Math.min(410/(hi-lo||1),250/(top-bottom||1));return {scale,point:([x,y])=>[260+(x-(hi+lo)/2)*scale,170-(y-(top+bottom)/2)*scale]};}
+export function renderDiscoveryGeometry(g){
+ if(!g)return '';
+ if(g.type==='counting'){
+  if(g.n>60)return '<p class="empty-state">61人以上の配置は、下の順番の表で確認できます。</p>';
+  const r=g.n>30?6:10,body=Array.from({length:g.n},(_,i)=>{const t=2*Math.PI*i/g.n-Math.PI/2,x=260+124*Math.cos(t),y=166+124*Math.sin(t),active=g.survivors.includes(i+1);return circle(x,y,r,active?'#c24e38':'#91a8b2',active?'#e58b6855':'none')+label(260+146*Math.cos(t),171+146*Math.sin(t),i+1);}).join('');
+  return svg(body+caption('朱色：最後に残る番号 ／ 上の1から時計回り'),'円形に並ぶ番号と最後に残る番号');
+ }
+ if(g.type==='integerTriangle'){const width=250,height=width*g.ratio,p=[[135,290],[385,290],[135,290-height]];return svg(path(p,true,'#244a5d','#dce7ec77')+path([[135,276],[149,276],[149,290]],false,'#c24e38')+caption('整数の三辺 ／ 直角を挟む辺の比を反映'),'整数の三辺を持つ直角三角形');}
+ if(g.type==='survey'){const F=frame(g.points),p=g.points.map(F.point);return svg(path([p[0],p[1]],false,'#244a5d')+path([p[1],p[2]],false,'#c24e38')+path([p[1],p[3]],false,'#447d86')+path([[45,F.point([0,0])[1]],[475,F.point([0,0])[1]]],false,'#91a8b2')+p.slice(1).map(([x,y],i)=>circle(x,y,3)+label(x,y-12,['頂点','近','遠'][i])).join('')+caption('同じ地面・同じ目の高さ ／ 横と縦は同じ尺度'),'二地点から同じ目標の高さを見る測量図');}
+ if(g.type==='surveyPolygon'){const F=frame([...g.points,g.centroid]),p=g.points.map(F.point),c=F.point(g.centroid);return svg(path(p,true,'#244a5d','#dce7ec77')+p.map(([x,y],i)=>label(x+9,y-8,i+1)).join('')+circle(c[0],c[1],5,'#c24e38','#c24e38')+caption('朱色：面積重心 ／ 数字：入力した頂点の順'),'頂点の順に結んだ多角形と面積重心');}
+ if(g.type==='sphereZone'){const R=125,Y=z=>175-z*R,left=z=>260-R*Math.sqrt(Math.max(0,1-z*z)),right=z=>520-left(z),a=Math.asin(g.lower),b=Math.asin(g.upper),points=[...Array.from({length:61},(_,i)=>{const t=a+(b-a)*i/60;return [260+R*Math.cos(t),Y(Math.sin(t))];}),...Array.from({length:61},(_,i)=>{const t=b-(b-a)*i/60;return [260-R*Math.cos(t),Y(Math.sin(t))];})];return svg(circle(260,175,R,'#91a8b2')+path(points,true,'#244a5d','#dce7ec88')+[g.lower,g.upper].map(z=>path([[left(z),Y(z)],[right(z),Y(z)]],false,'#447d86')).join('')+circle(260,Y(g.center),4,'#c24e38','#c24e38')+caption('球の中心を通る断面 ／ 朱色：立体の重心'),'二平面の間の球の断面と立体の重心');}
+ if(g.type==='torusSection'){const D=200/(1+g.ratio),r=D*g.ratio;return svg(circle(260-D,175,r,'#244a5d','#dce7ec77')+circle(260+D,175,r,'#244a5d','#dce7ec77')+path([[260,35],[260,315]],false,'#c24e38')+caption('回転軸を通る断面 ／ 朱色：回転軸'),'円を回してできる環体の中心断面');}
+ if(g.type==='malfatti'){const F=frame(g.points),p=g.points.map(F.point);return svg(path(p,true)+g.circles.map((c,i)=>{const [x,y]=F.point([c.x,c.y]);return circle(x,y,c.r*F.scale,['#c24e38','#447d86','#244a5d'][i],'#dce7ec44')+label(x,y+4,'ABC'[i]);}).join('')+p.map(([x,y],i)=>label(x+(i===1?10:-10),y+(i===2?-10:19),'ABC'[i])).join('')+caption('三円どうしの外接と、それぞれの二辺への接触'),'三角形の二辺と互いに接する三つの円');}
+ if(g.type==='apollonius'){const circles=[...g.circles,...(g.answer?[g.answer]:[])],bounds=circles.flatMap(c=>[[c.x-c.r,c.y-c.r],[c.x+c.r,c.y+c.r]]),F=frame(bounds);return svg(circles.map((c,i)=>{const [x,y]=F.point([c.x,c.y]);return circle(x,y,c.r*F.scale,i===3?'#c24e38':'#447d86',i===3?'#e58b6822':'none')+label(x,y+4,i===3?'解1':i+1);}).join('')+caption(g.answer?'朱色：表の1番の解 ／ 他の解は表を参照':'入力した三円 ／ 正の半径の接円なし'),'三つの入力円と接円の第一解');}
+ return '';
+}
