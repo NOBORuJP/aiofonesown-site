@@ -1,0 +1,77 @@
+/* AI NOBORu — https://www.aiofonesown.com/ | 出典を示す配布用表示。参照史料・第三者の権利表示は各記載を参照。 */
+/* Desktop rules remain in their original stylesheets. */
+.mobile-nav-toggle{display:none}
+@media screen and (max-width:930px){
+ .sidebar[data-mobile-ready]{position:sticky;top:0;z-index:10;padding:8px 16px;background:#fafbfc;border-bottom:1px solid var(--line)}
+ .mobile-nav-toggle{display:grid;grid-template-columns:minmax(0,1fr) 24px;gap:3px 10px;width:100%;min-height:52px;border:0;background:transparent;padding:4px 0;text-align:left}
+ .mobile-nav-heading{display:flex;gap:8px;align-items:center;color:var(--muted);font-size:12px}
+ .mobile-nav-count{font-variant-numeric:tabular-nums}
+ .mobile-nav-current{grid-row:2;font-size:15px;font-weight:600;line-height:1.5;overflow-wrap:anywhere}
+ .mobile-nav-chevron{grid-column:2;grid-row:1/3;align-self:center;font-size:24px;text-align:center;color:var(--accent)}
+ .sidebar[data-mobile-open="true"] .mobile-nav-chevron{transform:rotate(180deg)}
+ .sidebar[data-mobile-ready] #navigation{display:none}
+ .sidebar[data-mobile-open="true"] #navigation{display:block;max-height:min(60vh,32rem);max-height:min(60svh,32rem);overflow-y:auto;overflow-x:hidden;overscroll-behavior:contain;padding:8px 2px 12px;scroll-padding:8px}
+ .sidebar[data-mobile-ready] .nav-item{width:100%;min-height:58px;margin:3px 0;padding:10px 12px;gap:12px;white-space:normal}
+ .sidebar[data-mobile-ready] .nav-item>span:last-child{min-width:0}
+ .sidebar[data-mobile-ready] .nav-num{min-width:36px;font-size:15px;letter-spacing:0}
+ .sidebar[data-mobile-ready] .nav-label{font-size:15px;line-height:1.5;overflow-wrap:anywhere}
+ .sidebar[data-mobile-ready] .nav-sub{display:block;font-size:12px;line-height:1.6;margin-top:3px}
+ main{scroll-margin-top:90px}
+}
+@media screen and (max-width:660px){
+ .topbar{padding-left:max(16px,env(safe-area-inset-left));padding-right:max(16px,env(safe-area-inset-right));gap:8px 12px}
+ .topbar #help-button{min-height:44px;display:inline-flex;align-items:center;padding:8px;font-size:14px}
+ .view-nav a{min-height:44px;display:inline-flex;align-items:center;justify-content:center;padding:10px 12px}
+ main{padding:22px max(16px,env(safe-area-inset-right)) 36px max(16px,env(safe-area-inset-left));scroll-margin-top:90px}
+ .kicker{line-height:1.8;letter-spacing:.08em;gap:8px}
+ .kicker:before{flex-shrink:0}
+ .title-row{align-items:flex-start;gap:10px}
+ h1{font-size:25px;overflow-wrap:anywhere}
+ .mode-number{font-size:30px;flex-shrink:0;margin-top:4px}
+ .intro{font-size:15px;line-height:1.85}
+ .workbench{grid-template-columns:minmax(0,1fr);gap:18px}
+ .workbench>div{min-width:0}
+ .input-card{padding:20px 18px}
+ .fields{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px 14px}
+ .field label{font-size:15px;line-height:1.65}
+ .field input,.field textarea,.field select{font-size:18px;min-height:48px}
+ .field textarea{font-size:16px;line-height:1.65}
+ .examples{gap:8px;margin-bottom:20px}
+ .example{min-height:44px;padding:9px 12px;font-size:14px}
+ .calculate{min-height:52px;font-size:16px;margin-top:22px}
+ .answer-card{padding:21px 18px}
+ .answer-value.long{font-size:23px}
+ .answer-foot{flex-wrap:wrap;align-items:center;gap:8px 16px}
+ .copy{min-height:44px;font-size:14px;margin-left:auto;white-space:normal;text-align:right}
+ .visual-heading{padding:17px 16px 0;gap:12px;line-height:1.6}
+ .visual-heading>span:last-child{white-space:nowrap}
+ .visual-caption{padding:15px 16px}
+ .drawing{height:auto;padding:8px}
+ .diagram-legend{gap:10px 16px;flex-wrap:wrap;line-height:1.8}
+ .table-wrap{max-width:100%;overscroll-behavior-x:contain;scrollbar-width:auto;-webkit-overflow-scrolling:touch}
+ .table-wrap:focus-visible{outline:3px solid #ad5830;outline-offset:-3px}
+ .table-wrap table{font-size:14px}
+ .table-wrap th{font-size:13px}
+ .table-wrap th,.table-wrap td{padding:12px}
+ .formula-strip{padding:15px 16px}
+ .tool-path{gap:8px 20px;margin:16px 0 24px}
+ .tool-path a{display:inline-flex;align-items:center;min-height:44px;line-height:1.8}
+ .transfer-tool{min-height:48px;padding:14px 18px;line-height:1.8}
+ summary{min-height:52px;gap:12px;line-height:1.7}
+ dialog{max-height:calc(100vh - 32px);max-height:calc(100svh - 32px);overflow-y:auto;padding:22px}
+ #close-help{min-width:44px;min-height:44px;flex-shrink:0}
+ .dialog-head h2{font-size:22px}
+ .reading-index{gap:8px}
+ .reading-index a{min-height:44px;display:inline-flex;align-items:center;font-size:14px}
+ .kid-card{padding:20px 18px}
+ footer{padding-bottom:max(22px,env(safe-area-inset-bottom))}
+}
+@media screen and (max-width:380px){
+ .fields{grid-template-columns:minmax(0,1fr)}
+ .field.wide{grid-column:auto}
+ .brand{gap:8px}
+ h1{font-size:23px}
+ .answer-value{font-size:34px}
+ .answer-value.long{font-size:21px}
+ .kid-controls label{flex-wrap:wrap}
+}

@@ -1,0 +1,17 @@
+/* AI NOBORu — https://www.aiofonesown.com/ | 出典を示す配布用表示。参照史料・第三者の権利表示は各記載を参照。 */
+.kids-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;margin-top:30px}
+.kid-card{min-width:0;border:1px solid var(--line);border-radius:5px;padding:26px}
+.kid-card h2{font-size:24px}.kid-card p{margin:12px 0}
+.kid-controls{display:flex;flex-wrap:wrap;gap:16px;margin:20px 0}
+.kid-controls label{font-size:16px;display:flex;gap:12px;align-items:center}
+.kid-controls select{width:76px;min-height:44px;padding:8px;font-size:18px}
+.kid-picture{background:var(--wash);padding:18px;text-align:center;border-radius:4px}
+.kid-dots{display:block;color:var(--navy);font-size:21px;letter-spacing:2px;line-height:1.6;overflow-wrap:anywhere}
+.kid-dots.teal{color:var(--teal)}
+.kid-groups{display:flex;flex-wrap:wrap;gap:12px;margin:14px 0}
+.kid-groups>div{flex:1;min-width:95px;border:1px solid var(--line);border-radius:4px;padding:12px;font-size:16px}
+.reading .kid-equation{font-size:25px;font-weight:600;color:var(--navy);line-height:1.7}
+.kid-sequence{color:var(--teal);font-size:18px}
+.kid-card .reading-try{font-size:15px}
+rt{font-size:.6em}
+@media(max-width:800px){.kids-grid{grid-template-columns:1fr}.kid-card{padding:22px}}

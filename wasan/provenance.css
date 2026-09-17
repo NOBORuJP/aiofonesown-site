@@ -1,0 +1,12 @@
+/* AI NOBORU — https://www.aiofonesown.com/ — visible, portable source credit. */
+.result-attribution{font:12px/1.7 sans-serif;margin:15px 0 0;overflow-wrap:anywhere;color:#e0edf1}
+.result-attribution a{color:inherit;text-underline-offset:3px}
+[data-ainoboru-print]{display:none}
+@media print{
+  /* Supported page-margin boxes keep the credit out of the document content.
+     The ordinary page/result credits remain when a browser lacks this feature. */
+  @page{margin:16mm 12mm 24mm;
+    @bottom-center{content:"AI NOBORU · www.aiofonesown.com";font:10pt/1.5 sans-serif;color:#111}
+  }
+  .result-attribution,.result-attribution a{color:#111}
+}

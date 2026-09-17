@@ -1,0 +1,66 @@
+/* AI NOBORu — https://www.aiofonesown.com/ | 出典を示す配布用表示。参照史料・第三者の権利表示は各記載を参照。 */
+/* The calculator's original stylesheet is retained; these rules extend its palette and typography. */
+.reading{max-width:1050px}
+.reading .intro{font-size:16px;max-width:48em}
+.reading p{font-size:16px;line-height:2;overflow-wrap:anywhere}
+.reading strong{font-weight:600;color:var(--navy)}
+.reading h2{font-family:var(--serif);font-size:23px;line-height:1.7;font-weight:600;margin:0 0 13px;overflow-wrap:anywhere}
+.reading h3{font-size:16px;line-height:1.7;font-weight:600;margin:0 0 8px}
+.reading .reading-label{font-family:var(--sans);font-size:12px;letter-spacing:.12em;color:var(--accent);margin:0 0 11px}
+.reading-lead{padding:24px 28px;background:var(--wash);border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:4px;margin:28px 0 34px;max-width:900px}
+.reading-lead p{margin:0 0 12px}.reading-lead p:last-child{margin-bottom:0}
+.reading-section{margin:34px 0;padding-top:30px;border-top:1px solid var(--line)}
+.reading-section>p{max-width:48em;margin:0 0 13px}
+.reading-citations{display:flex;gap:6px 22px;flex-wrap:wrap;margin-top:14px}
+.reading-citations a{color:var(--teal);font-size:13px;line-height:1.8;text-underline-offset:4px;overflow-wrap:anywhere}
+.reading-citations a:hover{color:var(--accent)}
+.reading-try,.reading-connection{font-size:14px;line-height:1.85;color:var(--accent);text-decoration:none;display:inline-block;margin-top:18px;border-bottom:1px solid #dfb5a9;padding-bottom:3px}
+.reading-try:hover,.reading-connection:hover{border-color:var(--accent)}
+.reading-triptych{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;margin:32px 0}
+.reading-triptych section{padding:22px;border:1px solid var(--line);border-radius:5px}
+.reading-triptych h2{font-size:22px;margin-top:9px}.reading-triptych p{margin:0}
+.reading-glossary{display:grid;grid-template-columns:1fr 1fr;gap:20px 32px;margin:24px 0 0}
+.reading-glossary>div{border-left:2px solid var(--line);padding-left:17px}
+.reading-glossary dt{font-weight:600;font-size:16px;line-height:1.9}
+.reading-glossary dd{font-size:16px;line-height:1.9;color:var(--muted);margin:5px 0 0}
+.reading-next{margin-top:38px;padding-top:23px;border-top:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:18px}
+.reading-next>span{font-size:13px;color:var(--muted)}
+.reading-next>a{font-size:16px;color:var(--accent);line-height:1.8;text-underline-offset:5px}
+.reading-timeline{list-style:none;margin:30px 0 0;padding:0}
+.reading-timeline li{display:grid;grid-template-columns:120px minmax(0,1fr);gap:30px;padding:26px 0;border-top:1px solid var(--line)}
+.timeline-year{font-family:Georgia,serif;font-size:30px;color:var(--accent);line-height:1.4}
+.timeline-year span{font-family:var(--sans);display:block;font-size:12px;color:var(--muted);margin-top:8px}
+.reading-timeline h2{font-size:21px;margin-bottom:7px}
+.reading-timeline p{margin:0;max-width:43em}
+.reading-people{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:30px}
+.reading-people article{border:1px solid var(--line);border-radius:5px;padding:25px}
+.reading-people h2{margin-bottom:9px}
+.reading-people h2 span{display:block;font-family:var(--sans);font-size:13px;color:var(--muted);font-weight:400;margin-top:5px}
+.reading-people p{margin:0 0 13px}
+.reading-people .reading-dates{font-size:14px;color:var(--teal);line-height:1.8}.reading-dates span{display:block}
+.reading .reading-footnote{font-size:13px;color:var(--muted);margin-top:25px;line-height:1.9}
+.reading-stories{max-width:900px}
+.reading-stories article{padding:29px 0;border-top:1px solid var(--line)}
+.reading-stories article>p{margin:0 0 13px;max-width:48em}
+.reading-stories details{background:var(--wash);border:1px solid var(--line);border-radius:4px;margin:20px 0}
+.reading-stories summary{padding:16px 20px;font-size:15px;gap:16px;line-height:1.8}
+.story-detail{padding:0 20px 15px}.story-detail p{margin:0 0 10px}
+.reading-scope{border-left:3px solid var(--accent);background:var(--wash);padding:20px 24px;margin-top:22px;max-width:900px}
+.reading-scope p{margin:0}
+.reading-list{font-size:16px;line-height:2.1;padding-left:24px;max-width:48em}.reading-list li{margin:10px 0}
+.reading-source-note{margin-bottom:28px}.reading-source-note .story-detail{padding-left:0;padding-right:0}
+@media(max-width:1150px){.reading-triptych{gap:14px}.reading-triptych section{padding:19px}.reading-people{gap:18px}.reading-people article{padding:22px}.reading h2{font-size:22px}}
+@media(max-width:660px){
+ .reading .intro{font-size:16px}.reading h1{font-size:26px}.reading h2{font-size:22px}
+ .reading-lead{padding:20px;margin-top:24px}.reading-section{padding-top:24px;margin:28px 0}
+ .reading-triptych,.reading-people,.reading-glossary{grid-template-columns:1fr}
+ .reading-triptych{gap:14px}.reading-triptych section{padding:22px}.reading-people article{padding:22px}
+ .reading-timeline li{grid-template-columns:72px minmax(0,1fr);gap:18px;padding:23px 0}
+ .timeline-year{font-size:25px}.timeline-year span{font-size:12px;line-height:1.8}.reading-timeline h2{font-size:20px}
+ .reading-next{align-items:flex-start;flex-direction:column;gap:8px}.reading .mode-number{font-size:29px}
+ .reading-stories summary{padding:15px 16px}.story-detail{padding:0 16px 15px}
+}
+@media(max-width:370px){.reading-timeline li{grid-template-columns:1fr;gap:10px}.timeline-year span{display:inline;margin-left:12px}}
+@media print{.reading{max-width:none}.reading-try,.reading-next,.reading-connection{display:none}.reading-lead{background:white}.reading-people article,.reading-stories article{break-inside:avoid}}
+.reading-index{display:flex;flex-wrap:wrap;gap:10px 22px;margin-bottom:28px;padding-bottom:18px;border-bottom:1px solid var(--line)}
+.reading-index a{font-size:14px;line-height:1.8;color:var(--muted);text-underline-offset:4px}.reading-index a[aria-current=page]{color:var(--accent)}
