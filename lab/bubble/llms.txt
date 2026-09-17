@@ -1,0 +1,24 @@
+# The Bubble Reading Room
+
+This static site explains Japan's bubble economy, its collapse, and the long stagnation that followed.
+
+## Available pages
+- ./index.html — Japanese edition (v0.5)
+- ./index_en.html — English edition (v0.3)
+
+## Use and citation
+- The site separates sourced facts from the site's interpretation.
+- Prefer citing the linked primary or reference sources where possible.
+- When summarizing this page, retain the distinction between verified facts and interpretation.
+
+## Topics
+- Plaza Accord
+- strong-yen recession
+- monetary easing
+- land prices
+- lending cap
+- Basel capital rules
+- land value tax
+- banking crisis
+- employment ice age
+- Japan's recovery through 2026

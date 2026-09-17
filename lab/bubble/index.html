@@ -1,0 +1,1639 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>バブル｜読解室 v0.5 — 崩壊の根本原因と、2026年までの停滞</title>
+<meta name="description" content="日本は世界を席巻し、調子に乗り、外圧と引き締め策の重なりで崩れた。バブル崩壊の根本原因を、因果の連鎖と一次資料で示す読み物（v0.5）。">
+<link rel="alternate" hreflang="ja" href="index.html">
+<link rel="alternate" hreflang="en" href="index_en.html">
+<meta name="theme-color" content="#183744">
+<meta name="author" content="AI NOBORU">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+<meta name="googlebot" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="AI of One's Own">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:title" content="バブル｜読解室 v0.5 — 崩壊の根本原因と、2026年までの停滞">
+<meta property="og:description" content="日本のバブル経済の形成、崩壊、長期停滞を一次資料と因果の連鎖で読み解く日本語版。">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="バブル｜読解室 v0.5">
+<meta name="twitter:description" content="日本のバブル経済の形成、崩壊、長期停滞を一次資料と因果の連鎖で読み解く日本語版。">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"バブル｜読解室","inLanguage":"ja-JP","author":{"@type":"Organization","name":"AI NOBORU"},"publisher":{"@type":"Organization","name":"AI NOBORU"},"about":["日本のバブル経済","プラザ合意","土地バブル","金融引き締め","長期停滞"],"isAccessibleForFree":true}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&family=Noto+Serif+JP:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#183744;--ink:#203b47;--muted:#667780;--line:#d9e2e6;--paper:#fff;--wash:#f3f6f7;--side:#fafbfc;
+  --accent:#c24e38;--accent-hover:#ab422e;--accent-soft:#faf2ed;--teal:#447d86;--teal-soft:#eef4f4;
+  --amber:#9a6a1f;--amber-soft:#f8f1e4;
+  --card:#183744;--card-ink:#fff;--card-sub:#c8dade;--card-line:#395762;
+  --ghost:#dce5e8;--field:#c6d3d8;
+  --c1:#183744;--c2:#447d86;--c3:#c24e38;--c4:#9fb3ba;
+  --serif:'Noto Serif JP','Yu Mincho','Hiragino Mincho ProN',serif;
+  --sans:'Noto Sans JP','Hiragino Kaku Gothic ProN','Yu Gothic',Meiryo,sans-serif;
+  --num:Georgia,'Times New Roman',serif;
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --navy:#9cc7cf;--ink:#dce7ea;--muted:#93a6ad;--line:#29404a;--paper:#0f1d23;--wash:#14262d;--side:#112027;
+    --accent:#e2735c;--accent-hover:#ec8570;--accent-soft:#2a1e1b;--teal:#72b3bb;--teal-soft:#16302f;
+    --amber:#d9a55a;--amber-soft:#2a2418;
+    --card:#1f4553;--card-ink:#f2f8f9;--card-sub:#b9d0d5;--card-line:#3d6572;
+    --ghost:#1f3740;--field:#35505a;
+    --c1:#b9d8de;--c2:#72b3bb;--c3:#e2735c;--c4:#4d6670;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --navy:#9cc7cf;--ink:#dce7ea;--muted:#93a6ad;--line:#29404a;--paper:#0f1d23;--wash:#14262d;--side:#112027;
+  --accent:#e2735c;--accent-hover:#ec8570;--accent-soft:#2a1e1b;--teal:#72b3bb;--teal-soft:#16302f;
+  --amber:#d9a55a;--amber-soft:#2a2418;
+  --card:#1f4553;--card-ink:#f2f8f9;--card-sub:#b9d0d5;--card-line:#3d6572;
+  --ghost:#1f3740;--field:#35505a;
+  --c1:#b9d8de;--c2:#72b3bb;--c3:#e2735c;--c4:#4d6670;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:24px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+body{margin:0;font-family:var(--sans);font-size:16px;color:var(--ink);background:var(--paper);-webkit-text-size-adjust:100%}
+a{color:inherit}
+button,input,select{font:inherit;color:inherit}
+button{cursor:pointer}
+:focus-visible{outline:3px solid #ad5830;outline-offset:3px}
+.skip{position:absolute;left:-999px;top:8px;background:var(--accent);color:#fff;padding:8px 12px;z-index:50}
+.skip:focus{left:8px}
+
+/* header */
+.topbar{height:90px;display:flex;align-items:center;justify-content:space-between;padding:0 40px;border-bottom:1px solid var(--line);background:var(--paper)}
+.brand{display:flex;align-items:center;gap:14px;text-decoration:none}
+.seal{font-family:var(--serif);font-size:26px;background:var(--accent);color:#fff;width:43px;height:43px;display:grid;place-items:center;border-radius:2px;flex-shrink:0}
+.brand-name{font-family:var(--serif);font-size:25px;font-weight:700;letter-spacing:.08em;white-space:nowrap;line-height:1.2}
+.brand-name span{display:block;font-family:var(--num);font-size:12px;letter-spacing:.2em;font-weight:400;margin-top:3px;color:var(--muted)}
+.brand-divider{height:32px;width:1px;background:var(--line);margin:0 7px}
+.brand-room{font-size:17px;letter-spacing:.15em;white-space:nowrap}
+.header-actions{display:flex;gap:28px;align-items:center}
+.view-nav{display:flex;gap:22px;align-items:center;white-space:nowrap}
+.view-nav a{text-decoration:none;font-size:14px;padding:11px 0;border-bottom:2px solid transparent}
+.view-nav a:hover{color:var(--accent)}
+.view-nav a[aria-current="true"]{border-bottom-color:var(--accent);color:var(--accent)}
+.edition{font-size:12px;letter-spacing:.08em;color:var(--muted);white-space:nowrap}
+.quiet{border:0;background:transparent;padding:9px 0;font-size:14px;white-space:nowrap}
+.quiet .q{border:1px solid var(--muted);border-radius:50%;display:inline-grid;place-items:center;width:18px;height:18px;margin-left:8px;font-size:12px}
+.theme-toggle{border:1px solid var(--line);border-radius:4px;background:transparent;font-size:12px;padding:6px 9px;color:var(--muted)}
+.theme-toggle:hover{border-color:var(--teal);color:var(--ink)}
+
+.purpose-nav{display:grid;grid-template-columns:repeat(3,1fr);background:var(--wash);border-bottom:1px solid var(--line)}
+.purpose-nav a{display:flex;justify-content:center;align-items:baseline;gap:12px;padding:17px 16px;text-decoration:none;font-size:13px;color:var(--muted);position:relative}
+.purpose-nav a+a:before{content:'';position:absolute;left:0;top:12px;bottom:12px;width:1px;background:var(--line)}
+.purpose-nav strong{font-size:15px;color:var(--ink);font-weight:600}
+.purpose-nav a:hover strong{color:var(--accent)}
+
+/* layout */
+.layout{display:grid;grid-template-columns:250px minmax(0,1fr);max-width:1720px;margin:auto}
+.sidebar{border-right:1px solid var(--line);background:var(--side);min-width:0}
+.sidebar-inner{position:sticky;top:0;max-height:100vh;overflow-y:auto;padding:37px 20px 30px 26px;scrollbar-width:thin}
+.eyebrow{display:flex;justify-content:space-between;color:var(--muted);font-size:12px;letter-spacing:.14em;margin:0 10px 18px}
+.eyebrow span{font-family:var(--num);letter-spacing:.1em}
+.nav-list{list-style:none;margin:0;padding:0}
+.nav-item{display:flex;align-items:center;gap:13px;width:100%;text-decoration:none;padding:12px 11px;margin-bottom:3px;border-radius:4px;position:relative;transition:background .15s}
+.nav-item:hover{background:var(--teal-soft)}
+.nav-item[aria-current="true"]{background:var(--wash);color:var(--navy)}
+.nav-item[aria-current="true"]:before{content:'';position:absolute;left:-6px;top:13px;bottom:13px;width:3px;background:var(--accent)}
+.nav-num{width:28px;flex-shrink:0;color:#809298;font-family:var(--serif);font-size:17px;text-align:center}
+.nav-item[aria-current="true"] .nav-num{color:var(--accent)}
+.nav-label{font-weight:600;font-size:15px;display:block;color:var(--ink)}
+.nav-sub{display:block;font-size:12px;color:var(--muted);margin-top:4px;font-weight:400}
+.nav-sep{height:1px;background:var(--line);margin:14px 11px}
+.sidebar-note{margin:34px 11px 0;font-size:14px;color:var(--muted);line-height:1.8}
+.sidebar-note p{color:var(--ink);font-family:var(--serif);font-size:16px;margin:16px 0 6px}
+.sidebar-note span:last-child{font-size:12px}
+.tiny-rule{display:block;width:26px;border-top:2px solid var(--accent)}
+
+main{padding:37px 42px 64px;min-width:0}
+.page-head{max-width:1120px}
+.kicker{font-size:12px;letter-spacing:.17em;color:var(--accent);margin:0 0 13px;display:flex;align-items:center;gap:12px}
+.kicker:before{content:'';width:20px;border-top:1px solid var(--accent)}
+.title-row{display:flex;align-items:flex-start;justify-content:space-between;gap:16px}
+h1{font-family:var(--serif);font-size:clamp(26px,2.7vw,38px);font-weight:600;letter-spacing:.035em;margin:0;line-height:1.45}
+.mode-number{font-family:var(--serif);font-size:56px;color:var(--ghost);line-height:1;user-select:none}
+.intro{font-size:15px;line-height:1.95;color:var(--muted);margin:13px 0 0;max-width:46em}
+.method{margin:22px 0 0;border:0;border-left:2px solid var(--line);padding-left:14px;max-width:900px}
+.method summary{cursor:pointer;font-size:14px;font-weight:600;list-style:none;display:inline-flex;gap:14px;align-items:center;padding:6px 0}
+.method summary::-webkit-details-marker{display:none}
+.method summary:after{content:'＋';color:var(--accent);font-weight:400}
+.method[open] summary:after{content:'−'}
+.method p{font-size:14px;line-height:1.95;color:var(--muted);margin:8px 0 10px;max-width:48em}
+.spec{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:4px;overflow:hidden;margin:12px 0 6px;max-width:720px}
+.spec div{background:var(--paper);padding:10px 12px}
+.spec dt{font-size:11px;color:var(--muted);letter-spacing:.06em}
+.spec dd{margin:3px 0 0;font-family:var(--num);font-size:17px;font-variant-numeric:tabular-nums}
+
+/* workbench */
+.workbench{display:grid;grid-template-columns:minmax(280px,.9fr) minmax(300px,1.3fr);gap:24px;align-items:start;margin-top:30px;max-width:1120px}
+.input-card{border:1px solid var(--line);border-radius:6px;padding:23px 24px;background:var(--paper)}
+.section-label{display:flex;align-items:center;justify-content:space-between;font-size:14px;font-weight:600;margin:0 0 17px}
+.section-label>span:last-child{font-size:11px;color:var(--muted);font-weight:400;letter-spacing:.14em;font-family:var(--num)}
+.examples{display:flex;gap:6px;flex-wrap:wrap;margin:0 0 20px}
+.example{border:1px solid var(--line);border-radius:4px;background:var(--wash);font-size:12px;padding:7px 9px;line-height:1.3}
+.example:hover{border-color:var(--teal);background:var(--teal-soft)}
+.example[aria-pressed="true"]{border-color:var(--teal);background:var(--teal-soft);color:var(--navy)}
+.field{margin-bottom:18px}
+.field label,.field .flabel{display:flex;justify-content:space-between;align-items:baseline;font-size:14px;font-weight:500;margin-bottom:9px}
+.field output{font-family:var(--num);font-size:20px;font-variant-numeric:tabular-nums;color:var(--ink)}
+.field input[type=number]{width:100%;border:1px solid var(--field);border-radius:4px;background:var(--paper);padding:11px 12px;font-size:18px;min-height:49px;font-variant-numeric:tabular-nums}
+.field input[type=number]:focus{border-color:var(--teal);outline:none;box-shadow:0 0 0 3px var(--teal-soft)}
+.hint{font-size:12px;color:var(--muted);line-height:1.65;margin:7px 0 0}
+input[type=range]{width:100%;accent-color:var(--accent);height:28px;margin:0}
+.segmented{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--field);border-radius:4px;overflow:hidden}
+.segmented button{border:0;background:var(--paper);padding:10px 4px;font-size:13px}
+.segmented button+button{border-left:1px solid var(--field)}
+.segmented button[aria-pressed="true"]{background:var(--navy);color:var(--paper)}
+.calculate{width:100%;margin-top:6px;border:0;border-radius:4px;background:var(--accent);color:#fff;font-weight:600;font-size:15px;padding:13px 20px;display:flex;align-items:center;justify-content:space-between}
+.calculate:hover{background:var(--accent-hover)}
+.answer-card{background:var(--card);color:var(--card-ink);padding:22px 24px 22px;border-radius:5px;margin-top:17px}
+.answer-top{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;align-items:center;margin-bottom:10px}
+.answer-label{font-size:13px;color:var(--card-sub)}
+.badge{font-size:12px;border:1px solid var(--card-line);border-radius:3px;padding:4px 6px;white-space:nowrap;color:var(--card-sub)}
+.answer-value{font-family:var(--num);font-variant-numeric:tabular-nums;font-size:40px;line-height:1.3;overflow-wrap:anywhere;margin:0}
+.answer-value small{font-family:var(--sans);font-size:16px;margin-left:4px}
+.answer-detail{font-size:12.5px;line-height:1.85;margin:10px 0 0;color:var(--card-sub)}
+.answer-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:14px;padding-top:12px;border-top:1px solid var(--card-line)}
+.answer-grid b{display:block;font-family:var(--num);font-size:17px;font-weight:400;font-variant-numeric:tabular-nums;color:var(--card-ink)}
+.answer-grid span{font-size:11px;color:var(--card-sub)}
+.answer-foot{display:flex;justify-content:space-between;gap:15px;align-items:end;border-top:1px solid var(--card-line);margin-top:14px;padding-top:11px}
+.copy{font-size:12px;border:0;background:transparent;color:var(--card-sub);padding:3px 0;white-space:nowrap}
+.copy:hover{color:var(--card-ink)}
+.exact-note{font-size:12px;color:var(--card-sub)}
+.visual-panel{background:var(--wash);border:1px solid var(--line);border-radius:6px;overflow:hidden;min-width:0}
+.visual-heading{display:flex;justify-content:space-between;align-items:center;padding:17px 22px 0;font-size:12px;color:var(--muted);letter-spacing:.08em}
+.visual-heading span:last-child{font-family:var(--num);letter-spacing:.14em}
+.chart{display:block;width:100%;padding:8px 14px 4px;min-height:200px}
+.chart.compact{min-height:0;padding:14px 22px 16px}
+.chart svg{display:block;width:100%;height:auto;overflow:visible}
+.chart text{font-family:var(--sans);font-size:11.5px;fill:var(--muted)}
+.chart .lbl-strong{fill:var(--ink);font-weight:600}
+.chart .grid{stroke:var(--line);stroke-width:1}
+.chart .axis{stroke:var(--muted);stroke-width:1}
+.chart .s1{stroke:var(--c1);stroke-width:2.2;fill:none}
+.chart .s2{stroke:var(--c2);stroke-width:2;fill:none;stroke-dasharray:5 4}
+.chart .s3{stroke:var(--c3);stroke-width:2;fill:none}
+.chart .area{fill:var(--c1);opacity:.07}
+.chart .mark{stroke:var(--c3);stroke-width:1;stroke-dasharray:3 3}
+.chart .mark-dot{fill:var(--c3)}
+.chart .cursor{stroke:var(--c3);stroke-width:1.4}
+.chart .cursor-dot{fill:var(--paper);stroke:var(--c3);stroke-width:2.5}
+.chart .bar{fill:var(--c1)}
+.chart .bar-alt{fill:var(--c2)}
+.chart .bar-hot{fill:var(--c3)}
+.chart .dot1{fill:var(--c1)}
+.chart .dot2{fill:var(--c2)}
+.chart .hit{fill:transparent;cursor:pointer}
+.draw{stroke-dasharray:var(--len);stroke-dashoffset:var(--len);animation:draw 1.6s cubic-bezier(.4,.1,.2,1) .2s forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+.diagram-legend{display:flex;gap:18px;flex-wrap:wrap;justify-content:center;padding:2px 15px 16px;font-size:12px;color:var(--muted)}
+.legend-key{display:inline-block;width:16px;height:0;border-top:2.4px solid var(--c1);margin-right:7px;vertical-align:middle}
+.legend-key.k2{border-top:2px dashed var(--c2)}
+.legend-key.k3{border-top-color:var(--c3)}
+.legend-dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--c3);margin-right:7px}
+.visual-caption{padding:13px 22px 15px;margin:0;font-size:12px;color:var(--muted);line-height:1.75;border-top:1px solid var(--line);background:var(--side)}
+.formula-strip{margin:24px 0 0;border:1px solid var(--line);border-left:3px solid var(--accent);padding:15px 22px;display:flex;align-items:center;gap:24px;border-radius:3px;max-width:1120px}
+.formula-strip>span:first-child{font-size:12px;color:var(--muted);white-space:nowrap}
+.formula-strip p{margin:0;font-size:14px;line-height:1.85}
+
+/* storyboard */
+.storyboard{margin:52px 0 0;max-width:1120px}
+.block-head{display:flex;align-items:baseline;justify-content:space-between;gap:4px 16px;margin-bottom:14px;flex-wrap:wrap}
+.block-head h2{font-family:var(--serif);font-size:23px;font-weight:600;margin:0;line-height:1.6}
+.block-head span{font-size:12px;color:var(--muted)}
+.reading-label{font-size:12px;letter-spacing:.12em;color:var(--accent);margin:0 0 8px}
+.track{display:flex;height:58px;border:1px solid var(--line);border-radius:4px;overflow:hidden}
+.track a{flex:var(--w) 1 0;min-width:0;display:flex;flex-direction:column;justify-content:center;align-items:center;text-decoration:none;border-right:1px solid var(--line);background:var(--paper);transition:background .15s;position:relative}
+.track a:last-child{border-right:0}
+.track a:hover{background:var(--teal-soft)}
+.track a[aria-current="true"]{background:var(--wash)}
+.track a[aria-current="true"]:after{content:'';position:absolute;left:0;right:0;bottom:0;height:3px;background:var(--accent)}
+.track b{font-family:var(--serif);font-size:17px;font-weight:500}
+.track small{font-family:var(--num);font-size:11px;color:var(--muted)}
+.track-scale{position:relative;height:16px;font-family:var(--num);font-size:11px;color:var(--muted);margin-top:6px}
+.track-scale span{position:absolute;top:0;transform:translateX(-50%)}
+.track-scale span:first-child{transform:none}
+.track-scale span:last-child{transform:translateX(-100%)}
+
+/* chapters */
+.chapters{list-style:none;margin:40px 0 0;padding:0;max-width:1120px}
+.chapter{display:grid;grid-template-columns:118px minmax(0,1fr);gap:30px;padding:38px 0 42px;border-top:1px solid var(--line)}
+.rail{position:relative}
+.rail-inner{position:sticky;top:26px}
+.tc{font-family:var(--num);font-size:30px;color:var(--accent);line-height:1.2;font-variant-numeric:tabular-nums}
+.tc-end{display:block;font-size:13px;color:var(--muted);margin-top:3px}
+.era{display:block;font-size:12px;color:var(--muted);margin-top:14px;line-height:1.7}
+.kanji{display:block;font-family:var(--serif);font-size:44px;color:var(--ghost);margin-top:14px;line-height:1}
+.chapter h2{font-family:var(--serif);font-size:25px;line-height:1.6;font-weight:600;margin:0 0 16px;letter-spacing:.02em}
+.pair{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.25fr);gap:24px;margin-bottom:6px;align-items:start}
+.says{background:var(--wash);border:1px solid var(--line);border-left:3px solid var(--muted);border-radius:4px;padding:16px 19px}
+.says h3,.facts h3{font-size:12px;letter-spacing:.12em;font-weight:600;margin:0 0 8px;color:var(--muted)}
+.facts h3{color:var(--teal)}
+.says p{margin:0;font-size:15px;line-height:1.95}
+.facts p{margin:0 0 10px;font-size:15.5px;line-height:2;max-width:40em}
+.facts strong{font-weight:600;color:var(--navy)}
+.verdicts{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 4px}
+.v{display:inline-flex;align-items:center;gap:7px;font-size:12.5px;line-height:1.4;border-radius:3px;padding:5px 9px;border:1px solid}
+.v:before{content:'';width:7px;height:7px;border-radius:50%;background:currentColor;flex-shrink:0}
+.v-ok{color:var(--teal);border-color:color-mix(in srgb,var(--teal) 40%,transparent);background:var(--teal-soft)}
+.v-note{color:var(--amber);border-color:color-mix(in srgb,var(--amber) 40%,transparent);background:var(--amber-soft)}
+.v-myth{color:var(--accent);border-color:color-mix(in srgb,var(--accent) 40%,transparent);background:var(--accent-soft)}
+.v span{color:var(--ink)}
+.fig{margin-top:22px}
+.fig-row{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:20px;margin-top:22px;align-items:start}
+.source-links{display:flex;gap:6px 20px;flex-wrap:wrap;margin-top:16px}
+.source-links a{font-size:12.5px;line-height:1.75;color:var(--teal);text-underline-offset:3px}
+.source-links a:hover{color:var(--accent)}
+.notice{font-size:13px;line-height:1.85;padding:11px 15px;border-left:2px solid var(--accent);background:var(--accent-soft);margin:14px 0 0;color:var(--ink);max-width:48em}
+.data-details{margin:0;border-top:1px solid var(--line)}
+.data-details summary{cursor:pointer;font-size:13px;list-style:none;padding:12px 22px;display:flex;justify-content:space-between;color:var(--muted)}
+.data-details summary::-webkit-details-marker{display:none}
+.data-details summary:after{content:'＋';color:var(--accent)}
+.data-details[open] summary:after{content:'−'}
+.table-wrap{overflow:auto;max-height:320px;scrollbar-width:thin}
+table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums;font-size:13px}
+th{background:var(--wash);color:var(--muted);font-size:12px;font-weight:500;position:sticky;top:0;z-index:1;text-align:left}
+th,td{padding:9px 13px;border-bottom:1px solid var(--line);white-space:nowrap}
+td.n,th.n{text-align:right;font-family:var(--num)}
+td{background:var(--paper)}
+tr.peak td{background:var(--accent-soft)}
+
+/* loop diagram & squares */
+.loop text{font-size:13px;fill:var(--ink)}
+.loop .node{fill:var(--paper);stroke:var(--c1);stroke-width:1.3}
+.loop .num{font-family:var(--num);fill:var(--c3);font-size:15px}
+.loop .arc{stroke:var(--c2);stroke-width:1.6;fill:none}
+.loop .arrow{fill:var(--c2)}
+.loop .center{font-family:var(--serif);font-size:15px;fill:var(--muted)}
+.sq-jp{fill:var(--c3)}
+.sq-us{fill:none;stroke:var(--c1);stroke-width:1.3}
+.sq-us-fill{fill:var(--c1);opacity:.1}
+
+.deal-table td:first-child{font-family:var(--num);color:var(--accent)}
+.deal-table td{white-space:normal;line-height:1.6}
+.stat-duo{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border-top:1px solid var(--line)}
+.stat-duo div{background:var(--paper);padding:14px 18px}
+.stat-duo b{display:block;font-family:var(--num);font-size:28px;font-weight:400;line-height:1.3}
+.stat-duo span{font-size:12px;color:var(--muted);line-height:1.6;display:block}
+.crisis{list-style:none;margin:0;padding:6px 22px 16px}
+.crisis li{display:grid;grid-template-columns:96px 1fr;gap:12px;padding:10px 0;border-bottom:1px solid var(--line);font-size:14px;line-height:1.7}
+.crisis li:last-child{border-bottom:0}
+.crisis time{font-family:var(--num);color:var(--accent);font-variant-numeric:tabular-nums}
+
+/* verify table */
+.block{margin:56px 0 0;padding-top:34px;border-top:1px solid var(--line);max-width:1120px}
+.block>p{font-size:15.5px;line-height:2;max-width:48em;margin:0 0 16px;color:var(--muted)}
+.filters{display:flex;gap:6px;flex-wrap:wrap;margin:0 0 14px}
+.verify{border:1px solid var(--line);border-radius:6px;overflow:hidden}
+.verify table{font-size:14px}
+.verify td,.verify th{white-space:normal;vertical-align:top;line-height:1.75;padding:12px 14px}
+.verify td:first-child{font-family:var(--num);color:var(--muted);width:56px}
+.verify td:nth-child(2){min-width:13em}
+.verify td:nth-child(3){width:10.5em}
+.verify tr[hidden]{display:none}
+.glossary{display:grid;grid-template-columns:1fr 1fr;gap:20px 36px;margin:10px 0 0}
+.glossary div{border-left:2px solid var(--line);padding-left:17px}
+.glossary dt{font-weight:600;font-size:16px;line-height:1.9}
+.glossary dt span{font-family:var(--num);font-weight:400;font-size:13px;color:var(--muted);margin-left:8px}
+.glossary dd{font-size:15px;line-height:1.95;color:var(--muted);margin:3px 0 0}
+.sources{columns:2;column-gap:36px;padding:0;margin:8px 0 0;list-style:none}
+.sources li{break-inside:avoid;padding:9px 0;border-bottom:1px solid var(--line);font-size:13.5px;line-height:1.75}
+.sources a{color:var(--teal);text-underline-offset:3px}
+.sources a:hover{color:var(--accent)}
+.sources span{display:block;font-size:12px;color:var(--muted)}
+.reading-next{margin-top:44px;padding-top:22px;border-top:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:18px;max-width:1120px}
+.reading-next>span{font-size:13px;color:var(--muted)}
+.reading-next>a{font-size:16px;color:var(--accent);text-underline-offset:5px}
+
+footer{display:grid;grid-template-columns:auto 1fr auto;gap:30px;align-items:center;padding:26px 40px;border-top:1px solid var(--line);font-size:13px;color:var(--muted);background:var(--side)}
+footer p{margin:0;line-height:1.8}
+footer .fname{font-family:var(--serif);color:var(--ink);font-size:15px}
+footer a{color:var(--muted)}
+
+dialog{border:1px solid var(--line);border-radius:6px;padding:0;max-width:560px;width:calc(100% - 32px);color:var(--ink);background:var(--paper)}
+dialog::backdrop{background:rgba(15,29,35,.45)}
+.dialog-head{display:flex;justify-content:space-between;align-items:center;padding:18px 22px;border-bottom:1px solid var(--line)}
+.dialog-head h2{font-family:var(--serif);font-size:19px;margin:0;font-weight:600}
+.dialog-body{padding:6px 22px 20px}
+.dialog-body ol{padding-left:20px;line-height:2;font-size:14px}
+.dialog-body p{font-size:13.5px;line-height:1.9;color:var(--muted)}
+
+.toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%) translateY(20px);background:var(--navy);color:var(--paper);padding:10px 16px;border-radius:4px;font-size:13px;opacity:0;pointer-events:none;transition:.2s}
+.toast.show{opacity:1;transform:translateX(-50%)}
+
+
+/* v0.2 */
+.ver{font-family:var(--num);font-size:11px;letter-spacing:.08em;color:var(--accent);border:1px solid color-mix(in srgb,var(--accent) 45%,transparent);border-radius:3px;padding:2px 6px;margin-left:10px;vertical-align:middle;white-space:nowrap}
+a.edition{text-decoration:none}
+a.edition:hover{color:var(--accent)}
+.thesis h1{font-size:clamp(26px,2.9vw,40px);max-width:22em}
+.lead{padding:22px 26px;background:var(--wash);border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:4px;margin:24px 0 0;max-width:900px}
+.lead p{margin:0 0 12px;font-size:16px;line-height:2}
+.lead p:last-child{margin:0}
+.lead strong{color:var(--accent);font-weight:600}
+.props{list-style:none;padding:0;margin:26px 0 0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;max-width:1120px}
+.props li{border:1px solid var(--line);border-radius:5px;padding:20px 20px 18px;position:relative;background:var(--paper)}
+.prop-no{font-family:var(--serif);font-size:30px;color:var(--accent);line-height:1}
+.props h2{font-family:var(--serif);font-size:20px;font-weight:600;margin:10px 0 6px;line-height:1.5}
+.props p{font-size:14px;line-height:1.9;color:var(--muted);margin:0 0 12px}
+.tag{display:inline-block;font-size:11.5px;border-radius:3px;padding:3px 8px;border:1px solid;line-height:1.5;white-space:nowrap}
+.t-ok{color:var(--teal);background:var(--teal-soft);border-color:color-mix(in srgb,var(--teal) 40%,transparent)}
+.t-mix{color:var(--amber);background:var(--amber-soft);border-color:color-mix(in srgb,var(--amber) 40%,transparent)}
+.t-view{color:var(--accent);background:transparent;border-color:var(--accent);border-style:dashed}
+.legend-inline{display:flex;gap:6px;flex-wrap:wrap}
+.thesis .fig-row{max-width:1120px}
+.chain-block{margin:56px 0 0;padding-top:34px;border-top:1px solid var(--line);max-width:1120px}
+.chain{display:grid;grid-template-columns:minmax(260px,.85fr) minmax(0,1.35fr);gap:24px;align-items:start}
+.chain-list{list-style:none;margin:0;padding:0;position:relative}
+.chain-list:before{content:'';position:absolute;left:19px;top:22px;bottom:22px;width:1px;background:var(--line)}
+.chain-list button{display:grid;grid-template-columns:40px 1fr;gap:12px;align-items:center;width:100%;text-align:left;border:0;background:transparent;padding:9px 10px 9px 0;border-radius:4px;position:relative}
+.chain-list button:hover{background:var(--teal-soft)}
+.chain-list button[aria-current="true"]{background:var(--wash)}
+.chain-list button[aria-current="true"] .c-dot{background:var(--accent);color:#fff;border-color:var(--accent)}
+.c-dot{width:40px;height:40px;border-radius:50%;border:1px solid var(--line);background:var(--paper);display:grid;place-items:center;font-family:var(--num);font-size:14px;position:relative;z-index:1}
+.c-dot.s-ok{border-color:var(--teal)}
+.c-dot.s-mix{border-color:var(--amber)}
+.c-dot.s-view{border:1.5px dashed var(--accent)}
+.c-text b{display:block;font-size:15px;font-weight:600;line-height:1.5}
+.c-text span{display:block;font-size:12px;color:var(--muted);font-family:var(--num);margin-top:2px}
+.chain-detail{background:var(--card);color:var(--card-ink);border-radius:6px;padding:26px 28px;position:sticky;top:24px;outline:none}
+.cd-top{display:flex;justify-content:space-between;gap:12px;align-items:baseline;flex-wrap:wrap}
+.cd-step{font-family:var(--num);font-size:13px;color:var(--card-sub);letter-spacing:.12em}
+.cd-era{font-family:var(--num);font-size:15px;color:var(--card-sub)}
+.chain-detail h3{font-family:var(--serif);font-size:24px;font-weight:600;line-height:1.5;margin:8px 0 14px}
+.chain-detail p{font-size:15px;line-height:2;margin:0 0 12px;color:var(--card-ink)}
+.cd-basis{border-top:1px solid var(--card-line);margin-top:16px;padding-top:14px}
+.cd-basis h4{font-size:12px;letter-spacing:.12em;color:var(--card-sub);margin:0 0 8px;font-weight:500}
+.cd-basis ul{list-style:none;margin:0;padding:0}
+.cd-basis li{display:flex;gap:10px;align-items:baseline;font-size:13.5px;line-height:1.8;margin-bottom:4px}
+.cd-basis .tag{flex-shrink:0}
+.chain-detail .t-ok{color:#9fd6dc;background:transparent;border-color:#5f9ea6}
+.chain-detail .t-mix{color:#f0c47e;background:transparent;border-color:#a8823f}
+.chain-detail .t-view{color:#f39a86;border-color:#f39a86}
+.cd-src{display:flex;flex-wrap:wrap;gap:4px 16px;margin-top:12px}
+.cd-src a{font-size:12.5px;color:var(--card-sub);text-underline-offset:3px}
+.cd-src a:hover{color:var(--card-ink)}
+.cd-nav{display:flex;justify-content:space-between;gap:12px;margin-top:18px;border-top:1px solid var(--card-line);padding-top:14px}
+.cd-nav button{border:1px solid var(--card-line);background:transparent;color:var(--card-ink);border-radius:4px;padding:8px 12px;font-size:13px}
+.cd-nav button:hover:not(:disabled){border-color:var(--card-sub)}
+.cd-nav button:disabled{opacity:.35;cursor:default}
+.counter{margin-top:24px;border:1px solid var(--line);border-radius:4px;background:var(--wash)}
+.counter summary{cursor:pointer;list-style:none;padding:14px 18px;font-size:14px;font-weight:600;display:flex;justify-content:space-between}
+.counter summary::-webkit-details-marker{display:none}
+.counter summary:after{content:'＋';color:var(--accent);font-weight:400}
+.counter[open] summary:after{content:'−'}
+.counter p{margin:0 18px 14px;font-size:14.5px;line-height:1.95;color:var(--muted);max-width:52em}
+.lab-head{margin:56px 0 0;padding-top:34px;border-top:1px solid var(--line);max-width:1120px}
+.lab-head .intro{margin-top:0}
+.log{list-style:none;margin:0;padding:0}
+.log li{display:grid;grid-template-columns:70px 100px 1fr;gap:16px;padding:16px 0;border-bottom:1px solid var(--line);align-items:baseline}
+.log-ver{font-family:var(--num);font-size:20px;color:var(--accent)}
+.log time{font-family:var(--num);font-size:13px;color:var(--muted)}
+.log p{margin:0;font-size:14.5px;line-height:1.95}
+.log a{color:var(--teal)}
+.bar-us{fill:none;stroke:var(--c1);stroke-width:1.5;stroke-dasharray:5 3}
+@media (max-width:1000px){.chain{grid-template-columns:1fr}.chain-detail{position:static}}
+@media (max-width:930px){.props{grid-template-columns:1fr}.ver{margin-left:6px}.log li{grid-template-columns:60px 1fr}.log p{grid-column:1/-1}.lead{padding:18px 18px}.chain-detail{padding:22px 20px}.chain-detail h3{font-size:21px}}
+
+.pair.solo{grid-template-columns:1fr}
+.pair.solo .facts p{max-width:46em}
+.stat-duo small{font-family:var(--sans);margin-left:2px}
+/* responsive */
+@media (max-width:1150px){
+  .edition{display:none}
+  .pair{grid-template-columns:1fr}
+}
+@media (max-width:1000px){
+  .workbench,.fig-row{grid-template-columns:1fr}
+}
+@media (max-width:930px){
+  .topbar{height:auto;min-height:64px;padding:12px 18px;gap:12px}
+  .seal{width:36px;height:36px;font-size:22px}
+  .brand-name{font-size:20px}
+  .brand-divider,.brand-room{display:none}
+  .view-nav{display:none}
+  .header-actions{gap:14px}
+  .purpose-nav{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .purpose-nav a{flex-direction:column;align-items:center;gap:2px;padding:11px 6px;text-align:center}
+  .purpose-nav a span{font-size:11px}
+  .purpose-nav strong{font-size:13.5px}
+  .layout{grid-template-columns:1fr}
+  .sidebar{border-right:0;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:20}
+  .sidebar-inner{position:static;padding:8px 10px;overflow-x:auto;overflow-y:hidden;max-height:none}
+  .eyebrow,.sidebar-note,.nav-sep{display:none}
+  .nav-list{display:flex;gap:4px;width:max-content}
+  .nav-item{padding:8px 11px;margin:0;gap:7px;width:auto}
+  .nav-item[aria-current="true"]:before{left:10px;right:10px;top:auto;bottom:0;width:auto;height:2px}
+  .nav-num{width:auto;font-size:15px}
+  .nav-sub{display:none}
+  .nav-label{font-size:13.5px;white-space:nowrap}
+  html{scroll-padding-top:68px}
+  main{padding:26px 18px 48px}
+  .mode-number{font-size:40px}
+  .spec{grid-template-columns:repeat(2,1fr)}
+  .chapter{grid-template-columns:1fr;gap:6px;padding:30px 0 34px}
+  .rail-inner{position:static;display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+  .tc{font-size:24px}
+  .tc-end{display:inline;margin:0}
+  .era{margin:0}
+  .kanji{display:none}
+  .chapter h2{font-size:21px}
+  .glossary{grid-template-columns:1fr}
+  .sources{columns:1}
+  .formula-strip{flex-direction:column;align-items:flex-start;gap:6px;padding:14px 16px}
+  footer{grid-template-columns:1fr;gap:8px;padding:22px 18px}
+  .track{height:50px}
+  .track small{display:none}
+  .answer-value{font-size:34px}
+  .verify td:nth-child(3){width:auto}
+}
+@media (max-width:520px){
+  .verify thead{display:none}
+  .verify tr{display:grid;grid-template-columns:auto 1fr;border-bottom:1px solid var(--line)}
+  .verify td{border:0;padding:8px 12px}
+  .verify td:first-child{grid-row:span 3;padding-top:12px}
+  .verify td:nth-child(2){min-width:0;font-weight:600;padding-top:12px}
+  .verify tr:last-child{border-bottom:0}
+  .crisis li{grid-template-columns:1fr;gap:0}
+  .answer-grid{grid-template-columns:1fr 1fr}
+  .theme-toggle{display:none}
+}
+@media print{.sidebar,.purpose-nav,.topbar .header-actions,.theme-toggle{display:none}.layout{grid-template-columns:1fr}}
+
+[data-ainoboru-print]{display:none}
+@media print{[data-ainoboru-print]{display:block;margin:10mm 0 0;text-align:center;font:11pt/1.4 serif;color:#333}[data-ainoboru-print] a{color:inherit;text-decoration:none}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">本文へ移動</a>
+
+<header class="topbar">
+  <a class="brand" href="#top" aria-label="バブル 読解室 ページの先頭へ">
+    <span class="seal" aria-hidden="true">泡</span>
+    <span class="brand-name">バブル<span>1985 — 2026</span></span>
+    <span class="brand-divider" aria-hidden="true"></span>
+    <span class="brand-room">読解室</span><span class="ver">v0.4</span>
+  </a>
+  <div class="header-actions">
+    <nav class="view-nav" aria-label="ページ内の区分">
+      <a href="#thesis" data-view="thesis">主張</a>
+      <a href="#lab" data-view="lab">年で試す</a>
+      <a href="#c1" data-view="chronicle">場面を読む</a>
+      <a href="#sources" data-view="sources">出典</a>
+    </nav>
+    <a class="edition" href="index_en.html" hreflang="en" lang="en">English ↗</a>
+    <button class="theme-toggle" id="theme-toggle" type="button" aria-label="配色を切り替える">配色</button>
+    <button class="quiet" id="help-button" type="button">読み方 <span class="q" aria-hidden="true">?</span></button>
+  </div>
+</header>
+
+<nav class="purpose-nav" aria-label="目的から選ぶ">
+  <a href="#thesis"><strong>主張を読む</strong><span>崩壊の根本原因</span></a>
+  <a href="#chain"><strong>因果をたどる</strong><span>9つの連鎖</span></a>
+  <a href="#c10"><strong>今に続く</strong><span>2026年までの停滞と回復</span></a>
+</nav>
+
+<div class="layout" id="top">
+  <aside class="sidebar" aria-label="場面の一覧">
+    <div class="sidebar-inner">
+      <p class="eyebrow">主張と場面 <span>v0.4</span></p>
+      <ul class="nav-list" id="nav-list">
+        <li><a class="nav-item" href="#thesis"><span class="nav-num">主</span><span><span class="nav-label">このサイトの主張</span><span class="nav-sub">席巻・慢心・外圧</span></span></a></li>
+        <li><a class="nav-item" href="#chain"><span class="nav-num">鎖</span><span><span class="nav-label">因果の連鎖</span><span class="nav-sub">崩壊までの9段階</span></span></a></li>
+        <li><a class="nav-item" href="#lab"><span class="nav-num">数</span><span><span class="nav-label">数字で確かめる</span><span class="nav-sub">年ごとの4指標</span></span></a></li>
+        <li class="nav-sep" aria-hidden="true"></li>
+        <li><a class="nav-item" href="#c1"><span class="nav-num">壱</span><span><span class="nav-label">プラザ合意</span><span class="nav-sub">ドル高を正す協調</span></span></a></li>
+        <li><a class="nav-item" href="#c2"><span class="nav-num">弐</span><span><span class="nav-label">円高不況</span><span class="nav-sub">輸出に向かい風</span></span></a></li>
+        <li><a class="nav-item" href="#c3"><span class="nav-num">参</span><span><span class="nav-label">金融緩和</span><span class="nav-sub">公定歩合 2.5%</span></span></a></li>
+        <li><a class="nav-item" href="#c4"><span class="nav-num">肆</span><span><span class="nav-label">土地神話</span><span class="nav-sub">担保と地価の循環</span></span></a></li>
+        <li><a class="nav-item" href="#c5"><span class="nav-num">伍</span><span><span class="nav-label">バブル景気</span><span class="nav-sub">地価とジャパンマネー</span></span></a></li>
+        <li><a class="nav-item" href="#c6"><span class="nav-num">陸</span><span><span class="nav-label">売り手市場</span><span class="nav-sub">新卒とあふれる資金</span></span></a></li>
+        <li><a class="nav-item" href="#c7"><span class="nav-num">漆</span><span><span class="nav-label">引き締め</span><span class="nav-sub">利上げと総量規制</span></span></a></li>
+        <li><a class="nav-item" href="#c8"><span class="nav-num">捌</span><span><span class="nav-label">崩壊</span><span class="nav-sub">担保割れと金融危機</span></span></a></li>
+        <li><a class="nav-item" href="#c9"><span class="nav-num">玖</span><span><span class="nav-label">就職氷河期</span><span class="nav-sub">採用の冷え込み</span></span></a></li>
+        <li><a class="nav-item" href="#c10"><span class="nav-num">拾</span><span><span class="nav-label">2026年まで</span><span class="nav-sub">続いた停滞と回復</span></span></a></li>
+        <li class="nav-sep" aria-hidden="true"></li>
+        <li><a class="nav-item" href="#terms"><span class="nav-num">語</span><span><span class="nav-label">用語</span><span class="nav-sub">10の言葉</span></span></a></li>
+        <li><a class="nav-item" href="#sources"><span class="nav-num">典</span><span><span class="nav-label">出典</span><span class="nav-sub">一次資料へ</span></span></a></li>
+        <li><a class="nav-item" href="#changelog"><span class="nav-num">版</span><span><span class="nav-label">更新履歴</span><span class="nav-sub">v0.1 → v0.5</span></span></a></li>
+      </ul>
+      <div class="sidebar-note">
+        <span class="tiny-rule"></span>
+        <p>崩したのは、外からの力だ。</p>
+        <span>主張ごとに根拠の強さを「確認済み」「状況証拠」「解釈」で示しています。</span>
+      </div>
+    </div>
+  </aside>
+
+  <main id="main" tabindex="-1">
+    <section class="page-head thesis" id="thesis" aria-labelledby="thesis-title">
+      <p class="kicker">このサイトの主張 / バブル崩壊の根本原因</p>
+      <div class="title-row">
+        <h1 id="thesis-title">世界を席巻した日本は、<br>外からの力と、それに従った政策で崩れた</h1>
+        <span class="mode-number" aria-hidden="true">主</span>
+      </div>
+      <div class="lead">
+        <p>1980年代末、日本企業は世界の時価総額ランキングの上位を独占し、東京の土地だけで米国全土が買えるとまで言われました。日本は世界を席巻し、そして調子に乗りました。</p>
+        <p>その日本に、国際決済銀行（BIS）の自己資本規制と、米国の日米構造協議による圧力がかかります。政府は総量規制で不動産への融資を絞り、日銀は利上げを重ね、地価税で土地を「持つだけで損」な資産に変えました。銀行は貸せなくなり、土地の買い手は消え、地価は一気に崩れた。<strong>この重なりこそがバブル崩壊の根本原因である</strong>、というのが本サイトの主張です。</p>
+        <p>その傷は深く、停滞は2025年まで続きました。株価が1989年末の水準を取り戻したのは2024年、大都市の商業地の価格が1985年の水準に戻ったのは2026年のことです。</p>
+      </div>
+      <ol class="props">
+        <li><span class="prop-no">一</span><h2>日本は世界を席巻した</h2><p>1989年、世界の時価総額上位50社のうち32社が日本企業。首位はNTT。</p><span class="tag t-ok">確認済み</span></li>
+        <li><span class="prop-no">二</span><h2>そして、調子に乗った</h2><p>大都市の商業地は6年で約4倍。東京都の土地の値段は、米国全土とほぼ同じ規模に。</p><span class="tag t-ok">確認済み（規模感）</span></li>
+        <li><span class="prop-no">三</span><h2>外圧と引き締めが、崩壊を招いた</h2><p>BIS規制と日米構造協議の圧力のもとで、総量規制・利上げ・地価税が重なった。</p><span class="tag t-mix">事実＋本サイトの解釈</span></li>
+      </ol>
+      <div class="fig-row">
+        <div class="visual-panel">
+          <div class="visual-heading"><span>証拠A　1989年末の世界の時価総額 上位50社</span><span>FIG. A</span></div>
+          <div class="chart compact" id="dominance" role="img" aria-label="1989年末の世界時価総額上位50社のうち32社が日本企業。上位10社では7社。"></div>
+          <p class="visual-caption">朱が日本企業。マスの位置は順位ではなく社数を表します。上位10社のうち7社（NTT、日本興業銀行、住友銀行、富士銀行、第一勧業銀行、三菱銀行、東京電力）が日本勢でした。首位NTTの時価総額は約1,638億ドル。出典：ダイヤモンド・オンライン、東京新聞ほか。</p>
+        </div>
+        <div class="visual-panel">
+          <div class="visual-heading"><span>証拠B　東京の土地と、米国全土（1990年前後）</span><span>FIG. B</span></div>
+          <div class="chart compact" id="tokyo-us" role="img" aria-label="1990年末の日本全体の土地約2452兆円、米国全土の推計約613兆円（日本の4分の1とした換算）、東京都の民有地約592兆円の比較。"></div>
+          <p class="visual-caption">日本全体は国民経済計算（1990年末）。米国全土は、ハーバード・ビジネス・レビュー（1990年）の「日本の土地は米国全土の4倍超」を当てはめた換算値。東京都は国民経済計算の都道府県別内訳（民有地、1990年末）。23区だけの公式集計は見つかっていません。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="chain-block" id="chain" aria-labelledby="chain-title">
+      <p class="reading-label">因果の連鎖</p>
+      <div class="block-head"><h2 id="chain-title">席巻から崩壊まで、9つの段階</h2><span class="legend-inline"><span class="tag t-ok">確認済み</span><span class="tag t-mix">状況証拠</span><span class="tag t-view">本サイトの解釈</span></span></div>
+      <div class="chain">
+        <ol class="chain-list" id="chain-list"></ol>
+        <article class="chain-detail" id="chain-detail" aria-live="polite" tabindex="-1"></article>
+      </div>
+      <details class="counter">
+        <summary>この主張への主な反論も読む</summary>
+        <p>経済史の研究の多くは、1980年代後半に長く続いた金融緩和と、金融機関の過剰な土地担保融資をバブルの主因とみています。この立場では、崩壊は膨らみすぎた価格の調整であり、引き締めはその時期を早めたにすぎません。また、総量規制を外圧が直接決めたことを示す公文書は、今回の調査では見つかっていません。</p>
+        <p>本サイトは、バブルが国内の緩和で膨らんだことを否定しません。そのうえで、崩壊の引き金と深さを決めたのは、外からの圧力と、それに沿って短期間に重ねられた引き締め策だったと主張します。</p>
+      </details>
+    </section>
+
+    <div class="lab-head" id="lab">
+      <p class="reading-label">数字で確かめる</p>
+      <div class="block-head"><h2>年を動かして、4つの指標を見る</h2></div>
+      <p class="intro">1984年から最新の2026年まで、株価・地価・為替・金利を年ごとに確かめられます。</p>
+      <details class="method">
+        <summary>数字の出どころ</summary>
+        <p>数字は日本銀行、総務省統計局、内閣府、日本不動産研究所、日本経済新聞社などの資料から取得しました（2026年9月17日確認）。事実と本サイトの解釈の区別は「因果の連鎖」に示しています。</p>
+        <p>地価指数は、2017年までの「2000年3月末＝100」の系列と、2018年以降の「2010年3月末＝100」の系列を、2010年3月末の値（76.2）でつないだ本サイトの計算値です。2016年は2017年の前年比から逆算しています。2026年の値は最新値（株価は9月16日終値、為替は1〜8月平均、地価は3月末、金利は現在の水準）です。</p>
+      </details>
+    </div>
+
+    <section class="workbench" aria-label="年ごとの数字を調べる">
+      <div>
+        <div class="input-card">
+          <p class="section-label"><span>年を置く</span><span>INPUT</span></p>
+          <div class="examples" role="group" aria-label="節目の年">
+            <button class="example" type="button" data-year="1985">1985 合意</button>
+            <button class="example" type="button" data-year="1987">1987 金利2.5%</button>
+            <button class="example" type="button" data-year="1989">1989 株価の頂点</button>
+            <button class="example" type="button" data-year="1991">1991 地価の頂点</button>
+            <button class="example" type="button" data-year="1997">1997 金融危機</button>
+            <button class="example" type="button" data-year="2024">2024 株価が回復</button>
+            <button class="example" type="button" data-year="2026">2026 最新</button>
+          </div>
+          <div class="field">
+            <label for="year-range"><span>年</span><output id="year-out" for="year-range">1989年</output></label>
+            <input type="range" id="year-range" min="1984" max="2026" step="1" value="1989">
+            <p class="hint">1984〜2026年（2026年は最新値）。矢印キーでも1年ずつ動かせます。</p>
+          </div>
+          <div class="field">
+            <span class="flabel" id="metric-label">見る数字</span>
+            <div class="segmented" role="group" aria-labelledby="metric-label">
+              <button type="button" data-metric="nikkei" aria-pressed="true">株価</button>
+              <button type="button" data-metric="land" aria-pressed="false">地価</button>
+              <button type="button" data-metric="fx" aria-pressed="false">為替</button>
+              <button type="button" data-metric="rate" aria-pressed="false">金利</button>
+            </div>
+          </div>
+          <button class="calculate" type="button" id="go-scene"><span>この年の場面を読む</span><span aria-hidden="true">↓</span></button>
+        </div>
+        <div class="answer-card" aria-live="polite">
+          <div class="answer-top"><span class="answer-label" id="ans-label">1989年の日経平均（年末終値）</span><span class="badge" id="ans-badge">一次資料</span></div>
+          <p class="answer-value" id="ans-value">38,915.87<small>円</small></p>
+          <p class="answer-detail" id="ans-detail"></p>
+          <div class="answer-grid" id="ans-grid"></div>
+          <div class="answer-foot"><span class="exact-note" id="ans-src">出典：日本経済新聞社</span><button class="copy" type="button" id="copy-btn">結果をコピー ⧉</button></div>
+        </div>
+      </div>
+      <div class="visual-panel">
+        <div class="visual-heading"><span id="fig1-title">図で見る　日経平均（年末終値）</span><span>FIG. 01</span></div>
+        <div class="chart" id="hero-chart" role="img" aria-label="選んだ指標の1984年から2005年までの推移"></div>
+        <div class="diagram-legend"><span><span class="legend-key"></span><span id="hero-legend">選んだ指標</span></span><span><span class="legend-dot"></span>節目の年</span></div>
+        <p class="visual-caption" id="hero-caption"></p>
+      </div>
+    </section>
+
+    <div class="formula-strip">
+      <span>数字の定義</span>
+      <p>株価＝日経平均の年末終値／地価＝六大都市の商業地価格指数（各年3月末、2000年＝100、2018年以降は接続値）／為替＝東京市場ドル円の年平均／金利＝年末時点の公定歩合（2001年以降は基準貸付利率）。2026年は最新値。</p>
+    </div>
+
+
+    <ol class="chapters">
+      <!-- 壱 -->
+      <li class="chapter" id="c1">
+        <div class="rail"><div class="rail-inner"><span class="tc">1985</span><span class="era">1985年9月</span><span class="kanji" aria-hidden="true">壱</span></div></div>
+        <div>
+          <h2>貿易摩擦が、プラザ合意を呼ぶ</h2>
+          <div class="pair solo">
+            <div class="facts">
+              <p>1985年9月22日、ニューヨークのプラザホテルで<strong>日本・米国・英国・西ドイツ・フランスの5か国（G5）</strong>の蔵相と中央銀行総裁がドル高是正で合意し、協調介入に踏み出しました。背景には米国の高金利が招いたドル高と、財政・貿易の「双子の赤字」があります。</p>
+              <p>1985年の米国の貿易赤字は<strong>約1,480億ドル</strong>で、およそ3分の1が対日でした。日本銀行の統計では、合意直前の8月の月平均が<strong>1ドル＝237.2円</strong>です。</p>
+            </div>
+          </div>
+          <div class="visual-panel fig">
+            <div class="visual-heading"><span>図で見る　合意の前後でドル円はどう動いたか（月平均）</span><span>FIG. 02</span></div>
+            <div class="chart" id="fx-monthly" role="img" aria-label="1984年から1988年までのドル円月平均の推移。1985年2月の260円台から1988年11月の123円台へ下落。"></div>
+            <p class="visual-caption">1985年2月の260.34円が期間中の最も円安の月。合意の翌月（10月）には214.84円、1年後の1986年8月には154.11円まで円高が進みました。出典：日本銀行 時系列統計データ（東京市場 ドル・円 スポット 17時時点／月中平均）。</p>
+          </div>
+          <div class="source-links"><a href="https://www.nomura.co.jp/terms/japan/hu/plaza_a.html" target="_blank" rel="noopener">野村證券｜プラザ合意 ↗</a><a href="https://www.nri.com/jp/media/column/kiuchi/20250917.html" target="_blank" rel="noopener">野村総合研究所｜プラザ合意から40年 ↗</a><a href="https://www.stat-search.boj.or.jp/index.html" target="_blank" rel="noopener">日本銀行｜時系列統計データ ↗</a></div>
+        </div>
+      </li>
+
+      <!-- 弐 -->
+      <li class="chapter" id="c2">
+        <div class="rail"><div class="rail-inner"><span class="tc">1985</span><span class="era">1985〜1987年</span><span class="kanji" aria-hidden="true">弐</span></div></div>
+        <div>
+          <h2>円高が、輸出を直撃する</h2>
+          <div class="pair solo">
+            <div class="facts">
+              <p>月平均の円相場は1987年12月に<strong>128.25円</strong>、1988年11月に<strong>123.16円</strong>。年末にかけて一時120円台に入りました。輸出企業の採算は急速に悪化し、この時期は<strong>「円高不況」</strong>と呼ばれます。</p>
+              <p>ただし米国の赤字はすぐには縮みませんでした。ドル建て価格の上昇が数量に響くまで時間がかかり、1986年の日本の対米黒字はむしろ膨らんでいます。米国では1987年10月に、株価が暴落するブラックマンデーも起きました。</p>
+            </div>
+          </div>
+          <div class="workbench fig-row" style="margin-top:22px">
+            <div class="input-card">
+              <p class="section-label"><span>円高で、輸出価格はどう変わる？</span><span>CALC</span></p>
+              <div class="examples" role="group" aria-label="レートの例">
+                <button class="example" type="button" data-fx="238.5">1985年平均 238.5円</button>
+                <button class="example" type="button" data-fx="168.5">1986年平均 168.5円</button>
+                <button class="example" type="button" data-fx="128.1">1988年平均 128.1円</button>
+              </div>
+              <div class="field">
+                <label for="car-price"><span>国内での価格（万円）</span></label>
+                <input type="number" id="car-price" min="1" max="100000" step="1" value="200" inputmode="numeric">
+                <p class="hint">輸出する製品1台あたりの手取りにしたい円の額。</p>
+              </div>
+              <div class="field">
+                <label for="fx-range"><span>1ドルあたり</span><output id="fx-out" for="fx-range">128.1円</output></label>
+                <input type="range" id="fx-range" min="100" max="260" step="0.1" value="128.1">
+              </div>
+              <div class="answer-card" aria-live="polite" style="margin-top:8px">
+                <div class="answer-top"><span class="answer-label">米国での販売価格</span><span class="badge">簡易計算</span></div>
+                <p class="answer-value" id="car-usd">$15,613</p>
+                <p class="answer-detail" id="car-detail"></p>
+              </div>
+            </div>
+            <div class="visual-panel">
+              <div class="visual-heading"><span>図で見る　同じ円収入に必要なドル価格</span><span>FIG. 03</span></div>
+              <div class="chart" id="car-chart" role="img" aria-label="1985年平均レートと選んだレートでのドル建て価格の比較"></div>
+              <p class="visual-caption">手取りの円を変えずに売るなら、円高の分だけドル価格を上げる必要があります。値上げを避けるなら、その分だけ円の手取りが減ります。為替手数料や現地の流通コストは含めていません。</p>
+            </div>
+          </div>
+          <div class="source-links"><a href="https://www.oanda.jp/lab-education/dictionary/plaza-accord/" target="_blank" rel="noopener">OANDA｜プラザ合意後のドル円 ↗</a><a href="https://www.cia.gov/readingroom/node/2062100" target="_blank" rel="noopener">CIA 1986年メモ｜対米黒字の拡大（英語） ↗</a></div>
+        </div>
+      </li>
+
+      <!-- 参 -->
+      <li class="chapter" id="c3">
+        <div class="rail"><div class="rail-inner"><span class="tc">1986</span><span class="era">1986〜1989年</span><span class="kanji" aria-hidden="true">参</span></div></div>
+        <div>
+          <h2>金利2.5%、借りやすい時代へ</h2>
+          <div class="pair solo">
+            <div class="facts">
+              <p>公定歩合は1986年1月から5回引き下げられ、<strong>1987年2月23日に2.5%</strong>へ。この水準は<strong>1989年5月31日</strong>まで、2年3か月にわたって据え置かれました。</p>
+              <p>ブラックマンデー後の世界経済への配慮もあって緩和が長引き、企業や金融機関の手元に資金がだぶつく「過剰流動性」が生まれた、と振り返られています。</p>
+            </div>
+          </div>
+          <div class="fig-row">
+            <div class="visual-panel">
+              <div class="visual-heading"><span>図で見る　公定歩合の変更（1980〜1995年）</span><span>FIG. 04</span></div>
+              <div class="chart" id="rate-step" role="img" aria-label="公定歩合の階段状の推移。1980年の9%から1987年に2.5%、1990年に6%、1995年に0.5%。"></div>
+              <details class="data-details"><summary>変更日の一覧を見る</summary><div class="table-wrap"><table id="rate-table"><thead><tr><th>実施日</th><th class="n">公定歩合</th></tr></thead><tbody></tbody></table></div></details>
+            </div>
+            <div class="input-card">
+              <p class="section-label"><span>金利が変わると、利息はいくら違う？</span><span>CALC</span></p>
+              <div class="field">
+                <label for="loan"><span>借入額（億円）</span></label>
+                <input type="number" id="loan" min="0.1" max="100000" step="0.1" value="10" inputmode="decimal">
+              </div>
+              <div class="field">
+                <label for="rate-a"><span>緩和前の金利</span><output id="rate-a-out" for="rate-a">5.00%</output></label>
+                <input type="range" id="rate-a" min="0" max="9" step="0.25" value="5">
+              </div>
+              <div class="field">
+                <label for="rate-b"><span>緩和後の金利</span><output id="rate-b-out" for="rate-b">2.50%</output></label>
+                <input type="range" id="rate-b" min="0" max="9" step="0.25" value="2.5">
+              </div>
+              <div class="answer-card" aria-live="polite">
+                <div class="answer-top"><span class="answer-label">1年間の利息の差</span><span class="badge">単利・簡易計算</span></div>
+                <p class="answer-value" id="int-diff">2,500<small>万円</small></p>
+                <p class="answer-detail" id="int-detail"></p>
+              </div>
+              <p class="hint">公定歩合は日銀が金融機関に貸すときの基準金利で、企業の借入金利そのものではありません。ここでは差の大きさをつかむため、同じ幅で動くと仮定しています。</p>
+            </div>
+          </div>
+          <div class="source-links"><a href="https://www.boj.or.jp/statistics/boj/other/discount/discount.htm" target="_blank" rel="noopener">日本銀行｜公定歩合の推移 ↗</a><a href="https://www.pictet.co.jp/basics-of-asset-management/new-generation/BOJ/20250213.html" target="_blank" rel="noopener">ピクテ｜金融政策による経済効果 ↗</a></div>
+        </div>
+      </li>
+
+      <!-- 肆 -->
+      <li class="chapter" id="c4">
+        <div class="rail"><div class="rail-inner"><span class="tc">1986</span><span class="era">1986〜1990年</span><span class="kanji" aria-hidden="true">肆</span></div></div>
+        <div>
+          <h2>「土地は必ず値上がりする」という前提</h2>
+          <div class="pair solo">
+            <div class="facts">
+              <p>企業が調達した資金を本業ではなく投資に回す<strong>「財テク」</strong>が広がり、株式と不動産に資金が流れ込みました。融資の多くは土地を担保にしていたため、地価が上がるほど担保価値が増え、さらに借りられるようになります。</p>
+              <p>六大都市の商業地価格指数は、1985年3月末の<strong>128.9</strong>から1988年3月末には<strong>315.0</strong>へ。3年で約2.4倍になりました。</p>
+            </div>
+          </div>
+          <div class="visual-panel fig">
+            <div class="visual-heading"><span>図で見る　担保が融資を呼び、融資が地価を押し上げる</span><span>FIG. 05</span></div>
+            <div class="chart" id="loop" role="img" aria-label="循環図。1 地価が上がる、2 担保価値が増える、3 銀行が貸し増す、4 土地や株を買う、そして1へ戻る。"></div>
+            <p class="visual-caption">この循環は、地価が上がり続ける限り自己強化します。逆回転すると、地価の下落が担保不足を生み、貸し渋りと投げ売りがさらに地価を下げます（場面・捌）。</p>
+          </div>
+          <div class="source-links"><a href="https://www.pictet.co.jp/basics-of-asset-management/new-generation/BOJ/20250213.html" target="_blank" rel="noopener">ピクテ｜財テクと過剰流動性 ↗</a><a href="https://www.imes.boj.or.jp/research/papers/japanese/kk38-2-2.pdf" target="_blank" rel="noopener">日本銀行金融研究所｜1990年代の金融政策運営（PDF） ↗</a></div>
+        </div>
+      </li>
+
+      <!-- 伍 -->
+      <li class="chapter" id="c5">
+        <div class="rail"><div class="rail-inner"><span class="tc">1986</span><span class="era">1986年12月〜1991年2月</span><span class="kanji" aria-hidden="true">伍</span></div></div>
+        <div>
+          <h2>バブル景気と、ジャパンマネー</h2>
+          <div class="pair solo">
+            <div class="facts">
+              <p>内閣府の景気基準日付では、<strong>1986年12月から1991年2月までの51か月</strong>が拡大期です。六大都市の商業地価格指数は<strong>1991年3月末に519.4</strong>で頂点に達し、1985年の約4倍になりました。日本全体の土地資産も1990年末に約2,456兆円でピークを付けています（国民経済計算）。</p>
+              <p>海外では1989年にソニーがコロンビア・ピクチャーズ、三菱地所がロックフェラー・グループを買収。1990年5月にはゴッホ「医師ガシェの肖像」が<strong>8,250万ドル（約125億円）</strong>で日本の実業家に落札されました。</p>
+            </div>
+          </div>
+          <p class="notice">1990年のハーバード・ビジネス・レビューは、日本の土地の理論価格が米国全土の4倍を超えたと紹介しています。1990年末の東京都の民有地は約592兆円で、日本全体の約4分の1。この比率を当てはめると、東京の土地だけで米国全土とほぼ同じ値段になります（証拠B）。23区単独の公式集計は見つかっていませんが、「東京23区の地価でアメリカ全土が買える」という当時の言葉は、規模感として裏付けられます。</p>
+          <div class="fig-row">
+            <div class="visual-panel">
+              <div class="visual-heading"><span>図で見る　商業地の価格指数（3月末、2000年＝100）</span><span>FIG. 06</span></div>
+              <div class="chart" id="land-chart" role="img" aria-label="六大都市と全国の商業地価格指数。六大都市は1985年128.9から1991年519.4へ上昇し、2005年68.4まで下落。"></div>
+              <div class="diagram-legend"><span><span class="legend-key"></span>六大都市</span><span><span class="legend-key k2"></span>全国</span></div>
+              <details class="data-details"><summary>数値を表で見る</summary><div class="table-wrap"><table id="land-table"><thead><tr><th>年（3月末、2018年以降は接続値）</th><th class="n">六大都市</th><th class="n">全国</th></tr></thead><tbody></tbody></table></div></details>
+            </div>
+            <div class="visual-panel">
+              <div class="visual-heading"><span>図で見る　広さと値段の釣り合わなさ</span><span>FIG. 07</span></div>
+              <div class="chart compact" id="squares" role="img" aria-label="国土面積は日本が米国の約26分の1。一方、土地の評価額は日本が米国の約4倍と言われた。面積で比べた正方形の図。"></div>
+              <p class="visual-caption">正方形の面積で比較。国土面積は日本が約37.8万km²、米国が約983万km²。評価額の「約4倍」は当時語られた推計で、厳密な国際比較ではありません。</p>
+            </div>
+          </div>
+          <div class="input-card fig" style="padding:0;overflow:hidden">
+            <p class="section-label" style="padding:18px 22px 0"><span>ジャパンマネーの象徴的な買い物</span><span>CASES</span></p>
+            <div class="table-wrap" style="max-height:none">
+              <table class="deal-table">
+                <thead><tr><th>年</th><th>買い手</th><th>対象</th><th>規模</th></tr></thead>
+                <tbody>
+                  <tr><td>1989</td><td>ソニー</td><td>米コロンビア・ピクチャーズ（映画）</td><td>株式を34億ドルで取得</td></tr>
+                  <tr><td>1989</td><td>三菱地所</td><td>ロックフェラー・グループ（ニューヨークのロックフェラー・センター）</td><td>約2,200億円（内閣府資料）</td></tr>
+                  <tr><td>1990</td><td>大昭和製紙の名誉会長</td><td>ゴッホ「医師ガシェの肖像」</td><td>8,250万ドル（約125億円）</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="source-links"><a href="https://kotobank.jp/word/%E6%99%AF%E6%B0%97%E5%9F%BA%E6%BA%96%E6%97%A5%E4%BB%98" target="_blank" rel="noopener">コトバンク｜景気基準日付 ↗</a><a href="https://www.stat.go.jp/data/nenkan/65nenkan/zuhyou/y652013000.xls" target="_blank" rel="noopener">総務省統計局｜市街地価格指数（Excel） ↗</a><a href="https://www.lij.jp/html/jli/jli_2002/2002winter_p046.pdf" target="_blank" rel="noopener">土地総合研究所｜土地資産額推計（PDF） ↗</a><a href="https://www.esri.cao.go.jp/jp/esri/prj/sbubble/history/history_01/analysis_01_02_06.pdf" target="_blank" rel="noopener">内閣府経済社会総合研究所（PDF） ↗</a></div>
+        </div>
+      </li>
+
+      <!-- 陸 -->
+      <li class="chapter" id="c6">
+        <div class="rail"><div class="rail-inner"><span class="tc">1989</span><span class="era">1989〜1991年</span><span class="kanji" aria-hidden="true">陸</span></div></div>
+        <div>
+          <h2>売り手市場の新卒と、あふれる資金</h2>
+          <div class="pair solo">
+            <div class="facts">
+              <p>新卒の就職市場は極端な売り手市場でした。リクルートワークス研究所の大卒求人倍率は<strong>1991年卒で2.86倍</strong>。調査開始（1987年卒）以来の最高値で、求人総数約84万人に対し、民間企業への就職希望者は約29万人でした。</p>
+              <p>内定者を他社に取られないよう、企業の費用で旅行や海外研修に連れ出す<strong>「拘束旅行」</strong>は、当時の採用の定番でした。ハワイに行ったという体験談も数多く残り、1981年の日本経済新聞はすでに研修の名目の「足止め接待」を報じています。</p>
+              <p>海外旅行そのものも急増しました。出国日本人数は<strong>1985年の約495万人から1990年には約1,100万人</strong>へと2.2倍になっています。当時を知る人の証言では、週末にハワイやグアム、サイパンへ出かけることも流行しました。海外リゾートはバブルを象徴する風景です。</p>
+            </div>
+          </div>
+          <div class="fig-row">
+          <div class="visual-panel">
+            <div class="visual-heading"><span>図で見る　1991年卒の求人と希望者（大卒）</span><span>FIG. 08</span></div>
+            <div class="chart compact" id="seller" role="img" aria-label="1991年卒の求人総数84万400人と民間企業就職希望者29万3800人の比較"></div>
+            <p class="visual-caption">1マス＝1万人。求人が希望者のほぼ3倍ありました。出典：リクルートワークス研究所「ワークス大卒求人倍率調査」（HRプロ用語集経由）。</p>
+          </div>
+          <div class="visual-panel">
+            <div class="visual-heading"><span>図で見る　海外へ出かけた日本人（出国日本人数）</span><span>FIG. 09</span></div>
+            <div class="chart" id="travel" role="img" aria-label="出国日本人数。1984年466万人、1985年495万人、1986年552万人、1987年683万人、1988年843万人、1989年966万人、1990年1100万人、1991年1063万人、1992年1179万人。"></div>
+            <p class="visual-caption">円高で海外が一気に近くなり、1990年に初めて1,000万人を超えました。1991年の減少は湾岸戦争の年にあたります。出典：日本政府観光局（JNTO）。</p>
+          </div>
+          </div>
+          <div class="source-links"><a href="https://www.hrpro.co.jp/glossary_detail.php?id=16" target="_blank" rel="noopener">HRプロ｜大卒求人倍率 ↗</a><a href="https://www.j-cast.com/2011/08/27105281.html?p=all" target="_blank" rel="noopener">J-CAST｜バブル期の「拘束旅行」 ↗</a><a href="https://news.yahoo.co.jp/expert/articles/09abeb02b411886071ca94d505ba0490e48e2ac0" target="_blank" rel="noopener">石渡嶺司｜就活の平成史 ↗</a><a href="https://career-research.mynavi.jp/column/20220425_26273/" target="_blank" rel="noopener">マイナビキャリアリサーチLab｜1991年入社座談会 ↗</a><a href="https://www.jnto.go.jp/statistics/data/visitors-statistics/pdf/marketingdata_outbound.pdf" target="_blank" rel="noopener">JNTO｜出国日本人数の推移（PDF） ↗</a></div>
+        </div>
+      </li>
+
+      <!-- 漆 -->
+      <li class="chapter" id="c7">
+        <div class="rail"><div class="rail-inner"><span class="tc">1988</span><span class="era">1988〜1993年</span><span class="kanji" aria-hidden="true">漆</span></div></div>
+        <div>
+          <h2>外圧のもとで、ブレーキが何重にも踏まれた</h2>
+          <div class="pair solo">
+            <div class="facts">
+              <p>日本銀行は<strong>1989年5月から1990年8月までに5回</strong>利上げし、公定歩合は2.5%から6.0%へ。大蔵省は<strong>1990年3月27日</strong>、不動産向け融資の伸びを貸出全体の伸び以下に抑える<strong>「総量規制」</strong>を通達し、1991年12月まで続けました。</p>
+              <p>いわゆるBIS規制（バーゼル合意）は1988年に合意された国際的な銀行の自己資本比率ルールで、自己資本の薄いまま海外で急拡大した邦銀への警戒も背景にあったとされます。ただし日本での本格適用は<strong>1993年3月末</strong>で、総量規制とは別の枠組みです。</p>
+              <p>米国からの圧力もありました。1989年に始まった<strong>日米構造協議</strong>で、米国は200項目を超える要求を示し、土地を持ち続けやすい日本の税制が地価高騰を招いているとして、<strong>土地税制の見直し</strong>を求めました。総量規制の通達は、この協議の最中に出ています。また、日本の銀行は保有株の含み益の45%を自己資本に数えられたため、株価の下落がそのままBIS規制上の貸出余力を削りました。</p>
+              <p>地価税は、政府税制調査会の基本答申（<strong>1990年10月</strong>）で方針が固まり、1991年5月に法律が公布、<strong>1992年1月1日</strong>に施行されました。方針が決まった時期は、大都市の地価が頂点を付けた1991年3月とほぼ重なります。施行の時点では、地価はすでに下がり始めていました。</p>
+            </div>
+          </div>
+          <div class="visual-panel fig">
+            <div class="visual-heading"><span>図で見る　引き締めの時期と、株価・地価の頂点（それぞれの頂点＝100）</span><span>FIG. 10</span></div>
+            <div class="chart" id="brake" role="img" aria-label="1988年末から1994年3月までの株価と地価を、それぞれの頂点を100として重ねた図。株価は1989年末、地価は1991年3月が頂点。利上げ開始、総量規制、公定歩合6%、総量規制解除、地価税施行、BIS規制の本格適用の時期を縦線で示す。"></div>
+            <div class="diagram-legend"><span><span class="legend-key"></span>日経平均（年末）</span><span><span class="legend-key k2"></span>六大都市商業地（3月末）</span><span><span class="legend-dot"></span>政策の節目</span></div>
+            <p class="visual-caption">株価は利上げが続くなかで1990年に急落し、地価は1年あまり遅れて下り坂に入りました。地価税の施行とBIS規制の本格適用は、どちらも下落が始まった後です。</p>
+          </div>
+          <div class="source-links"><a href="https://www.lij.jp/html/jli/jli_2017/2017summer_p151.pdf" target="_blank" rel="noopener">土地総合研究所｜総量規制（PDF） ↗</a><a href="https://www.boj.or.jp/about/education/oshiete/pfsys/e24.htm" target="_blank" rel="noopener">日本銀行｜バーゼル合意とは ↗</a><a href="https://www.mof.go.jp/pri/publication/policy_history/series/h1-12/4_3_8.pdf" target="_blank" rel="noopener">財務省｜財政史・土地税制（PDF） ↗</a><a href="https://www.nta.go.jp/about/introduction/torikumi/report/2003/japanese/text/02/04_4-5.htm" target="_blank" rel="noopener">国税庁｜地価税 ↗</a><a href="https://ja.wikipedia.org/wiki/%E6%97%A5%E7%B1%B3%E6%A7%8B%E9%80%A0%E5%8D%94%E8%AD%B0" target="_blank" rel="noopener">Wikipedia｜日米構造協議 ↗</a><a href="https://www.mof.go.jp/pri/publication/policy_history/series/h1-12/4_2_8.pdf" target="_blank" rel="noopener">財務省｜財政史・基本答申（PDF） ↗</a></div>
+        </div>
+      </li>
+
+      <!-- 捌 -->
+      <li class="chapter" id="c8">
+        <div class="rail"><div class="rail-inner"><span class="tc">1990</span><span class="era">1990〜1998年</span><span class="kanji" aria-hidden="true">捌</span></div></div>
+        <div>
+          <h2>地価が落ち、貸したお金が戻らない</h2>
+          <div class="pair solo">
+            <div class="facts">
+              <p>先に崩れたのは株価でした。日経平均は1989年末の<strong>38,915.87円</strong>から、1990年末には<strong>23,848.71円</strong>へ、1年で約39%下落。地価は遅れて1991年から下がり始め、六大都市の商業地は<strong>2005年までに頂点から約87%</strong>下がりました。</p>
+              <p>土地を担保にした融資は担保割れを起こし、不良債権として銀行に残りました。大型の金融破綻は崩壊から数年後の<strong>1997〜98年</strong>に集中しています。</p>
+            </div>
+          </div>
+          <div class="fig-row">
+            <div class="visual-panel">
+              <div class="visual-heading"><span>図で見る　株価と地価（それぞれの頂点＝100）</span><span>FIG. 11</span></div>
+              <div class="chart" id="crash" role="img" aria-label="日経平均と六大都市商業地価格指数を、それぞれの頂点を100として1984年から2005年まで重ねた図"></div>
+              <div class="diagram-legend"><span><span class="legend-key"></span>日経平均（年末）</span><span><span class="legend-key k2"></span>六大都市商業地（3月末）</span></div>
+            </div>
+            <div class="input-card">
+              <p class="section-label"><span>地価が下がると、担保はどれだけ足りなくなる？</span><span>CALC</span></p>
+              <div class="field">
+                <label for="coll-val"><span>購入時の土地の評価額（億円）</span></label>
+                <input type="number" id="coll-val" min="0.1" max="100000" step="0.1" value="10" inputmode="decimal">
+              </div>
+              <div class="field">
+                <label for="ltv"><span>評価額に対する借入の割合</span><output id="ltv-out" for="ltv">70%</output></label>
+                <input type="range" id="ltv" min="10" max="120" step="5" value="70">
+                <p class="hint">バブル期には、将来の値上がりを見込んで評価額以上を貸す例もありました。</p>
+              </div>
+              <div class="field">
+                <label for="drop"><span>地価の下落率</span><output id="drop-out" for="drop">50%</output></label>
+                <input type="range" id="drop" min="0" max="90" step="1" value="50">
+              </div>
+              <div class="examples" role="group" aria-label="下落率の例">
+                <button class="example" type="button" data-drop="15">1991→92年 −15%</button>
+                <button class="example" type="button" data-drop="59">1991→95年 −59%</button>
+                <button class="example" type="button" data-drop="87">1991→2005年 −87%</button>
+              </div>
+              <div class="answer-card" aria-live="polite">
+                <div class="answer-top"><span class="answer-label">担保の不足額</span><span class="badge">簡易計算</span></div>
+                <p class="answer-value" id="short-val">2<small>億円</small></p>
+                <p class="answer-detail" id="short-detail"></p>
+              </div>
+            </div>
+          </div>
+          <div class="visual-panel fig">
+            <div class="visual-heading"><span>1997年秋からの連鎖</span><span>LIST</span></div>
+            <ul class="crisis">
+              <li><time datetime="1997-11-03">1997.11.03</time><span>三洋証券が破綻。コール市場で戦後初のデフォルトが起きる。</span></li>
+              <li><time datetime="1997-11-17">1997.11.17</time><span>北海道拓殖銀行が経営破綻。都市銀行として戦後初。</span></li>
+              <li><time datetime="1997-11-24">1997.11.24</time><span>山一證券が自主廃業を決定。</span></li>
+              <li><time datetime="1998">1998</time><span>日本長期信用銀行、日本債券信用銀行が経営破綻し、一時国有化される。</span></li>
+            </ul>
+          </div>
+          <div class="source-links"><a href="https://ecodb.net/stock/nikkei.html" target="_blank" rel="noopener">世界経済のネタ帳｜日経平均の推移 ↗</a><a href="https://ja.wikipedia.org/wiki/%E5%8C%97%E6%B5%B7%E9%81%93%E6%8B%93%E6%AE%96%E9%8A%80%E8%A1%8C" target="_blank" rel="noopener">Wikipedia｜北海道拓殖銀行 ↗</a><a href="https://news.mynavi.jp/article/heiseieconomy-4/" target="_blank" rel="noopener">マイナビニュース｜山一証券破綻 ↗</a></div>
+        </div>
+      </li>
+
+      <!-- 玖 -->
+      <li class="chapter" id="c9">
+        <div class="rail"><div class="rail-inner"><span class="tc">1992</span><span class="era">1992〜2004年</span><span class="kanji" aria-hidden="true">玖</span></div></div>
+        <div>
+          <h2>採用が止まり、就職氷河期へ</h2>
+          <div class="pair solo">
+            <div class="facts">
+              <p>大卒求人倍率は1991年卒の2.86倍から下がり続け、<strong>2000年卒で0.99倍</strong>と初めて1倍を下回りました。「就職氷河期」は1994年の新語・流行語大賞（審査員特選造語賞）に選ばれ、大卒の就職率は2003年に55.1%まで落ち込んでいます。</p>
+              <p>停滞は長く続き、「失われた10年」は20年、30年と言い換えられてきました。日経平均が1989年末の終値を上回ったのは、<strong>2024年2月</strong>のことです。</p>
+            </div>
+          </div>
+          <div class="visual-panel fig">
+            <div class="visual-heading"><span>図で見る　大卒求人倍率（卒業年）</span><span>FIG. 12</span></div>
+            <div class="chart" id="jobs" role="img" aria-label="大卒求人倍率。1991年卒2.86倍、1992年卒2.41倍、1993年卒1.91倍、1994年卒1.55倍、1996年卒1.08倍、1997年卒1.45倍、1998年卒1.68倍、2000年卒0.99倍。"></div>
+            <p class="visual-caption">資料で確認できた年のみ表示（1995年卒・1999年卒は未掲載）。1倍の線を下回ると、求人より希望者が多い状態です。出典：リクルートワークス研究所（WEB労政時報、HRプロ経由）。</p>
+          </div>
+          <div class="source-links"><a href="https://www.rosei.jp/readers/article/76569" target="_blank" rel="noopener">WEB労政時報｜就職氷河期 ↗</a><a href="https://ja.wikipedia.org/wiki/%E5%B0%B1%E8%81%B7%E6%B0%B7%E6%B2%B3%E6%9C%9F" target="_blank" rel="noopener">Wikipedia｜就職氷河期 ↗</a><a href="https://www.dir.co.jp/report/column/20240318_012085.html" target="_blank" rel="noopener">大和総研｜土地を持っているのは誰か ↗</a></div>
+        </div>
+      </li>
+      <!-- 拾 -->
+      <li class="chapter" id="c10">
+        <div class="rail"><div class="rail-inner"><span class="tc">2026</span><span class="era">1991〜2026年</span><span class="kanji" aria-hidden="true">拾</span></div></div>
+        <div>
+          <h2>停滞は2025年まで続き、ようやく出口が見えた</h2>
+          <div class="pair solo">
+            <div class="facts">
+              <p>失われた時代は10年でも20年でも終わりませんでした。日経平均が1989年末の終値を上回ったのは<strong>2024年2月</strong>で、34年かかっています。政策金利が1%に戻ったのは<strong>2026年6月</strong>、31年ぶりのことです。その間の2023年には、日本の名目GDPがドイツに抜かれて世界4位に下がりました。</p>
+              <p>土地の傷はさらに深く残りました。大都市（六大都市）の商業地価格は<strong>2026年3月末に、ようやく1985年3月末と同じ水準</strong>に戻りましたが、それでも頂点の約4分の1です。全国の商業地は今も頂点の約24%にとどまっています。</p>
+              <p>一方、2024年以降は流れが変わりました。株価は2025年末に5万円台、2026年6月には初めて終値で7万円台に乗せ、<strong>9月16日の終値は63,923円</strong>です。円相場は2024年に年平均151円台、2026年1〜8月は平均158円台と、円安が続いています。</p>
+            </div>
+          </div>
+          <div class="fig-row">
+            <div class="visual-panel">
+              <div class="visual-heading"><span>図で見る　元の水準に戻るまでにかかった年数</span><span>FIG. 13</span></div>
+              <div class="chart compact" id="recovery" role="img" aria-label="日経平均が1989年末の終値を上回るまで34年。政策金利が1%に戻るまで31年。大都市の商業地価格が1985年の水準に戻るまで、頂点から35年。全国の商業地は未回復。"></div>
+              <p class="visual-caption">株価は1989年末→2024年2月、金利は1995年（公定歩合が1%を下回った年）→2026年6月、大都市の商業地は頂点の1991年3月末→2026年3月末（1985年の水準）。全国の商業地は2026年3月末で頂点の約24%です。</p>
+            </div>
+            <div class="visual-panel">
+              <div class="visual-heading"><span>最新の数字</span><span>2026.09</span></div>
+              <div class="stat-duo">
+                <div><b>63,923<small style="font-size:14px">円</small></b><span>日経平均（2026年9月16日終値）<br>1989年末の約1.64倍</span></div>
+                <div><b>158.78<small style="font-size:14px">円</small></b><span>ドル円（2026年1〜8月の平均）<br>1985年平均は238.53円</span></div>
+                <div><b>128.9</b><span>六大都市の商業地価格（2026年3月末、接続値）<br>1985年3月末と同水準、頂点の約25%</span></div>
+                <div><b>1.0<small style="font-size:14px">%</small></b><span>日銀の政策金利（2026年6月〜）<br>基準貸付利率は1.25%</span></div>
+              </div>
+              <p class="visual-caption">出典：日本経済新聞、日本銀行（時系列統計・基準貸付利率）、日本不動産研究所「市街地価格指数」（2017年・2018年・2026年3月末ほか）をもとに本サイトで接続。</p>
+            </div>
+          </div>
+          <div class="visual-panel fig">
+            <div class="visual-heading"><span>図で見る　株価と地価の43年（それぞれのバブル期の頂点＝100）</span><span>FIG. 14</span></div>
+            <div class="chart" id="long" role="img" aria-label="1984年から2026年までの日経平均と六大都市商業地価格指数。株価は2024年に100を超え2026年に約164。地価は2026年に約25。"></div>
+            <div class="diagram-legend"><span><span class="legend-key"></span>日経平均（年末、2026年は9月16日）</span><span><span class="legend-key k2"></span>六大都市商業地（3月末）</span></div>
+          </div>
+          <div class="source-links"><a href="https://www.nikkei.com/article/DGXZQOFL161GITW6A910C2000000/" target="_blank" rel="noopener">日本経済新聞｜9月16日の終値 ↗</a><a href="https://www.nikkei.com/article/DGXZQOUB166B40W6A610C2000000/" target="_blank" rel="noopener">日本経済新聞｜政策金利1%と初の7万円台 ↗</a><a href="https://www.reinet.or.jp/pdf/UA_WD/published-document_ulpi-and-wfhmvi_202603.pdf" target="_blank" rel="noopener">日本不動産研究所｜市街地価格指数 2026年3月末（PDF） ↗</a><a href="https://www.boj.or.jp/statistics/boj/other/discount/discount.htm" target="_blank" rel="noopener">日本銀行｜基準貸付利率 ↗</a></div>
+        </div>
+      </li>
+    </ol>
+
+
+    <section class="block" id="terms" aria-labelledby="terms-title">
+      <p class="reading-label">まず押さえたい言葉</p>
+      <div class="block-head"><h2 id="terms-title">用語</h2></div>
+      <dl class="glossary">
+        <div><dt>プラザ合意<span>1985</span></dt><dd>G5が過度なドル高を正すため、協調してドル売り介入を行うと決めた合意。円高の起点になった。</dd></div>
+        <div><dt>公定歩合<span>〜2006</span></dt><dd>日本銀行が金融機関に貸し出すときの基準金利。当時は金融政策の主な手段で、現在は「基準割引率および基準貸付利率」と呼ぶ。</dd></div>
+        <div><dt>円高不況<span>1985–86</span></dt><dd>急な円高で輸出企業の採算が悪化し、景気が落ち込んだ局面。</dd></div>
+        <div><dt>財テク</dt><dd>企業が調達した資金を本業の設備などではなく、株式や土地などの運用に回して利益を狙うこと。</dd></div>
+        <div><dt>土地神話</dt><dd>土地の値段は下がらない、という戦後日本で広く共有された思い込み。土地担保融資の前提にもなった。</dd></div>
+        <div><dt>総量規制<span>1990–91</span></dt><dd>大蔵省の通達による行政指導。不動産向け融資の伸びを、貸出全体の伸び以下に抑えるよう金融機関に求めた。</dd></div>
+        <div><dt>BIS規制（バーゼル合意）<span>1988</span></dt><dd>国際的に活動する銀行に、自己資本比率8%以上を求める国際基準。日本では1992年度末から本格適用。</dd></div>
+        <div><dt>地価税<span>1992–</span></dt><dd>土地の保有に毎年かかる国税として1992年に施行。地価下落を受け、1998年から課税が停止されている。</dd></div>
+        <div><dt>不良債権</dt><dd>返済が滞り、回収が難しくなった貸出。担保の土地が値下がりすると、回収できる額はさらに減る。</dd></div>
+        <div><dt>就職氷河期</dt><dd>バブル崩壊後に新卒採用が絞られ、就職が著しく難しくなった時期。1992年に就職情報誌が名付けた。</dd></div>
+      </dl>
+    </section>
+
+    <section class="block" id="sources" aria-labelledby="sources-title">
+      <p class="reading-label">一次資料と参考資料</p>
+      <div class="block-head"><h2 id="sources-title">出典</h2><span>2026年9月17日 確認</span></div>
+      <ul class="sources">
+        <li><a href="https://www.boj.or.jp/statistics/boj/other/discount/discount.htm" target="_blank" rel="noopener">基準割引率および基準貸付利率（公定歩合）の推移</a><span>日本銀行｜FIG. 04・年表の金利</span></li>
+        <li><a href="https://www.stat-search.boj.or.jp/index.html" target="_blank" rel="noopener">時系列統計データ検索サイト（FM08 / FXERM07）</a><span>日本銀行｜ドル円の月平均・年平均（2026年8月まで）</span></li>
+        <li><a href="https://www.stat.go.jp/data/nenkan/65nenkan/zuhyou/y652013000.xls" target="_blank" rel="noopener">日本統計年鑑 20-13 市街地価格指数（Excel）</a><span>総務省統計局（資料：日本不動産研究所）｜地価指数</span></li>
+        <li><a href="https://ecodb.net/stock/nikkei.html" target="_blank" rel="noopener">日経平均株価の推移（年末終値）</a><span>世界経済のネタ帳（出典：日本経済新聞社）｜株価（2025年末まで）</span></li>
+        <li><a href="https://www.nomura.co.jp/terms/japan/hu/plaza_a.html" target="_blank" rel="noopener">証券用語解説集「プラザ合意」</a><span>野村證券</span></li>
+        <li><a href="https://www.boj.or.jp/about/education/oshiete/pfsys/e24.htm" target="_blank" rel="noopener">バーゼル合意、いわゆるBIS規制とは</a><span>日本銀行</span></li>
+        <li><a href="https://www.lij.jp/html/jli/jli_2017/2017summer_p151.pdf" target="_blank" rel="noopener">日本の土地バブルと不動産融資総量規制</a><span>土地総合研究所『土地総合研究』2017年夏号</span></li>
+        <li><a href="https://www.mof.go.jp/pri/publication/policy_history/series/h1-12/4_3_8.pdf" target="_blank" rel="noopener">平成8〜12年度の税制 第8節 土地税制</a><span>財務総合政策研究所 財政史</span></li>
+        <li><a href="https://www.nta.go.jp/about/introduction/torikumi/report/2003/japanese/text/02/04_4-5.htm" target="_blank" rel="noopener">税務執行のあらまし（地価税）</a><span>国税庁</span></li>
+        <li><a href="https://www.esri.cao.go.jp/jp/esri/prj/sbubble/history/history_01/analysis_01_02_06.pdf" target="_blank" rel="noopener">バブル／デフレ期の日本経済と経済政策（海外投資の事例）</a><span>内閣府経済社会総合研究所</span></li>
+        <li><a href="https://www.lij.jp/html/jli/jli_2002/2002winter_p046.pdf" target="_blank" rel="noopener">土地基本調査結果を用いた土地資産額推計</a><span>土地総合研究所</span></li>
+        <li><a href="https://ja.wikipedia.org/wiki/%E3%83%90%E3%83%96%E3%83%AB%E5%B4%A9%E5%A3%8A" target="_blank" rel="noopener">バブル崩壊（土地資産2,456兆円の記述ほか）</a><span>Wikipedia（内閣府 国民経済計算を引用）</span></li>
+        <li><a href="https://www.rosei.jp/readers/article/76569" target="_blank" rel="noopener">平成10〜12年 「就職氷河期」の到来と困難</a><span>WEB労政時報</span></li>
+        <li><a href="https://www.hrpro.co.jp/glossary_detail.php?id=16" target="_blank" rel="noopener">大卒求人倍率（1991年卒・2000年卒の内訳）</a><span>HRプロ（出典：リクルートワークス研究所）</span></li>
+        <li><a href="https://www.reinet.or.jp/pdf/UA_WD/published-document_ulpi-and-wfhmvi_202603.pdf" target="_blank" rel="noopener">第170回 市街地価格指数（2026年3月末現在）</a><span>日本不動産研究所｜2018年以降の地価指数は2018年・2020年・2023年・2024年などの各回公表資料を使用</span></li>
+        <li><a href="https://www.nikkei.com/article/DGXZQOFL161GITW6A910C2000000/" target="_blank" rel="noopener">日経平均終値438円高（2026年9月16日）</a><span>日本経済新聞｜最新の株価</span></li>
+        <li><a href="https://www.nikkei.com/article/DGXZQOUB166B40W6A610C2000000/" target="_blank" rel="noopener">日経平均最高値、一時初の7万円台（政策金利1%）</a><span>日本経済新聞（2026年6月16日）</span></li>
+        <li><a href="https://www.smd-am.co.jp/market/ichikawa/2026/06/irepo260622/" target="_blank" rel="noopener">7万円も通過点となった日経平均株価</a><span>三井住友DSアセットマネジメント（初の終値7万円台）</span></li>
+        <li><a href="https://www.jnto.go.jp/statistics/data/visitors-statistics/pdf/marketingdata_outbound.pdf" target="_blank" rel="noopener">年別 訪日外客数・出国日本人数の推移（PDF）</a><span>日本政府観光局（JNTO）｜FIG. 09</span></li>
+        <li><a href="https://www.j-cast.com/2011/08/27105281.html?p=all" target="_blank" rel="noopener">内定学生を企業が「囲い込み」 バブル期並み「拘束旅行」が復活</a><span>J-CAST ニュース</span></li>
+        <li><a href="https://news.yahoo.co.jp/expert/articles/09abeb02b411886071ca94d505ba0490e48e2ac0" target="_blank" rel="noopener">就活の平成史～売り手・氷河期・売り手のその先は</a><span>石渡嶺司（Yahoo!ニュース エキスパート）</span></li>
+        <li><a href="https://hbr.org/1990/05/power-from-the-ground-up-japans-land-bubble" target="_blank" rel="noopener">Power from the Ground Up: Japan's Land Bubble</a><span>Harvard Business Review 1990年5–6月号（英語）｜証拠B</span></li>
+        <li><a href="https://www.e-stat.go.jp/stat-search/files?page=1&amp;query=%E9%83%BD%E9%81%93%E5%BA%9C%E7%9C%8C%E5%88%A5&amp;layout=dataset&amp;stat_infid=000002031751" target="_blank" rel="noopener">国民経済計算 参考表 土地および森林資産額の都道府県別内訳（民有地）</a><span>内閣府（e-Stat）｜証拠B 東京都 591.7兆円</span></li>
+        <li><a href="https://www.rieti.go.jp/jp/publications/dp/21j033.pdf" target="_blank" rel="noopener">バブル期の土地取引とキャピタル・ゲイン／ロスの帰着</a><span>経済産業研究所 宇南山卓｜土地の時価総額 2,452兆円</span></li>
+        <li><a href="https://diamond.jp/articles/-/360518?page=4" target="_blank" rel="noopener">「世界時価総額ランキング」1989年→2024年</a><span>ダイヤモンド・オンライン｜証拠A</span></li>
+        <li><a href="https://www.tokyo-np.co.jp/article/309782" target="_blank" rel="noopener">「時価総額ランキング」の今と昔</a><span>東京新聞｜証拠A</span></li>
+        <li><a href="https://ja.wikipedia.org/wiki/%E6%97%A5%E7%B1%B3%E6%A7%8B%E9%80%A0%E5%8D%94%E8%AD%B0" target="_blank" rel="noopener">日米構造協議（土地税制の見直し要求）</a><span>Wikipedia</span></li>
+        <li><a href="https://kotobank.jp/word/%E6%97%A5%E7%B1%B3%E6%A7%8B%E9%80%A0%E5%8D%94%E8%AD%B0-164277" target="_blank" rel="noopener">日米構造協議（430兆円の公共投資）</a><span>コトバンク（共同通信・ブリタニカ）</span></li>
+        <li><a href="https://www.mof.go.jp/pri/publication/policy_history/series/h1-12/4_2_8.pdf" target="_blank" rel="noopener">平成元〜7年度の税制 第8節 土地税制（基本答申 1990年10月）</a><span>財務総合政策研究所 財政史</span></li>
+        <li><a href="https://www.dir.co.jp/report/research/introduction/financial/basel3/20140611_008623.pdf" target="_blank" rel="noopener">バーゼル規制の歴史（米国の提案と英・日の賛同）</a><span>大和総研</span></li>
+        <li><a href="http://www.chihousai.or.jp/07/04_04.html" target="_blank" rel="noopener">自己資本比率規制の歴史（1987年の米英共同提案）</a><span>地方債協会</span></li>
+        <li><a href="https://www.setsuyaku-lifeplan.com/asset/4394/" target="_blank" rel="noopener">BIS規制と含み益45%の算入</a><span>節約ライフプラン</span></li>
+        <li><a href="https://www.sn-hoki.co.jp/article/tamasters/tamaster1630795/" target="_blank" rel="noopener">バブル期の土地税制改革−資産課税の観点から−</a><span>週刊T&amp;A master（新日本法規）</span></li>
+        <li><a href="https://www.nikkei.com/article/DGKDZO56526170S3A620C1TY8000/" target="_blank" rel="noopener">ソニー、米コロンビア買収（1989年）</a><span>日本経済新聞</span></li>
+        <li><a href="https://ja.wikipedia.org/wiki/%E9%BD%8A%E8%97%A4%E4%BA%86%E8%8B%B1" target="_blank" rel="noopener">齊藤了英（1990年の絵画落札）</a><span>Wikipedia</span></li>
+        <li><a href="https://ebhsoc.org/journal/index.php/ebhs/article/download/272/253/541" target="_blank" rel="noopener">A Competitiveness Analysis of the US-Japan Trade Relations, 1985–1995</a><span>Essays in Economic &amp; Business History（英語）</span></li>
+        <li><a href="https://www.dir.co.jp/report/column/20240318_012085.html" target="_blank" rel="noopener">土地を持っているのは誰か</a><span>大和総研（2024年の株価最高値更新ほか）</span></li>
+      </ul>
+    </section>
+
+    <section class="block" id="changelog" aria-labelledby="log-title">
+      <p class="reading-label">版の記録</p>
+      <div class="block-head"><h2 id="log-title">更新履歴</h2><span>旧版はそのまま公開しています</span></div>
+      <ol class="log">
+        <li><span class="log-ver">v0.5</span><time datetime="2026-09-17">2026年9月17日</time><p>WASANサイトと同じAI NOBORUの出典表示を追加し、英語版への導線を明示しました。あわせて検索エンジン向けの基本メタ情報と構造化データを補強し、日本語版を最終校正しました。本文の主張、年次データ、計算結果は変更していません。</p></li>
+        <li><span class="log-ver">v0.4</span><time datetime="2026-09-17">2026.09.17</time><p>公開前の全文校正版。日本語全体を再点検し、旧版の版表示、対象期間の残存表記、AI NOBORUの綴り、読みづらい表現を修正。日本語版から英語版 v0.2 への導線を追加し、日英を相互リンクしました。主張・数値・図表データは変更していません。</p></li>
+        <li><span class="log-ver">v0.3</span><time datetime="2026-09-17">2026.09.17</time><p>海外発信に向けた完成版。参考にした映像作品の説明と、それとの照合（検証表・判定）を削除し、本サイトの記述に一本化。場面・拾（2026年まで続いた停滞と回復）を追加し、年表・図を最新値（株価2026年9月16日、地価2026年3月末、為替2026年8月、金利2026年6月）まで延長。</p></li>
+        <li><span class="log-ver">v0.2</span><time datetime="2026-09-17">2026.09.17</time><p>サイトの主張（席巻・慢心・外圧と引き締め）を冒頭に置き、崩壊までの9段階の因果の連鎖と、根拠の強さの表示を追加。証拠A（1989年の時価総額上位50社）と証拠B（東京の土地と米国全土）を追加。日米構造協議の土地税制要求、BIS規制の含み益ルール、地価税の決定時期を追記し、「東京23区＝米国全土」など3件の判定を更新。</p></li>
+        <li><span class="log-ver">v0.1</span><time datetime="2026-09-17">2026.09.17</time><p>1985〜2005年を9つの場面に分け、一次資料の数字で整理した初版。公開後、場面・陸（拘束旅行・海外旅行ブーム）の記述を修正。<a href="archive/v0.1.html">v0.1 を開く ↗</a></p></li>
+      </ol>
+    </section>
+
+    <div class="reading-next"><span>主張に戻る</span><a href="#thesis">世界を席巻した日本は、なぜ崩れたか</a></div>
+  </main>
+</div>
+
+<footer>
+  <span class="fname">バブル 読解室 <span class="ver">v0.5</span></span>
+  <p>数字は一次資料で確かめ、事実と本サイトの解釈を区別して示しています。最新値は2026年9月17日時点。</p>
+  <span><a href="https://www.aiofonesown.com/" target="_blank" rel="noopener">AI NOBORU</a></span>
+</footer>
+
+<dialog id="help-dialog" aria-labelledby="help-title">
+  <div class="dialog-head"><h2 id="help-title">この読解室の読み方</h2><button class="quiet" id="close-help" type="button" aria-label="閉じる">✕</button></div>
+  <div class="dialog-body">
+    <ol>
+      <li>「年を置く」で年と指標を選ぶと、その年の数字と推移の図が変わります。</li>
+      <li>「この年の場面を読む」で、その年を扱う場面へ移動します。</li>
+      <li>冒頭の「因果の連鎖」では、段階ごとに根拠の強さ（確認済み・状況証拠・本サイトの解釈）を示しています。</li>
+      <li>10の場面で、1985年から2026年までの出来事と数字を順に読めます。</li>
+    </ol>
+    <p>計算機は仕組みをつかむための簡易計算で、実際の取引条件は反映していません。</p>
+  </div>
+</dialog>
+<div class="toast" id="toast" role="status"></div>
+
+<script>
+(function(){
+'use strict';
+var NS='http://www.w3.org/2000/svg';
+var reduceMotion=false;
+try{reduceMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches;}catch(e){}
+
+/* ---------- data (primary sources) ---------- */
+var YEARS=[];for(var y=1984;y<=2026;y++)YEARS.push(y);
+// 日経平均 年末終値（日本経済新聞社）
+var NIKKEI=[11542.60,13113.32,18701.30,21564.00,30159.00,38915.87,23848.71,22983.77,16924.95,17417.24,19723.06,19868.15,19361.35,15258.74,13842.17,18934.34,13785.69,10542.62,8578.95,10676.64,11488.76,16111.43,17225.83,15307.78,8859.56,10546.44,10228.92,8455.35,10395.18,16291.31,17450.77,19033.71,19114.37,22764.94,20014.77,23656.62,27444.17,28791.71,26094.50,33464.17,39894.54,50339.48,63923.00];
+// 市街地価格指数 商業地（各年3月末, 2000年=100）日本不動産研究所／日本統計年鑑
+var LAND6=[113.9,128.9,166.1,222.2,315.0,394.0,502.9,519.4,440.2,341.4,278.3,210.8,166.6,143.2,128.9,114.1,100,89.6,80.3,73.2,68.9,68.4,75.6,90.5,101.3,86.5,76.2,72.6,71.2,71.4,73.8,76.9,81.2,85.5,90.9,99.3,107.3,105.8,106.3,109.4,114.8,121.2,128.9];
+var LANDJ=[104.9,108.1,112.5,121.3,137.5,151.3,175.4,195.5,191.6,177.1,163.9,152.8,140.1,128.9,120.0,110.2,100,90.5,81.2,72.6,65.1,59.7,56.4,55.2,54.8,52.2,49.4,47.1,45.3,44.0,43.2,42.8,42.6,42.6,42.8,43.3,43.9,43.5,43.4,43.8,44.5,45.5,46.6];
+// 東京市場 ドル円 年平均（日本銀行 FXERM07 月中平均の単純平均）
+var FX=[237.53,238.53,168.52,144.60,128.13,137.98,144.81,134.51,126.67,111.18,102.22,94.05,108.77,121.02,130.89,113.85,107.74,121.52,125.28,115.92,108.16,110.15,116.28,117.77,103.33,93.53,87.77,79.78,79.79,97.60,105.84,121.02,108.84,112.16,110.40,109.01,106.78,109.78,131.37,140.51,151.50,149.65,158.78];
+// 公定歩合 年末時点（日本銀行）
+var RATE=[5.0,5.0,3.0,2.5,2.5,4.25,6.0,4.5,3.25,1.75,1.75,0.5,0.5,0.5,0.5,0.5,0.5,0.1,0.1,0.1,0.1,0.1,0.4,0.75,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.5,1.0,1.25];
+// ドル円 月平均 1984/01–1988/12（日本銀行）
+var FXM=[233.95,233.67,225.52,224.95,230.67,233.29,242.72,242.24,245.19,246.89,243.29,247.96,254.11,260.34,258.43,251.67,251.57,248.95,241.7,237.2,236.91,214.84,203.85,202.75,200.05,184.62,178.83,175.56,166.89,167.82,158.65,154.11,154.78,156.04,162.72,162.13,154.48,153.49,151.56,142.96,140.47,144.52,150.2,147.57,143.03,143.48,135.25,128.25,127.44,129.26,127.23,124.88,124.74,127.2,133.1,133.63,134.45,128.85,123.16,123.63];
+// 公定歩合 変更日（日本銀行）
+var RATE_CHG=[['1979-11-02',6.25],['1980-02-19',7.25],['1980-03-19',9.00],['1980-08-20',8.25],['1980-11-06',7.25],['1981-03-18',6.25],['1981-12-11',5.50],['1983-10-22',5.00],['1986-01-30',4.50],['1986-03-10',4.00],['1986-04-21',3.50],['1986-11-01',3.00],['1987-02-23',2.50],['1989-05-31',3.25],['1989-10-11',3.75],['1989-12-25',4.25],['1990-03-20',5.25],['1990-08-30',6.00],['1991-07-01',5.50],['1991-11-14',5.00],['1991-12-30',4.50],['1992-04-01',3.75],['1992-07-27',3.25],['1993-02-04',2.50],['1993-09-21',1.75],['1995-04-14',1.00],['1995-09-08',0.50]];
+
+var EVENTS={
+1984:'ドル高が続き、米国の対日貿易赤字が政治問題になる。',
+1985:'9月22日、G5がプラザ合意。年末までに円は1ドル＝200円台前半へ。',
+1986:'円高不況。公定歩合は1月から段階的に下げられ、12月に景気の拡大（のちのバブル景気）が始まる。',
+1987:'2月に公定歩合2.5%。10月にブラックマンデー。12月の月平均は1ドル＝128円台。',
+1988:'7月にバーゼル合意（BIS規制）が成立。大都市の地価上昇が加速する。',
+1989:'5月から利上げが始まる。12月29日、日経平均が年末終値で38,915.87円。',
+1990:'3月27日に総量規制を通達、8月には公定歩合6%。株価は1年で約39%下落。',
+1991:'2月に景気の山。大都市の商業地価格は3月末が頂点。12月に総量規制を解除。',
+1992:'1月に地価税を施行。地価の下落が本格化する。',
+1993:'3月末にBIS規制が本格適用。10月に景気の谷。',
+1994:'「就職氷河期」が新語・流行語大賞の審査員特選造語賞に。',
+1995:'4月の月平均で1ドル＝83円台の円高。公定歩合は9月に0.5%へ。',
+1996:'地価税の税率が0.3%から0.15%に下がる。',
+1997:'11月、三洋証券・北海道拓殖銀行・山一證券が相次いで破綻・廃業。',
+1998:'日本長期信用銀行と日本債券信用銀行が破綻。地価税の課税が停止される。',
+1999:'株価は年末に18,934円まで戻すが、地価の下落は続く。',
+2000:'大卒求人倍率（2000年卒）が0.99倍と、初めて1倍を下回る。',
+2001:'9月に公定歩合0.1%。日経平均の年末終値は1万円台に。',
+2002:'日経平均の年末終値が8,578.95円まで下がる。',
+2003:'大卒の就職率が55.1%まで落ち込む。',
+2004:'大都市の商業地価格指数は68.9と、頂点の約13%。',
+2005:'大都市の商業地価格指数が68.4で底を打ち、翌年から上昇に転じる。',
+2006:'7月にゼロ金利を解除し、基準貸付利率を0.4%に。',
+2007:'2月に基準貸付利率0.75%。株価は年末にかけて下落する。',
+2008:'9月のリーマン・ショックで、株価は年末に8,859円まで下落。',
+2009:'世界的な景気後退のなか、株価は年末に1万円台を回復。',
+2010:'大都市の商業地価格指数は76.2と、頂点の約15%。',
+2011:'3月に東日本大震災。円相場は年平均79.78円の超円高に。',
+2012:'年末から、政権交代による金融緩和への期待で株高・円安が始まる。',
+2013:'4月に日銀が量的・質的金融緩和を開始。株価は1年で約57%上昇。',
+2014:'10月に日銀が追加緩和。株価は年末に1万7千円台。',
+2015:'株価は年末に1万9千円台。円相場は年平均121円台の円安。',
+2016:'2月にマイナス金利政策が始まる。',
+2017:'大都市の商業地価格の回復が続き、指数は85.5に。',
+2018:'株価は年末に2万円台前半へ下落。',
+2019:'10月に消費税率が10%に上がる。',
+2020:'新型コロナウイルスの感染拡大。大都市の地価の上昇が止まる。',
+2021:'株価は年末に2万8千円台。地価は横ばい。',
+2022:'円安が進み、円相場は年平均131円台に。',
+2023:'日本の名目GDPがドイツに抜かれ、世界4位に下がる。',
+2024:'2月に株価が34年ぶりに1989年末の終値を上回る。3月にマイナス金利を解除。',
+2025:'株価は年末終値で5万円台に。12月に基準貸付利率が1.0%へ。',
+2026:'6月に日銀が政策金利を1.0%へ引き上げ（31年ぶり）、株価は初めて終値で7万円台に。9月16日の終値は63,923円。大都市の商業地価格は3月末に1985年と同じ水準へ。'
+};
+
+var METRICS={
+  nikkei:{short:'株価',label:'日経平均（年末終値）',unit:'円',data:NIKKEI,dec:2,src:'出典：日本経済新聞社',marks:{1985:'合意',1989:'株価の頂点',1997:'金融危機',2008:'リーマン',2024:'株価が回復'}},
+  land:{short:'地価',label:'六大都市 商業地価格指数（3月末）',unit:'',data:LAND6,dec:1,src:'出典：日本不動産研究所（日本統計年鑑）',marks:{1985:'合意',1989:'株価の頂点',1997:'金融危機',2008:'リーマン',2024:'株価が回復'}},
+  fx:{short:'為替',label:'ドル円（年平均）',unit:'円',data:FX,dec:2,src:'出典：日本銀行',marks:{1985:'合意',1989:'株価の頂点',1997:'金融危機',2008:'リーマン',2024:'株価が回復'}},
+  rate:{short:'金利',label:'公定歩合・基準貸付利率（年末時点）',unit:'%',data:RATE,dec:2,step:true,src:'出典：日本銀行',marks:{1985:'合意',1989:'株価の頂点',1997:'金融危機',2008:'リーマン',2024:'株価が回復'}}
+};
+
+/* ---------- helpers ---------- */
+function el(tag,attrs,parent,text){var n=document.createElementNS(NS,tag);if(attrs){for(var k in attrs){n.setAttribute(k,attrs[k]);}}if(text!=null)n.textContent=text;if(parent)parent.appendChild(n);return n;}
+function fmt(v,dec){return Number(v).toLocaleString('ja-JP',{minimumFractionDigits:dec,maximumFractionDigits:dec});}
+function niceTicks(min,max,count){var span=max-min;var step=Math.pow(10,Math.floor(Math.log10(span/count)));var err=span/count/step;if(err>=7.5)step*=10;else if(err>=3.5)step*=5;else if(err>=1.5)step*=2;var lo=Math.floor(min/step)*step,hi=Math.ceil(max/step)*step,t=[];for(var v=lo;v<=hi+1e-9;v+=step)t.push(+v.toFixed(6));return t;}
+function widthOf(node){var w=node.clientWidth;var cs=getComputedStyle(node);w-=parseFloat(cs.paddingLeft)+parseFloat(cs.paddingRight);return Math.max(280,Math.round(w));}
+function clear(node){while(node.firstChild)node.removeChild(node.firstChild);}
+var renderers=[];
+function register(fn){renderers.push(fn);fn();}
+var rt;window.addEventListener('resize',function(){clearTimeout(rt);rt=setTimeout(function(){renderers.forEach(function(f){f();});},120);});
+
+/* generic line chart */
+function lineChart(host,o){
+  clear(host);
+  var W=widthOf(host),narrow=W<460;
+  var H=o.height||(narrow?250:300);
+  var m={t:o.top||26,r:narrow?14:22,b:34,l:o.left||(narrow?44:54)};
+  var svg=el('svg',{viewBox:'0 0 '+W+' '+H,width:W,height:H},host);
+  var xs=o.x, x0=o.xMin!=null?o.xMin:xs[0], x1=o.xMax!=null?o.xMax:xs[xs.length-1];
+  var all=[];o.series.forEach(function(s){all=all.concat(s.v.filter(function(v){return v!=null;}));});
+  var yMin=o.yMin!=null?o.yMin:Math.min.apply(null,all), yMax=o.yMax!=null?o.yMax:Math.max.apply(null,all);
+  var ticks=niceTicks(yMin,yMax,narrow?4:5);yMin=Math.min(yMin,ticks[0]);yMax=Math.max(yMax,ticks[ticks.length-1]);
+  function X(v){return m.l+(v-x0)/(x1-x0)*(W-m.l-m.r);}
+  function Y(v){return H-m.b-(v-yMin)/(yMax-yMin)*(H-m.t-m.b);}
+  ticks.forEach(function(t){el('line',{x1:m.l,x2:W-m.r,y1:Y(t),y2:Y(t),'class':'grid'},svg);el('text',{x:m.l-8,y:Y(t)+4,'text-anchor':'end'},svg,o.yFmt?o.yFmt(t):fmt(t,0));});
+  (o.xTicks||[]).forEach(function(t){if(narrow&&t.skipNarrow)return;el('text',{x:X(t.v),y:H-m.b+20,'text-anchor':'middle'},svg,t.label);el('line',{x1:X(t.v),x2:X(t.v),y1:H-m.b,y2:H-m.b+5,'class':'axis'},svg);});
+  el('line',{x1:m.l,x2:W-m.r,y1:H-m.b,y2:H-m.b,'class':'axis'},svg);
+  if(o.hline!=null){el('line',{x1:m.l,x2:W-m.r,y1:Y(o.hline),y2:Y(o.hline),'class':'mark'},svg);}
+  (o.vmarks||[]).forEach(function(mk){var xx=X(mk.v);var show=!narrow||mk.always;var ly=m.t-6-(show?(mk.row||0)*14:0);
+    el('line',{x1:xx,x2:xx,y1:ly-4,y2:H-m.b,'class':'mark'},svg);el('circle',{cx:xx,cy:ly-4,r:3,'class':'mark-dot'},svg);
+    if(show){var tx=el('text',{x:xx+(mk.anchor==='end'?-6:6),y:ly,'text-anchor':mk.anchor||'start','class':'lbl-strong'},svg,mk.label);tx.style.fontSize='11px';}
+  });
+  var paths=[];
+  o.series.forEach(function(s){
+    var d='',first=true;
+    for(var i=0;i<xs.length;i++){var v=s.v[i];if(v==null){first=true;continue;}
+      if(s.step&&!first){d+='H'+X(xs[i]).toFixed(1)+'V'+Y(v).toFixed(1);}else{d+=(first?'M':'L')+X(xs[i]).toFixed(1)+','+Y(v).toFixed(1);}first=false;}
+    if(s.step&&s.stepEnd!=null){d+='H'+X(s.stepEnd).toFixed(1);}
+    if(s.area){var a=d+'L'+X(xs[xs.length-1]).toFixed(1)+','+(H-m.b)+'L'+X(xs[0]).toFixed(1)+','+(H-m.b)+'Z';el('path',{d:a,'class':'area'},svg);}
+    var p=el('path',{d:d,'class':s.cls||'s1','stroke-linejoin':'round','stroke-linecap':'round'},svg);paths.push(p);
+    if(s.dots){for(var j=0;j<xs.length;j++){if(s.v[j]==null)continue;el('circle',{cx:X(xs[j]),cy:Y(s.v[j]),r:3.2,'class':s.dotCls||'dot1'},svg);}}
+    if(s.endLabel){var li=s.v.length-1;el('text',{x:X(xs[li])-4,y:Y(s.v[li])-8,'text-anchor':'end','class':'lbl-strong'},svg,s.endLabel);}
+  });
+  (o.notes||[]).forEach(function(n){var t=el('text',{x:X(n.x)+(n.dx||0),y:Y(n.y)+(n.dy||0),'text-anchor':n.anchor||'middle','class':'lbl-strong'},svg,n.text);});
+  return {svg:svg,X:X,Y:Y,H:H,W:W,m:m,paths:paths};
+}
+
+/* ---------- hero lab ---------- */
+var state={year:1989,metric:'nikkei',drawn:false};
+var heroHost=document.getElementById('hero-chart');
+function renderHero(){
+  var M=METRICS[state.metric];
+  var marks=[];Object.keys(M.marks).forEach(function(k,i){marks.push({v:+k,label:M.marks[k],anchor:(+k>2015)?'end':'start',row:i%2});});
+  var c=lineChart(heroHost,{x:YEARS,series:[{v:M.data,cls:'s1',area:true,step:M.step,stepEnd:M.step?2005.5:null}],yMin:0,
+    yFmt:function(t){if(t===0)return '0';return state.metric==='nikkei'?(t/10000)+'万':fmt(t,0);},
+    xTicks:[1985,1995,2005,2015,2025].map(function(v){return {v:v,label:v};}),vmarks:marks,top:40});
+  // cursor
+  var i=YEARS.indexOf(state.year),cx=c.X(state.year),cy=c.Y(M.data[i]);
+  el('line',{x1:cx,x2:cx,y1:c.m.t,y2:c.H-c.m.b,'class':'cursor'},c.svg);
+  el('circle',{cx:cx,cy:cy,r:5.5,'class':'cursor-dot'},c.svg);
+  var lab=el('text',{x:cx+(state.year>2010?-9:9),y:Math.max(c.m.t+12,cy-10),'text-anchor':state.year>2010?'end':'start','class':'lbl-strong'},c.svg,(state.year===2026?'最新 ':state.year+'年  ')+fmt(M.data[i],M.dec)+M.unit);
+  lab.style.fontSize='12.5px';
+  // click targets per year
+  YEARS.forEach(function(yy){var w=(c.X(YEARS[YEARS.length-1])-c.X(YEARS[0]))/(YEARS.length-1);var r=el('rect',{x:c.X(yy)-w/2,y:c.m.t,width:w,height:c.H-c.m.t-c.m.b,'class':'hit'},c.svg);r.addEventListener('click',function(){setYear(yy);});
+    el('title',null,r,yy+'年');});
+  if(!state.drawn&&!reduceMotion&&c.paths[0]){var p=c.paths[0];var L=p.getTotalLength();p.style.setProperty('--len',L);p.classList.add('draw');}
+  state.drawn=true;
+}
+function updateHeroText(){
+  var M=METRICS[state.metric],i=YEARS.indexOf(state.year),v=M.data[i];
+  var latest=state.year===2026;
+  document.getElementById('year-out').textContent=state.year+(latest?'年（最新）':'年');
+  var LATEST={nikkei:'2026年9月16日の日経平均（終値）',land:'2026年3月末の六大都市 商業地価格指数（接続値）',fx:'2026年1〜8月のドル円（平均）',rate:'現在の基準貸付利率（政策金利は1.0%）'};
+  document.getElementById('ans-label').textContent=latest?LATEST[state.metric]:state.year+'年の'+M.label;
+  document.getElementById('ans-badge').textContent=latest?'最新値':'一次資料';
+  document.getElementById('ans-value').innerHTML=fmt(v,M.dec)+(M.unit?'<small>'+M.unit+'</small>':'');
+  var d='';
+  if(i>0){var p=M.data[i-1];
+    if(state.metric==='rate'){var diff=v-p;d='前年末から '+(diff>0?'+':diff<0?'−':'±')+fmt(Math.abs(diff),2)+'ポイント';}
+    else if(state.metric==='fx'){var pc=(v/p-1)*100;d='前年から '+(pc>0?'+':'−')+fmt(Math.abs(pc),1)+'%（'+(pc<0?'円高':'円安')+'方向）';}
+    else{var pc2=(v/p-1)*100;d=(state.year===2026?'2025年末から ':'前年から ')+(pc2>=0?'+':'−')+fmt(Math.abs(pc2),1)+'%';}
+  }else d='期間の起点';
+  var PEAK={nikkei:1989,land:1991};
+  if(PEAK[state.metric]){var pv=M.data[YEARS.indexOf(PEAK[state.metric])];d+='　／　バブル期の頂点（'+PEAK[state.metric]+'年）比 '+fmt(v/pv*100,1)+'%';}
+  document.getElementById('ans-detail').textContent=d+'。'+EVENTS[state.year];
+  var grid=document.getElementById('ans-grid');grid.innerHTML='';
+  Object.keys(METRICS).forEach(function(k){if(k===state.metric)return;var N=METRICS[k];var div=document.createElement('div');
+    div.innerHTML='<b>'+fmt(N.data[i],N.dec===2&&k!=='rate'?(k==='nikkei'?0:1):N.dec)+(N.unit==='円'?'円':N.unit)+'</b><span>'+N.short+'</span>';grid.appendChild(div);});
+  document.getElementById('ans-src').textContent=M.src;
+  document.getElementById('fig1-title').textContent='図で見る　'+M.label;
+  document.getElementById('hero-legend').textContent=M.label;
+  document.getElementById('hero-caption').textContent=state.year+'年：'+EVENTS[state.year]+'　グラフの年をクリックしても選べます。';
+  document.querySelectorAll('[data-year]').forEach(function(b){b.setAttribute('aria-pressed',String(+b.dataset.year===state.year));});
+}
+function setYear(y){state.year=y;document.getElementById('year-range').value=y;updateHeroText();renderHero();}
+document.getElementById('year-range').addEventListener('input',function(e){state.year=+e.target.value;updateHeroText();renderHero();});
+document.querySelectorAll('[data-year]').forEach(function(b){b.addEventListener('click',function(){setYear(+b.dataset.year);});});
+document.querySelectorAll('[data-metric]').forEach(function(b){b.addEventListener('click',function(){state.metric=b.dataset.metric;document.querySelectorAll('[data-metric]').forEach(function(x){x.setAttribute('aria-pressed',String(x===b));});updateHeroText();renderHero();});});
+function sceneFor(y){if(y<=1985)return 'c1';if(y===1986)return 'c2';if(y===1987)return 'c3';if(y===1988)return 'c4';if(y===1989)return 'c5';if(y<=1992)return 'c7';if(y<=1998)return 'c8';if(y<=2004)return 'c9';return 'c10';}
+document.getElementById('go-scene').addEventListener('click',function(){var id=sceneFor(state.year);var t=document.getElementById(id);t.scrollIntoView({behavior:reduceMotion?'auto':'smooth'});history.replaceState(null,'','#'+id);});
+function toast(msg){var t=document.getElementById('toast');t.textContent=msg;t.classList.add('show');setTimeout(function(){t.classList.remove('show');},1800);}
+document.getElementById('copy-btn').addEventListener('click',function(){
+  var txt=document.getElementById('ans-label').textContent+'：'+document.getElementById('ans-value').textContent+'（'+document.getElementById('ans-src').textContent.replace('出典：','')+'）';
+  try{navigator.clipboard.writeText(txt).then(function(){toast('コピーしました');},function(){toast('コピーできませんでした');});}catch(e){toast('コピーできませんでした');}
+});
+updateHeroText();register(renderHero);
+
+
+/* ---------- FIG 02 monthly fx ---------- */
+var fxHost=document.getElementById('fx-monthly');
+register(function(){
+  var xs=FXM.map(function(_,i){return 1984+i/12;});
+  lineChart(fxHost,{x:xs,series:[{v:FXM,cls:'s1',area:true}],yMin:100,yMax:275,xMin:1984,xMax:1989,
+    xTicks:[1984,1985,1986,1987,1988,1989].map(function(v){return {v:v,label:v+'年'};}),
+    yFmt:function(t){return t+'円';},
+    vmarks:[{v:1985+8.7/12,label:'1985.9 プラザ合意',always:true},{v:1987+11.5/12,label:'1987.12 128円',anchor:'end',row:1}],top:40});
+});
+
+/* ---------- FIG 03 car price ---------- */
+var carHost=document.getElementById('car-chart');
+function carUpdate(){
+  var man=Math.max(0,+document.getElementById('car-price').value||0);
+  var r=+document.getElementById('fx-range').value;
+  document.getElementById('fx-out').textContent=fmt(r,1)+'円';
+  var yen=man*10000,usd=yen/r,base=yen/238.5;
+  document.getElementById('car-usd').textContent='$'+fmt(Math.round(usd),0);
+  var up=(usd/base-1)*100;
+  document.getElementById('car-detail').textContent='1985年平均（238.5円）なら $'+fmt(Math.round(base),0)+'。同じ円の手取りを保つには '+(up>=0?fmt(up,1)+'% の値上げ':fmt(-up,1)+'% の値下げ余地')+'。値上げしないと、円の手取りは '+fmt(base*r/10000,1)+'万円に。';
+  document.querySelectorAll('[data-fx]').forEach(function(b){b.setAttribute('aria-pressed',String(Math.abs(+b.dataset.fx-r)<0.05));});
+  renderCar(base,usd,r);
+}
+function renderCar(base,usd,r){
+  clear(carHost);var W=widthOf(carHost),H=W<460?240:290,m={l:14,r:14,t:30,b:40};
+  var svg=el('svg',{viewBox:'0 0 '+W+' '+H,width:W,height:H},carHost);
+  var max=Math.max(base,usd)*1.15||1;var bw=Math.min(110,(W-m.l-m.r)/4);
+  var cols=[{v:base,label:'1985年平均 238.5円',cls:'bar-alt'},{v:usd,label:'選んだレート '+fmt(r,1)+'円',cls:'bar-hot'}];
+  cols.forEach(function(c,i){var cx=m.l+(W-m.l-m.r)*(i*2+1)/4;var h=(c.v/max)*(H-m.t-m.b);
+    el('rect',{x:cx-bw/2,y:H-m.b-h,width:bw,height:h,'class':c.cls,rx:2},svg);
+    var t=el('text',{x:cx,y:H-m.b-h-8,'text-anchor':'middle','class':'lbl-strong'},svg,'$'+fmt(Math.round(c.v),0));t.style.fontSize='14px';
+    el('text',{x:cx,y:H-m.b+20,'text-anchor':'middle'},svg,c.label);});
+  el('line',{x1:m.l,x2:W-m.r,y1:H-m.b,y2:H-m.b,'class':'axis'},svg);
+}
+['car-price','fx-range'].forEach(function(id){document.getElementById(id).addEventListener('input',carUpdate);});
+document.querySelectorAll('[data-fx]').forEach(function(b){b.addEventListener('click',function(){document.getElementById('fx-range').value=b.dataset.fx;carUpdate();});});
+register(carUpdate);
+
+/* ---------- FIG 04 rate step ---------- */
+function decYear(s){var p=s.split('-');var d=new Date(+p[0],+p[1]-1,+p[2]);var st=new Date(+p[0],0,1),en=new Date(+p[0]+1,0,1);return +p[0]+(d-st)/(en-st);}
+var rateHost=document.getElementById('rate-step');
+register(function(){
+  var xs=[1980],vs=[6.25];
+  RATE_CHG.forEach(function(r){var dy=decYear(r[0]);if(dy<1980)return;xs.push(dy);vs.push(r[1]);});
+  lineChart(rateHost,{x:xs,series:[{v:vs,cls:'s1',step:true,stepEnd:1996,area:false}],yMin:0,yMax:10,xMin:1980,xMax:1996,
+    xTicks:[1980,1984,1988,1992,1996].map(function(v){return {v:v,label:v};}),yFmt:function(t){return t+'%';},
+    vmarks:[{v:decYear('1987-02-23'),label:'2.5%',always:true},{v:decYear('1990-08-30'),label:'6.0%',always:true,row:1}],top:40});
+});
+(function(){var tb=document.querySelector('#rate-table tbody');RATE_CHG.forEach(function(r){var tr=document.createElement('tr');if(r[0]==='1987-02-23'||r[0]==='1990-08-30')tr.className='peak';var p=r[0].split('-');tr.innerHTML='<td>'+p[0]+'年'+(+p[1])+'月'+(+p[2])+'日</td><td class="n">'+fmt(r[1],2)+'%</td>';tb.appendChild(tr);});})();
+
+/* interest calc */
+function intUpdate(){
+  var loan=Math.max(0,+document.getElementById('loan').value||0);var a=+document.getElementById('rate-a').value,b=+document.getElementById('rate-b').value;
+  document.getElementById('rate-a-out').textContent=fmt(a,2)+'%';document.getElementById('rate-b-out').textContent=fmt(b,2)+'%';
+  var ia=loan*1e8*a/100,ib=loan*1e8*b/100,diff=ia-ib;
+  document.getElementById('int-diff').innerHTML=(diff<0?'−':'')+fmt(Math.abs(diff)/1e4,0)+'<small>万円</small>';
+  document.getElementById('int-detail').textContent='年間の利息は '+fmt(ia/1e4,0)+'万円 → '+fmt(ib/1e4,0)+'万円。同じ利息負担で借りられる額は '+(b>0?fmt(a/b,2)+'倍':'理論上は上限なし')+'になります。';
+}
+['loan','rate-a','rate-b'].forEach(function(id){document.getElementById(id).addEventListener('input',intUpdate);});intUpdate();
+
+/* ---------- FIG 05 loop ---------- */
+var loopHost=document.getElementById('loop');
+register(function(){
+  clear(loopHost);var W=widthOf(loopHost),narrow=W<620;
+  var nodes=[{t:'地価が上がる',s:'「土地は下がらない」'},{t:'担保価値が増える',s:'同じ土地で多く借りられる'},{t:'銀行が貸し増す',s:'不動産・ノンバンクへ'},{t:'土地や株を買う',s:'財テク・転売'}];
+  var H=narrow?300:300;
+  var svg=el('svg',{viewBox:'0 0 '+W+' '+H,width:W,height:H,'class':'loop'},loopHost);
+  var defs=el('defs',null,svg);var mk=el('marker',{id:'ah',viewBox:'0 0 10 10',refX:'8',refY:'5',markerWidth:'7',markerHeight:'7',orient:'auto-start-reverse'},defs);el('path',{d:'M0,0L10,5L0,10z','class':'arrow'},mk);
+  var bw,bh=54,P,cx=W/2,cy=H/2;
+  if(narrow){
+    bw=Math.min(158,(W-24)/2);var gx=(W-bw*2)/3;var lx=gx+bw/2,rx2=W-gx-bw/2,ty=62,by=H-62;
+    P=[[lx,ty],[rx2,ty],[rx2,by],[lx,by]];
+    var e=6;
+    el('path',{d:'M'+(lx+bw/2+e)+','+ty+'H'+(rx2-bw/2-e),'class':'arc','marker-end':'url(#ah)'},svg);
+    el('path',{d:'M'+rx2+','+(ty+bh/2+e)+'V'+(by-bh/2-e),'class':'arc','marker-end':'url(#ah)'},svg);
+    el('path',{d:'M'+(rx2-bw/2-e)+','+by+'H'+(lx+bw/2+e),'class':'arc','marker-end':'url(#ah)'},svg);
+    el('path',{d:'M'+lx+','+(by-bh/2-e)+'V'+(ty+bh/2+e),'class':'arc','marker-end':'url(#ah)'},svg);
+  }else{
+    bw=196;var rx=Math.min(W*0.34,270),ry=96;
+    var ang=[-90,0,90,180];P=ang.map(function(a){var r=a*Math.PI/180;return [cx+rx*Math.cos(r),cy+ry*Math.sin(r)];});
+    function pt(a){var r=a*Math.PI/180;return [cx+rx*Math.cos(r),cy+ry*Math.sin(r)];}
+    for(var i=0;i<4;i++){var a0=ang[i]+30,a1=ang[(i+1)%4]-30+(i===3?360:0);var p0=pt(a0),p1=pt(a1);
+      el('path',{d:'M'+p0[0].toFixed(1)+','+p0[1].toFixed(1)+' A'+rx+','+ry+' 0 0 1 '+p1[0].toFixed(1)+','+p1[1].toFixed(1),'class':'arc','marker-end':'url(#ah)'},svg);}
+  }
+  el('text',{x:cx,y:cy-4,'text-anchor':'middle','class':'center'},svg,'自己強化の');
+  el('text',{x:cx,y:cy+18,'text-anchor':'middle','class':'center'},svg,'ループ');
+  nodes.forEach(function(n,i){var p=P[i];var g=el('g',null,svg);
+    el('rect',{x:p[0]-bw/2,y:p[1]-bh/2,width:bw,height:bh,rx:4,'class':'node'},g);
+    el('text',{x:p[0]-bw/2+11,y:p[1]-3,'class':'num'},g,String(i+1));
+    var t=el('text',{x:p[0]-bw/2+26,y:p[1]-3},g,n.t);t.style.fontWeight='600';if(narrow)t.style.fontSize='12px';
+    var s2=el('text',{x:p[0]-bw/2+26,y:p[1]+15},g,n.s);s2.style.fontSize=narrow?'9.5px':'11.5px';s2.style.fill='var(--muted)';});
+});
+
+/* ---------- FIG 06 land ---------- */
+var landHost=document.getElementById('land-chart');
+register(function(){
+  lineChart(landHost,{x:YEARS,series:[{v:LAND6,cls:'s1',area:true},{v:LANDJ,cls:'s2'}],yMin:0,yMax:560,
+    xTicks:[1985,1995,2005,2015,2025].map(function(v){return {v:v,label:v};}),
+    notes:[{x:1991,y:519.4,text:'519.4（1991）',dy:-10},{x:1985,y:128.9,text:'128.9（1985）',dy:26,anchor:'start',dx:6},{x:2026,y:128.9,text:'128.9（2026）',dy:-12,anchor:'end'}]});
+});
+(function(){var tb=document.querySelector('#land-table tbody');YEARS.forEach(function(y,i){var tr=document.createElement('tr');if(y===1991)tr.className='peak';tr.innerHTML='<td>'+y+'</td><td class="n">'+fmt(LAND6[i],1)+'</td><td class="n">'+fmt(LANDJ[i],1)+'</td>';tb.appendChild(tr);});})();
+
+/* ---------- FIG 07 squares ---------- */
+var sqHost=document.getElementById('squares');
+register(function(){
+  clear(sqHost);var W=widthOf(sqHost);var half=W/2,base=Math.min(half-30,190);var H=40+base*0.82+46;var svg=el('svg',{viewBox:'0 0 '+W+' '+H,width:W,height:H},sqHost);
+  // area: US 983 / JP 37.8 ~ 26x
+  var usS=base*0.82,jpS=usS/Math.sqrt(983/37.8);
+  var y0=40;
+  el('text',{x:half/2,y:20,'text-anchor':'middle','class':'lbl-strong'},svg,'国土の広さ');
+  el('rect',{x:half/2-usS/2,y:y0,width:usS,height:usS,'class':'sq-us-fill'},svg);
+  el('rect',{x:half/2-usS/2,y:y0,width:usS,height:usS,'class':'sq-us'},svg);
+  el('rect',{x:half/2-usS/2+6,y:y0+usS-jpS-6,width:jpS,height:jpS,'class':'sq-jp'},svg);
+  el('text',{x:half/2,y:y0+usS/2,'text-anchor':'middle'},svg,'米国 1');
+  el('text',{x:half/2-usS/2+jpS+12,y:y0+usS-10},svg,'日本 約1/26');
+  // value: JP 4 vs US 1
+  var jv=usS,uv=jv/2;
+  el('text',{x:half+half/2,y:20,'text-anchor':'middle','class':'lbl-strong'},svg,'土地の評価額（当時の言説）');
+  el('rect',{x:half+half/2-jv/2,y:y0,width:jv,height:jv,'class':'sq-jp',opacity:.9},svg);
+  el('rect',{x:half+half/2-jv/2+6,y:y0+jv-uv-6,width:uv,height:uv,'class':'sq-us-fill'},svg);
+  el('rect',{x:half+half/2-jv/2+6,y:y0+jv-uv-6,width:uv,height:uv,'class':'sq-us'},svg);
+  var t1=el('text',{x:half+half/2+jv/4,y:y0+22,'text-anchor':'middle'},svg,'日本 約4');t1.style.fill='#fff';t1.style.fontWeight='600';
+  var t2=el('text',{x:half+half/2-jv/2+6+uv/2,y:y0+jv-uv/2-2,'text-anchor':'middle'},svg,'米国 1');t2.style.fill='var(--ink)';
+  el('line',{x1:half,x2:half,y1:30,y2:y0+usS,'class':'grid'},svg);
+  el('text',{x:W/2,y:H-10,'text-anchor':'middle'},svg,'1/26 の広さで、約4倍の値段');
+});
+
+/* ---------- FIG 08 seller market pictogram ---------- */
+var sellerHost=document.getElementById('seller');
+register(function(){
+  clear(sellerHost);var W=widthOf(sellerHost);var rows=[{n:84.04,label:'求人総数 84万400人',cls:'bar-hot'},{n:29.38,label:'就職希望者 29万3,800人',cls:'bar'}];
+  var cell=W<520?11:16,gap=3,labelW=W<520?0:176,cols=Math.floor((W-labelW)/(cell+gap));cols=Math.min(cols,W<520?40:43);
+  var y=10,svgH=0;rows.forEach(function(r){var full=Math.round(r.n);svgH+=(W<520?22:0)+Math.ceil(full/cols)*(cell+gap)+18;});
+  var svg=el('svg',{viewBox:'0 0 '+W+' '+(svgH+10),width:W,height:svgH+10},sellerHost);
+  rows.forEach(function(r){var full=Math.round(r.n);var x0=labelW;
+    if(W<520){el('text',{x:0,y:y+12,'class':'lbl-strong'},svg,r.label);y+=22;}else{var lt=el('text',{x:0,y:y+13,'class':'lbl-strong'},svg,r.label);lt.style.fontSize='13px';}
+    for(var i=0;i<full;i++){var cx=x0+(i%cols)*(cell+gap),cy=y+Math.floor(i/cols)*(cell+gap);el('rect',{x:cx,y:cy,width:cell,height:cell,rx:1.5,'class':r.cls},svg);}
+    y+=Math.ceil(full/cols)*(cell+gap)+18;});
+});
+
+/* ---------- FIG 09 travel ---------- */
+var travelHost=document.getElementById('travel');
+var TRAVEL=[[1984,465.9],[1985,494.8],[1986,551.6],[1987,682.9],[1988,842.7],[1989,966.3],[1990,1099.7],[1991,1063.4],[1992,1179.1]];
+register(function(){
+  clear(travelHost);var W=widthOf(travelHost),narrow=W<460,H=narrow?240:280,m={l:narrow?42:52,r:10,t:26,b:34};
+  var svg=el('svg',{viewBox:'0 0 '+W+' '+H,width:W,height:H},travelHost);
+  function Y(v){return H-m.b-v/1300*(H-m.t-m.b);}
+  [0,400,800,1200].forEach(function(t){el('line',{x1:m.l,x2:W-m.r,y1:Y(t),y2:Y(t),'class':'grid'},svg);el('text',{x:m.l-8,y:Y(t)+4,'text-anchor':'end'},svg,t+'万');});
+  var slot=(W-m.l-m.r)/TRAVEL.length,bw=Math.min(40,slot*0.62);
+  TRAVEL.forEach(function(d,i){var cx=m.l+slot*(i+.5);var cls=d[0]===1985?'bar-alt':(d[0]===1990?'bar-hot':'bar');
+    el('rect',{x:cx-bw/2,y:Y(d[1]),width:bw,height:H-m.b-Y(d[1]),rx:2,'class':cls},svg);
+    if(!narrow||d[0]===1985||d[0]===1990){var t=el('text',{x:cx,y:Y(d[1])-7,'text-anchor':'middle','class':'lbl-strong'},svg,fmt(Math.round(d[1]),0));t.style.fontSize=narrow?'10px':'11.5px';}
+    el('text',{x:cx,y:H-m.b+20,'text-anchor':'middle'},svg,narrow?("'"+String(d[0]).slice(2)):String(d[0]));});
+  el('line',{x1:m.l,x2:W-m.r,y1:H-m.b,y2:H-m.b,'class':'axis'},svg);
+});
+
+/* ---------- FIG 10 brake timeline ---------- */
+var brakeHost=document.getElementById('brake');
+register(function(){
+  var nk=[[1988.99,30159.00],[1989.99,38915.87],[1990.99,23848.71],[1991.99,22983.77],[1992.99,16924.95],[1993.99,17417.24]];
+  var ld=[[1989.25,394.0],[1990.25,502.9],[1991.25,519.4],[1992.25,440.2],[1993.25,341.4],[1994.25,278.3]];
+  var c=lineChart(brakeHost,{x:nk.map(function(p){return p[0];}),series:[{v:nk.map(function(p){return p[1]/38915.87*100;}),cls:'s1',dots:true,dotCls:'dot1'}],yMin:0,yMax:110,xMin:1988.8,xMax:1994.4,
+    xTicks:[1989,1990,1991,1992,1993,1994].map(function(v){return {v:v,label:v};}),yFmt:function(t){return t;},top:70,height:W_(brakeHost)<460?300:320,
+    vmarks:[{v:decYear('1989-05-31'),label:'利上げ開始',row:0},{v:decYear('1990-03-27'),label:'総量規制',row:1},{v:decYear('1990-08-30'),label:'公定歩合6%',row:2},{v:decYear('1991-12-26'),label:'規制解除',row:0,anchor:'end'},{v:decYear('1992-01-01'),label:'地価税',row:0},{v:decYear('1993-03-31'),label:'BIS本格適用',row:2}]});
+  // second series manually
+  var d='';ld.forEach(function(p,i){d+=(i?'L':'M')+c.X(p[0]).toFixed(1)+','+c.Y(p[1]/519.4*100).toFixed(1);});
+  el('path',{d:d,'class':'s2'},c.svg);ld.forEach(function(p){el('circle',{cx:c.X(p[0]),cy:c.Y(p[1]/519.4*100),r:3.2,'class':'dot2'},c.svg);});
+  // on narrow, labels hidden by lineChart; add numeric keys
+  if(c.W<460){var names=['利上げ','総量','6%','解除','地価税','BIS'];[decYear('1989-05-31'),decYear('1990-03-27'),decYear('1990-08-30'),decYear('1991-12-26'),decYear('1992-01-01'),decYear('1993-03-31')].forEach(function(v,i){var t=el('text',{x:c.X(v)+(i===4?4:-3),y:c.m.t-12-(i%3)*13,'text-anchor':i===4?'start':'end','class':'lbl-strong'},c.svg,names[i]);t.style.fontSize='10px';});}
+  var t=el('text',{x:c.X(1989.99),y:c.Y(100)-10,'text-anchor':'middle','class':'lbl-strong'},c.svg,'株価の頂点');t.style.fontSize='11px';
+  var t2=el('text',{x:c.X(1991.25),y:c.Y(100)-10,'text-anchor':'middle','class':'lbl-strong'},c.svg,'地価の頂点');t2.style.fontSize='11px';
+});
+function W_(n){return widthOf(n);}
+
+/* ---------- FIG 10 crash + collateral ---------- */
+var crashHost=document.getElementById('crash');
+register(function(){
+  var n=NIKKEI.map(function(v){return v/38915.87*100;}),l=LAND6.map(function(v){return v/519.4*100;});
+  var n0=n.slice(0,22),l0=l.slice(0,22);
+  lineChart(crashHost,{x:YEARS.slice(0,22),series:[{v:n0,cls:'s1'},{v:l0,cls:'s2'}],yMin:0,yMax:110,
+    xTicks:[1985,1990,1995,2000,2005].map(function(v){return {v:v,label:v};}),
+    notes:[{x:2005,y:l[21],text:'地価 13',dy:16,anchor:'end'},{x:2002,y:n[18],text:'株価 22',dy:-10,anchor:'middle'}]});
+});
+function collUpdate(){
+  var V=Math.max(0,+document.getElementById('coll-val').value||0),L=+document.getElementById('ltv').value,D=+document.getElementById('drop').value;
+  document.getElementById('ltv-out').textContent=L+'%';document.getElementById('drop-out').textContent=D+'%';
+  var loan=V*L/100,now=V*(1-D/100),short=Math.max(0,loan-now),be=Math.max(0,100-L);
+  var sv=document.getElementById('short-val');
+  sv.innerHTML=(short>0?fmt(short,short<10?2:1):'0')+'<small>億円</small>';
+  document.getElementById('short-detail').textContent='借入 '+fmt(loan,2)+'億円に対し、下落後の土地は '+fmt(now,2)+'億円。'+(L>=100?'評価額以上を借りているため、少しの下落でも担保割れします。':'下落率が '+be+'% を超えると担保割れします。')+(short>0?' 土地を売っても借入の '+fmt(short/loan*100,0)+'% が残ります。':' 今の下落率では売却で返済できます。');
+  document.querySelectorAll('[data-drop]').forEach(function(b){b.setAttribute('aria-pressed',String(+b.dataset.drop===D));});
+}
+['coll-val','ltv','drop'].forEach(function(id){document.getElementById(id).addEventListener('input',collUpdate);});
+document.querySelectorAll('[data-drop]').forEach(function(b){b.addEventListener('click',function(){document.getElementById('drop').value=b.dataset.drop;collUpdate();});});
+collUpdate();
+
+/* ---------- FIG 11 jobs ---------- */
+var jobsHost=document.getElementById('jobs');
+var JOBS=[[1991,2.86],[1992,2.41],[1993,1.91],[1994,1.55],[1995,null],[1996,1.08],[1997,1.45],[1998,1.68],[1999,null],[2000,0.99]];
+register(function(){
+  clear(jobsHost);var W=widthOf(jobsHost),narrow=W<460,H=narrow?240:270,m={l:narrow?34:44,r:narrow?30:40,t:30,b:34};
+  var svg=el('svg',{viewBox:'0 0 '+W+' '+H,width:W,height:H},jobsHost);
+  function Y(v){return H-m.b-v/3.2*(H-m.t-m.b);}
+  [0,1,2,3].forEach(function(t){el('line',{x1:m.l,x2:W-m.r,y1:Y(t),y2:Y(t),'class':t===1?'mark':'grid'},svg);el('text',{x:m.l-8,y:Y(t)+4,'text-anchor':'end'},svg,t+'倍');});
+  var n=JOBS.length,slot=(W-m.l-m.r)/n,bw=Math.min(46,slot*0.62);
+  JOBS.forEach(function(j,i){var cx=m.l+slot*(i+.5);
+    el('text',{x:cx,y:H-m.b+20,'text-anchor':'middle'},svg,narrow?("'"+String(j[0]).slice(2)):String(j[0]));
+    if(j[1]==null){el('text',{x:cx,y:H-m.b-8,'text-anchor':'middle'},svg,'—');return;}
+    var cls=j[0]===1991?'bar-alt':(j[1]<1?'bar-hot':'bar');
+    el('rect',{x:cx-bw/2,y:Y(j[1]),width:bw,height:H-m.b-Y(j[1]),rx:2,'class':cls},svg);
+    var t=el('text',{x:cx,y:Y(j[1])-7,'text-anchor':'middle','class':'lbl-strong'},svg,fmt(j[1],2));t.style.fontSize=narrow?'10px':'12px';});
+  el('line',{x1:m.l,x2:W-m.r,y1:H-m.b,y2:H-m.b,'class':'axis'},svg);
+  var lt=el('text',{x:W-m.r+4,y:Y(1)+4,'text-anchor':'start'},svg,'1倍');lt.style.fill='var(--c3)';
+});
+
+
+
+
+/* ---------- v0.4: FIG 13 recovery years ---------- */
+var recHost=document.getElementById('recovery');
+register(function(){
+  clear(recHost);var W=widthOf(recHost),narrow=W<460;
+  var rows=[{l:'株価',s:'1989年末の終値を上回るまで',v:34,t:'34年（2024年2月）'},{l:'政策金利',s:'1%に戻るまで',v:31,t:'31年（2026年6月）'},{l:'大都市の商業地',s:'1985年の水準に戻るまで',v:35,t:'35年（2026年3月）'},{l:'全国の商業地',s:'頂点の約24%',v:null,t:'未回復'}];
+  var lw=narrow?0:170,rh=narrow?52:46,H=rows.length*rh+30;var svg=el('svg',{viewBox:'0 0 '+W+' '+H,width:W,height:H},recHost);
+  var maxW=W-lw-(narrow?112:132);function X(v){return lw+v/40*maxW;}
+  [0,10,20,30,40].forEach(function(t){el('line',{x1:X(t),x2:X(t),y1:0,y2:H-22,'class':'grid'},svg);var tt=el('text',{x:X(t),y:H-6,'text-anchor':'middle'},svg,t+'年');tt.style.fontSize='10.5px';});
+  rows.forEach(function(r,i){var y=i*rh+4,by=narrow?y+18:y+6,bh=narrow?18:22;
+    var a=el('text',{x:narrow?0:0,y:narrow?y+12:y+15,'class':'lbl-strong'},svg,r.l);a.style.fontSize='13px';
+    if(!narrow){var b=el('text',{x:0,y:y+31},svg,r.s);b.style.fontSize='11px';}
+    if(r.v==null){var u=el('rect',{x:X(0),y:by,width:X(40)-X(0),height:bh,rx:2,'class':'sq-us'},svg);u.setAttribute('stroke-dasharray','4 3');
+      var c=el('text',{x:X(0)+10,y:by+bh/2+5,'class':'lbl-strong'},svg,r.t+(narrow?'（頂点の約24%）':''));c.style.fontSize='12.5px';return;}
+    el('rect',{x:X(0),y:by,width:X(r.v)-X(0),height:bh,rx:2,'class':i===0?'bar-hot':'bar'},svg);
+    var v=el('text',{x:X(r.v)+8,y:by+bh/2+5,'class':'lbl-strong'},svg,r.t);v.style.fontSize='12.5px';});
+});
+
+/* ---------- v0.4: FIG 14 long view ---------- */
+var longHost=document.getElementById('long');
+register(function(){
+  var n=NIKKEI.map(function(v){return v/38915.87*100;}),l=LAND6.map(function(v){return v/519.4*100;});
+  var c=lineChart(longHost,{x:YEARS,series:[{v:n,cls:'s1'},{v:l,cls:'s2'}],yMin:0,yMax:180,hline:100,
+    xTicks:[1985,1995,2005,2015,2025].map(function(v){return {v:v,label:v};}),
+    vmarks:[{v:1989,label:'株価の頂点',row:0},{v:2024.15,label:'株価が回復',anchor:'end',row:0}],top:40,
+    notes:[{x:2026,y:n[42],text:'164',dy:-8,anchor:'end'},{x:2026,y:l[42],text:'25',dy:-8,anchor:'end'}]});
+  var t=el('text',{x:c.X(1984)+4,y:c.Y(100)-6},c.svg,'バブル期の頂点＝100');t.style.fontSize='11px';t.style.fill='var(--c3)';
+});
+
+/* ---------- v0.2: chain ---------- */
+var CHAIN=[
+ {era:'1989',title:'日本が世界を席巻する',
+  body:['1989年末の世界の時価総額ランキングで、上位10社のうち7社、上位50社のうち32社が日本企業でした。首位はNTT（約1,638億ドル）で、日本興業銀行、住友銀行、富士銀行、第一勧業銀行、三菱銀行、東京電力が続きます。','同じ1989年、ソニーがコロンビア・ピクチャーズを、三菱地所がロックフェラー・グループを買収しました。'],
+  basis:[['ok','時価総額ランキングと海外買収の事実']],
+  src:[['ダイヤモンド・オンライン','https://diamond.jp/articles/-/360518?page=4'],['東京新聞','https://www.tokyo-np.co.jp/article/309782'],['日本経済新聞','https://www.nikkei.com/article/DGKDZO56526170S3A620C1TY8000/']],go:'c5'},
+ {era:'1985–1991',title:'そして、調子に乗る',
+  body:['六大都市の商業地価格は1985年から1991年で約4倍になり、日本全体の土地の時価総額は1990年末に約2,452兆円に達しました。','1990年のハーバード・ビジネス・レビューは、日本の土地の理論価格が米国全土の4倍を超えたと紹介しています。1990年末の東京都の民有地は約592兆円で、日本全体の約4分の1。東京の土地だけで、米国全土とほぼ同じ値段だった計算です。'],
+  basis:[['ok','地価の上昇と土地の時価総額'],['ok','「東京≒米国全土」の規模感（23区単独の集計は未確認）']],
+  src:[['統計局｜市街地価格指数','https://www.stat.go.jp/data/nenkan/65nenkan/zuhyou/y652013000.xls'],['RIETI｜土地の時価総額','https://www.rieti.go.jp/jp/publications/dp/21j033.pdf'],['HBR 1990（英語）','https://hbr.org/1990/05/power-from-the-ground-up-japans-land-bubble']],go:'c5'},
+ {era:'1987–1993',title:'外圧①　BIS規制が銀行を縛る',
+  body:['国際的に活動する銀行に自己資本比率8%を求めるバーゼル合意（BIS規制）は、1987年の米英共同提案を土台に1988年に合意されました。自己資本が薄いまま国際市場で急拡大していた邦銀への警戒も背景にあったとされます。','日本の銀行は保有株の含み益の45%を自己資本に数えられたため、株価が下がれば自己資本も目減りし、貸出を絞るしかない構造でした。本格適用は1993年3月末です。'],
+  basis:[['ok','米英主導の合意、含み益45%の算入ルール'],['mix','邦銀の急拡大を意識した規制だったという見方']],
+  src:[['地方債協会｜米英共同提案','http://www.chihousai.or.jp/07/04_04.html'],['大和総研｜バーゼル規制の歴史','https://www.dir.co.jp/report/research/introduction/financial/basel3/20140611_008623.pdf'],['日本銀行｜バーゼル合意','https://www.boj.or.jp/about/education/oshiete/pfsys/e24.htm']],go:'c7'},
+ {era:'1989–1990',title:'外圧②　日米構造協議が土地税制を迫る',
+  body:['1989年に始まった日米構造協議で、米国は200項目を超える要求を示しました。その一つが土地税制の見直しです。米国は、土地を持ち続けやすい日本の税制が売り渋りと地価高騰を招いていると主張しました。','1990年6月の最終報告で、日本は10年間で430兆円の公共投資などを約束しています。'],
+  basis:[['ok','米国が土地税制の見直しを要求した事実']],
+  src:[['Wikipedia｜日米構造協議','https://ja.wikipedia.org/wiki/%E6%97%A5%E7%B1%B3%E6%A7%8B%E9%80%A0%E5%8D%94%E8%AD%B0'],['コトバンク｜日米構造協議','https://kotobank.jp/word/%E6%97%A5%E7%B1%B3%E6%A7%8B%E9%80%A0%E5%8D%94%E8%AD%B0-164277'],['日本経済新聞｜構造協議が決着','https://www.nikkei.com/article/DGKKZO73245450V20C21A6EAC000/']],go:'c7'},
+ {era:'1989.5–1991.12',title:'政府と日銀が、一斉にブレーキを踏む',
+  body:['日本銀行は1989年5月から1990年8月にかけて公定歩合を5回引き上げ、2.5%から6.0%にしました。大蔵省は1990年3月27日に総量規制を通達し、不動産向け融資の伸びを貸出全体の伸び以下に抑えさせました。','総量規制が出されたのは、日米構造協議の最中です。外圧に屈した結果だと本サイトは見ますが、それを直接示す公文書は今回の調査では見つかっていません。国内でも地価高騰への批判は強まっていました。'],
+  basis:[['ok','利上げと総量規制の時期と中身'],['view','外圧に屈して総量規制を決めた、という因果']],
+  src:[['日本銀行｜公定歩合','https://www.boj.or.jp/statistics/boj/other/discount/discount.htm'],['土地総合研究所｜総量規制','https://www.lij.jp/html/jli/jli_2017/2017summer_p151.pdf']],go:'c7'},
+ {era:'1990–1991',title:'銀行がお金を貸せなくなる',
+  body:['不動産業への資金の流れが止まり、土地を買う側の資金が細りました。地価高騰の是正には、税制よりも不動産融資規制の効果が大きかったという指摘があります。','1990年には株価が1年で約39%下がり、含み益を自己資本に数えていた銀行の貸出余力も削られました。'],
+  basis:[['ok','株価の下落幅'],['mix','融資規制が地価の転換に最も効いたという指摘']],
+  src:[['週刊T&A master｜土地税制改革','https://www.sn-hoki.co.jp/article/tamasters/tamaster1630795/'],['世界経済のネタ帳｜日経平均','https://ecodb.net/stock/nikkei.html']],go:'c8'},
+ {era:'1990.10–1992.1',title:'地価税で「持つだけで損」になる',
+  body:['政府税制調査会が1990年10月に土地税制の基本答申を出し、地価税を柱とする改革が決まりました。地価税法は1991年5月に公布、1992年1月に施行。譲渡益課税や固定資産税評価の強化も同時に進みました。','方針が決まった時期は、大都市の地価が頂点を付けた1991年3月とほぼ重なります。保有コストが上がると見えたことで、土地を手放す動きが強まったと本サイトは考えます。'],
+  basis:[['ok','答申・公布・施行の時期'],['view','地価税が土地売却を促した主因だった、という見方']],
+  src:[['財務省｜財政史・基本答申','https://www.mof.go.jp/pri/publication/policy_history/series/h1-12/4_2_8.pdf'],['国税庁｜地価税','https://www.nta.go.jp/about/introduction/torikumi/report/2003/japanese/text/02/04_4-5.htm']],go:'c7'},
+ {era:'1991–2005',title:'買い手が消え、地価が崩れる',
+  body:['六大都市の商業地価格は1991年3月末を頂点に下落に転じ、2005年までに約87%下がりました。バブル初期から2003年までに、家計は通算136兆円の土地を売り越し、企業は55兆円を買い越して、その後の暴落で巨額の損失を抱えました。','担保割れした融資は不良債権になり、1997〜98年の大型金融破綻につながりました。'],
+  basis:[['ok','地価の下落幅、土地の売買の偏り、金融破綻']],
+  src:[['統計局｜市街地価格指数','https://www.stat.go.jp/data/nenkan/65nenkan/zuhyou/y652013000.xls'],['RIETI｜土地取引の帰着','https://www.rieti.go.jp/jp/publications/dp/21j033.pdf']],go:'c8'},
+ {era:'1991–2026',title:'停滞は2025年まで続いた',
+  body:['新卒採用は冷え込み、大卒求人倍率は2000年卒で0.99倍まで下がりました。日経平均が1989年末の終値を上回るまでに34年（2024年2月）、政策金利が1%に戻るまでに31年（2026年6月）かかっています。','大都市の商業地価格は2026年3月末にようやく1985年の水準に戻りましたが、頂点の約4分の1です。全国の商業地は、今も頂点の約24%にとどまっています。'],
+  basis:[['ok','求人倍率、株価・金利・地価の回復時期（地価は本サイトの接続計算）']],
+  src:[['WEB労政時報｜就職氷河期','https://www.rosei.jp/readers/article/76569'],['大和総研｜2024年の最高値更新','https://www.dir.co.jp/report/column/20240318_012085.html'],['日本不動産研究所｜2026年3月末','https://www.reinet.or.jp/pdf/UA_WD/published-document_ulpi-and-wfhmvi_202603.pdf']],go:'c10'}
+];
+var TAGTXT={ok:'確認済み',mix:'状況証拠',view:'本サイトの解釈'};
+function chainLevel(c){var k=c.basis.map(function(b){return b[0];});return k.indexOf('view')>=0?'view':(k.indexOf('mix')>=0?'mix':'ok');}
+var chainList=document.getElementById('chain-list'),chainDetail=document.getElementById('chain-detail'),chainIdx=0;
+function esc(t){return String(t).replace(/&/g,'&amp;').replace(/</g,'&lt;');}
+CHAIN.forEach(function(c,i){var li=document.createElement('li');var b=document.createElement('button');b.type='button';
+  b.innerHTML='<span class="c-dot s-'+chainLevel(c)+'">'+String(i+1).padStart(2,'0')+'</span><span class="c-text"><b>'+esc(c.title)+'</b><span>'+esc(c.era)+'</span></span>';
+  b.addEventListener('click',function(){showChain(i,true);});li.appendChild(b);chainList.appendChild(li);});
+function showChain(i,user){
+  chainIdx=i;var c=CHAIN[i];
+  chainList.querySelectorAll('button').forEach(function(b,j){b.setAttribute('aria-current',String(j===i));});
+  var h='<div class="cd-top"><span class="cd-step">STEP '+String(i+1).padStart(2,'0')+' / 09</span><span class="cd-era">'+esc(c.era)+'</span></div>';
+  h+='<h3>'+esc(c.title)+'</h3>';
+  c.body.forEach(function(p){h+='<p>'+esc(p)+'</p>';});
+  h+='<div class="cd-basis"><h4>根拠の強さ</h4><ul>';
+  c.basis.forEach(function(b){h+='<li><span class="tag t-'+b[0]+'">'+TAGTXT[b[0]]+'</span><span>'+esc(b[1])+'</span></li>';});
+  h+='</ul><div class="cd-src">';
+  c.src.forEach(function(sx){h+='<a href="'+sx[1]+'" target="_blank" rel="noopener">'+esc(sx[0])+' ↗</a>';});
+  h+='<a href="#'+c.go+'">関連する場面へ ↓</a></div></div>';
+  h+='<div class="cd-nav"><button type="button" data-step="-1"'+(i===0?' disabled':'')+'>← 前の段階</button><button type="button" data-step="1"'+(i===CHAIN.length-1?' disabled':'')+'>次の段階 →</button></div>';
+  chainDetail.innerHTML=h;
+  chainDetail.querySelectorAll('[data-step]').forEach(function(b){b.addEventListener('click',function(){showChain(chainIdx+(+b.dataset.step),true);});});
+  if(user&&window.innerWidth<=1000){chainDetail.scrollIntoView({behavior:reduceMotion?'auto':'smooth',block:'start'});}
+}
+showChain(0,false);
+
+/* ---------- v0.2: FIG A dominance ---------- */
+var domHost=document.getElementById('dominance');
+register(function(){
+  clear(domHost);var W=widthOf(domHost),narrow=W<460;var cols=10,gap=narrow?5:7;var cell=Math.min(34,Math.floor((W-(cols-1)*gap)/cols));
+  var H=5*(cell+gap)+44;var svg=el('svg',{viewBox:'0 0 '+W+' '+H,width:W,height:H},domHost);
+  // count-only unit chart (ranks not implied): row1 = top10 (7 JP), rows2-5 = 11-50 (25 JP)
+  var flags=[];for(var k=0;k<10;k++)flags.push(k<7?1:0);for(var k2=0;k2<40;k2++)flags.push(k2<25?1:0);
+  flags.forEach(function(f,i){var x=(i%cols)*(cell+gap),y=Math.floor(i/cols)*(cell+gap)+(i>=10?8:0);
+    el('rect',{x:x,y:y,width:cell,height:cell,rx:2,'class':f?'bar-hot':'sq-us'},svg);});
+  var y0=5*(cell+gap)+28;
+  var a=el('text',{x:0,y:y0,'class':'lbl-strong'},svg,'日本企業 32社 / 50社');a.style.fontSize='13px';
+  var b=el('text',{x:W,y:y0,'text-anchor':'end'},svg,'1行目＝上位10社（7社）、2〜5行目＝11〜50位（25社）');b.style.fontSize=narrow?'10px':'11.5px';
+});
+
+/* ---------- v0.2: FIG B tokyo vs us ---------- */
+var tuHost=document.getElementById('tokyo-us');
+register(function(){
+  clear(tuHost);var W=widthOf(tuHost),narrow=W<460;var rows=[{v:2452,l:'日本全体の土地',s:'1990年末',c:'bar'},{v:613,l:'米国全土（換算）',s:'日本の1/4',c:'us'},{v:592,l:'東京都の民有地',s:'1990年末',c:'bar-hot'}];
+  var lw=narrow?0:150,rh=narrow?50:44,H=rows.length*rh+14;var svg=el('svg',{viewBox:'0 0 '+W+' '+H,width:W,height:H},tuHost);
+  var maxW=W-lw-(narrow?70:84);
+  rows.forEach(function(r,i){var y=i*rh+6,by=narrow?y+18:y+4,bh=narrow?20:26;var w=r.v/2452*maxW;
+    var t=el('text',{x:0,y:narrow?y+12:y+17,'class':'lbl-strong'},svg,r.l);t.style.fontSize='13px';
+    if(!narrow){var t2=el('text',{x:0,y:y+33},svg,r.s);t2.style.fontSize='11px';}
+    if(r.c==='us'){el('rect',{x:lw,y:by,width:w,height:bh,rx:2,'class':'sq-us-fill'},svg);el('rect',{x:lw+.75,y:by+.75,width:w-1.5,height:bh-1.5,rx:2,'class':'bar-us'},svg);}
+    else el('rect',{x:lw,y:by,width:w,height:bh,rx:2,'class':r.c},svg);
+    var v=el('text',{x:lw+w+8,y:by+bh/2+5,'class':'lbl-strong'},svg,'約'+fmt(r.v,0)+'兆円');v.style.fontSize='13px';});
+});
+
+/* ---------- scroll spy ---------- */
+var navLinks=Array.prototype.slice.call(document.querySelectorAll('#nav-list a'));
+var trackLinks=Array.prototype.slice.call(document.querySelectorAll('#track a'));
+var viewLinks=Array.prototype.slice.call(document.querySelectorAll('.view-nav a'));
+var sections=['thesis','chain','lab','c1','c2','c3','c4','c5','c6','c7','c8','c9','c10','terms','sources','changelog'].map(function(id){return document.getElementById(id);});
+var current=null;
+function setCurrent(id){
+  if(id===current)return;current=id;
+  navLinks.forEach(function(a){var on=a.getAttribute('href')==='#'+id;a.setAttribute('aria-current',String(on));if(on&&window.innerWidth<=930){var sc=a.closest('.sidebar-inner');if(sc){sc.scrollTo({left:a.offsetLeft-12,behavior:reduceMotion?'auto':'smooth'});}}});
+  trackLinks.forEach(function(a){a.setAttribute('aria-current',String(a.dataset.target===id));});
+  var view=(!id||id==='thesis'||id==='chain')?'thesis':(id==='lab'?'lab':(/^c\d+$/.test(id)?'chronicle':'sources'));
+  viewLinks.forEach(function(a){a.setAttribute('aria-current',String(a.dataset.view===view));});
+}
+function spy(){
+  var y=window.innerHeight*0.35,found=null;
+  sections.forEach(function(s){var r=s.getBoundingClientRect();if(r.top<=y)found=s.id;});
+  if(!found)found='thesis';
+  setCurrent(found);
+}
+window.addEventListener('scroll',function(){window.requestAnimationFrame(spy);},{passive:true});
+spy();viewLinks[0].setAttribute('aria-current','true');
+
+/* ---------- dialog & theme ---------- */
+var dlg=document.getElementById('help-dialog');
+document.getElementById('help-button').addEventListener('click',function(){if(dlg.showModal)dlg.showModal();else dlg.setAttribute('open','');});
+document.getElementById('close-help').addEventListener('click',function(){dlg.close?dlg.close():dlg.removeAttribute('open');});
+dlg.addEventListener('click',function(e){if(e.target===dlg)dlg.close();});
+var root=document.documentElement;
+function sysDark(){try{return window.matchMedia('(prefers-color-scheme: dark)').matches;}catch(e){return false;}}
+try{var saved=localStorage.getItem('bubble-theme');if(saved)root.setAttribute('data-theme',saved);}catch(e){}
+document.getElementById('theme-toggle').addEventListener('click',function(){
+  var cur=root.getAttribute('data-theme')||(sysDark()?'dark':'light');var next=cur==='dark'?'light':'dark';root.setAttribute('data-theme',next);
+  try{localStorage.setItem('bubble-theme',next);}catch(e){}
+  var meta=document.querySelector('meta[name=theme-color]');if(meta)meta.setAttribute('content',next==='dark'?'#0f1d23':'#183744');
+});
+})();
+</script>
+<aside data-ainoboru-attribution style="display:block;box-sizing:border-box;text-align:center;padding:16px;margin:16px 0;color:#183744;background:#f5f3eb;font:14px/1.7 sans-serif;overflow-wrap:anywhere"><a href="https://www.aiofonesown.com/" style="color:inherit">AI NOBORU · www.aiofonesown.com</a><br><a href="index_en.html" hreflang="en" lang="en" style="color:inherit">English edition ↗</a></aside>
+<div data-ainoboru-print><a href="https://www.aiofonesown.com/">AI NOBORU · www.aiofonesown.com</a></div>
+</body>
+</html>
