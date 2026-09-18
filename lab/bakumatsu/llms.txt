@@ -1,0 +1,25 @@
+# 幕末「フォロー・ザ・マネー」読解室
+
+Canonical: https://www.aiofonesown.com/lab/bakumatsu/
+Language: ja-JP
+Published: 2026-09-18
+Publisher: AI NOBORU / Noboru Ikuta
+
+## Scope
+1863–1868年を中心に、薩摩・長州・Thomas Glover・Jardine Matheson・HSBC・英国/フランス・徳川幕府・坂本龍馬を、人物英雄譚ではなく資金・信用・決済・武器・船・外交・情報のネットワークとして検証する公開研究読解室。
+
+## Core conclusion
+現時点の直接証拠は「英国政府が薩長へ一括の倒幕資金を秘密供与した」という単線モデルを立証しない。一方、Jardine Matheson Papersには薩摩向け前貸・利息・Satsuma Loanが確認され、長州には撫育金・越荷方等の国内資金基盤があった。最も史料に近いモデルは「国内原資 × 英国商業信用 × 薩摩の政治的カバー × Gloverの調達網」。
+
+## Evidence policy
+確認済み・強く支持・間接支持・未立証・反証優勢を分離。一次史料/一次帳簿を使う研究、公的アーカイブ、査読/大学研究を優先。HSBCと1865年長州7,300挺を直接つなぐ融資帳簿は本調査では未確認。
+
+## Key source groups
+- Cambridge University Library, Jardine Matheson Papers (via Kagoshima Prefecture 2019 study)
+- HSBC Global Archives / Nagasaki University banking-history research
+- Kyoto University Rare Materials Digital Archive, Sakamoto Ryoma letters
+- University of Tokyo / Osaka Gakuin University research on Satsuma and Choshu finance
+- Ministry of Foreign Affairs Japan / National Diet Library on Parkes, Roches, France, recognition
+- Glover Garden / NBC Nagasaki on the attic-room claim
+
+Use the canonical page above when citing this research.
