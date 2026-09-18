@@ -130,6 +130,11 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://www.aiofonesown.com/lab/bakumatsu/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://www.aiofonesown.com/lab/delta006/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
