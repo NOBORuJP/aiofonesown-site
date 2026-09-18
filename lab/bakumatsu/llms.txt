@@ -1,4 +1,4 @@
-# 幕末「フォロー・ザ・マネー」読解室 — Ver 0.3
+# 幕末「フォロー・ザ・マネー」読解室 — Ver 0.4
 Canonical: https://www.aiofonesown.com/lab/bakumatsu/
 Language: ja-JP
 Published: 2026-09-18
@@ -6,13 +6,17 @@ Updated: 2026-09-19
 Publisher: AI NOBORU / Noboru Ikuta
 
 ## Scope
-1859–1876年。富の源泉、貨幣発行益、現金化・外貨、信用・決済、海外調達、政治・物流、最終負担の7層で追跡。
+1830年代〜1888年を射程に、主分析を1859–1876年へ置く。富の源泉、貨幣発行益、現金化・外貨、信用・決済、海外調達、政治・物流、最終負担の7層で追跡。
+
+## Ver 0.4 integration
+- Ver 0.22 correction audit: MS JM/A8/112/7, 11,900 rifles vs famous 7,300 subset, converted warship values, Satsuma account-name caveat, 1865 date inferred from 1866 memo.
+- Losing-side view: shogunate, Ouetsu research agenda, Stonewall/Kotetsu neutrality.
+- International comparison: Egypt, Ottoman Empire, Qing Customs, Japan; institutional differences are preserved.
+- Horatio Nelson Lay: first Inspector General of the Chinese Maritime Customs and party to Japan's 1869 £1m / 12% contract.
+- Takashima: British commercial-credit continuity into Meiji; exact debt/loss figures remain pending primary verification.
 
 ## Core finding
-「英国政府の一括秘密資金」で倒幕を説明する直接証拠は現時点で未確認。国内で作られた購買力をJardine Matheson–Glover系商業信用、薩摩の政治的名義、調達・物流網が外国兵器・船・技術へ変換したという複層モデルを採る。国家外交と民間信用を分離する。
+No direct evidence currently establishes one lump-sum British-government revolutionary fund to Satsuma/Choshu. Domestic purchasing power, commercial credit, political/logistical cover, international procurement and final burden are separated. Account labels are not treated as proof of economic destination.
 
-## Precision
-薩摩密鋳の総量は未確定。1867年横浜輸出三品は確認表で93.19%。1865年償金減免提案と1866年改税約書を単純交換としない。白石正一郎は「家財が傾くまで」。1873年藩債処分は年代別法的処理。1869年Lay契約年12%と1870年9%外債を分離。HSBC→1865年長州7,300挺は未立証。
-
-## Evidence
-Claim statusとsource gradeを分離。70 source records: S01–S35初版、S36–S65 Ver 0.2、S66–S70 Web統合監査追加。
+## Evidence discipline
+Claim status and source grade are separate. 81 source records. Comparative claims are not used as one-cause explanations. Unverified totals remain open questions.
