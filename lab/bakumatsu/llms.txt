@@ -1,25 +1,18 @@
-# 幕末「フォロー・ザ・マネー」読解室
-
+# 幕末「フォロー・ザ・マネー」読解室 — Ver 0.3
 Canonical: https://www.aiofonesown.com/lab/bakumatsu/
 Language: ja-JP
 Published: 2026-09-18
+Updated: 2026-09-19
 Publisher: AI NOBORU / Noboru Ikuta
 
 ## Scope
-1863–1868年を中心に、薩摩・長州・Thomas Glover・Jardine Matheson・HSBC・英国/フランス・徳川幕府・坂本龍馬を、人物英雄譚ではなく資金・信用・決済・武器・船・外交・情報のネットワークとして検証する公開研究読解室。
+1859–1876年。富の源泉、貨幣発行益、現金化・外貨、信用・決済、海外調達、政治・物流、最終負担の7層で追跡。
 
-## Core conclusion
-現時点の直接証拠は「英国政府が薩長へ一括の倒幕資金を秘密供与した」という単線モデルを立証しない。一方、Jardine Matheson Papersには薩摩向け前貸・利息・Satsuma Loanが確認され、長州には撫育金・越荷方等の国内資金基盤があった。最も史料に近いモデルは「国内原資 × 英国商業信用 × 薩摩の政治的カバー × Gloverの調達網」。
+## Core finding
+「英国政府の一括秘密資金」で倒幕を説明する直接証拠は現時点で未確認。国内で作られた購買力をJardine Matheson–Glover系商業信用、薩摩の政治的名義、調達・物流網が外国兵器・船・技術へ変換したという複層モデルを採る。国家外交と民間信用を分離する。
 
-## Evidence policy
-確認済み・強く支持・間接支持・未立証・反証優勢を分離。一次史料/一次帳簿を使う研究、公的アーカイブ、査読/大学研究を優先。HSBCと1865年長州7,300挺を直接つなぐ融資帳簿は本調査では未確認。
+## Precision
+薩摩密鋳の総量は未確定。1867年横浜輸出三品は確認表で93.19%。1865年償金減免提案と1866年改税約書を単純交換としない。白石正一郎は「家財が傾くまで」。1873年藩債処分は年代別法的処理。1869年Lay契約年12%と1870年9%外債を分離。HSBC→1865年長州7,300挺は未立証。
 
-## Key source groups
-- Cambridge University Library, Jardine Matheson Papers (via Kagoshima Prefecture 2019 study)
-- HSBC Global Archives / Nagasaki University banking-history research
-- Kyoto University Rare Materials Digital Archive, Sakamoto Ryoma letters
-- University of Tokyo / Osaka Gakuin University research on Satsuma and Choshu finance
-- Ministry of Foreign Affairs Japan / National Diet Library on Parkes, Roches, France, recognition
-- Glover Garden / NBC Nagasaki on the attic-room claim
-
-Use the canonical page above when citing this research.
+## Evidence
+Claim statusとsource gradeを分離。70 source records: S01–S35初版、S36–S65 Ver 0.2、S66–S70 Web統合監査追加。
