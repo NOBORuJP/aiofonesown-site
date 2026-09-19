@@ -5,18 +5,35 @@ Published: 2026-09-18
 Updated: 2026-09-19
 Publisher: AI NOBORU / Noboru Ikuta
 
-## Scope
-1830年代〜1888年を射程に、主分析を1859–1876年へ置く。富の源泉、貨幣発行益、現金化・外貨、信用・決済、海外調達、政治・物流、最終負担の7層で追跡。
+## What this page does
+1830年代から1880年代まで、幕末・維新の資金網を時系列で追う公開読解室。
+国内原資、貨幣発行益、外貨、商業信用、兵器・船・人材の調達、外交、維新後の債務清算を分けて扱う。
 
-## Ver 0.4 integration
-- Ver 0.22 correction audit: MS JM/A8/112/7, 11,900 rifles vs famous 7,300 subset, converted warship values, Satsuma account-name caveat, 1865 date inferred from 1866 memo.
-- Losing-side view: shogunate, Ouetsu research agenda, Stonewall/Kotetsu neutrality.
-- International comparison: Egypt, Ottoman Empire, Qing Customs, Japan; institutional differences are preserved.
-- Horatio Nelson Lay: first Inspector General of the Chinese Maritime Customs and party to Japan's 1869 £1m / 12% contract.
-- Takashima: British commercial-credit continuity into Meiji; exact debt/loss figures remain pending primary verification.
+## Recommended reading order
+1. 「年を動かして、幕末の金の流れを見る」— 1830〜1888年の4レーン時系列
+2. 薩摩・長州の国内原資
+3. Jardine Matheson–Gloverの商業信用
+4. HSBCとアヘン戦争後の香港金融秩序
+5. 龍馬・亀山社中・留学生の人的／物流ネットワーク
+6. 幕府・フランス・Stonewall・奥羽越
+7. 1868年後の贋貨、公債、外債、高島炭鉱（1881年三菱買収まで）
+8. S01–S81の主要史料・研究文献
 
 ## Core finding
-No direct evidence currently establishes one lump-sum British-government revolutionary fund to Satsuma/Choshu. Domestic purchasing power, commercial credit, political/logistical cover, international procurement and final burden are separated. Account labels are not treated as proof of economic destination.
+「英国政府の一括秘密資金」だけで倒幕を説明する直接証拠は現時点で確認できない。
+日本国内で形成された購買力が、商業信用、政治的名義、人的・海運ネットワーク、国際調達市場を通じて銃・船・技術へ変換された、という複層モデルで読む。
+国家外交と民間商業信用、勘定名と経済的実態、確定値と推計値を分ける。
+
+## Key precision points
+- Cambridge shelfmark: MS JM/A8/112/7
+- 1865 Choshu rifle table: 11,900 rifles in total; the famous 7,300-rifle / 92,400-ryo transaction is a subset.
+- HSBC opened in Hong Kong in 1865 and Yokohama in 1866; direct HSBC financing of the 1865 Choshu rifle purchase is not established here.
+- 1867 Yokohama export table: raw silk 53.71%, silkworm-egg cards 22.81%, tea 16.67%; total 93.19%, explicitly Yokohama-only.
+- 1869 Lay contract: £1 million, 12% interest; keep separate from the later 9% bond.
+- 1873 domain debt treatment is described by debt vintage/category rather than as a single cancellation.
+- Takashima demonstrates continuity of foreign commercial credit into Meiji; exact debt/loss totals remain pending primary verification.
 
 ## Evidence discipline
-Claim status and source grade are separate. 81 source records. Comparative claims are not used as one-cause explanations. Unverified totals remain open questions.
+81 source records (S01–S81).
+Claims are distinguished as confirmed, strongly supported, conditional, unproven, or counterevidenced where appropriate.
+Comparative material on Qing, Egypt and the Ottoman Empire preserves institutional differences and is not used as a one-cause explanation of Japan.
