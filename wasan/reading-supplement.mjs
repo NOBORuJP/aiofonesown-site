@@ -1,4 +1,4 @@
-/* AI NOBORu — https://www.aiofonesown.com/ | 出典を示す配布用表示。参照史料・第三者の権利表示は各記載を参照。 */
+/* AI NOBORU — https://www.aiofonesown.com/ | 出典を示す配布用表示。参照史料・第三者の権利表示は各記載を参照。 */
 // Source-linked public explanations; mathematical provenance is kept with each claim.
 const link=(url,label)=>`<a href="${url}" target="_blank" rel="noopener noreferrer">${label} ↗</a>`;
 const kb=(name,id,label=name)=>link(`https://kotobank.jp/word/${name}-${id}`,label);
@@ -12,9 +12,9 @@ const table=(heads,rows,numeric=false)=>`<div class="research-table${numeric?' n
 
 export const historyNotes=()=>`<section class="reading-section"><p class="reading-label">人物・年代・関係を確かめる</p><h2>系譜の線は、何を意味する？</h2>
 <p>直接教わった師弟関係、免許に記された学統、同じ問題を扱う研究の流れは別です。下の図は確認できた関係を抜粋しています。人物を一列に並べた「唯一の正統系譜」ではありません。</p>
-${figure('lineage-reviewed','人物と学びの関係','矢印は本文の出典が述べる師弟関係。確定していない伝承は別に注記。全門人・全学統を網羅しません。')}
+${figure('lineage','人物と学びの関係','矢印は本文の出典が述べる師弟関係。確定していない伝承は別に注記。全門人・全学統を網羅しません。')}
 ${table(['人物','掲載する記述と注意','根拠'],[
-['松永良弼（まつなが よしすけ）','生年未詳–1744。世界大百科事典には1690年頃と記されています。生年を一つに確定せず、資料の違いを示します。',kb('松永良弼','136693','世界大百科事典／日本人名大辞典')],
+['松永良弼（まつなが よしすけ）','生年未詳–1744。世界大百科事典は1690年頃、2022年の査読論文は1694?としています。生年を一つに確定せず、資料の違いを示します。',`<a href="https://kotobank.jp/word/松永良弼-136693" target="_blank" rel="noopener noreferrer">世界大百科事典／日本人名大辞典 ↗</a>／<a href="https://www.combinatorics.org/ojs/index.php/eljc/article/view/v29i2p2" target="_blank" rel="noopener noreferrer">Dou・Hwang・Li（2022） ↗</a>`],
 ['久留島義太（くるしま よしひろ）','生年未詳（1690年頃とする辞典もある）。没日は宝暦7年11月29日。旧暦の年を対応させた1757表記と、西暦1758表記があります。同じ没日でも、暦の換算により年の表記が変わります。',kb('久留島義太','486459','大辞泉／日本人名大辞典／世界大百科事典')],
 ['田中由真（たなか よしざね）','1651–1719。京都の和算家。消去・行列式・魔方陣を研究しました。石黒信由とは時代が異なり、直接の師弟関係ではありません。',kb('田中由真','93852','ブリタニカ／日本人名大辞典')],
 ['安島直円（あじま なおのぶ）','1732–1798を採用。国立国会図書館の著者典拠によります。1739–1798と記す書誌もあるため、生年の資料差を残します。18世紀に活動した人物です。',link('https://ndlsearch.ndl.go.jp/books/R100000002-I000001109612','国立国会図書館：安島直円全集')+'／'+link('https://www.wul.waseda.ac.jp/kotenseki/html/ni02/ni02_00866/index.html','早稲田大学：精要算法の著者書誌')],
@@ -98,7 +98,7 @@ ${table(['多項式の次数 n','終結式 Res(f,g)','Bézout型行列の行列�
 </section>
 <section class="reading-section"><p class="reading-label">読者も、同じ計算を確かめられる</p><h2>証明を読み、コードを動かす。</h2>
 <p>再現資料には、A・Bの全項検査、交級型の構成、相消対、終結式のコードと保存結果を収めています。入力・出力・検査範囲はREADMEからたどれます。</p>
-<p><a class="reading-try" href="./downloads/research-reproduction.zip" download>研究コードと計算結果をダウンロード（ZIP） <span aria-hidden="true">↓</span></a></p>
+<p><a href="./downloads/research-reproduction.zip" download>研究の再現資料をダウンロード</a>できます。史料の帰属、現代的な再構成、検査範囲はREADMEで確認してください。</p>
 <p>全項の列挙には階乗の計算量がかかります。これは算法の構造を調べる研究用の方法であり、大規模な行列式を高速に計算するための推奨手法ではありません。</p>
 <div class="reading-scope"><p><strong>残る境界。</strong>写本間の違い、石黒の全番号との対応、配列を作った歴史上の手順、その唯一性や発見の優先権は、別に調べる必要があります。数学的な再構成の正しさだけで、これらが確定したとは扱いません。</p></div>
 </section>`;
@@ -118,4 +118,4 @@ export const questionRows=[
 ['11','成果の帰属','史料の記述、先行研究の解釈、現代的な再構成を分けて、誰の仕事かを確かめます。'],
 ['12','現代への応用','数学モデルの成立と、実機・実測の検証を分けます。掲載した研究の装置応用は、実機未検証です。']
 ];
-export const questionDetails=()=>`<section class="reading-section"><p class="reading-label">次へ渡す問い</p><h2>研究は、ここからも続く。</h2><p>和算を受け継ぐと、数式だけでなく、史料の読み方や算法の使える範囲にも問いが生まれます。以下はこの研究で取り組む12の課題です。数学界全体の未解決問題を網羅した一覧ではありません。</p><details class="research-detail"><summary>12の研究課題と、これから確かめることを読む</summary><div class="research-detail-body">${figure('questions-reviewed','12の課題と確認の境界','式・史料・応用の、どこを次に確かめるかを示します。')}${table(['番号','課題','これから確かめること'],questionRows)}<p>六球連鎖の歴史と計算条件は<a href="#history-stories">「和算の物語」</a>でも紹介しています。1822年の奉納、1832年の記録、1936年のSoddy発表は別の出来事であり、入澤からSoddyへの直接伝承は確認できていません。</p></div></details></section>`;
+export const questionDetails=()=>`<section class="reading-section"><p class="reading-label">次へ渡す問い</p><h2>研究は、ここからも続く。</h2><p>和算を受け継ぐと、数式だけでなく、史料の読み方や算法の使える範囲にも問いが生まれます。以下はこの研究で取り組む12の課題です。数学界全体の未解決問題を網羅した一覧ではありません。</p><details class="research-detail"><summary>12の研究課題と、これから確かめることを読む</summary><div class="research-detail-body">${figure('research-questions','12の課題と確認の境界','式・史料・応用の、どこを次に確かめるかを示します。')}${table(['番号','課題','これから確かめること'],questionRows)}<p>六球連鎖の歴史と計算条件は<a href="#history-stories">「和算の物語」</a>でも紹介しています。1822年の奉納、1832年の記録、1936年のSoddy発表は別の出来事であり、入澤からSoddyへの直接伝承は確認できていません。</p></div></details></section>`;

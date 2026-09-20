@@ -1,4 +1,4 @@
-/* AI NOBORu — https://www.aiofonesown.com/ | Attribution for distributed materials. See each source for third-party rights. */
+/* AI NOBORU — https://www.aiofonesown.com/ | Attribution for distributed materials. See each source for third-party rights. */
 const dots=(n,color='')=>`<span class="kid-dots ${color}" aria-hidden="true">${'● '.repeat(n)}</span>`;
 const options=(min,max,selected)=>Array.from({length:max-min+1},(_,i)=>`<option value="${i+min}"${i+min===selected?' selected':''}>${i+min}</option>`).join('');
 const choose=(key,label,min,max,selected)=>`<label for="kid-${key}">${label} <select id="kid-${key}" name="${key}">${options(min,max,selected)}</select></label>`;
@@ -21,7 +21,8 @@ export function kidAnswer(kind,values){
     const times=count(values.times,1,4);
     const before=2**(times-1);
     const total=2**times;
-    return `<p>Start with one circle and double the number ${times} ${times===1?'time':'times'}.</p><div class="kid-groups"><div>${dots(before)}</div><div>${dots(before,'teal')}</div></div><p class="kid-equation">${before} + ${before} = ${total}</p><p>Doubling means adding another group of the same size.</p><p class="kid-sequence">${Array.from({length:times+1},(_,i)=>2**i).join(' → ')}</p>`;
+    const instruction=times===1?'Start with one circle and double it once.':times===2?'Start with one circle and double it twice.':`Start with one circle and double it ${times} times.`;
+    return `<p>${instruction}</p><div class="kid-groups"><div>${dots(before)}</div><div>${dots(before,'teal')}</div></div><p class="kid-equation">${before} + ${before} = ${total}</p><p>Doubling means adding another group of the same size.</p><p class="kid-sequence">${Array.from({length:times+1},(_,i)=>2**i).join(' → ')}</p>`;
   }
   const cranes=count(values.cranes,0,3);
   const turtles=count(values.turtles,0,3);

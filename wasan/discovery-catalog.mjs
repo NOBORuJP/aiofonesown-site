@@ -1,4 +1,4 @@
-/* AI NOBORu — https://www.aiofonesown.com/ | 出典を示す配布用表示。参照史料・第三者の権利表示は各記載を参照。 */
+/* AI NOBORU — https://www.aiofonesown.com/ | 出典を示す配布用表示。参照史料・第三者の権利表示は各記載を参照。 */
 const field=(key,label,value,hint='',wide=false)=>({key,label,value,hint,wide,kind:'text'});
 const length=(key,label,value)=>field(key,label,value,'0.001〜1,000,000。小数・分数可');
 const area=(key,label,value,hint)=>({...field(key,label,value,hint+'。全体1400文字以内',true),kind:'textarea'});

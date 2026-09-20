@@ -1,4 +1,4 @@
-/* AI NOBORu — https://www.aiofonesown.com/
+/* AI NOBORU — https://www.aiofonesown.com/
  * Curated English copy for values returned by the shared calculation engines.
  * Japanese source strings remain as lookup keys; mathematics is never rewritten here.
  */

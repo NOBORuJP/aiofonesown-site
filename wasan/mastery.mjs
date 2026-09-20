@@ -1,4 +1,4 @@
-/* AI NOBORu — https://www.aiofonesown.com/ | 出典を示す配布用表示。参照史料・第三者の権利表示は各記載を参照。 */
+/* AI NOBORU — https://www.aiofonesown.com/ | 出典を示す配布用表示。参照史料・第三者の権利表示は各記載を参照。 */
 import {bernoulli,enriTable,ellipse,cylinders} from './mastery-analysis.mjs';
 import {replacement} from './mastery-algebra.mjs';
 import {inversion,steiner} from './mastery-geometry.mjs';

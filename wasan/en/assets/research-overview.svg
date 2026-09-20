@@ -25,7 +25,7 @@
 <text x="78" y="930" font-size="23" fill="#193b48" font-weight="400">Cancellation pairs: (n−1)n!/2 — 36 at order 4, 240 at 5, and 1,800 at 6.</text>
 <text x="78" y="969" font-size="23" fill="#193b48" font-weight="400">One-to-one manuscript collation and any priority claim remain unresolved.</text>
 <text x="48" y="1057" font-size="20" fill="#193b48" font-weight="400">Proofs, implementations, counterexamples, and unresolved history are all passed on to future work.</text>
-<text x="48" y="1098" font-size="20" fill="#193b48" font-weight="400">AI NOBORU | Updated 15 September 2026 | Sources and variants appear in the article</text>
+<text x="48" y="1098" font-size="20" fill="#193b48" font-weight="400">AI NOBORU | Sources and variants appear in the article</text>
 </g>
 <g data-ainoboru-attribution="true">
 <rect x="0" y="1135" width="1500" height="56" fill="#183744"/>

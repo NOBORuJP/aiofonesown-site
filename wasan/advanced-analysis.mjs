@@ -1,4 +1,4 @@
-/* AI NOBORu — https://www.aiofonesown.com/ | 出典を示す配布用表示。参照史料・第三者の権利表示は各記載を参照。 */
+/* AI NOBORU — https://www.aiofonesown.com/ | 出典を示す配布用表示。参照史料・第三者の権利表示は各記載を参照。 */
 import {Q,pack,count,positive,sqrtFloor,decimal} from './advanced-common.mjs';
 export function takebeArc(diameter,sagitta,terms){
  const d=positive(diameter,'円の直径 d'),c=positive(sagitta,'矢の高さ c'),z=c.div(d),n=count(terms,'項数',1,120);

@@ -1,4 +1,4 @@
-/* AI NOBORu — https://www.aiofonesown.com/ | 出典を示す配布用表示。参照史料・第三者の権利表示は各記載を参照。 */
+/* AI NOBORU — https://www.aiofonesown.com/ | 出典を示す配布用表示。参照史料・第三者の権利表示は各記載を参照。 */
 import {Q,q,normal,fail,scalar,coefficients,trim,isZero,neg,add,multiply,evaluate,derivative,divide,polynomialGcd,textPolynomial} from './expansion-common.mjs';
 import {count,pack} from './advanced-common.mjs';
 const scale=(p,a)=>trim(p.map(v=>v.mul(a)));

@@ -1,4 +1,4 @@
-/* AI NOBORu — https://www.aiofonesown.com/ | 出典を示す配布用表示。参照史料・第三者の権利表示は各記載を参照。 */
+/* AI NOBORU — https://www.aiofonesown.com/ | 出典を示す配布用表示。参照史料・第三者の権利表示は各記載を参照。 */
 /* The calculator's original stylesheet is retained; these rules extend its palette and typography. */
 .reading{max-width:1050px}
 .reading .intro{font-size:16px;max-width:48em}
@@ -64,3 +64,5 @@
 @media print{.reading{max-width:none}.reading-try,.reading-next,.reading-connection{display:none}.reading-lead{background:white}.reading-people article,.reading-stories article{break-inside:avoid}}
 .reading-index{display:flex;flex-wrap:wrap;gap:10px 22px;margin-bottom:28px;padding-bottom:18px;border-bottom:1px solid var(--line)}
 .reading-index a{font-size:14px;line-height:1.8;color:var(--muted);text-underline-offset:4px}.reading-index a[aria-current=page]{color:var(--accent)}
+
+.private-preview-banner{display:flex;align-items:center;justify-content:center;gap:.8rem;padding:.45rem 1rem;background:#6b2f23;color:#fff;font-size:.78rem;letter-spacing:.04em}.private-preview-banner strong{font-size:.72rem;letter-spacing:.12em}.private-disabled{opacity:.58;cursor:not-allowed;white-space:nowrap}

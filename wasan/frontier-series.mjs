@@ -1,4 +1,4 @@
-/* AI NOBORu — https://www.aiofonesown.com/ | 出典を示す配布用表示。参照史料・第三者の権利表示は各記載を参照。 */
+/* AI NOBORU — https://www.aiofonesown.com/ | 出典を示す配布用表示。参照史料・第三者の権利表示は各記載を参照。 */
 import {q,neg,plus,times,quot,list,product,sum,scale,powerPoly,valueAt,solve,same,seriesOutput,fail,count,pack,normal} from './frontier-common.mjs';
 import {scalar} from './expansion-common.mjs';
 export function seriesPower(p){const f=list(p.coefficients,21),alpha=scalar(p.exponent,'指数',-20,20),N=count(p.order,'次数',1,20);if(f[0].sub(q(1)).n)fail('定数項は1にしてください。');const g=[q(1)];for(let n=1;n<=N;n++){let v=q(0);for(let k=1;k<=n&&k<f.length;k++)v=plus(v,times(times(alpha.add(q(1)).mul(q(k)).sub(q(n)),f[k]),g[n-k]));g.push(quot(v,q(n)));}const df=f.slice(1).map((v,i)=>times(v,q(i+1))),dg=g.slice(1).map((v,i)=>times(v,q(i+1)));if(!same(product(f,dg,N-1),scale(product(df,g,N-1),alpha)))fail('級数の微分関係の検算が一致しません。');return seriesOutput(g,N,['定数項g₀=1から係数を順に求めます。','n gₙ = Σ[((α+1)k−n) fₖ gₙ₋ₖ]。','F g′=α F′g の全係数を指定次数まで照合済み。','形式的な級数です。数値を代入したときの収束は別途確認が必要です。']);}

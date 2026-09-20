@@ -1,4 +1,4 @@
-/* AI NOBORu — https://www.aiofonesown.com/ | 出典を示す配布用表示。参照史料・第三者の権利表示は各記載を参照。 */
+/* AI NOBORU — https://www.aiofonesown.com/ | 出典を示す配布用表示。参照史料・第三者の権利表示は各記載を参照。 */
 const input=(key,label,value,hint='',wide=false)=>({key,label,value,kind:'text',hint,wide});
 const select=(key,label,value,options)=>({key,label,value,kind:'select',options});
 const link=(id,name)=>({id,name});

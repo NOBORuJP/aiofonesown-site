@@ -1,10 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1500" height="1444" viewBox="0 0 1500 1444" role="img" aria-labelledby="title desc">
 <title id="title">Twelve questions — what must be checked next?</title>
-<desc id="desc">The project separates mathematical, textual, and applied verification. This is not a historical teacher–student chart.</desc>
+<desc id="desc">This research separates mathematical, documentary, and applied questions. This is not a historical teacher–student chart.</desc>
 <rect width="1500" height="1388" fill="#f5f3eb"/>
 <g font-family="Noto Sans CJK JP, Noto Sans JP, sans-serif">
 <text x="48" y="66" font-size="40" fill="#193b48" font-weight="600">Twelve questions — what must be checked next?</text>
-<text x="48" y="113" font-size="22" fill="#193b48" font-weight="400">The project separates mathematical, textual, and applied verification.</text>
+<text x="48" y="113" font-size="22" fill="#193b48" font-weight="400">This research separates mathematical, documentary, and applied questions.</text>
 <rect x="48" y="168" width="1404" height="163" rx="14" fill="#fff" stroke="#cbd6d0"/>
 <text x="78" y="212" font-size="28" fill="#946640" font-weight="600">01 Notation and translation / 02 Elimination and determinants</text>
 <text x="78" y="258" font-size="25" fill="#193b48" font-weight="400">Match every source symbol to an edition and page.</text>
@@ -30,7 +30,7 @@
 <text x="78" y="1183" font-size="23" fill="#193b48" font-weight="400">Separate source, prior scholarship, modern reconstruction, and unverified claims.</text>
 <text x="78" y="1222" font-size="23" fill="#193b48" font-weight="400">Separate models from tested devices; listed device applications remain untested.</text>
 <text x="48" y="1310" font-size="20" fill="#193b48" font-weight="400">The article explains all twelve items. This is not a historical teacher–student chart.</text>
-<text x="48" y="1351" font-size="20" fill="#193b48" font-weight="400">AI NOBORU | Updated 15 September 2026 | Sources and variants appear in the article</text>
+<text x="48" y="1351" font-size="20" fill="#193b48" font-weight="400">AI NOBORU | Sources and variants appear in the article</text>
 </g>
 <g data-ainoboru-attribution="true">
 <rect x="0" y="1388" width="1500" height="56" fill="#183744"/>

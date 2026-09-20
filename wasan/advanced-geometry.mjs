@@ -1,4 +1,4 @@
-/* AI NOBORu — https://www.aiofonesown.com/ | 出典を示す配布用表示。参照史料・第三者の権利表示は各記載を参照。 */
+/* AI NOBORU — https://www.aiofonesown.com/ | 出典を示す配布用表示。参照史料・第三者の権利表示は各記載を参照。 */
 import {Q,rational,pack,positive,count,fmt,fail} from './advanced-common.mjs';
 const norm=v=>Math.hypot(...v),dot=(a,b)=>a.reduce((s,x,i)=>s+x*b[i],0),distance=(a,b)=>norm(a.map((x,i)=>x-b[i]));
 const sum=q=>q.reduce((s,x)=>s.add(x),new Q(0n));

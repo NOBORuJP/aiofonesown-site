@@ -1,4 +1,4 @@
-/* AI NOBORu — https://www.aiofonesown.com/ | 出典を示す配布用表示。参照史料・第三者の権利表示は各記載を参照。 */
+/* AI NOBORU — https://www.aiofonesown.com/ | 出典を示す配布用表示。参照史料・第三者の権利表示は各記載を参照。 */
 import {q,neg,plus,times,quot,list,pack,fail,count,fmt,approximateQ} from './frontier-common.mjs';
 import {scalar,power} from './expansion-common.mjs';
 import {positive} from './advanced-common.mjs';
