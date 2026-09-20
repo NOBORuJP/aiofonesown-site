@@ -18,11 +18,11 @@
   const link = document.createElement('a');
   link.className = 'button';
   const filename = english ? 'AI-NOBORu-wasan-site-en.zip' : 'AI-NOBORu-wasan-site.zip';
-  link.href = packageCopy ? 'https://www.aiofonesown.com/' : new URL('downloads/' + filename, base).href;
+  link.href = packageCopy ? (english ? 'https://www.aiofonesown.com/wasan/en/downloads.html' : 'https://www.aiofonesown.com/wasan/downloads.html') : new URL('downloads/' + filename, base).href;
   if (!packageCopy) link.download = filename;
   link.textContent = packageCopy
-    ? (english ? 'Visit the official website' : '公式サイトを見る')
-    : (english ? 'Download the English package' : '出典表示付きの計算室をダウンロード');
+    ? (english ? 'Open downloads on the official site' : '公式サイトのダウンロードを開く')
+    : (english ? 'Download the bilingual site (English entry)' : '日英の和算計算室をダウンロード');
   const note = document.createElement('small');
   const brand = document.createElement('a');
   brand.href = 'https://www.aiofonesown.com/';

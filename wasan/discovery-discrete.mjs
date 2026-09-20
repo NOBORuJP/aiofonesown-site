@@ -1,4 +1,4 @@
-/* AI NOBORu — https://www.aiofonesown.com/ | 出典を示す配布用表示。参照史料・第三者の権利表示は各記載を参照。 */
+/* AI NOBORU — https://www.aiofonesown.com/ | 出典を示す配布用表示。参照史料・第三者の権利表示は各記載を参照。 */
 import {Q,rational,normal,fail,count,pack} from './advanced-common.mjs';
 import {gcd} from './math.mjs';
 const integer=(s,label,max)=>{s=normal(s);if(!/^\d{1,13}$/.test(s)||BigInt(s)<1n||BigInt(s)>max)fail(`${label}は1〜${max}の整数にしてください。`);return BigInt(s)};

@@ -1,4 +1,4 @@
-/* AI NOBORu — https://www.aiofonesown.com/ | 出典を示す配布用表示。参照史料・第三者の権利表示は各記載を参照。 */
+/* AI NOBORU — https://www.aiofonesown.com/ | 出典を示す配布用表示。参照史料・第三者の権利表示は各記載を参照。 */
 const dots=(n,color='')=>`<span class="kid-dots ${color}" aria-hidden="true">${'● '.repeat(n)}</span>`;
 const options=(min,max,selected)=>Array.from({length:max-min+1},(_,i)=>`<option value="${i+min}"${i+min===selected?' selected':''}>${i+min}</option>`).join('');
 const choose=(key,label,min,max,selected)=>`<label for="kid-${key}">${label} <select id="kid-${key}" name="${key}">${options(min,max,selected)}</select></label>`;

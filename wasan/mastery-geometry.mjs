@@ -1,4 +1,4 @@
-/* AI NOBORu — https://www.aiofonesown.com/ | 出典を示す配布用表示。参照史料・第三者の権利表示は各記載を参照。 */
+/* AI NOBORU — https://www.aiofonesown.com/ | 出典を示す配布用表示。参照史料・第三者の権利表示は各記載を参照。 */
 import {Q,normal,rational,positive,count,pack,fail,fmt} from './advanced-common.mjs';
 const signed=(s,label)=>{s=normal(s);if(s.length>24)fail(label+'は24文字以内で入力してください。');const q=rational(s);if(q.n>1000000n*q.d||q.n< -1000000n*q.d)fail(label+'の絶対値は1,000,000以下にしてください。');return q};
 const absQ=q=>q.n<0n?new Q(-q.n,q.d):q;

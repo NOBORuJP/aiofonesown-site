@@ -1,4 +1,4 @@
-/* AI NOBORu — https://www.aiofonesown.com/ | 出典を示す配布用表示。参照史料・第三者の権利表示は各記載を参照。 */
+/* AI NOBORU — https://www.aiofonesown.com/ | 出典を示す配布用表示。参照史料・第三者の権利表示は各記載を参照。 */
 // WASAN calculation engine. No eval, network, or mutable global state.
 const fail=(message)=>{throw new Error(message)};
 export const normal=s=>String(s).normalize('NFKC').replaceAll('−','-').trim();

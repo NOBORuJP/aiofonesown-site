@@ -1,4 +1,4 @@
-/* AI NOBORu — https://www.aiofonesown.com/ | 出典を示す配布用表示。参照史料・第三者の権利表示は各記載を参照。 */
+/* AI NOBORU — https://www.aiofonesown.com/ | 出典を示す配布用表示。参照史料・第三者の権利表示は各記載を参照。 */
 // Enhance the existing navigation; calculators and reading content keep their own routing.
 export function bindMobileNavigation(doc=document,win=window){
  const sidebar=doc.querySelector('.sidebar'),nav=doc.getElementById('navigation'),workspace=doc.getElementById('workspace');

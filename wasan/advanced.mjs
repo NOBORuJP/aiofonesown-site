@@ -1,4 +1,4 @@
-/* AI NOBORu — https://www.aiofonesown.com/ | 出典を示す配布用表示。参照史料・第三者の権利表示は各記載を参照。 */
+/* AI NOBORU — https://www.aiofonesown.com/ | 出典を示す配布用表示。参照史料・第三者の権利表示は各記載を参照。 */
 import {eliminate,allRealRoots} from './advanced-algebra.mjs';
 import {takebeArc,certifiedPi} from './advanced-analysis.mjs';
 import {tangentCircles,tangentSpheres,hexlet} from './advanced-geometry.mjs';

@@ -1,4 +1,4 @@
-/* AI NOBORu — https://www.aiofonesown.com/ | 出典を示す配布用表示。参照史料・第三者の権利表示は各記載を参照。 */
+/* AI NOBORU — https://www.aiofonesown.com/ | 出典を示す配布用表示。参照史料・第三者の権利表示は各記載を参照。 */
 const f=(key,label,value,hint='',wide=false)=>({key,label,value,hint,wide,kind:'text'});
 const len=(key,label,value)=>f(key,label,value,'0.001〜100万。各24文字以内。小数・分数可');
 const poly=(key,label,value,hint='')=>f(key,label,value,'各24文字・絶対値100万以下。'+hint,true);

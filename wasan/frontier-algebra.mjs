@@ -1,4 +1,4 @@
-/* AI NOBORu — https://www.aiofonesown.com/ | 出典を示す配布用表示。参照史料・第三者の権利表示は各記載を参照。 */
+/* AI NOBORU — https://www.aiofonesown.com/ | 出典を示す配布用表示。参照史料・第三者の権利表示は各記載を参照。 */
 import {q,neg,guard,plus,times,quot,list,product,sum,scale,powerPoly,valueAt,solve,dividePoly,same,integerPolynomial,intervalValue,seriesOutput,trim,textPolynomial,fail,count,pack,fmt,approximateQ,rational,normal} from './frontier-common.mjs';
 import {scalar,derivative,coefficients} from './expansion-common.mjs';
 import {allRealRoots} from './advanced-algebra.mjs';

@@ -1,4 +1,4 @@
-/* AI NOBORu — https://www.aiofonesown.com/ | 出典を示す配布用表示。参照史料・第三者の権利表示は各記載を参照。 */
+/* AI NOBORU — https://www.aiofonesown.com/ | 出典を示す配布用表示。参照史料・第三者の権利表示は各記載を参照。 */
 const ndl=['国立国会図書館｜関孝和と消去','https://www.ndl.go.jp/math/s1/2.html'];
 const rootsSource=['国立国会図書館｜高次方程式の近似解法','https://www.ndl.go.jp/math/s1/c3.html'];
 const takebe=['森本・小川｜建部『綴術算経』校訂英訳','https://www.sciamvs.org/files/SCIAMVS_13_157-286_Morimoto_Ogawa.pdf'];

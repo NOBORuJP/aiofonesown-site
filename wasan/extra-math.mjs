@@ -1,4 +1,4 @@
-/* AI NOBORu — https://www.aiofonesown.com/ | 出典を示す配布用表示。参照史料・第三者の権利表示は各記載を参照。 */
+/* AI NOBORU — https://www.aiofonesown.com/ | 出典を示す配布用表示。参照史料・第三者の権利表示は各記載を参照。 */
 import {normal,Q,rational} from './math.mjs';
 const fail=s=>{throw new Error(s)};
 const natural=(s,label,maxDigits=80)=>{s=normal(s);if(!new RegExp('^\\+?\\d{1,'+maxDigits+'}$').test(s))fail(label+'は'+maxDigits+'桁以内の0以上の整数で入力してください。');return BigInt(s);};

@@ -1,6 +1,8 @@
-/* AI NOBORu — https://www.aiofonesown.com/ | 出典を示す配布用表示。参照史料・第三者の権利表示は各記載を参照。 */
+/* AI NOBORU — https://www.aiofonesown.com/ | 出典を示す配布用表示。参照史料・第三者の権利表示は各記載を参照。 */
 #navigation-pages{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:4px;margin:0 4px 18px}
-#navigation-pages a{display:flex;align-items:center;justify-content:center;min-height:40px;padding:6px 2px;border:1px solid var(--line);border-radius:4px;font-size:13px;font-variant-numeric:tabular-nums;color:var(--muted);text-decoration:none;white-space:nowrap}
+#navigation-pages a{display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:48px;padding:6px 5px;border:1px solid var(--line);border-radius:4px;font-size:12px;font-variant-numeric:tabular-nums;color:var(--muted);text-decoration:none;white-space:normal;text-align:center;line-height:1.25}
+#navigation-pages .chapter-range{font-size:11px;opacity:.8}
+#navigation-pages .chapter-label{font-weight:650;overflow-wrap:anywhere}
 #navigation-pages a[aria-current]{background:#e6eef0;color:var(--ink);border-color:#bfcfd5}
 #navigation-pages a:hover{border-color:var(--accent);color:var(--accent)}
 #navigation .nav-num{width:48px;font-size:16px;line-height:1.7;white-space:nowrap}
@@ -14,3 +16,8 @@
 @media print{#navigation-pages{display:none}}
 
 #navigation-pages a:last-child:nth-child(odd){grid-column:1 / -1}
+.learning-path{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);gap:10px;align-items:stretch;margin:18px 0 10px}
+.learning-path>a,.learning-path>p{box-sizing:border-box;min-height:58px;margin:0;padding:8px 10px;border:1px solid var(--line);border-radius:5px;background:#fff;text-decoration:none;color:var(--ink)}
+.learning-path>a{display:flex;flex-direction:column;justify-content:center}.learning-path>a span,.learning-path>p span{font-size:11px;color:var(--muted);letter-spacing:.04em}.learning-path>a strong{font-size:13px;font-weight:650}.learning-path .learning-next{text-align:right}.learning-path>p{display:flex;min-width:138px;flex-direction:column;justify-content:center;text-align:center;background:#f5f3eb}.learning-path>p strong{font-size:12px}
+@media screen and (max-width:700px){.learning-path{grid-template-columns:1fr 1fr}.learning-path>p{grid-column:1/-1;grid-row:1;min-height:46px}.learning-path>a{min-height:56px}.learning-path>span:empty{display:none}}
+@media print{.learning-path{display:none}}

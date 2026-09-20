@@ -1,4 +1,4 @@
-/* AI NOBORu — https://www.aiofonesown.com/ | 出典を示す配布用表示。参照史料・第三者の権利表示は各記載を参照。 */
+/* AI NOBORU — https://www.aiofonesown.com/ | 出典を示す配布用表示。参照史料・第三者の権利表示は各記載を参照。 */
 import {pack,count,decimal} from './advanced-common.mjs';
 import {approximateQ} from './math.mjs';
 import {q,Q,rational,scalar,normal,fail,coefficients,trim,isZero,neg,add,multiply,evaluate,derivative,divide,polynomialGcd,textPolynomial,determinant,power} from './expansion-common.mjs';

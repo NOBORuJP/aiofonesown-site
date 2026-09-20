@@ -1,4 +1,4 @@
-/* AI NOBORu — https://www.aiofonesown.com/ | English entry point. */
+/* AI NOBORU — https://www.aiofonesown.com/ | English entry point. */
 import {installEnglishInterface,translateEnglishText,localizeWasanTool} from './locale.mjs';
 window.__wasanLocalize=translateEnglishText;
 // Localize only this site's optional AI tool while the shared app registers it.
