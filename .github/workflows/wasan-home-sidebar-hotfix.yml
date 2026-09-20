@@ -202,14 +202,13 @@ jobs:
               root_manifest[rel] = digest(p.read_bytes())
           (root / "SHA256SUMS.json").write_bytes(json_bytes(root_manifest))
 
-          # Structural acceptance for this hotfix.
-          from bs4 import BeautifulSoup
+          # Structural acceptance for this hotfix (stdlib only).
           for p in sorted(en.glob("about*.html")):
-              soup = BeautifulSoup(p.read_text("utf-8"), "html.parser")
-              if len(soup.select(".sidebar")) != 1: raise SystemExit(f"sidebar missing {p}")
-              if len(soup.select(".purpose-nav")) != 1: raise SystemExit(f"purpose nav missing {p}")
-              if len(soup.select("#navigation .nav-item")) != 14: raise SystemExit(f"nav item count {p}")
-              if len(soup.select("#navigation-pages a")) != 6: raise SystemExit(f"chapter count {p}")
+              check = p.read_text("utf-8")
+              if check.count('class="sidebar"') != 1: raise SystemExit(f"sidebar missing {p}")
+              if check.count('class="purpose-nav"') != 1: raise SystemExit(f"purpose nav missing {p}")
+              if check.count('class="nav-item"') != 14: raise SystemExit(f"nav item count {p}")
+              if check.count('class="chapter-range"') != 6: raise SystemExit(f"chapter count {p}")
           for rel in ["index.html","en/index.html"]:
               s=(root/rel).read_text("utf-8")
               if "data-wasan-home-redirect" not in s: raise SystemExit("home redirect missing "+rel)
