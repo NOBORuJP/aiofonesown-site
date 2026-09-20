@@ -1,0 +1,206 @@
+name: WASAN home-link finalizer
+
+on:
+  push:
+    branches:
+      - feature/wasan-home-links-fix-20260921
+    paths:
+      - .github/workflows/wasan-home-links-finalize.yml
+
+permissions:
+  contents: write
+
+jobs:
+  finalize:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: feature/wasan-home-links-fix-20260921
+          fetch-depth: 0
+
+      - name: Verify base
+        run: |
+          set -euo pipefail
+          git merge-base --is-ancestor a88121ebd25a036a92e853645f6fc82380e9c1fd HEAD
+
+      - name: Audit home-return semantics
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          from pathlib import Path
+          from html.parser import HTMLParser
+          import re
+
+          root=Path("wasan")
+          bad=[]
+          seen=[]
+          class A(HTMLParser):
+              def __init__(self,path):
+                  super().__init__()
+                  self.path=path
+                  self.stack=[]
+                  self.current=None
+              def handle_starttag(self,tag,attrs):
+                  if tag=="a":
+                      d=dict(attrs)
+                      self.current={"href":d.get("href",""),"text":[],"class":d.get("class","")}
+              def handle_data(self,data):
+                  if self.current is not None:
+                      self.current["text"].append(data)
+              def handle_endtag(self,tag):
+                  if tag=="a" and self.current is not None:
+                      href=self.current["href"]
+                      text=" ".join("".join(self.current["text"]).split())
+                      seen.append((self.path,href,text,self.current["class"]))
+                      if "#tsurukame" in href and re.search(r"home|top|トップ|ホーム|return|Mathematics Laboratory|和算計算室",text,re.I):
+                          bad.append((self.path,href,text))
+                      self.current=None
+
+          for p in sorted(root.rglob("*.html")):
+              parser=A(str(p))
+              parser.feed(p.read_text("utf-8"))
+
+          required={
+              "wasan/downloads.html":('./about.html','← 和算トップ'),
+              "wasan/en/downloads.html":('./about.html','← WASAN home'),
+              "wasan/en/calculators.html":('./about.html','← WASAN home'),
+          }
+          for path,(href,text) in required.items():
+              if not any(p==path and h==href and t==text for p,h,t,c in seen):
+                  raise SystemExit(f"required home link missing: {path} {href} {text}")
+          if bad:
+              raise SystemExit("old-home semantic links remain: "+repr(bad))
+
+          # Brand/home identity is the introduction on every page that has a brand link.
+          brand_bad=[]
+          for p,h,t,c in seen:
+              if "brand" in c.split() and not h.endswith("about.html"):
+                  brand_bad.append((p,h,t))
+          if brand_bad:
+              raise SystemExit("brand link not introduction: "+repr(brand_bad))
+
+          for rel in ["index.html","en/index.html"]:
+              s=(root/rel).read_text("utf-8")
+              if 'data-wasan-home-redirect' not in s or 'location.replace("./about.html")' not in s:
+                  raise SystemExit("home redirect missing: "+rel)
+
+          # Explicit calculator navigation remains available.
+          ja=(root/"about.html").read_text("utf-8")
+          en=(root/"en/about.html").read_text("utf-8")
+          if '>計算室</a>' not in ja or './#tsurukame' not in ja:
+              raise SystemExit("Japanese calculator link lost")
+          if '>Calculators</a>' not in en or './#tsurukame' not in en:
+              raise SystemExit("English calculator link lost")
+
+          print(f"HOME_LINK_AUDIT_PASS html={len(list(root.rglob('*.html')))} anchors={len(seen)} bad=0")
+          PY
+
+      - name: Rebuild public distribution packages
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          from pathlib import Path
+          from zipfile import ZipFile, ZIP_DEFLATED
+          import json, hashlib
+
+          root=Path("wasan")
+          dist=root/"downloads"
+          kit_path=dist/"AI-NOBORu-aiofonesown-kit.zip"
+          with ZipFile(kit_path) as z:
+              kit_helpers={n:z.read(n) for n in z.namelist()
+                           if not n.startswith("wasan/") and n!="SHA256SUMS.json"}
+
+          dist_names={
+              "downloads/AI-NOBORu-wasan-site.zip",
+              "downloads/AI-NOBORu-wasan-site-en.zip",
+              "downloads/AI-NOBORu-aiofonesown-kit.zip",
+          }
+          def digest(b): return hashlib.sha256(b).hexdigest()
+          def jb(o): return (json.dumps(o,ensure_ascii=False,indent=2,sort_keys=True)+"\n").encode()
+          def files(): return sorted(p for p in root.rglob("*") if p.is_file())
+
+          site_manifest={}
+          for p in files():
+              rel=p.relative_to(root).as_posix()
+              if rel=="SHA256SUMS.json" or rel in dist_names: continue
+              site_manifest[rel]=digest(p.read_bytes())
+          site_manifest_bytes=jb(site_manifest)
+
+          def build_site(out,prefix):
+              with ZipFile(out,"w",ZIP_DEFLATED,compresslevel=9) as z:
+                  for p in files():
+                      rel=p.relative_to(root).as_posix()
+                      if rel in dist_names: continue
+                      if rel=="SHA256SUMS.json":
+                          z.writestr(prefix+rel,site_manifest_bytes)
+                      else:
+                          z.write(p,prefix+rel)
+
+          jp=dist/"AI-NOBORu-wasan-site.zip"
+          en=dist/"AI-NOBORu-wasan-site-en.zip"
+          build_site(jp,"AI-NOBORu-wasan/")
+          build_site(en,"AI-NOBORu-wasan-en/")
+
+          kit_wasan={}
+          for p in files():
+              rel=p.relative_to(root).as_posix()
+              if rel=="SHA256SUMS.json" or rel=="downloads/AI-NOBORu-aiofonesown-kit.zip": continue
+              kit_wasan[rel]=digest(p.read_bytes())
+          kit_wasan_bytes=jb(kit_wasan)
+
+          entries=dict(kit_helpers)
+          for p in files():
+              rel=p.relative_to(root).as_posix()
+              if rel=="downloads/AI-NOBORu-aiofonesown-kit.zip": continue
+              arc="wasan/"+rel
+              entries[arc]=kit_wasan_bytes if rel=="SHA256SUMS.json" else p.read_bytes()
+          top_manifest={k:digest(v) for k,v in sorted(entries.items())}
+          with ZipFile(kit_path,"w",ZIP_DEFLATED,compresslevel=9) as z:
+              for n,b in sorted(entries.items()): z.writestr(n,b)
+              z.writestr("SHA256SUMS.json",jb(top_manifest))
+
+          root_manifest={}
+          for p in files():
+              rel=p.relative_to(root).as_posix()
+              if rel=="SHA256SUMS.json": continue
+              root_manifest[rel]=digest(p.read_bytes())
+          (root/"SHA256SUMS.json").write_bytes(jb(root_manifest))
+
+          if len(root_manifest)!=102: raise SystemExit(f"root manifest {len(root_manifest)}")
+          with ZipFile(jp) as z:
+              if len(z.namelist())!=100: raise SystemExit("JP package count")
+          with ZipFile(en) as z:
+              if len(z.namelist())!=100: raise SystemExit("EN package count")
+          with ZipFile(kit_path) as z:
+              if len(z.namelist())!=109: raise SystemExit("kit package count")
+          print("PACKAGE_REBUILD_PASS root_manifest=102 jp=100 en=100 kit=109")
+          PY
+
+      - name: Syntax and manifest checks
+        run: |
+          set -euo pipefail
+          while IFS= read -r f; do node --check "$f" >/dev/null; done < <(find wasan -name '*.mjs' -type f | sort)
+          python - <<'PY'
+          from pathlib import Path
+          import hashlib,json
+          root=Path("wasan")
+          man=json.loads((root/"SHA256SUMS.json").read_text("utf-8"))
+          for rel,want in man.items():
+              p=root/rel
+              if not p.is_file(): raise SystemExit("missing "+rel)
+              got=hashlib.sha256(p.read_bytes()).hexdigest()
+              if got!=want: raise SystemExit("hash mismatch "+rel)
+          print(f"MANIFEST_PASS entries={len(man)}")
+          PY
+
+      - name: Commit finalized hotfix
+        run: |
+          set -euo pipefail
+          rm -f .github/workflows/wasan-home-links-finalize.yml
+          git config user.name "AI NOBORU Release"
+          git config user.email "noreply@users.noreply.github.com"
+          git add -A wasan .github/workflows/wasan-home-links-finalize.yml
+          git status --short
+          git commit -m "fix: align all WASAN home-return links with introduction"
+          git push origin HEAD:feature/wasan-home-links-fix-20260921
