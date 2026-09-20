@@ -11,18 +11,20 @@ Publisher: AI NOBORU / Noboru Ikuta
 
 ## Recommended reading order
 1. 「年を動かして、幕末の金の流れを見る」— 1830〜1888年の4レーン時系列
-2. 薩摩・長州の国内原資
-3. Jardine Matheson–Gloverの商業信用
-4. HSBCとアヘン戦争後の香港金融秩序
-5. 龍馬・亀山社中・留学生の人的／物流ネットワーク
-6. 幕府・フランス・Stonewall・奥羽越
-7. 1868年後の贋貨、公債、外債、高島炭鉱（1881年三菱買収まで）
-8. S01–S81の主要史料・研究文献
+2. 「薩長と幕府 — 同じ年を両側から読む」— 同じスライダーに同期する対抗ストーリー
+3. 薩摩・長州の国内原資
+4. Jardine Matheson–Gloverの商業信用
+5. HSBCとアヘン戦争後の香港金融秩序
+6. 龍馬・亀山社中・留学生の人的／物流ネットワーク
+7. 幕府・フランス・Stonewall・奥羽越
+8. 1868年後の贋貨、公債、外債、高島炭鉱（1881年三菱買収まで）
+9. S01–S87の主要史料・研究文献
 
 ## Core finding
 「英国政府の一括秘密資金」だけで倒幕を説明する直接証拠は現時点で確認できない。
 日本国内で形成された購買力が、商業信用、政治的名義、人的・海運ネットワーク、国際調達市場を通じて銃・船・技術へ変換された、という複層モデルで読む。
 国家外交と民間商業信用、勘定名と経済的実態、確定値と推計値を分ける。
+薩長同盟は1866年の一会談だけでなく、1865年の武器・船・糧食・名義をめぐる実務協力から1867年の武力倒幕連合まで連続過程として読む。幕府側も国際銀行・フランス技術・横須賀・軍需を束ねた別の資金変換モデルで対抗した。
 
 ## Key precision points
 - Cambridge shelfmark: MS JM/A8/112/7
@@ -34,6 +36,6 @@ Publisher: AI NOBORU / Noboru Ikuta
 - Takashima demonstrates continuity of foreign commercial credit into Meiji; exact debt/loss totals remain pending primary verification.
 
 ## Evidence discipline
-81 source records (S01–S81).
+87 source records (S01–S87).
 Claims are distinguished as confirmed, strongly supported, conditional, unproven, or counterevidenced where appropriate.
 Comparative material on Qing, Egypt and the Ottoman Empire preserves institutional differences and is not used as a one-cause explanation of Japan.
