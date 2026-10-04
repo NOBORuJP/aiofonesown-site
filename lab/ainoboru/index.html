@@ -1,0 +1,619 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>AI NOBORu — 話すほど、NOBORU に近づくAI｜AI of One's Own / 育てるAI</title>
+<meta name="description" content="AI NOBORu は、『育てるAI』の著者 生田 昇が自分のために組み上げたAI環境。毎日の会話から判断と考え方を読み取り、NOBORU のクローンAIを育てる。">
+<link rel="canonical" href="https://www.aiofonesown.com/lab/ainoboru/">
+<link rel="alternate" hreflang="en" href="https://www.aiofonesown.com/lab/ainoboru/en/">
+<link rel="alternate" hreflang="ja" href="https://www.aiofonesown.com/lab/ainoboru/">
+<link rel="alternate" hreflang="x-default" href="https://www.aiofonesown.com/lab/ainoboru/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="AI of One's Own / 育てるAI">
+<meta property="og:title" content="AI NOBORu — 話すほど、NOBORU に近づくAI">
+<meta property="og:description" content="『育てるAI』の著者 生田 昇が自分のために組み上げたAI環境。毎日の会話から判断と考え方を読み取り、NOBORU のクローンAIを育てる。">
+<meta property="og:url" content="https://www.aiofonesown.com/lab/ainoboru/">
+<meta property="og:image" content="https://www.aiofonesown.com/lab/ainoboru/og-ja.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="article:published_time" content="2026-10-04T00:00:00+09:00">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@aiofonesown">
+<meta name="twitter:title" content="AI NOBORu — 話すほど、NOBORU に近づくAI">
+<meta name="twitter:description" content="『育てるAI』の著者 生田 昇が自分のために組み上げたAI環境。毎日の会話から判断と考え方を読み取り、NOBORU のクローンAIを育てる。">
+<meta name="twitter:image" content="https://www.aiofonesown.com/lab/ainoboru/og-ja.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --midnight:#0D162C; --deep:#04081A; --core:#18254A;
+  --gold-hi:#E1CB91; --gold:#C9A468; --gold-dk:#765F44;
+  --parchment:#E8E4CD; --bronze:#7F532F; --bronze-dk:#5E3D22;
+  --muted:#9AA3B8;
+  --line:rgba(201,164,104,.22);
+  --serif:"Noto Serif JP","Hiragino Mincho ProN","Yu Mincho",serif;
+  --sans:-apple-system,BlinkMacSystemFont,"Hiragino Kaku Gothic ProN","Noto Sans JP",sans-serif;
+  --w:1080px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{background:var(--deep);color:var(--parchment);font-family:var(--sans);font-size:16px;line-height:1.9;-webkit-font-smoothing:antialiased;line-break:strict}
+p,h1,h2,h3{word-break:auto-phrase}
+a{color:var(--gold-hi);text-decoration:none}
+a:hover{text-decoration:underline}
+a:focus-visible{outline:2px solid var(--gold-hi);outline-offset:3px;border-radius:2px}
+.wrap{max-width:var(--w);margin:0 auto;padding:0 24px}
+.nb{display:inline-block}
+
+/* header（サイトと同じ） */
+header{position:sticky;top:0;z-index:10;background:rgba(4,8,26,.82);backdrop-filter:blur(8px);border-bottom:1px solid rgba(201,164,104,.18)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:60px}
+.brand{display:flex;align-items:center;gap:10px;color:var(--parchment);font-family:var(--serif);font-weight:600;font-size:15px;letter-spacing:.04em}
+.brand:hover{text-decoration:none}
+.brand .ai{color:var(--gold)}
+.nav-links{display:flex;gap:22px;font-size:13.5px;letter-spacing:.06em}
+.nav-links a{color:var(--muted)}
+.nav-links a[aria-current]{color:var(--gold-hi)}
+
+/* hero */
+.hero{position:relative;overflow:hidden;text-align:center;padding:96px 24px 88px;background:radial-gradient(900px 540px at 50% 28%,var(--core) 0%,var(--midnight) 52%,var(--deep) 100%)}
+.orbits{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.hero > *:not(.orbits){position:relative}
+.eyebrow{font-size:12px;letter-spacing:.42em;color:var(--gold);text-transform:uppercase;margin-bottom:34px}
+.symbol{margin:0 auto 38px;width:108px;height:108px;display:block}
+h1{font-family:var(--serif);font-weight:700;font-size:clamp(30px,5.4vw,56px);line-height:1.55;letter-spacing:.02em;margin-bottom:30px}
+h1 .own{color:var(--gold-hi);text-shadow:0 0 28px rgba(225,203,145,.25)}
+.lede{max-width:660px;margin:0 auto 44px;color:var(--muted);font-size:clamp(15px,1.6vw,17.5px);line-height:2.1}
+.lede b{color:var(--parchment);font-weight:600}
+.cta-row{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.btn{display:inline-block;padding:13px 26px;border-radius:3px;font-size:14.5px;letter-spacing:.05em;font-weight:600;border:1px solid var(--gold);color:var(--gold-hi);transition:background .2s,color .2s}
+.btn:hover{background:rgba(201,164,104,.12);text-decoration:none}
+.btn.primary{background:var(--gold);color:#1a1206;border-color:var(--gold)}
+.btn.primary:hover{background:var(--gold-hi)}
+.badge{display:inline-block;margin-top:40px;font-size:12px;letter-spacing:.22em;color:var(--muted);border:1px solid rgba(154,163,184,.35);padding:5px 16px;border-radius:99px}
+
+/* sections */
+.section{padding:92px 24px;position:relative}
+.section-head{text-align:center;margin-bottom:48px}
+.kicker{font-size:12px;letter-spacing:.36em;color:var(--gold);margin-bottom:16px}
+h2{font-family:var(--serif);font-weight:600;font-size:clamp(23px,3.2vw,32px);letter-spacing:.03em}
+.body{max-width:720px;margin:0 auto;text-align:center}
+.body p{color:var(--muted);font-size:15.5px;line-height:2.1;margin-top:18px}
+.body p b{color:var(--parchment);font-weight:600}
+.system{background:var(--midnight);border-top:1px solid rgba(201,164,104,.14);border-bottom:1px solid rgba(201,164,104,.14)}
+
+/* THE CLONE */
+.quote{text-align:center;margin:0 auto 54px;font-family:var(--serif);font-weight:700;font-size:clamp(26px,4.4vw,44px);line-height:1.6;color:var(--gold-hi);text-shadow:0 0 28px rgba(225,203,145,.2)}
+.quote small{display:block;font-family:var(--sans);font-weight:400;font-size:14px;color:var(--muted);letter-spacing:.08em;text-shadow:none;margin-top:10px}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:2px;max-width:980px;margin:48px auto 0;border:1px solid var(--line)}
+.col{padding:46px 42px;background:var(--midnight)}
+.col.rented{background:#0A1124}
+.col.owned{background:linear-gradient(180deg,#101b3a 0%,var(--midnight) 100%)}
+.col .tag{font-size:12px;letter-spacing:.3em;margin-bottom:18px}
+.col.rented .tag{color:var(--muted)}
+.col.owned .tag{color:var(--gold-hi)}
+.col h3{font-family:var(--serif);font-size:24px;font-weight:600;margin-bottom:18px}
+.col.rented h3{color:var(--parchment)}
+.col.owned h3{color:var(--gold-hi)}
+.col p{color:var(--muted);font-size:15px;line-height:2.05}
+.col.owned p{color:#C9CFE0}
+.col ul{list-style:none;margin-top:20px;font-size:14.5px}
+.col li{padding:7px 0;border-top:1px solid rgba(154,163,184,.14);color:var(--muted)}
+.col.owned li{border-top:1px solid rgba(201,164,104,.22);color:var(--parchment)}
+.col.owned li::before{content:"★ ";color:var(--gold);font-size:11px}
+.col.rented li::before{content:"— ";color:var(--muted)}
+.axiom{text-align:center;margin:54px auto 0;max-width:780px;font-family:var(--serif);font-size:clamp(17px,2.2vw,21px);color:var(--parchment);line-height:2}
+.axiom .gold{color:var(--gold-hi)}
+
+/* bronze band：育ち方 */
+.band{background:linear-gradient(180deg,var(--bronze) 0%,var(--bronze-dk) 100%);padding:84px 24px}
+.band .kicker{color:#F3DDC0}
+.band h2{color:#FCF4E6}
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;max-width:1020px;margin:0 auto;list-style:none}
+.card{background:rgba(13,22,44,.92);border:1px solid rgba(225,203,145,.25);padding:30px 26px;border-radius:3px}
+.card .no{font-size:12px;letter-spacing:.3em;color:var(--gold);margin-bottom:12px}
+.card h3{font-family:var(--serif);font-size:21px;font-weight:600;color:var(--parchment);margin-bottom:10px}
+.card p{font-size:14px;color:var(--muted);line-height:2}
+.band-note{max-width:760px;margin:40px auto 0;text-align:center;font-family:var(--serif);font-size:clamp(16px,2vw,19px);color:#FCF4E6;line-height:2}
+
+/* ONE MEMORY */
+.fig-mem{margin:44px auto 0;display:grid;grid-template-columns:minmax(0,1.2fr) minmax(40px,.55fr) minmax(0,1fr);max-width:720px;text-align:left}
+.entries{list-style:none;display:grid;grid-auto-rows:1fr;gap:12px}
+.entries li{border:1px solid var(--line);border-top:3px solid var(--gold);background:#0A1124;padding:.6em 1em;font-size:14px;color:var(--parchment);display:flex;align-items:center;line-height:1.5}
+.wires{width:100%;height:100%;overflow:visible}
+.wires path{fill:none;stroke:var(--gold);stroke-opacity:.7;stroke-width:1.4;vector-effect:non-scaling-stroke}
+.core-box{align-self:center;text-align:center;padding:22px 14px;border:1px solid var(--gold);background:linear-gradient(180deg,#101b3a 0%,var(--midnight) 100%)}
+.core-box strong{display:block;font-family:var(--serif);font-size:20px;color:var(--gold-hi);letter-spacing:.04em}
+.core-box span{font-size:13px;color:var(--muted)}
+.drop{display:none}
+
+/* 44 LANES */
+.loom{max-width:960px;margin:52px auto 0;--tw:clamp(5px,1.05vw,11px);--tg:clamp(3px,.6vw,7px);--th:clamp(140px,20vw,220px)}
+.pole-label{font-size:13px;color:var(--gold);letter-spacing:.08em;margin-bottom:6px}
+.hangs{display:flex;flex-wrap:wrap;justify-content:space-between;gap:26px 24px;border-top:2px solid var(--gold)}
+.hang{display:flex;flex-direction:column}
+.threads{display:flex;gap:var(--tg);height:var(--th)}
+.threads span{position:relative;width:var(--tw);height:100%;background:rgba(154,163,184,.13);border-radius:0 0 3px 3px;overflow:hidden}
+.threads span.run::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,var(--gold-hi) 0%,var(--gold) 55%,var(--gold-dk) 100%);transform-origin:top;animation:fill 1.3s cubic-bezier(.3,.55,.2,1) both;animation-delay:calc(var(--i)*30ms + 250ms)}
+@keyframes fill{from{transform:scaleY(0)}to{transform:scaleY(1)}}
+@media (prefers-reduced-motion:reduce){.threads span.run::after{animation:none}}
+.hang-name{margin-top:12px;font-size:13.5px;color:var(--muted);line-height:1.5}
+.hang-name b{font-family:var(--serif);font-size:19px;color:var(--parchment);margin-left:.35em}
+.legend{display:flex;gap:22px;flex-wrap:wrap;margin-top:22px;font-size:13px;color:var(--muted)}
+.legend i{display:inline-block;width:10px;height:10px;margin-right:7px;vertical-align:-1px}
+.legend .k-run{background:var(--gold)}
+.legend .k-idle{background:rgba(154,163,184,.3)}
+
+.chat{max-width:760px;margin:56px auto 0;background:var(--midnight);border:1px solid var(--line);border-radius:3px;padding:28px clamp(18px,3vw,32px);text-align:left}
+.who{display:block;font-size:12px;letter-spacing:.2em;color:var(--gold);margin-bottom:4px}
+.msg + .msg{margin-top:20px}
+.msg p{color:var(--parchment);font-size:15px}
+.msg.me p{display:inline-block;background:#0A1124;border:1px solid rgba(154,163,184,.18);padding:.5em .95em;border-radius:3px}
+.msg .big{font-family:var(--serif);font-size:19px;color:var(--gold-hi)}
+.tbl{overflow-x:auto;margin-top:14px}
+.tbl table{border-collapse:collapse;width:100%;min-width:520px;font-size:13.5px;line-height:1.6}
+.tbl th,.tbl td{text-align:left;vertical-align:top;padding:.55em .9em .55em 0;border-top:1px solid rgba(154,163,184,.14)}
+.tbl th{font-weight:600;color:var(--muted);font-size:12px;letter-spacing:.12em;border-top:0}
+.tbl td{color:var(--muted)}
+.tbl td.lane{color:var(--parchment);white-space:nowrap}
+.tbl td.model{color:var(--gold-hi);white-space:nowrap}
+.db{display:inline-block;font-size:11px;letter-spacing:.1em;color:#1a1206;background:var(--gold);padding:0 6px;border-radius:2px;margin-left:6px}
+.chat figcaption{margin-top:14px;font-size:12.5px;color:var(--muted);letter-spacing:.04em}
+
+/* BLIND SPOTS */
+.makers{list-style:none;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0 22px;max-width:760px;margin:40px auto 0;text-align:left}
+.makers li{border-top:1px solid var(--line);padding:.8em 0 1em}
+.makers .m{display:block;font-family:var(--serif);font-weight:600;font-size:21px;color:var(--parchment)}
+.makers .c{font-size:12.5px;color:var(--muted);letter-spacing:.08em}
+
+/* PRIVATE RAG */
+.oneway{display:grid;grid-template-columns:minmax(0,1fr) 112px minmax(0,1fr) 112px minmax(0,1fr);align-items:center;max-width:1000px;margin:52px auto 0;text-align:left}
+.pnode{padding:20px 20px 18px;line-height:1.6}
+.pnode .nt{display:block;font-size:12px;letter-spacing:.14em;color:var(--muted);margin-bottom:4px}
+.pnode strong{display:block;font-family:var(--serif);font-weight:600;font-size:18px;color:var(--parchment)}
+.pnode > span:not(.nt){font-size:13.5px;color:var(--muted)}
+.cloud{border:1px dashed rgba(154,163,184,.45);background:#0A1124}
+.local{border:1px solid rgba(232,228,205,.45);background:#0A1124}
+.vault{text-align:center;padding:32px 18px;background:linear-gradient(180deg,#101b3a 0%,var(--deep) 100%);border:1px solid var(--gold);outline:1px solid var(--gold);outline-offset:6px}
+.vault strong{font-size:22px;color:var(--gold-hi)}
+.noroute{display:block;margin-top:12px;padding-top:10px;border-top:1px solid rgba(154,163,184,.2);font-style:normal;font-size:13px;color:var(--parchment)}
+.arrow{text-align:center;padding:0 8px}
+.arrow svg{width:100%;height:22px;display:block;overflow:visible}
+.arrow line{stroke:var(--gold);stroke-width:1.6}
+.arrow path{fill:var(--gold)}
+.arrow span{display:block;font-size:12px;color:var(--muted);margin-top:6px;line-height:1.5}
+
+
+/* THE WHOLE PICTURE（全体図） */
+.overview{max-width:1000px;margin:44px auto 0;text-align:center}
+.ov-box{border:1px solid var(--line);background:#0A1124;padding:14px 22px;line-height:1.6;display:inline-block;min-width:min(100%,340px)}
+.ov-box .t{display:block;font-size:11.5px;letter-spacing:.22em;color:var(--gold);margin-bottom:2px}
+.ov-box strong{display:block;font-family:var(--serif);font-weight:600;font-size:17px;color:var(--parchment)}
+.ov-box .s{display:block;font-size:12.5px;color:var(--muted)}
+.ov-link{height:46px;position:relative;display:flex;justify-content:center;align-items:center}
+.ov-link::before{content:"";position:absolute;top:0;bottom:0;left:50%;width:1px;background:var(--gold);opacity:.75}
+.ov-link span{position:relative;background:var(--midnight);padding:0 10px;font-size:12px;color:var(--muted)}
+.ov-link.down::after{content:"";position:absolute;bottom:-1px;left:50%;transform:translateX(-50%);border:6px solid transparent;border-top:8px solid var(--gold);border-bottom:0}
+.ov-mid{display:grid;grid-template-columns:minmax(0,1fr) 44px minmax(0,1.7fr) 44px minmax(0,1fr);align-items:center}
+.ov-mid > .ov-box{display:block;min-width:0;height:100%;display:flex;flex-direction:column;justify-content:center}
+.ov-h{height:1px;background:var(--gold);opacity:.75}
+.ov-core{border:1px solid var(--gold);background:linear-gradient(180deg,#101b3a 0%,var(--midnight) 100%);padding:18px 16px 16px}
+.ov-core > strong{display:block;font-family:var(--serif);font-size:22px;color:var(--gold-hi);letter-spacing:.04em;margin-bottom:12px}
+.ov-cells{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.ov-cells div{border:1px solid rgba(201,164,104,.3);padding:10px 6px;font-size:13px;line-height:1.5;color:var(--parchment)}
+.ov-cells div.hl{background:rgba(201,164,104,.14);border-color:var(--gold);color:var(--gold-hi)}
+.ov-cells small{display:block;font-size:11.5px;color:var(--muted)}
+.ov-local{border:1px dashed rgba(232,228,205,.35);padding:24px 18px 20px;max-width:640px;margin:0 auto;position:relative}
+.ov-local > .t{position:absolute;top:-10px;left:50%;transform:translateX(-50%);background:var(--midnight);padding:0 10px;font-size:11.5px;letter-spacing:.18em;color:var(--parchment);white-space:nowrap}
+.ov-pair{display:grid;grid-template-columns:minmax(0,1fr) 70px minmax(0,1fr);align-items:center}
+.ov-pair .ov-box{min-width:0;display:block}
+.ov-pair .vb{border-color:var(--gold)}
+.ov-pair .vb strong{color:var(--gold-hi)}
+.ov-pair .ov-h{position:relative}
+.ov-pair .ov-h::before,.ov-pair .ov-h::after{content:"";position:absolute;top:-5px;border:5px solid transparent}
+.ov-pair .ov-h::before{left:-2px;border-right:7px solid var(--gold);border-left:0}
+.ov-pair .ov-h::after{right:-2px;border-left:7px solid var(--gold);border-right:0}
+.ov-note{margin-top:22px;font-size:12.5px;color:var(--muted)}
+@media (max-width:760px){
+  .ov-mid{grid-template-columns:1fr}
+  .ov-mid .ov-h{width:1px;height:26px;margin:0 auto}
+  .ov-mid > :nth-child(1){order:1}.ov-mid > :nth-child(2){order:2}.ov-mid > :nth-child(5){order:3}.ov-mid > :nth-child(4){order:4}.ov-mid > :nth-child(3){order:5}
+  .ov-cells{grid-template-columns:1fr}
+  .ov-pair{grid-template-columns:1fr}
+  .ov-pair .ov-h{width:1px;height:30px;margin:0 auto}
+  .ov-pair .ov-h::before{left:-5px;top:-2px;border:5px solid transparent;border-bottom:7px solid var(--gold);border-top:0}
+  .ov-pair .ov-h::after{left:-5px;right:auto;top:auto;bottom:-2px;border:5px solid transparent;border-top:7px solid var(--gold);border-bottom:0}
+}
+
+/* 浸すたびに、深くなる（結び） */
+.closing{text-align:center;padding:110px 24px 120px;background:radial-gradient(700px 420px at 50% 45%,var(--core) 0%,var(--deep) 75%)}
+.closing h2{font-weight:700;font-size:clamp(26px,4vw,40px);line-height:1.6}
+.closing .body p{color:#C9CFE0;font-size:16px}
+.dye{list-style:none;display:flex;max-width:640px;margin:46px auto 0}
+.dye li{flex:1 1 0;min-width:0}
+.dye li::before{content:"";display:block;height:64px;background:var(--s);border:1px solid rgba(232,228,205,.12)}
+.dye li{text-align:center}
+.dye .nm{display:block;margin-top:12px;font-family:var(--serif);font-weight:600;font-size:18px;color:var(--parchment);white-space:nowrap}
+.dye .rd{display:block;font-size:11px;color:var(--muted);letter-spacing:.05em;white-space:nowrap}
+@media (max-width:480px){.dye .nm{font-size:15px}.dye .rd{font-size:10px}}
+
+.date{display:block;margin-top:16px;font-size:13px;letter-spacing:.14em;color:var(--muted)}
+
+/* footer */
+footer{border-top:1px solid rgba(201,164,104,.16);padding:40px 24px 48px;background:var(--deep);text-align:center}
+footer p{font-size:12.5px;color:#5E6679;letter-spacing:.08em}
+footer p + p{margin-top:6px}
+
+@media (max-width:900px){
+  .cards{grid-template-columns:repeat(2,1fr)}
+  .oneway{grid-template-columns:1fr;max-width:420px}
+  .arrow{padding:10px 0;display:flex;align-items:center;justify-content:center;gap:12px}
+  .arrow svg{width:44px;height:44px;transform:rotate(90deg)}
+  .arrow span{margin:0}
+}
+@media (max-width:840px){
+  .two-col{grid-template-columns:1fr}
+  .hero{padding:72px 20px 64px}
+  .nav-links{gap:14px;font-size:12.5px}
+  .hangs{border-top:0;justify-content:flex-start}
+  .hang{border-top:2px solid var(--gold)}
+}
+@media (max-width:640px){
+  .nav-links a:not([aria-current]):nth-child(n+3){display:none}
+  .col{padding:34px 26px}
+  .cards{grid-template-columns:1fr}
+  .fig-mem{grid-template-columns:1fr}
+  .wires{display:none}
+  .drop{display:block;width:1px;height:30px;background:var(--gold);margin:10px auto}
+  .makers{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="/ja/">
+      <svg width="26" height="26" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="29" fill="none" stroke="#C9A468" stroke-width="2" opacity=".7"/><path d="M32 12 L36.4 27.6 L52 32 L36.4 36.4 L32 52 L27.6 36.4 L12 32 L27.6 27.6 Z" fill="#E1CB91"/></svg>
+      <span><span class="ai">AI</span> of One's Own / 育てるAI</span>
+    </a>
+    <nav class="nav-links" aria-label="サイト内">
+      <a href="/lab/ainoboru/" aria-current="page">AI NOBORu</a>
+      <a href="en/" lang="en">English</a>
+      <a href="/lab/">Lab</a>
+      <a href="/updates/">Updates</a>
+      <a href="/support/">Support</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <svg class="orbits" viewBox="0 0 1440 760" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+    <g fill="none" stroke="#C9A468">
+      <circle cx="-60" cy="820" r="430" stroke-opacity=".14" stroke-width="1.4"/>
+      <circle cx="-60" cy="820" r="600" stroke-opacity=".09" stroke-width="1.2"/>
+      <circle cx="1510" cy="-80" r="380" stroke-opacity=".12" stroke-width="1.4"/>
+    </g>
+    <g fill="#E8E4CD">
+      <circle cx="180" cy="120" r="1.4" opacity=".5"/><circle cx="420" cy="80" r="1" opacity=".35"/>
+      <circle cx="730" cy="60" r="1.2" opacity=".4"/><circle cx="1090" cy="110" r="1.5" opacity=".5"/>
+      <circle cx="1320" cy="240" r="1" opacity=".3"/><circle cx="240" cy="430" r="1.1" opacity=".35"/>
+      <circle cx="1180" cy="520" r="1.3" opacity=".45"/><circle cx="90" cy="610" r="1" opacity=".3"/>
+      <circle cx="980" cy="660" r="1.2" opacity=".4"/><circle cx="610" cy="700" r="1" opacity=".3"/>
+      <circle cx="1390" cy="640" r="1.4" opacity=".45"/><circle cx="540" cy="300" r="1" opacity=".25"/>
+    </g>
+  </svg>
+
+  <p class="eyebrow">AI · NOBORu · Lab</p>
+
+  <svg class="symbol" viewBox="0 0 120 120" aria-hidden="true">
+    <circle cx="60" cy="60" r="56" fill="none" stroke="#C9A468" stroke-opacity=".45" stroke-width="1.6"/>
+    <circle cx="60" cy="60" r="41" fill="none" stroke="#C9A468" stroke-opacity=".8" stroke-width="1.8"/>
+    <path d="M60 86 A 56 56 0 0 0 113 45" fill="none" stroke="#E1CB91" stroke-width="2.4" stroke-linecap="round" opacity=".9"/>
+    <defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F2DCA4"/><stop offset="55%" stop-color="#C9A468"/><stop offset="100%" stop-color="#8A6F47"/>
+    </linearGradient></defs>
+    <path d="M60 32 L66 54 L88 60 L66 66 L60 88 L54 66 L32 60 L54 54 Z" fill="url(#g)"/>
+  </svg>
+
+  <h1>話すほど、<br><span class="own">NOBORU に近づくAI。</span></h1>
+
+  <p class="lede">
+    AI&nbsp;NOBORu は、『育てるAI』の著者 生田 昇が、自分のために組み上げたAI環境です。頭脳はクラウドから借り、記憶とRAGは手元に置く。そのうえで、<b>毎日の会話から NOBORU の判断と考え方を読み取り、NOBORU のクローンAIを育てています。</b>
+  </p>
+
+  <div class="cta-row">
+    <a class="btn primary" href="#clone">クローンの育て方を見る</a>
+    <a class="btn" href="/ja/">『育てるAI』を見る</a>
+  </div>
+
+  <span class="badge">AI&nbsp;NOBORu Lab · 生田 昇</span>
+  <time class="date" datetime="2026-10-04">2026年10月4日</time>
+</section>
+
+
+<!-- ============ THE WHOLE PICTURE ============ -->
+<section class="section system">
+  <div class="section-head">
+    <p class="kicker">THE WHOLE PICTURE</p>
+    <h2>AI&nbsp;NOBORu の全体図</h2>
+  </div>
+  <div class="body">
+    <p>NOBORU は、チャットで話すだけ。頭脳はクラウドから借り、<b>記憶と判断の記録は AI&nbsp;NOBORu の側に積み重なる</b>。</p>
+  </div>
+  <figure class="overview" aria-label="AI NOBORu の全体図">
+    <div class="ov-box"><span class="t">NOBORU</span><strong>チャットで話すだけ</strong></div>
+    <div class="ov-link"><span>指示する・報告を受ける</span></div>
+    <div class="ov-box"><span class="t">頭脳を借りる</span><strong>Claude・ChatGPT・Gemini</strong><span class="s">デスクトップアプリ・ブラウザ</span></div>
+    <div class="ov-link"><span>どのAIからも、同じ記憶へ</span></div>
+    <div class="ov-mid">
+      <div class="ov-box"><span class="t">44 LANES</span><strong>44本のレーン</strong><span class="s">Opus が指揮<br>Codex 14・Claude Code 20・Gemini 10</span></div>
+      <div class="ov-h" aria-hidden="true"></div>
+      <div class="ov-core">
+        <strong>AI&nbsp;NOBORu</strong>
+        <div class="ov-cells">
+          <div>記憶・RAG<small>どのAIからも共通</small></div>
+          <div class="hl">判断の記録<small>NOBORU の<span class="nb">クローン</span></small></div>
+          <div>AIの盲点<small>FLAG</small></div>
+        </div>
+      </div>
+      <div class="ov-h" aria-hidden="true"></div>
+      <div class="ov-box"><span class="t">BLIND SPOTS</span><strong>8つの作り手のAI</strong><span class="s">Claude・GPT・Gemini・Grok<br>DeepSeek・Qwen・Mistral・PLaMo</span></div>
+    </div>
+    <div class="ov-link down"><span>一方向に収める</span></div>
+    <div class="ov-local">
+      <span class="t">手元だけ（クラウドのAIからは読めない）</span>
+      <div class="ov-pair">
+        <div class="ov-box vb"><strong>プライベートRAG</strong><span class="s">手元の置き場</span></div>
+        <div class="ov-h" aria-hidden="true"></div>
+        <div class="ov-box"><strong>Qwen・Gemma など</strong><span class="s">手元の機械で、別の画面から読む</span></div>
+      </div>
+    </div>
+  </figure>
+</section>
+
+<!-- ============ THE CLONE ============ -->
+<section class="section" id="clone">
+  <div class="section-head">
+    <p class="kicker">THE CLONE</p>
+    <h2>NOBORU のクローンを、会話で育てる</h2>
+  </div>
+
+  <p class="quote">「NOBORU なら、どうする？」<small>この問いに、NOBORU の代わりに答えられるAIをつくる。</small></p>
+
+  <div class="body">
+    <p>ジャッジメント・オーナーシップのモジュールが、毎日の会話から、NOBORU が<b>何を選び、何を退け、なぜそう決めたのか</b>を読み取ります。性格、決断の仕方、判断の力。読み取った判断は RAG に積み重なり、次の会話で、どのAIからも参照されます。</p>
+    <p>写すのは、NOBORU の判断と考え方、そして思想です。</p>
+  </div>
+
+  <div class="two-col">
+    <div class="col owned">
+      <p class="tag">写せるもの</p>
+      <h3>判断と思想</h3>
+      <p>同じ場面で、NOBORU ならどちらを選ぶか。何を大事にし、何を嫌うか。会話を重ねるほど、写しは細かく、正確になっていきます。</p>
+      <ul>
+        <li>判断の基準と優先順位</li>
+        <li>何を良しとし、何を嫌うか</li>
+        <li>物事の考え方と思想</li>
+      </ul>
+    </div>
+    <div class="col rented">
+      <p class="tag">写しにくいもの</p>
+      <h3>ひらめき</h3>
+      <p>まだ誰も考えていない一手は、記録からは生まれません。新しい発想は、これからも NOBORU 本人の仕事です。</p>
+      <ul>
+        <li>新しいアイデア</li>
+        <li>突拍子もない発想</li>
+        <li>その場のひらめき</li>
+      </ul>
+    </div>
+  </div>
+
+  <p class="axiom">特別な作業は、何も要らない。<br><span class="gold">今日AIと話すほど、明日のクローンは NOBORU に近づく。</span></p>
+</section>
+
+<!-- ============ HOW IT GROWS（ブロンズ帯） ============ -->
+<section class="band">
+  <div class="section-head">
+    <p class="kicker">HOW IT GROWS</p>
+    <h2>毎日の会話が、そのまま養分になる</h2>
+  </div>
+  <ol class="cards">
+    <li class="card"><p class="no">01</p><h3>話す</h3><p>Claude・GPT・Gemini。いつものAIで、いつもどおり仕事をする。</p></li>
+    <li class="card"><p class="no">02</p><h3>読み取る</h3><p>会話の中から、NOBORU が下した判断と、その理由を読み取る。</p></li>
+    <li class="card"><p class="no">03</p><h3>積み重なる</h3><p>判断の記録が RAG にたまり、NOBORU の考え方の地図が広がる。</p></li>
+    <li class="card"><p class="no">04</p><h3>次の会話で生きる</h3><p>どのAIで話しても、積み重なった判断を踏まえて答える。</p></li>
+  </ol>
+  <p class="band-note">そして、また話す。<br>この輪が一周するたびに、クローンの精度が上がっていく。</p>
+</section>
+
+<!-- ============ ONE MEMORY ============ -->
+<section class="section">
+  <div class="section-head">
+    <p class="kicker">ONE MEMORY</p>
+    <h2>どのAIで話しても、同じ記憶につながる</h2>
+  </div>
+  <div class="body">
+    <p>使う画面は、Claude や ChatGPT のデスクトップアプリ。ブラウザから Claude・ChatGPT・Gemini を使うこともできます。基本は、<b>安くて賢いクラウドのAIを、いつもどおり使う</b>ことです。</p>
+    <p>記憶とRAGは、各社のAIの中ではなく、AI&nbsp;NOBORu の側にあります。だから Claude で話しても、GPT で話しても、Gemini で話しても、同じ記憶と知識、そして同じクローンの判断を使えます。</p>
+  </div>
+  <figure class="fig-mem" aria-label="三つの入口が、AI NOBORu の記憶とRAGにつながる図">
+    <ul class="entries">
+      <li>Claude デスクトップ</li>
+      <li>ChatGPT デスクトップ</li>
+      <li>ブラウザの Claude・ChatGPT・Gemini</li>
+    </ul>
+    <svg class="wires" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0 16 C 55 16, 45 50, 100 50"/><path d="M0 50 L 100 50"/><path d="M0 84 C 55 84, 45 50, 100 50"/>
+    </svg>
+    <div class="drop" aria-hidden="true"></div>
+    <div class="core-box"><strong>AI&nbsp;NOBORu</strong><span>記憶・RAG・判断の記録</span></div>
+  </figure>
+</section>
+
+<!-- ============ 44 LANES ============ -->
+<section class="section system">
+  <div class="section-head">
+    <p class="kicker">44 LANES</p>
+    <h2>話しかけるだけで、44本のレーンが動く</h2>
+  </div>
+  <div class="body">
+    <p>AI&nbsp;NOBORu は、Codex のレーンを14本、Claude Code のレーンを20本、Gemini のレーンを10本、<b>合わせて44本</b>持っています。レーンごとにAIのモデルを置き、並列に開発を進めます。</p>
+    <p>置けるモデルは、Claude の Fable・Opus・Sonnet 5.5、GPT-6 Astra・GPT-6 Luna、Gemini 3.8 Flash、手元で動く Qwen3.6:35B-A3B・Gemma4:12B・Gemma4:26B-A4B など。Codex や Claude Code のレーンに、Gemini や Qwen を置くこともできます。</p>
+    <p>NOBORU がするのは、Claude デスクトップのチャット欄で Opus に頼むことだけ。<b>Opus が仕事を分けてレーンに渡し、進み具合と結果をチャット欄で報告します。</b></p>
+  </div>
+
+  <figure class="loom" aria-label="44本のレーンのうち、23本が走っている様子">
+    <p class="pole-label">チャット欄の Opus が指揮する</p>
+    <div class="hangs">
+      <div class="hang">
+        <div class="threads" data-prefix="C" data-n="14" data-run="1,3,4,7,9,11,13"></div>
+        <p class="hang-name">Codex<b>14本</b></p>
+      </div>
+      <div class="hang">
+        <div class="threads" data-prefix="K" data-n="20" data-run="1,2,3,5,7,8,10,12,13,15,17,19"></div>
+        <p class="hang-name">Claude Code<b>20本</b></p>
+      </div>
+      <div class="hang">
+        <div class="threads" data-prefix="G" data-n="10" data-pad="2" data-run="2,4,5,8"></div>
+        <p class="hang-name">Gemini<b>10本</b></p>
+      </div>
+    </div>
+    <p class="legend"><span><i class="k-run"></i>いま走っている 23本</span><span><i class="k-idle"></i>空いている 21本</span></p>
+  </figure>
+
+  <figure class="chat">
+    <div class="msg me"><span class="who">NOBORU</span><p>DBの作り直しと検索の速さ、今日のうちに進めて。直したら別のAIに読み直させて。</p></div>
+    <div class="msg"><span class="who">OPUS</span>
+      <p class="big">23本で走っています。そのうち DB 関連は11本です。</p>
+      <div class="tbl">
+        <table>
+          <thead><tr><th>レーン</th><th>モデル</th><th>いま</th></tr></thead>
+          <tbody>
+            <tr><td class="lane">Claude Code K3<span class="db">DB</span></td><td class="model">Opus</td><td>DBの設計を読み直し、直す案を書いている</td></tr>
+            <tr><td class="lane">Claude Code K12<span class="db">DB</span></td><td class="model">Sonnet 5.5</td><td>DBの移し替えを実装し、試験を流している</td></tr>
+            <tr><td class="lane">Claude Code K15<span class="db">DB</span></td><td class="model">Qwen3.6:35B-A3B</td><td>索引の作り直し</td></tr>
+            <tr><td class="lane">Claude Code K7</td><td class="model">Fable</td><td>区切りの最終の読み直し</td></tr>
+            <tr><td class="lane">Codex C11</td><td class="model">GPT-6 Astra</td><td>検索の速さの直し</td></tr>
+            <tr><td class="lane">Codex C13<span class="db">DB</span></td><td class="model">GPT-6 Luna</td><td>変更点のバグ探し</td></tr>
+            <tr><td class="lane">Codex C4</td><td class="model">Gemini 3.8 Flash</td><td>関係する文書の通読</td></tr>
+            <tr><td class="lane">Gemini G05<span class="db">DB</span></td><td class="model">Gemma4:26B-A4B</td><td>手元で試験データを照合</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <figcaption>チャット欄での報告の例（23本のうち8本を表示）</figcaption>
+  </figure>
+</section>
+
+<!-- ============ BLIND SPOTS ============ -->
+<section class="section">
+  <div class="section-head">
+    <p class="kicker">BLIND SPOTS</p>
+    <h2>AIの盲点に、旗を立てる</h2>
+  </div>
+  <div class="body">
+    <p>AI&nbsp;NOBORu は、Claude・GPT・Gemini・Grok に加えて、DeepSeek・Qwen・Mistral・PLaMo ともつながっています。作り手の違うAIに同じ問いを投げると、答えの食い違いから、<b>1社のAIだけでは気づけない盲点</b>が見えてきます。</p>
+  </div>
+  <ul class="makers" aria-label="つながっているAIと作り手の国">
+    <li><span class="m">Claude</span><span class="c">アメリカ</span></li>
+    <li><span class="m">GPT</span><span class="c">アメリカ</span></li>
+    <li><span class="m">Gemini</span><span class="c">アメリカ</span></li>
+    <li><span class="m">Grok</span><span class="c">アメリカ</span></li>
+    <li><span class="m">DeepSeek</span><span class="c">中国</span></li>
+    <li><span class="m">Qwen</span><span class="c">中国</span></li>
+    <li><span class="m">Mistral</span><span class="c">フランス</span></li>
+    <li><span class="m">PLaMo</span><span class="c">日本</span></li>
+  </ul>
+  <div class="body">
+    <p>盲点が見つかると旗（FLAG）を立て、「AIの盲点」として RAG に集めます。同じ落とし穴に、二度落ちないためです。</p>
+  </div>
+</section>
+
+<!-- ============ PRIVATE RAG ============ -->
+<section class="section system">
+  <div class="section-head">
+    <p class="kicker">PRIVATE RAG</p>
+    <h2><span class="nb">プライベートRAGは、</span><span class="nb">一方通行</span></h2>
+  </div>
+  <div class="body">
+    <p>RAG にはプライベートモードがあります。文書の整理や要約といった部品づくりは、性能の高い Claude や GPT-6 Astra に任せます。できた部品は、プライベートRAGへ<b>一方向にだけ</b>収めます。</p>
+    <p>プライベートRAGを読めるのは、手元の機械で動くオープンモデル（Qwen や Gemma など）だけ。それも、クラウドのAIとは別の画面からです。<b>クラウドのAIには、プライベートRAGを読む経路そのものがありません。</b></p>
+    <p>守り方は、AIへの「お願い」ではありません。データの置き場と、通り道で閉じています。</p>
+  </div>
+  <figure class="oneway" aria-label="クラウドのAIが作った部品は一方向にプライベートRAGへ収まり、読めるのは手元のオープンモデルだけ、という図">
+    <div class="pnode cloud">
+      <span class="nt">クラウドのAI</span>
+      <strong>Claude・GPT-6 Astra</strong>
+      <span>部品を作る</span>
+      <em class="noroute"><span class="nb">プライベートRAGを</span><span class="nb">読む経路はない</span></em>
+    </div>
+    <div class="arrow">
+      <svg viewBox="0 0 100 22" preserveAspectRatio="none" aria-hidden="true"><line x1="0" y1="11" x2="86" y2="11"/><path d="M84 4 L100 11 L84 18 Z"/></svg>
+      <span>一方向に収める</span>
+    </div>
+    <div class="pnode vault">
+      <strong>プライベートRAG</strong>
+      <span>手元の置き場</span>
+    </div>
+    <div class="arrow">
+      <svg viewBox="0 0 100 22" preserveAspectRatio="none" aria-hidden="true"><line x1="14" y1="11" x2="100" y2="11"/><path d="M16 4 L0 11 L16 18 Z"/></svg>
+      <span>別の画面から読む</span>
+    </div>
+    <div class="pnode local">
+      <span class="nt">手元のオープンモデル</span>
+      <strong>Qwen や Gemma など</strong>
+      <span>手元の機械で動く</span>
+    </div>
+  </figure>
+</section>
+
+
+<!-- ============ 浸すたびに、深くなる ============ -->
+<section class="closing">
+  <div class="section-head">
+    <p class="kicker">DEEPER EVERY DIP</p>
+    <h2>浸すたびに、深くなる</h2>
+  </div>
+  <div class="body">
+    <p>藍染めの布は、藍の甕に浸すたびに色が深くなります。AI&nbsp;NOBORu も同じです。ふだんは安くて高性能なクラウドのAIを使う。その会話から判断が集まり、盲点が集まり、記憶が増えていく。Claude を使っても、GPT を使っても、Gemini を使っても、その結果が AI&nbsp;NOBORu の養分になります。</p>
+  </div>
+  <ol class="dye" aria-label="藍の色は、浸すたびに深くなる">
+    <li style="--s:#CFE3E8"><span class="nm">甕覗</span><span class="rd">かめのぞき</span></li>
+    <li style="--s:#4B98A8"><span class="nm">浅葱</span><span class="rd">あさぎ</span></li>
+    <li style="--s:#2C6A90"><span class="nm">縹</span><span class="rd">はなだ</span></li>
+    <li style="--s:#1D4266"><span class="nm">藍</span><span class="rd">あい</span></li>
+    <li style="--s:#121A28"><span class="nm">褐</span><span class="rd">かち</span></li>
+  </ol>
+</section>
+
+</main>
+
+<footer>
+  <p>© 2026 Noboru Ikuta / AI&nbsp;NOBORu</p>
+  <p>Claude・ChatGPT・Gemini ほか、記載したAIの名称は各社の商標です。</p>
+</footer>
+
+<script>
+  document.querySelectorAll('.threads').forEach(function (box, g) {
+    var n = +box.dataset.n, prefix = box.dataset.prefix, pad = +(box.dataset.pad || 0);
+    var run = box.dataset.run.split(',').map(Number);
+    var offset = [0, 14, 34][g], order = 0;
+    for (var k = 1; k <= n; k++) {
+      var s = document.createElement('span');
+      var on = run.indexOf(k) !== -1;
+      if (on) { s.className = 'run'; s.style.setProperty('--i', offset + k); }
+      s.title = prefix + String(k).padStart(pad, '0') + (on ? '（走っている）' : '（空き）');
+      box.appendChild(s);
+    }
+  });
+</script>
+</body>
+</html>
