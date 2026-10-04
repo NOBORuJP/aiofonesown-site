@@ -165,6 +165,16 @@ h2{font-family:var(--serif);font-weight:600;font-size:clamp(23px,3.2vw,32px);let
 .chat figcaption{margin-top:14px;font-size:12.5px;color:var(--muted);letter-spacing:.04em}
 
 /* BLIND SPOTS */
+.flagflow{list-style:none;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;max-width:900px;margin:34px auto 30px;counter-reset:none}
+.flagflow li{position:relative;background:var(--midnight);border:1px solid var(--line);padding:22px 20px 20px;text-align:left}
+.flagflow li:last-child{border-color:var(--gold);background:linear-gradient(180deg,#101b3a 0%,var(--midnight) 100%)}
+.flagflow li:not(:last-child)::after{content:"";position:absolute;top:50%;right:-15px;width:12px;height:12px;border-top:1.5px solid var(--gold);border-right:1.5px solid var(--gold);transform:translateY(-50%) rotate(45deg)}
+.flagflow .no{display:block;font-size:12px;letter-spacing:.3em;color:var(--gold);margin-bottom:8px}
+.flagflow strong{display:block;font-family:var(--serif);font-weight:600;font-size:17px;color:var(--parchment);line-height:1.5;margin-bottom:6px}
+.flagflow li:last-child strong{color:var(--gold-hi)}
+.flagflow li > span:not(.no){font-size:13.5px;color:var(--muted);line-height:1.8}
+@media (max-width:760px){.flagflow{grid-template-columns:1fr;max-width:460px;gap:22px}.flagflow li:not(:last-child)::after{top:auto;bottom:-16px;right:auto;left:50%;transform:translateX(-50%) rotate(135deg)}}
+
 .makers{list-style:none;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0 22px;max-width:760px;margin:40px auto 0;text-align:left}
 .makers li{border-top:1px solid var(--line);padding:.8em 0 1em}
 .makers .m{display:block;font-family:var(--serif);font-weight:600;font-size:21px;color:var(--parchment)}
@@ -527,7 +537,8 @@ footer p + p{margin-top:6px}
     <h2>Planting flags on AI's blind spots</h2>
   </div>
   <div class="body">
-    <p>Besides Claude, GPT, Gemini, and Grok, AI&nbsp;NOBORu is connected to DeepSeek, Qwen, Mistral, and PLaMo. Put the same question to AIs from different makers, and where their answers part ways, <b>blind spots that no single vendor's AI would catch</b> start to show.</p>
+    <p>Here, an “AI blind spot” means <b>something NOBORU or AI&nbsp;NOBORu knows that none of the world's leading AIs do.</b></p>
+    <p>AI&nbsp;NOBORu is connected to eight AIs, built by different makers in different countries.</p>
   </div>
   <ul class="makers" aria-label="Connected AI models and where their makers are based">
     <li><span class="m">Claude</span><span class="c">United States</span></li>
@@ -539,8 +550,14 @@ footer p + p{margin-top:6px}
     <li><span class="m">Mistral</span><span class="c">France</span></li>
     <li><span class="m">PLaMo</span><span class="c">Japan</span></li>
   </ul>
+  <ol class="flagflow" aria-label="How AI blind spots are collected">
+    <li><span class="no">01</span><strong>Take something NOBORU knows</strong><span>Start with a fact that NOBORU or AI&nbsp;NOBORu knows.</span></li>
+    <li><span class="no">02</span><strong>Ask all eight AIs</strong><span>Have each of the eight AIs look into the same fact.</span></li>
+    <li><span class="no">03</span><strong>If none of them know it, <span class="nb">plant a flag</span></strong><span>File it as an AI blind spot in AI&nbsp;NOBORu's blind-spot store.</span></li>
+  </ol>
   <div class="body">
-    <p>When a blind spot turns up, it is flagged and filed in the RAG as a known AI blind spot, so nobody falls into the same trap twice.</p>
+    <p>If it is NOBORU or AI&nbsp;NOBORu that turns out to be wrong, nothing is flagged and nothing is stored. Only facts that all eight AIs have looked into and <b>genuinely didn't know</b> become AI blind spots.</p>
+    <p>AI gets smarter with every new version, so yesterday's blind spot may no longer be one today. That's why the collected blind spots are regularly rechecked against all eight AIs, and <b>the blind-spot store is audited and pruned.</b></p>
   </div>
 </section>
 
