@@ -171,6 +171,11 @@ h2{font-family:var(--serif);font-weight:600;font-size:clamp(23px,3.2vw,32px);let
 .makers .c{font-size:12.5px;color:var(--muted);letter-spacing:.08em}
 
 /* PRIVATE RAG */
+.choices{list-style:none;max-width:600px;margin:20px auto 6px;text-align:left}
+.choices li{padding:10px 0;border-top:1px solid rgba(154,163,184,.18);color:var(--muted);font-size:15.5px;line-height:1.9}
+.choices li:last-child{border-bottom:1px solid rgba(154,163,184,.18)}
+.choices li b{color:var(--parchment);font-weight:600}
+
 .oneway{display:grid;grid-template-columns:minmax(0,1fr) 112px minmax(0,1fr) 112px minmax(0,1fr);align-items:center;max-width:1000px;margin:52px auto 0;text-align:left}
 .pnode{padding:20px 20px 18px;line-height:1.6}
 .pnode .nt{display:block;font-size:12px;letter-spacing:.14em;color:var(--muted);margin-bottom:4px}
@@ -543,12 +548,19 @@ footer p + p{margin-top:6px}
 <section class="section system">
   <div class="section-head">
     <p class="kicker">PRIVATE RAG</p>
-    <h2><span class="nb">Private RAG:</span> <span class="nb">a one-way street</span></h2>
+    <h2><span class="nb">All the power of cloud AI,</span> <span class="nb">and none of the data leaves</span></h2>
   </div>
   <div class="body">
-    <p>The RAG has a private mode. The heavy lifting of building its parts, such as organizing and summarizing documents, goes to powerful models like Claude and GPT-6 Astra. The finished parts are then deposited into the private RAG <b>in one direction only</b>.</p>
-    <p>Only open models running on local hardware, such as Qwen and Gemma, can read the private RAG, and only through an interface kept separate from any cloud AI. <b>Cloud AI has no route into the private RAG at all.</b></p>
-    <p>The protection doesn't depend on asking an AI nicely. It's sealed by where the data lives and the paths it's allowed to travel.</p>
+    <p>Until now, private AI has come in two flavors.</p>
+    <ul class="choices">
+      <li><b>Cloud-based:</b> you get powerful cloud AI, but accept that your information goes out the door.</li>
+      <li><b>Fully local:</b> your information stays safe, but you make do with open models running on your own machine.</li>
+    </ul>
+    <p>Brains or secrecy: you had to give one up. <b>AI&nbsp;NOBORu refuses that trade-off.</b></p>
+    <p>The parts that go into the RAG, such as research findings, results from academic papers, pieces of finished work, and summaries of all of these, are produced by high-performance cloud AI like Claude and GPT-6 Astra. The cloud only ever sees material that's safe to share.</p>
+    <p>Think of how a smartphone is made. Circuit boards, microphones, memory, CPUs, even the screws come from specialist suppliers, and the phone maker puts them together in its own factory. The suppliers never touch the finished phone, or the data of the person who uses it.</p>
+    <p>The finished parts move into the private RAG <b>in one direction only</b>. From there, assembling those parts and using them day to day is handled solely by open models running on NOBORU's own computers and NAS, such as Qwen and Gemma, and only through an interface kept separate from any cloud AI. <b>Cloud AI has no route into the private RAG at all.</b></p>
+    <p>The private RAG isn't protected by politely asking an AI, or by some protocol. <b>It's sealed off by where the RAG data lives and the only paths it's allowed to travel.</b></p>
   </div>
   <figure class="oneway" aria-label="Parts built by cloud AI go into the private RAG one way only; only local open models can read it">
     <div class="pnode cloud">
