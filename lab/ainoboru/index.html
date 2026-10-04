@@ -165,6 +165,16 @@ h2{font-family:var(--serif);font-weight:600;font-size:clamp(23px,3.2vw,32px);let
 .chat figcaption{margin-top:14px;font-size:12.5px;color:var(--muted);letter-spacing:.04em}
 
 /* BLIND SPOTS */
+.flagflow{list-style:none;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;max-width:900px;margin:34px auto 30px;counter-reset:none}
+.flagflow li{position:relative;background:var(--midnight);border:1px solid var(--line);padding:22px 20px 20px;text-align:left}
+.flagflow li:last-child{border-color:var(--gold);background:linear-gradient(180deg,#101b3a 0%,var(--midnight) 100%)}
+.flagflow li:not(:last-child)::after{content:"";position:absolute;top:50%;right:-15px;width:12px;height:12px;border-top:1.5px solid var(--gold);border-right:1.5px solid var(--gold);transform:translateY(-50%) rotate(45deg)}
+.flagflow .no{display:block;font-size:12px;letter-spacing:.3em;color:var(--gold);margin-bottom:8px}
+.flagflow strong{display:block;font-family:var(--serif);font-weight:600;font-size:17px;color:var(--parchment);line-height:1.5;margin-bottom:6px}
+.flagflow li:last-child strong{color:var(--gold-hi)}
+.flagflow li > span:not(.no){font-size:13.5px;color:var(--muted);line-height:1.8}
+@media (max-width:760px){.flagflow{grid-template-columns:1fr;max-width:460px;gap:22px}.flagflow li:not(:last-child)::after{top:auto;bottom:-16px;right:auto;left:50%;transform:translateX(-50%) rotate(135deg)}}
+
 .makers{list-style:none;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0 22px;max-width:760px;margin:40px auto 0;text-align:left}
 .makers li{border-top:1px solid var(--line);padding:.8em 0 1em}
 .makers .m{display:block;font-family:var(--serif);font-weight:600;font-size:21px;color:var(--parchment)}
@@ -525,7 +535,8 @@ footer p + p{margin-top:6px}
     <h2>AIの盲点に、旗を立てる</h2>
   </div>
   <div class="body">
-    <p>AI&nbsp;NOBORu は、Claude・GPT・Gemini・Grok に加えて、DeepSeek・Qwen・Mistral・PLaMo ともつながっています。作り手の違うAIに同じ問いを投げると、答えの食い違いから、<b>1社のAIだけでは気づけない盲点</b>が見えてきます。</p>
+    <p>ここでいう「AIの盲点」とは、<b>NOBORU や AI&nbsp;NOBORu は知っているのに、世界の主要なAIがどれも知らないこと</b>です。</p>
+    <p>AI&nbsp;NOBORu は、作り手も国も違う8つのAIとつながっています。</p>
   </div>
   <ul class="makers" aria-label="つながっているAIと作り手の国">
     <li><span class="m">Claude</span><span class="c">アメリカ</span></li>
@@ -537,8 +548,14 @@ footer p + p{margin-top:6px}
     <li><span class="m">Mistral</span><span class="c">フランス</span></li>
     <li><span class="m">PLaMo</span><span class="c">日本</span></li>
   </ul>
+  <ol class="flagflow" aria-label="AIの盲点の集め方">
+    <li><span class="no">01</span><strong>NOBORU が知っていること</strong><span>NOBORU や AI&nbsp;NOBORu が知っている事柄を取り上げる。</span></li>
+    <li><span class="no">02</span><strong>8つのAIに調べさせる</strong><span>同じ事柄を、8つのAIそれぞれに調べさせる。</span></li>
+    <li><span class="no">03</span><strong>8つとも知らなければ、<span class="nb">旗を立てる</span></strong><span>「AIの盲点」として、AI&nbsp;NOBORu の中の盲点の倉庫に収める。</span></li>
+  </ol>
   <div class="body">
-    <p>盲点が見つかると旗（FLAG）を立て、「AIの盲点」として RAG に集めます。同じ落とし穴に、二度落ちないためです。</p>
+    <p>NOBORU や AI&nbsp;NOBORu の側が間違っていた時は、盲点として扱わず、集めません。8つのAIが調べた上で、<b>本当に知らなかったと分かった事柄だけ</b>が、AIの盲点になります。</p>
+    <p>AIは新しい版が出るたびに賢くなり、昨日の盲点が、今日はもう盲点でなくなることもあります。そのため、集めた盲点は定期的に8つのAIで確かめ直し、<b>盲点の倉庫を棚卸し</b>しています。</p>
   </div>
 </section>
 
