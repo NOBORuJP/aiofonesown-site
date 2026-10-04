@@ -1,7 +1,10 @@
 <!doctype html>
-<html lang="en" data-default-lang="en">
+<html lang="en" data-default-lang="en" data-alt-href="../">
 <head>
 <meta charset="utf-8">
+<script>(function(){try{var d=document.documentElement,q=new URLSearchParams(location.search).get('lang'),l=(q==='en'||q==='ja')?q:(d.getAttribute('data-default-lang')||JSON.parse(localStorage.getItem('kh:lang')||'null'));if(l==='en'){d.lang='en';d.classList.add('lang-boot');setTimeout(function(){d.classList.remove('lang-boot');},8000);}}catch(e){}})();</script>
+<style>html.lang-boot body{visibility:hidden}</style>
+
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Rotation and Change — formulas are found, not memorized</title>
 <meta name="description" content="三角関数・加法定理・微分・積分・オイラーの公式を、3Dで動かしながら自分の目で見つける数学ビジュアライゼーション。">
@@ -81,7 +84,7 @@ button{font:inherit;color:inherit;cursor:pointer}
 .tb[aria-pressed="false"]{opacity:.5}
 
 /* step bar */
-#stepbar{position:fixed;z-index:19;top:calc(env(safe-area-inset-top,0px) + 58px);left:calc(452px + (100% - 452px)/2);transform:translateX(-50%);
+#stepbar{position:fixed;z-index:19;top:calc(env(safe-area-inset-top,0px) + 58px);left:calc((100% - 452px)/2);transform:translateX(-50%);
   display:flex;align-items:center;background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:4px;white-space:nowrap;
   backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);transition:opacity .4s}
 .st{display:flex;align-items:center;gap:.45rem;padding:4px 12px;border-radius:7px;font-size:.84rem;color:var(--muted);font-weight:500}
@@ -91,7 +94,7 @@ button{font:inherit;color:inherit;cursor:pointer}
 .st-sep{width:12px;height:1px;background:var(--line2)}
 
 /* card */
-#card{position:fixed;z-index:15;left:16px;top:calc(env(safe-area-inset-top,0px) + 58px);bottom:calc(env(safe-area-inset-bottom,0px) + 16px);width:428px;
+#card{position:fixed;z-index:15;right:16px;top:calc(env(safe-area-inset-top,0px) + 58px);bottom:calc(env(safe-area-inset-bottom,0px) + 16px);width:428px;
   display:flex;flex-direction:column;background:var(--panel);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow);
   backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);transition:transform .5s cubic-bezier(.2,.8,.2,1),opacity .4s}
 .card-min{position:absolute;top:10px;right:10px;z-index:2;width:30px;height:30px;border-radius:9px;border:1px solid var(--line);background:var(--panel);color:var(--fg2,var(--fg));font:600 18px/1 var(--ui);cursor:pointer;display:grid;place-items:center;opacity:.8}
@@ -240,7 +243,7 @@ html[lang="en"] .chain li::before{content:"Chapter " counter(c)}
 #toast.show{opacity:1;transform:translate(-50%,0)}
 .hidden{opacity:0 !important;pointer-events:none !important}
 body.rec #topbar,body.rec #stepbar,body.rec #card,body.rec .screen,body.rec #toast{display:none !important}
-#card.hidden{transform:translateX(-24px)}
+#card.hidden{transform:translateX(24px)}
 
 @media (max-width:899px),(max-aspect-ratio:1/1){
   #topbar{padding-left:10px;padding-right:10px}
@@ -387,7 +390,7 @@ const X=new T.Vector3(1,0,0),Y=new T.Vector3(0,1,0),Z=new T.Vector3(0,0,1);
 const V=(x=0,y=0,z=0)=>new T.Vector3(x,y,z);
 const E={lin:t=>t,inOut:t=>t<.5?4*t*t*t:1-Math.pow(-2*t+2,3)/2,out:t=>1-Math.pow(1-t,3),in:t=>t*t*t,sine:t=>-(Math.cos(PI*t)-1)/2,
   outBack:t=>{const c1=1.3,c3=c1+1;return 1+c3*Math.pow(t-1,3)+c1*Math.pow(t-1,2);}};
-const LANG=(()=>{try{const u=new URLSearchParams(location.search).get('lang');if(u==='en'||u==='ja')return u;const s=localStorage.getItem('kh:lang');if(s)return JSON.parse(s);}catch(e){}return document.documentElement.getAttribute('data-default-lang')||'ja';})();
+const LANG=(()=>{try{const u=new URLSearchParams(location.search).get('lang');if(u==='en'||u==='ja')return u;const dl=document.documentElement.getAttribute('data-default-lang');if(dl==='en'||dl==='ja')return dl;const s=localStorage.getItem('kh:lang');if(s)return JSON.parse(s);}catch(e){}return 'ja';})();
 const TT=(ja,en)=>LANG==='en'?en:ja;
 document.documentElement.lang=LANG;
 const FUI=(LANG==='en'?'"IBM Plex Sans",':'')+'"Zen Kaku Gothic New","Hiragino Sans","Yu Gothic","Meiryo",sans-serif';
@@ -703,9 +706,9 @@ function relayout(){
   if($('#titleScreen').classList.contains('show')&&!document.body.classList.contains('rec')){
     if(wideMode)x0=W*0.46;else{const h=$('.hero');if(h)y1=h.getBoundingClientRect().top-6;}
   }
-  if(!tb.classList.contains('hidden')&&tb.offsetParent!==null)y0=tb.offsetTop+tb.offsetHeight+4;
-  if(!sb.classList.contains('hidden')&&sb.offsetParent!==null)y0=Math.max(y0,sb.offsetTop+sb.offsetHeight+4);
-  if(!cd.classList.contains('hidden')&&cd.offsetParent!==null){if(wideMode&&!cd.classList.contains('min'))x0=cd.offsetLeft+cd.offsetWidth+8;else if(!wideMode)y1=cd.offsetTop-4;}
+  if(!tb.classList.contains('hidden')&&tb.getClientRects().length>0)y0=tb.offsetTop+tb.offsetHeight+4;
+  if(!sb.classList.contains('hidden')&&sb.getClientRects().length>0)y0=Math.max(y0,sb.offsetTop+sb.offsetHeight+4);
+  if(!cd.classList.contains('hidden')&&cd.getClientRects().length>0){if(wideMode&&!cd.classList.contains('min'))x1=cd.offsetLeft-8;else if(!wideMode)y1=cd.offsetTop-4;}
   layT.cx=(x0+x1)/2;layT.cy=(y0+y1)/2;layT.aw=Math.max(140,x1-x0);layT.ah=Math.max(140,y1-y0);
 }
 function setView(v,dur=1.3,keepUser=false){
@@ -718,7 +721,9 @@ function setView(v,dur=1.3,keepUser=false){
     if(!keepUser){userTh=u0.th*(1-e);userPh=u0.ph*(1-e);userZoom=lerp(u0.z,1,e);}},{ease:E.inOut});
 }
 let spinOn=true;
+let relayT=0;
 function updateCamera(dt){
+  if((relayT-=dt)<=0){relayout();relayT=0.25;}
   const k=1-Math.exp(-dt*6);
   for(const key of ['cx','cy','aw','ah'])lay[key]=lerp(lay[key],layT[key],k);
   const W=innerWidth,H=innerHeight;camera.aspect=W/H;
@@ -2138,9 +2143,10 @@ function applyStaticEN(){
   $('#menuClose').setAttribute('aria-label','Close');
 }
 if(LANG==='en')applyStaticEN();
+document.documentElement.classList.remove('lang-boot');
 $('#langBtn').textContent=LANG==='en'?'日本語':'EN';$('#langBtn').setAttribute('lang',LANG==='en'?'ja':'en');
 $('#langBtn2').textContent=LANG==='en'?'日本語':'English';$('#langBtn2').setAttribute('lang',LANG==='en'?'ja':'en');
-$('#langBtn').onclick=$('#langBtn2').onclick=()=>{store.set('lang',LANG==='en'?'ja':'en');location.reload();};
+$('#langBtn').onclick=$('#langBtn2').onclick=()=>{const alt=document.documentElement.getAttribute('data-alt-href');if(alt){location.href=alt;return;}store.set('lang',LANG==='en'?'ja':'en');location.reload();};
 
 /* ================= minimisable card ================= */
 function setCardMin(on,save=true){
