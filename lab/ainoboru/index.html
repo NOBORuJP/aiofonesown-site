@@ -171,6 +171,11 @@ h2{font-family:var(--serif);font-weight:600;font-size:clamp(23px,3.2vw,32px);let
 .makers .c{font-size:12.5px;color:var(--muted);letter-spacing:.08em}
 
 /* PRIVATE RAG */
+.choices{list-style:none;max-width:600px;margin:20px auto 6px;text-align:left}
+.choices li{padding:10px 0;border-top:1px solid rgba(154,163,184,.18);color:var(--muted);font-size:15.5px;line-height:1.9}
+.choices li:last-child{border-bottom:1px solid rgba(154,163,184,.18)}
+.choices li b{color:var(--parchment);font-weight:600}
+
 .oneway{display:grid;grid-template-columns:minmax(0,1fr) 112px minmax(0,1fr) 112px minmax(0,1fr);align-items:center;max-width:1000px;margin:52px auto 0;text-align:left}
 .pnode{padding:20px 20px 18px;line-height:1.6}
 .pnode .nt{display:block;font-size:12px;letter-spacing:.14em;color:var(--muted);margin-bottom:4px}
@@ -541,12 +546,19 @@ footer p + p{margin-top:6px}
 <section class="section system">
   <div class="section-head">
     <p class="kicker">PRIVATE RAG</p>
-    <h2><span class="nb">プライベートRAGは、</span><span class="nb">一方通行</span></h2>
+    <h2><span class="nb">クラウドAIの性能を使いながら、</span><span class="nb">中身は外に出さないRAG</span></h2>
   </div>
   <div class="body">
-    <p>RAG にはプライベートモードがあります。文書の整理や要約といった部品づくりは、性能の高い Claude や GPT-6 Astra に任せます。できた部品は、プライベートRAGへ<b>一方向にだけ</b>収めます。</p>
-    <p>プライベートRAGを読めるのは、手元の機械で動くオープンモデル（Qwen や Gemma など）だけ。それも、クラウドのAIとは別の画面からです。<b>クラウドのAIには、プライベートRAGを読む経路そのものがありません。</b></p>
-    <p>守り方は、AIへの「お願い」ではありません。データの置き場と、通り道で閉じています。</p>
+    <p>これまでのプライベートAIは、二つに分かれていました。</p>
+    <ul class="choices">
+      <li><b>クラウド型</b>：高性能なクラウドのAIを使う代わりに、情報が外に出ることを受け入れる。</li>
+      <li><b>完全ローカル型</b>：情報を守る代わりに、自分の機械で動くオープンモデルだけで我慢する。</li>
+    </ul>
+    <p>賢さを取るか、秘密を取るか。どちらかを諦めるしかありませんでした。<b>AI&nbsp;NOBORu は、その二択をやめました。</b></p>
+    <p>調査結果や論文の結果、成果物の一部、それらの要約といった RAG の部品は、Claude や GPT-6 Astra といった高性能なクラウドAIに作らせます。クラウドに渡すのは、見せてよい材料だけです。</p>
+    <p>スマートフォンづくりに似ています。基板、マイク、メモリー、CPU、ネジは、それぞれ専門の会社が作り、メーカーはそれを自社の工場で組み立てます。部品を作った会社が、組み立てた後の製品や、それを使う人のデータに触れることはありません。</p>
+    <p>できた部品は、プライベートRAGへ<b>一方向にだけ</b>運び込まれます。部品の組み立ても、毎日の実際の利用も、担うのは自分のパソコンや NAS で動くオープンモデル（Qwen や Gemma など）だけです。それも、クラウドのAIとは別の画面から使います。<b>クラウドのAIには、プライベートRAGを読む経路そのものがありません。</b></p>
+    <p>プライベートRAGの護り方は、AIへの「お願いレベル、プロトコルレベル」ではありません。<b>RAGデータの置き場と、通り道そのもので閉じています。</b></p>
   </div>
   <figure class="oneway" aria-label="クラウドのAIが作った部品は一方向にプライベートRAGへ収まり、読めるのは手元のオープンモデルだけ、という図">
     <div class="pnode cloud">
