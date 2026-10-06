@@ -281,7 +281,10 @@ footer p + p{margin-top:6px}
   .hang{border-top:2px solid var(--gold)}
 }
 @media (max-width:640px){
-  .nav-links a:not([aria-current]):nth-child(n+3){display:none}
+  .nav-links a:not([aria-current]):not(.nav-yt):nth-child(n+3){display:none}
+  .nav-links{gap:10px;font-size:11.5px;letter-spacing:.03em}
+  .nav-links a{white-space:nowrap}
+  .brand{font-size:13px;gap:8px}
   .col{padding:34px 26px}
   .cards{grid-template-columns:1fr}
   .fig-mem{grid-template-columns:1fr}
@@ -303,8 +306,7 @@ footer p + p{margin-top:6px}
       <a href="/lab/ainoboru/en/" aria-current="page">AI NOBORu</a>
       <a href="../" lang="ja">日本語</a>
       <a href="/lab/">Lab</a>
-      <a href="/updates/">Updates</a>
-      <a href="/support/">Support</a>
+      <a class="nav-yt" href="https://www.youtube.com/@MathinUseByAINOBOru" target="_blank" rel="noopener">YouTube</a>
     </nav>
   </div>
 </header>
